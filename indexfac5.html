@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=14&id=11 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:08:19 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Mat&eacute;ria Especial: A Dogmatização Do Metal [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var site = $("#site").val();
+		var mensagem = $("#mensagem").val();
+		var esc_esp_id = $("#esc_esp_id").val();
+		var esc_ver = $("#esc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_mat0055.html?id=11', {nome: nome, email: email, site: site, mensagem: mensagem, esc_esp_id: esc_esp_id, esc_ver: esc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#site").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<div class="mat_topo">
+
+<div class="mat_imagem"><img src="a-dogmatizacao-do-metal3150.jpg?imagem=imagens/materias/a-dogmatizacao-do-metal.jpg&amp;w=350&amp;h=350" border="0" /></div>
+
+<p>
+<p>Um fen&ocirc;meno que tem incomodado muitos atualmente, principalmente aos que almejam um ideal de liberdade, &eacute; o da dogmatiza&ccedil;&atilde;o, do transporte para o &acirc;mbito religioso (ou quase-religioso) de aspectos essencialmente inadequados a este sentido. Hoje em dia a liberdade de express&atilde;o vem sendo buscada sob variadas formas e em diversos ambientes, apesar de ainda existir uma atmosfera conservadora que atravanca qualquer avan&ccedil;o nesse sentido; pessoas que acham que regras de comportamento s&atilde;o essenciais para preservar uma determinada cultura. Em outros termos, &eacute; o fen&ocirc;meno da transforma&ccedil;&atilde;o do &lsquo;gosto&rsquo; ("eu gosto disso", "voc&ecirc; gosta daquilo") ou das prefer&ecirc;ncias est&eacute;ticas (ou seja, de interesses e sensibilidades muito pessoais), em estruturas regradas, com normas e quase-leis que as regem.<br /><br />No Metal, h&aacute; tempos que isso ocorre. Para alguns, andar de preto &eacute; o m&iacute;nimo que um Headbanger tem que fazer para mostrar que merece ouvir Metal. Antigamente dever-se-ia ter cabelos longos, mas hoje os mesmos ficaram calvos e desistiram de impor isso como regra - ou amadureceram mesmo. O Metal, tal como se expressa na cabe&ccedil;a dessas pessoas, se tornou algo esdr&uacute;xulo e at&eacute; mesmo ir&ocirc;nico para quem o v&ecirc; de fora, pois na medida em que tanto se critica a religi&atilde;o por seus dogmas e o aprisionamento do homem, praticamente se criou uma "religi&atilde;o Metal" em certas cabe&ccedil;as. L&oacute;gico que hoje n&atilde;o se v&ecirc; tanto isso, mas ainda existem aqueles que, sendo eufem&iacute;stico, agora s&atilde;o "saudosistas".<br /><br />Padr&otilde;es na forma de como se vestir, de como arrumar o cabelo, regras de comportamento de acordo com o estilo que mais ouve, com consequentes normas do que ouvir e do que n&atilde;o ouvir e etc. - a lista poderia se estender. Os regramentos dentro do Metal s&atilde;o in&uacute;meros e todos poderiam dar pelo menos um exemplo dessas regras. Alguns casos chegam a legislar, dentro da pr&oacute;pria esfera do Metal, como por exemplo: se voc&ecirc; &eacute; um 'deathbanger' n&atilde;o pode ouvir, sob nenhuma hip&oacute;tese, Metal Mel&oacute;dico; n&atilde;o pode se vestir como um thrasher; o ecletismo &eacute; uma doen&ccedil;a e etc. E esses regramentos acabam por separar os g&ecirc;neros dentro do pr&oacute;prio Heavy Metal e criar, em alguns casos, o &oacute;dio e a intoler&acirc;ncia. Por esses motivos, muitos passam a criticar a exist&ecirc;ncia de r&oacute;tulos dentro do Metal.<br /><br />Acreditamos que esse texto vai revelar dois tipos principais de rea&ccedil;&atilde;o: Para os que procuram serem livres de dogmas, &eacute; um absurdo achar que essa dogmatiza&ccedil;&atilde;o seja perpetuada na cena Underground, pois abafaria sua personalidade, se prendendo aos moldes ditados (ou seja, a individualidade viria em primeiro plano). Para os mais conservadores, &eacute; at&eacute; mesmo rid&iacute;culo discutir esse assunto, pois est&atilde;o certos que &eacute; necess&aacute;rio ter regras de comportamento dentro da cena, para que ela n&atilde;o seja "infectada" por pessoas que n&atilde;o entendem o "esp&iacute;rito Metal", ou at&eacute; mesmo para saudar a tradi&ccedil;&atilde;o e a cultura criada dentro desse estilo (ou seja, valorizam o coletivo e o grupo acima do indiv&iacute;duo). Claro que h&aacute; muitas opini&otilde;es diferentes al&eacute;m dessas e entre esses dois exemplos extremos existem uma gama razo&aacute;vel de opini&otilde;es.</p>
+</p><br /><br />
+<div class="mat_pergunta">Na sua opinião, as regras e os padrões de comportamento no Metal, que muitos defendem ao extremo, são aceitáveis dentro da cena Underground contemporânea?</div>
+<br /><br />
+Essa mat&eacute;ria foi elaborada por <b><a href="mailto:alexneundorf@yahoo.com.br">Alex Neundorf</a>, <a href="mailto:carrascu@bol.com.br">Carrascu</a> e <a href="mailto:rodrigo_simetti@hotmail.com">Rodrigo Simetti</a></b>, e publicada no dia <b>04/09/2011</b>.
+
+</div>
+
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Marcos Campos&nbsp;
+<span class="mat_respostas_descricao">(Vocalista da banda <a href="http://www.myspace.com/ressonanciamorfica" title="" target="_blank">Ressonância Mórfica</a>)</span></div>
+São aceitáveis até certo ponto, pois não podemos radicalizar demais, por uma questão de bom senso. Em contrapartida, uma coisa que eu acho inaceitável e contraditória é a religião no Metal. A essência Metal é obscura, visceral e simples como tem de ser. Esse lance de "pregação" é totalmente sem nexo e não soma nada à música extrema. Porém, isso não quer dizer que eu vá brigar com quem faz esse tipo de música.&nbsp;</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Pedro Poney&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.violatorthrash.com/" title="" target="_blank">Violator</a>)</span></div>
+<div>Acho que cabe uma distinção importante nessa pergunta: pra quem você quer estabelecer padrões de comportamento e regras?&nbsp;</div><div><br></div><div>Se é pra você mesmo, tudo bem. Se eu quero me vestir de um determinado jeito, escutar um determinado tipo específico de música, e acreditar em determinadas coisas que pra mim são verdadeiras, tá beleza. De uma maneira ou de outra, todas as pessoas fazem isso todos os dias, em diferentes níveis.&nbsp;</div><div><br></div><div>O problema é o movimento de passar essas certezas para julgar outras pessoas. Quando a partir do que eu acho certo e do que eu gosto, eu começo a querer ditar o que as outras pessoas devem gostar e achar certo. Isso torna a cena mais próximo de uma polícia do que qualquer outra coisa, e eu acho que não deveria existir coisa mais distante da nossa contracultura do que a polícia.</div><div><br></div><div>Eu sempre entendi que o metal era sobre ser você mesmo, sobre ter liberdade pra ser você mesmo sem se importar com o que os outros pensam de você, foi isso que me fez entrar, me envolver e me afundar nesse mundo subterrâneo. Eu não me encaixava em lugar nenhum e eu encontrei um espaço em que todo mundo que também se sentia assim poderia ser do jeito que bem entendesse.</div><div><br></div><div>A partir do momento que o metal vira um espaço não para a afirmação das nossas vontades e sim para reprimir a vontade dos outros, acho que perdemos tudo de bom que há na cena e no underground.</div><div><br></div><div>***</div><div><br></div><div>Falando mais especificamente sobre o Violator, a gente faz parte (e ajudou a construir) uma cena calcada em uma sonoridade "old school" que, infelizmente, muitas pessoas confundem com ditadura de padrões de sonoridade, comportamento e, o que eu acho mais ridículo, vestimenta. Eu acho que não existe nada menos "thrash" do que querer impor um uniforme, quase uma fantasia, pros outros.&nbsp;</div><div><br></div><div>Cada um deve usar a roupa que bem entender, seja a que for, chinela e shortinho, calça apertada e colete, tanto faz. E escutar o que quiser, o que achar legal. Mesmo que isso seja somente bandas de metal da primeira metade dos anos 80, ou ainda escutar de tudo, coisas fora do rock inclusive, sei lá. Não sou eu nem ninguém que vai determinar isso. Cada pessoa é que sabe. "Não há autoridade a não ser você mesmo", já diziam por aí.&nbsp;</div><div><br></div><div>As bandas originais do thrash marcaram uma época justamente por "serem elas mesmas", no palco ou fora dele. Era uma maneira de reagir a esse lance "poser" das bandas "glam" da sunset boulevard.&nbsp;</div><div><br></div><div>A gente escreveu uma letra sobre isso no último disco, chama "uniformity is conformity" (uniformidade é conformismo), o que eu vejo até mesmo como uma continuação, um aprofundamento da ideia de "união na cena", que é tão cara ao Violator. Infelizmente, as pessoas ainda confundem "união" com "uniformidade", parece que é difícil entender que é possível fazer as coisas juntos e respeitar a diversidade.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Robson Souto&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://myspace.com/landoftearsbrasil" title="" target="_blank">Land of Tears</a>)</span></div>
+Bem, nos anos 80 e 90 era comum o pessoal se encontrar nas praças dos bairros pra trocarem informações, lps, comprar camisas, vender camisas, emprestar fitas, etc., era a única maneira de se ter informações e saber novidades das bandas que se curtia, era normal, você usar aquele estereótipo, colete com patches de bandas, alça rasgada, cabelos compridos e a camisa de sua banda favorita, eram os 80/90. Hoje com a informação em tempo real, você pode conhecer qualquer som de qualquer banda, sem sair de casa apenas com um click sem ser obrigatório o individuo participar de algum grupo, ou seja, até quem não e fã de Heavy Metal tem muito mais facilidade de se tornar um fã em potencial, basta ter curiosidade de buscar ou ser indicado por alguém. Em suma, você não precisa vestir uma roupa de banger pra ser, pois banger na minha opinião é quem curte o som, quem se contagia com a energia da música, seja com tatuagem e cabelo comprido ou de terno e gravata dentro de uma grande corporação, o que manda é o gostar, o interesse pela arte do Metal, interesse em conhecer a banda, seus integrantes, começar a buscar bandas similares ao estilo que se gosta e assim como a cachaça, nunca mais parar de ouvir. O Heavy Metal faz parte de minha vida desde que tinha oito anos de idade, era 1983, eu não tinha blusa de banda, nem tatuagens, somente o cabelo comprido por gosto próprio, nem sabia o que era Hard Rock ou Heavy Metal, apenas ouvi e me apaixonei, hoje com 36, posso dizer que minha vida não existiria sem o Heavy Metal, eu poderia não ter braços pra tocar minha guitarra, nem pernas pra agitar, eu continuaria a ser fã desse estilo de vida, então como diz o ditado: "Não se pode julgar um livro pela capa".</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Leon Manssur&nbsp;
+<span class="mat_respostas_descricao">(Integrante das bandas&nbsp;<a href="http://www.reverbnation.com/apokalypticraids" title="" target="_blank">Apokalyptic Raids</a> e <a href="http://www.myspace.com/metalmorphoseband" title="" target="_blank">Metalmorphose</a>)</span></div>
+<div>Esse é um assunto vastíssimo, na teoria e na prática.</div><div>&nbsp;</div><div>Primeiro, precisamos analisar a psicologia do Metal: junte num caldeirão rebeldia adolescente, imaturidade, desejo de controle, romantização, idealização e frustração. Eu falo com tranquilidade &nbsp;desses aspectos porque já digeri ou estou digerindo estas facetas</div><div>da "psicologia banger".</div><div>&nbsp;</div><div>Daí é natural em certo ponto que apareçam atitudes comparáveis às piores religiões. Sim, o Metal tem um componente "messiânico". Nós o escolhemos para nos "salvar" da pasmaceira que é a vida. &nbsp;Nosso estilo de vida e, de certa forma, nossa religião irreligiosa.</div><div>&nbsp;</div><div>Alguns mais fracos da cabeça confundem as coisas e levam tudo para o lado do messianismo religioso, com a religião substituída pelo Metal. Mas o fanatismo é o mesmo, e é deplorável, e é um desserviço ao nosso estilo de vida. Desse modo, recriam a religião que repudiam, recriam a sociedade ditatorial que combatem.</div><div>&nbsp;</div><div>Ao longo da história, pessoas tão díspares quanto Jello Biafra e Euronymous falaram sobre isso. Recomendo a leitura da letra de "Where do you draw the line" e do manifesto escrito por Euronymous no começo dos anos 90.</div><div>&nbsp;</div><div>Embora tenham enfoques diferentes, ambos se referem aos "ditadores" do underground.</div><div>&nbsp;</div><div>Sim, eu penso que nosso meio deva ser fechado, elitizado, e as coisas passadas aos mais novos conforme eles se mostram mais ou menos "dignos". Realmente, não sou a favor do "pode tudo".</div><div>&nbsp;</div><div>O que eu não concordo é que alguém se advogue o direito de traçar a linha e fazer juízos. Esse "fechamento" é uma característica da nossa coletividade, não é prerrogativa de um ou de alguns indivíduos.</div><div>&nbsp;</div><div>Concluindo, eu acho que não se trata de uma luta entre libertários e conservadores no nosso meio. Mas em vez disso de uma luta entre as pessoas inteligentes e que reconhecem os próprios erros, e as pessoas que não conseguem agir diferente daquilo que criticam, uma atitude de total arrogância.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Alexandre Chakal&nbsp;
+<span class="mat_respostas_descricao">(<a href="http://metalreunionzine.blogspot.com/" title="" target="_blank">Metal Reunion Recs &amp; Zine</a> e <a href="http://www.recifemetallaw.com.br/" title="" target="_blank">Recife Metal Law</a>)</span></div>
+<div>Opa amigo. Muito interessante sua &nbsp;abordagem cara. Seguinte. Independente de o indivíduo ser conservador ou não, sabemos bem que princípios básicos do Rock’n’Roll e Heavy Metal estão diretamente ligados ao termo utópico "Liberdade".</div><div>&nbsp;</div><div>Mas como falar de liberdade aqui no Brasil com uma segmentação do Rock e Metal tão forte? Os subgêneros são criados e recriados todos os dias. E com eles, são adotadas ações de convívio social que interferem muito em todo o conhecimento adquirido referente aquela tal subdivisão, às vezes, recém-criada. Ou seja, interfere na Cultura e consequentemente acaba criando essas tais regras e padrões de comportamento.</div><div>&nbsp;</div><div>Enfim. Observando essa explanação na questão, só sobra como resposta dizer que a tal liberdade que o Rock'n'Roll tinha obrigação de "defender", seja nas letras, seja em conceitos ideológicos e/ou na construção de valores culturais, infelizmente acabou ficando em 3º plano perdendo para os rótulos de subgêneros/vertentes e também para as regras de comportamento que por sua vez, se não forem seguidas "religiosamente", acabam tornando-se poderosas ferramentas de exclusão para os indivíduos que não as seguem dentro dos grupos que os mesmos mais se identificam musicalmente ou ideologicamente.&nbsp;</div><div>&nbsp;</div><div>Essa necessidade de separar, rotular e ditar quem é o melhor ou o certo é própria do comportamento humano desde o inicio dos tempos. Certo? Então? No Rock e Metal não haveria de ser diferente.</div><div>&nbsp;</div><div>Já que não fui eu que criei as divisões de estilos, eu defendo que haja sim, certas regras de comportamento no Rock &amp; Metal para que não deturpem alguns valores que existem apenas no nosso underground.</div><div>&nbsp;</div><div>Eu por exemplo tenho regras que eu mesmo criei onde não apoio bandas, eventos, produtores, pessoas e/ou grupos ligados a White Metal, Cover e Nazi/Fascismo. Mas apesar disso, não sou a favor de que regras sejam tão limitadoras a ponto de fomentar um certo fanatismo programado, similar aos praticados por grupos religiosos que tem objetivos geralmente não relacionados ao tema de seus discursos responsáveis muitas vezes em criar as tais regras.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Renato De Luccas&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda&nbsp;<a href="http://www.exhortation.com.br/" title="" target="_blank">Exhortation</a>)</span></div>
+<div>Em primeiro lugar, muito obrigado pela oportunidade em contribuímos com esta pesquisa de opinião. Acho muito positivo este tipo de matéria que vocês têm realizado, conte sempre conosco.</div><div>&nbsp;</div><div>Pergunta: Na sua opinião, as regras e os padrões de comportamento no Metal, que muitos defendem ao extremo, são aceitáveis dentro da cena Underground contemporânea?</div><div>&nbsp;</div><div>Começo meus argumentos dizendo o seguinte: hoje em dia, sabemos que tudo que é levado ao extremo, não faz bem para qualquer setor da vida de qualquer individuo, e muito menos para cena musical, seja ela qual for. &nbsp;Já dizia minha avó: “Tudo que é demais faz mal” (acho que todos aqui já ouviram essa frase).</div><div>&nbsp;</div><div>Obviamente que determinados costumes, precisam existir, pois são estes costumes de uma determinada cultura que a caracterizam como tal. Porém, acredito que o fator de determinado comportamento ser aceitável ou não dentro do Metal, é o limite do respeito. A partir do momento que seu costume se impõe de maneira social negativa, sua crença passa a ser objeto de obsessão e suas atitudes não prezam mais pelo respeito ao próximo, (ou por respeito a qualquer outra crença ou costume) você acaba perdendo a razão. Hoje em dia, este tipo de atitude não possui mais argumentos para afirmar que tal comportamento é aceitável. Sou a favor, da liberdade de expressão. Vivo e respeito nossa cultura underground e em especial nossa cultura “Metal”. Porém, acredito que as minhas crenças, meus costumes, e a cultura no qual admiro, são minhas causas. Não quero e não preciso fazer com que ninguém acredite ou se comporte da maneira que eu gosto, ou que me sinto bem. Cada um acredita no que achar melhor, e não sou eu que vou dizer o contrário. Porém, o meu respeito pelos outros existe até o momento que o “outro” me respeita... Já dizia a minha avó... “não faça aos outro aquilo que não quer a si mesmo”.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">André Meyer&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda&nbsp;<a href="http://www.myspace.com/bandadistraught" title="" target="_blank">Distraught</a>)</span></div>
+Vou ser breve naquilo que penso e acredito sobre gosto musical, estilo de vida, comportamento enfim na cena underground. Sempre acreditei que a união destes grupos tornaria tudo melhor, seriamos mais fortes, já que nunca foi o som da grande midia. Grandes festivais dão muito certo quando há uma mistura de bandas que tem estilos diversos dentro do heavy metal. Acho que todos deveriam se respeitar independentemente de sua preferência e estilo.</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Erthal Israel&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.myspace.com/bulletcourse" title="" target="_blank">Bullet Course</a>)</span></div>
+<div>Com o passar do tempo um pouco do radicalismo foi deixado de lado na cena Metal, bandas de estilos diferentes dividindo palco, até os estilos mais radicais deram espaço para essa união.</div><div>Mas como todos os estilos cada um segue sua linha musical e comportamental. Cada Banger segura a sua bandeira e defende seus ideais.&nbsp;</div><div>O Banger cresceu vendo o seu estilo de vida/metal sendo cultuada e ao mesmo tempo sendo modificado pelas novas gerações, algumas renovações &nbsp;boas, mas algumas preocupantes, então é defendido radicalmente algumas situações por um grande “receio” de ver a cultura que ele colaborou por anos de Undergroud ser apagada, perdida ou pior, mudarem os conceitos no qual o seu estilo de vida e musical defende e ataca.</div><div><br></div><div>O Cenário Undergroud Nacional já cedeu sua parte para contribuir com a união de estilos diversos do Metal, mas tem que continuar sendo original, radical e muitas vezes fechado para outros membros, caso contrario exemplo como a palhaçada de “UnBlack”Metal tenta infectar as mentes das pessoas. Hoje em dia se “camuflam” em meio as Banger’s por isso que cenário Metal tem que ser fechado, ríspido as vezes, confiar nas pessoas certas, abrir espaço apenas para os de confiança, &nbsp; &nbsp;</div><div><br></div><div>Metal é Liberdade, é Rebeldia, é Blasfêmia, todos que lutam contra isso não passam de psêudos.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Yakili&nbsp;
+<span class="mat_respostas_descricao">(Intergrante da banda&nbsp;<a href="http://www.myspace.com/crunchdelights" title="" target="_blank">Crunch Delights</a>)</span></div>
+<div>Resposta na lata, Não!</div><div>&nbsp;</div><div>Um exemplo certo disso é o som em que cada um se identifica. O Black Metal, por exemplo, com certeza será o estilo mais ''chamativo'' e ''questionado'' da cena metal de todos os tempos, pelo fato dos temas das letras, estilo de vida dos ''apreciadores'', roupas etc. etc., porque antigamente todos andavam de um jeito, tinham seu modo de pensar, de agir, totalmente diferente dos de hoje em dia, mas com a mesma ideologia.</div><div>&nbsp;</div><div>Na questão de gosto musical ou estilo que cada um escuta, logicamente por analisarmos uma ''Banda das Antigas'' vamos assistir documentários, ver vídeos, shows, e começamos a reparar como os Headbangers da época se comportavam, ou não, se você curte Thrash Metal, ou quem escuta, você já o identifica, pelo fato do colete, dos patches das bandas ali costuradas, mas isso não quer dizer que quem esta escutando o som siga a ideologia de tal estilo, ate mesmo porque o Metal não é feito de aparências, e sim de atitudes, prestigiando as bandas, comprando merch, material, indo a shows (mesmo que na maioria das vezes o preço é um absurdo). Na verdade sopra quem teve ou tem banda sabe a desgraça que é ter isso rsrsrsrs.</div><div>&nbsp;</div><div>Um Dogma do Metal que sempre vai existir com certeza, é o Cabelo comprido, mas que não influência.</div><div>&nbsp;</div><div>Metal não esta na roupa, estilo, cor, e sim o que corre nas suas veias.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Pedro Webster&nbsp;
+<span class="mat_respostas_descricao">(Integrante das bandas&nbsp;<a href="http://www.myspace.com/burnthemankind" title="" target="_blank">Burn The Mankind</a> e <a href="http://www.myspace.com/indulgence666" title="" target="_blank">Indulgence</a>)</span></div>
+<div>Não estamos mais nos anos 80, as coisas estão mudando muito e vejo que passamos atualmente por um período de adaptação, querendo chegar a uma conclusão que talvez nunca chegará.</div><div>&nbsp;</div><div>Os padrões de comportamento são muito importante para a perpetuação da cultura "Heavy Metal". &nbsp;A maneira de como se vestir, o que está se ouvindo agora, opiniões sobre religião e sociedade, e até mesmo o modo de vida do cidadão é totalmente moldado de acordo com as normas desta cultura.</div><div>&nbsp;</div><div>Porém é uma cultura que se expandiu fortemente, espalhando-se em muitas sub-culturas, e agora são raros os casos que permitem uma unificação geral.</div><div>&nbsp;</div><div>Nos dias de hoje as regras são um pouco mais sutis, e são aceitas pessoas que levam isso com menos seriedade, apenas como gosto musical mesmo. Isso deve ser aceito tanto quanto os verdadeiros "True Headbangers", pois estes são os que realmente levam adiante a história, levantam a bandeira do metal e não deixam a cena morrer.</div><div>&nbsp;&nbsp;</div><div>Preconceitos não deveriam existir, nem ao fã menos fiel, nem ao fã mais fiel. Nem ao fã de metal melódico e nem ao fã de death metal. Mesmo os gostos pessoais sendo diferentes, e até a cultura em geral sendo diferente, é tudo Metal.</div><div>&nbsp;</div><div>Então as regras e os padrões de comportamento no Metal, que muitos defendem ao extremo devem ser aceitas atualmente sim, tanto a velha escola como a nova. Mudanças ocorrem e haverão alguns desentendimentos, mas as coisas se encaminharão naturalmente para haver o mínimo de conflitos possíveis, é só querermos, pois somos nós que moldamos isso.</div><div>&nbsp;</div><div>Eu particularmente sou adepto ao metal extremo, que não há frescura alguma, só colocar a camiseta da banda underground de amigos, que são tão boas quanto as gringas, tacar a britadeira e já era. É o som mais agressivo e que me cai melhor aos ouvidos. Não quero usar brincos ou fazer chapinha nos cabelos, ou fazer a barba bem feita, e tem headbanger que até usa maquilagem, nada contra eles, são irmãos do metal também, porém, essas coisas não são para mim. O que importa é que todos batamos as cabeças nos shows, apoiarmos, comprarmos coisas das bandas undergrounds, divulgá-las, apreciá-las. Ai sim você será um Headbanger, não importa o estilo que ouve.</div><div>&nbsp;</div><div>E assim se fazer parte da história, e não deixando-a morrer.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Victor Angelotti&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.myspace.com/cruscifire" title="" target="_blank">Cruscifire</a>)</span></div>
+<div>Bom, primeiramente gostaria de agradecer a oportunidade de participar da matéria!</div><div>&nbsp;</div><div>Acredito que essa "dogmatização" no metal existe desde sempre, mas é algo mais extremo em algumas situações.</div><div>&nbsp;</div><div>A principal representação dessa dogmatização talvez seja a preocupação com o visual acima da música e da arte.</div><div>&nbsp;</div><div>Nós do Cruscifire já fomos diversas vezes abordados neste sentido, pois como algumas pessoas sabem, não somos uma banda de visual. Quando vamos em shows, ou até mesmo tocar, não nos preocupamos com visual, usamos a roupa que estivermos na hora e é isso. Não nos sentimos "menos metal" ou "menos headbanger" por tocar de bermuda, não termos cabelos compridos ou por nos divertirmos nos shows ao invés de ficar fazendo cara de mal com os braços cruzados.</div><div>&nbsp;</div><div>Acho que cada um deve se comportar como quiser, se vestir como quiser e principalmente ouvir o tipo de música que quiser. Não importa se você curte metal e outro estilo ao mesmo tempo, seja ele qual for. Se você ama música de qualidade, tem a sua banda favorita, gosta de se reunir com amigos em shows ou em bares para falar de música, nada mais importa. O que importa é aquela sensação que todos nós sentimos e compartilhamos quando ouvimos nosso som e o respeito que devemos ter por todos.</div><div>&nbsp;</div><div>Todos que fazem parte de alguma cultura underground seja ela no metal, no punk, no hardcore, na música independente em geral ou em qualquer tipo de manifestação artística fora da música, já fazem parte de uma contra-cultura. Isso significa que fazemos parte de um determinado grupo que se manifesta contra determinadas regras (religiosa, política, social, etc...) ou seja, somos a parcela da sociedade que não concorda com tudo que é oferecido para nós, não queremos ser manipulados por regras. Então, é uma ironia querer criar regras para uma cultura que surgiu para quebra-las.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Rodrigo Balan&nbsp;
+<span class="mat_respostas_descricao">(Dono da&nbsp;<a href="http://www.metalmedia.com.br/" title="" target="_blank">Metal Media Management</a>)</span></div>
+<div>Bom, exatamente como no texto escrito, minha forma de pensar é a mesma. Desde os anos 80 os ‘die hard fans’ de Metal estão se entregando a essa obrigatoriedade de rituais quase Xiita e que vem se solidificando. Por um lado eu compreendo que é uma forma de se proteger das influências exteriores neste mundo globalizado em que essa troca de influências é imediata e não passa por nenhum “filtro” (leia-se: irmão mais velho, amigos, galera) como acontecia antigamente.</div><div>&nbsp;</div><div>Essas regras serem aceitáveis ou não, depende do quão extremo se coloca tal comportamento. Eu acho que isso é algo bem comum do caráter humano, nós vemos isso quando se fala de futebol, de política, de religião. Qual o sentido em matar alguém que torce para um outro time? É a mesma indagação para o Metal. Ficamos sempre no 8 ou 80 e esquecemos das outras 72 opções entre esse números.</div><div>&nbsp;</div><div>Partindo do ponto de vista das bandas, faz parte da imagem do artista se adequar a estereótipos para o público conseguir se identificar. Mas certas atitudes devem ficar apenas no palco. As pessoas levam a sério demais algo que deveria ser apenas por diversão, colocaram regras naquilo que era pra ser contra elas e desperdiçam energia policiando uns aos outros ao invés de estarem curtindo o mais importante: a música.</div><div>&nbsp;</div><div>Em conclusão, creio que não há uma resposta definitiva ou certa para essa pergunta, vai do julgamento de cada um. Eu particularmente sou contra exigir certas posturas das pessoas e acho que o melhor é fazer o que você sente que te faz feliz. Se você gosta de usar coletes anos 80, manda bala! Se prefere um visual mais moderno e mesmo assim curtir Manowar, ótimo! E assim vai... Como um mestre que já nos deixou disse uma vez “support music, not rumors”. Música é mais importante do que o que está em volta dela.</div></div>
+
+<div class="mat_compartilhar">
+<div class="mat_compartilhar_topo">Compartilhe essa mat&eacute;ria!</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="width:400px; vertical-align:central;">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<g:plusone size="medium"></g:plusone>
+<a class="addthis_button">Divulgue!</a>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000" 
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+<meta property="og:image" content="http://www.goregrinder.net/imagens/materias/a-dogmatizacao-do-metal.jpg" /></div>
+
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:cristianosteps@gmail.com'>Cristiano Dos Passos</a></span>
+<a href='http://' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Sei que essa matéria já está aqui há um bom tempo, mas não poderia deixar de comentar um assunto tão importante, na minha opinião. Já fui radical ao extremo nos anos 80, entre meus 14-16 anos, mas hoje em dia vejo esse radicalismo de outra forma. Vejo como algo totalmente possível a convivência entre estilos completamente diferentes dentro do metal, pois acho que todos fazemos partes de uma mesma cultura, e é isso que realmente importa. Quanto a ideias de fora do metal, tb não vejo problema nenhum em conviver com todas elas, pois o que torna o metal forte são as pessoas que o fazem e nelas eu ponho fé. Não será um compêndio de regras que fará o movimento mais forte, pois isso tb não impediu ninguém de mudar seu modo de pensar, pois é natural para todos nós avançarmos na idade e revermos alguns dos nossos posicionamentos. Se alguém não o faz, ok, cada um na sua, mas me parece pouco saudável ser a mesma pessoa, com as mesmas ideias, a vida toda. Por fim, concordo que o metal, o punk e todos os gêneros do underground são fortes mesmo pq pregam liberdade, e não pelo autoritarismo quase religioso que impera em certas mentes ainda. Bem, sei que ao assunto é mais complexo do que isso e que eu poderia escrever muito mais, mas como a matéria já tem alguns meses, deixo isso para uma outra oportunidade. De qualquer forma, parabéns por levantarem a questão! </div>
+
+<div class="mat_comentarios_base">
+19/03/12 &agrave;s 12:03 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:niilistic@gmail.com'>Ari</a></span>
+<a href='http://www.facebook.com/facadanagoela' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ tô nem vendo, quero é que morram. cada um da forma mais horrível que o outro.</div>
+
+<div class="mat_comentarios_base">
+05/09/11 &agrave;s 12:26 Hs
+</div>
+
+</div>
+
+
+<div class="mat_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="mat_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="mat_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; height:25px; float:left;" class="mat_formulario_texto">Site <span style="font:9px Tahoma, Geneva, sans-serif;">(opcional)</span>: <input type="text" name="site" id="site" value="" size="50" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="mat_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="esc_esp_id" id="esc_esp_id" value="11">
+                  <input type="hidden" name="esc_ver" id="esc_ver" value="n">
+                </form>
+</div>
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=14&id=11 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:08:19 GMT -->
+</html>

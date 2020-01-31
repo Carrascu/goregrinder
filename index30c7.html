@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=66 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:09:01 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<script type='text/javascript' language='javascript' src='jscripts/jquery-1.3.2.js'></script>
+<script type='text/javascript' language='javascript'>
+$(function($) {
+	// Quando o formulário for enviado, essa função é chamada
+	$('#form1').submit(function() {
+		// Colocamos os valores de cada campo em uma váriavel para facilitar a manipulação
+		var nome = $('#rcc_nome').val();
+		var email = $('#rcc_email').val();
+		var mensagem = $('#rcc_texto').val();
+		// Exibe mensagem de carregamento
+		// $('#status').html('<img src='loader.gif' alt='Enviando' />');
+		// Fazemos a requisão ajax com o arquivo envia.php e enviamos os valores de cada campo através do método POST
+		$.post('com_rescds.html', {nome: nome, email: email, mensagem: mensagem }, function(resposta) {
+				// Quando terminada a requisição
+				// Exibe a div status
+				$('#status').slideDown();
+				// Se a resposta é um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$('#status').html(resposta);
+				} 
+				// Se resposta for false, ou seja, não ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$('#status').html('Mensagem enviada com sucesso!');
+					// Coloca a mensagem no div de mensagens
+					// $('#mensagens').prepend('<strong>'+ nome +'</strong> disse: <em>' + mensagem + '</em><br />');
+					// Limpando todos os campos
+					$('#rcc_nome').val('');
+					$('#rcc_email').val('');
+					$('#rcc_texto').val('');
+				}
+		});
+	});
+});
+</script>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Resenha: CRUSCIFIRE - Chaos Season [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].rcc_email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<script type="text/javascript" language="javascript" src="jscripts/lytebox.js"></script>
+<link rel="stylesheet" href="jscripts/lytebox.css" type="text/css" media="screen" />
+
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<script type='text/javascript' src='jscripts/enlargeit.js'></script>
+<script type='text/javascript'>
+        enl_brdsize = 10;
+        enl_shadowintens = 10;
+        enl_center = 1;
+        enl_darkprct = 70;
+        enl_preload = 1;
+        enl_drgdrop = 0;
+        enl_darksteps = 1;
+        enl_buttonurl[0] = 'prev';
+        enl_buttontxt[0] = 'Anterior';
+        enl_buttonoff[0] = -216;
+        enl_buttonurl[1] = 'next';
+        enl_buttontxt[1] = 'Proximo';
+        enl_buttonoff[1] = -234;
+        enl_buttonurl[2] = 'close';
+        enl_buttontxt[2] = 'Fechar [Esc]';
+        enl_buttonoff[2] = -0;
+</script>
+
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var mensagem = $("#mensagem").val();
+		var rcc_res_id = $("#rcc_res_id").val();
+		var rcc_ver = $("#rcc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_rescdsc5b2.php?id=66', {nome: nome, email: email, mensagem: mensagem, rcc_res_id: rcc_res_id, rcc_ver: rcc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+
+
+<a href="#" title="Clique para ampliar"><div class="rescds_capa"><img src="Cruscifire_Chaos%20Season_20107aae.jpg?imagem=imagens/resenhas/Cruscifire_Chaos%20Season_2010.jpg&amp;w=300&amp;h=300" border="0" onclick="enlarge(this);" longdesc="imagens/resenhas/Cruscifire_Chaos%20Season_2010.jpg"/></div></a>
+
+<div class="rescds_detalhes">
+<div class="rescds_detalhes_itens">Banda/Artista: <b>Cruscifire</b></div>
+<div class="rescds_detalhes_itens">T&iacute;tulo: <b>Chaos Season</b></div>
+<div class="rescds_detalhes_itens">Lan&ccedil;amento: <b>Independente</b></div>
+<div class="rescds_detalhes_itens">Ano: <b>2010</b></div>
+<div class="rescds_detalhes_itens"><span style="position:relative; float:left;">Contatos: </span><b><span style="position:relative; float:left; margin-left:2px; width:340px;">
+<a href="https://www.facebook.com/cruscifire" target="_blank">https://www.facebook.com/cruscifire</a><br /><a href="https://twitter.com/cruscifire" target="_blank">https://twitter.com/cruscifire</a>&nbsp;<br /><a href="http://www.myspace.com/cruscifire" target="_blank">http://www.myspace.com/cruscifire</a><br /><a href="http://soundcloud.com/cruscifire" target="_blank">http://soundcloud.com/cruscifire<br /></a><a href="mailto:cruscifire@hotmail.com">cruscifire@hotmail.com</a></span></b></div>
+
+<div class="rescds_detalhes_itens">Site oficial: <b><a href="http://www.reverbnation.com/cruscifire" target="_blank">http://www.reverbnation.com/cruscifire</a></b></div>
+
+<div class="rescds_detalhes_itens">Resenha por <b><a href="mailto:alexneundorf@yahoo.com.br">Alex Neundorf</a></b></div>
+<div class="rescds_detalhes_itens" style="border-bottom:0px;">Publicada no dia <b>04/09/2012</b></div>
+</div>
+
+<div class="rescds_texto"><p>O Cruscifire &eacute; uma banda que, desde sua funda&ccedil;&atilde;o em 2004, vem trilhando uma trajet&oacute;ria de desenvolvimento e evolu&ccedil;&atilde;o muito s&eacute;ria e comprometida com sua identidade musical, com o p&uacute;blico e com o Metal de uma maneira geral. Afinal, j&aacute; em 2005 e 2007 pod&iacute;amos ouvir similaridades com este play nas respectivas demo &lsquo;Sick World&rsquo; e no EP &lsquo;A New Bloody Day&rsquo;; tamb&eacute;m atrav&eacute;s do nome sempre presente na m&iacute;dia especializada, nos shows com grandes nomes do metal brasileiro e mundial, na divulga&ccedil;&atilde;o profissional e competente. De Atibaia, no estado de S&atilde;o Paulo, temos aqui o debut lan&ccedil;ado em dezembro de 2010 (lembrando que recentemente, em fevereiro de 2012, a banda lan&ccedil;ou e disponibilizou o EP &lsquo;Hateful&rsquo; para download), quando a banda contava com os irm&atilde;os Victor Angelotti (Vocals, Bass, acoustic Guitars) e Caio Angelotti (lead Guitars), al&eacute;m de Ricardo Cari que gravou a bateria. Vale mencionar que atualmente a banda &eacute; formada pelos irm&atilde;os Victor e Caio Angelotti, mais Murillo Romagnoli (Guitar) e Victor Nabuco (Drums). O som &eacute; (e sempre foi, embora nos primeiros materiais tamb&eacute;m flertasse com o Thrash Metal) um Death Metal bem anos 2000, mesclando a brutalidade que &eacute; comum ao g&ecirc;nero com uma t&eacute;cnica mais apurada e composi&ccedil;&otilde;es que gravitam em um meio-termo na &ecirc;nfase entre o mel&oacute;dico e o r&iacute;tmico.</p>
+<p>Iniciando nossa cr&iacute;tica, temos de considerar a parte gr&aacute;fica que &eacute; um caso &agrave; parte, pois muito bem trabalhada pelo conhecido artista Marcelo Vasco (ou Marcelo HVC, como tamb&eacute;m assina seus trabalhos), mas tamb&eacute;m pelo pr&oacute;prio Victor Angelotti. A concep&ccedil;&atilde;o da arte da capa nos remete a identidade que o artista mencionado j&aacute; desenvolve de longa data (imposs&iacute;vel n&atilde;o olhar uma capa e sacar de cara quem a fez). No caso aqui, temos uma ideia que nos remete, talvez, aos cenobitas e cen&aacute;rios de tormento do universo de Hellraiser e da obra de Clive Barker. Internamente, o encarte &eacute; bem simples, por&eacute;m com muito bom gosto e completo, no sentido de conter, al&eacute;m das letras, fotos dos componentes da banda e todas as informa&ccedil;&otilde;es necess&aacute;rias.</p>
+<p>Em se tratando da parte t&eacute;cnica, a produ&ccedil;&atilde;o e grava&ccedil;&atilde;o foram efetuadas no est&uacute;dio pr&oacute;prio da banda em Atibaia. J&aacute; mixagem e masteriza&ccedil;&atilde;o s&atilde;o assinados por Denis Dilallo e AVWorks Studio de S&atilde;o Paulo/SP.</p>
+<p>A seguir, a parte musical propriamente dita:</p>
+<p>Este play conta com dez sons, sendo oito deles totalmente novos (duas m&uacute;sicas apareceram no EP de 2007), que totalizam quase trinta e seis minutos ininterruptos de um Death Metal muito coeso, bem trabalhado e de excelente audi&ccedil;&atilde;o (para ser contido nos elogios!). A primeira faixa se chama &lsquo;A Letter For My Enemy&rsquo; e j&aacute; inicia de forma devastadora com tudo, incluindo voz, iniciando junto. Ouvindo as linhas de guitarra com mais aten&ccedil;&atilde;o nos vem a lembran&ccedil;a duas influ&ecirc;ncias declaradas da banda: Cannibal Corpse e Dying Fetus. Principalmente nas guitarras dobradas. Com rela&ccedil;&atilde;o ao tema abordado na letra, certamente muitos ouvintes se identificariam com ele. Quem nunca conheceu gente assim? &lsquo;You think you&rsquo;re better than everything, but you can&rsquo;t look yourself in the mirror&rsquo;. A seguir temos &lsquo;Chaotic&rsquo; que mant&eacute;m a quebradeira e ritmicamente &eacute; bem mais complexa que a anterior. Tranquilamente &eacute; um dos destaques deste play. A letra aborda um tema mais clich&ecirc;: um certo pessimismo com rela&ccedil;&atilde;o aos destinos da humanidade. &lsquo;The Chaos Season&rsquo; &eacute; a terceira faixa e intitulada este debut. E aqui temos outro destaque, uma vez que a composi&ccedil;&atilde;o &eacute; bastante intrincada, mas ao mesmo tempo cativante e transbordante de feeling. &lsquo;The chaos season, spreading terror everywhere&rsquo;. O pr&oacute;ximo som se chama &lsquo;Squeals From Slaughterhouse&rsquo; e abre com uma intro matadora (que &eacute; a mesma base para o refr&atilde;o) e, embora seja um som mais reto que os anteriores, tem algumas partes mais cadenciadas e marcadas. Vale mencionar que este tamb&eacute;m &eacute; o som mais longo do play com quase exatos cinco minutos de dura&ccedil;&atilde;o. Na sequ&ecirc;ncia, a quinta faixa &eacute; &lsquo;A New Bloody Day&rsquo;, faixa que tamb&eacute;m constou como faixa de abertura do EP por ela intitulado. Aqui, temos uma nova produ&ccedil;&atilde;o que a deixou mais encorpada e atualizada com este full. O que chama a aten&ccedil;&atilde;o, apesar de musicalmente tamb&eacute;m ser uma faixa primorosa (e perfeitamente compreens&iacute;vel sua reutiliza&ccedil;&atilde;o neste full), &eacute; a parte l&iacute;rica, onde encontramos uma abordagem mais cr&iacute;tica com rela&ccedil;&atilde;o a flagrante e estrutural desigualdade social do nosso pa&iacute;s: &lsquo;The streets are full of blood, a new blood day, where are the rights?&rsquo;. A destrui&ccedil;&atilde;o continua com &lsquo;Smash Your Head&rsquo; que mant&eacute;m a pegada das faixas que abrem o play. Um desenvolvimento mais cadenciado &eacute; a marca desse som, al&eacute;m deste ser tamb&eacute;m o mais curto com pouco mais de dois minutos. Com uma introdu&ccedil;&atilde;o pra l&aacute; de interessante e cativante, temos &lsquo;Sons Of Disgrace&rsquo;, a s&eacute;tima faixa deste trabalho. E j&aacute; se aproximando do fim do play, a antepen&uacute;ltima faixa &eacute; &lsquo;Finish Him&rsquo; que nos brinda com um som que mant&eacute;m a brutalidade e feeling. Aqui temos outra m&uacute;sica bem r&aacute;pida e direta, sem maiores firulas, &eacute; quebradeira total. Para fechar o registro, temos na sequ&ecirc;ncia as excelentes &lsquo;Valley Of Suicidal&rsquo; e &lsquo;Untrue Illusion&rsquo;, esta &uacute;ltima, outra remanescente do EP de 2007. Ambas desenvolvem-se tendo por fio condutor a porradaria acelerada. Em &lsquo;Valley...&rsquo; temos um vocal quase onipresente e que chama bastante a aten&ccedil;&atilde;o pelo peso que oferece &agrave; faixa. J&aacute; &lsquo;Untrue Illusion&rsquo; destaca-se pela quase onipresen&ccedil;a das dobras de guitarra.</p>
+<p>Ok! Audi&ccedil;&atilde;o realizada, vamos &agrave;s considera&ccedil;&otilde;es finais. Em primeiro lugar gostaria de chamar a aten&ccedil;&atilde;o para a sempre bem vinda iniciativa de lan&ccedil;ar este material de forma independente. Cada vez mais vemos isso acontecer no nosso cen&aacute;rio metal e, acho eu, que representa bem as quantas anda esse mesmo cen&aacute;rio. Hoje, apesar de podermos presenciar uma profus&atilde;o de bandas nunca antes vista, gra&ccedil;as certamente ao fen&ocirc;meno da massifica&ccedil;&atilde;o da internet, tamb&eacute;m verificamos a falta de uma estrutura de suporte para essas bandas (selos, distros, produtoras, etc. profissionais, ou melhor, de uma envergadura mais abrangente). &Eacute; claro que hoje temos muitas distros, selos e produtoras, mas grande parte delas s&atilde;o trabalhos &lsquo;na ra&ccedil;a&rsquo;, desenvolvidos por gente que nutre este trabalho mais pela paix&atilde;o pela coisa do que pelo desenvolvimento profissional. Esse fen&ocirc;meno paralelo, de dissolu&ccedil;&atilde;o dos grandes selos e difus&atilde;o dos selos undergrounds, traz consigo, claro, coisas boas e ruins: &lsquo;boa&rsquo; no sentido de que nunca foi t&atilde;o f&aacute;cil conseguir uma divulga&ccedil;&atilde;o ampla e massiva, inclusive de &acirc;mbito internacional; &lsquo;ruim&rsquo; no sentido de que uma banda nascida nesses anos 2000, irremediavelmente, se n&atilde;o &lsquo;fazer das tripas cora&ccedil;&atilde;o&rsquo; e desembolsar uma quantidade significativa de capital, jamais conseguir&aacute; escapar do v&oacute;rtex do underground. Dificilmente veremos uma banda alcan&ccedil;ar o patamar de um Sepultura, por exemplo. Claro, h&aacute; que se relativizar tais considera&ccedil;&otilde;es. Estas, s&atilde;o desse que vos escreve, uma vez que entendo que toda banda, ou ao menos boa parte delas, almejam tocar para grandes p&uacute;blicos, em grandes festivais, ter seu trabalho reconhecido mundialmente, etc. H&aacute; bandas e bandas e, no caso do Cruscifire, entendo que o objetivo seja este. Underground e Mainstream n&atilde;o s&atilde;o essencialmente &lsquo;bons&rsquo; ou &lsquo;ruins&rsquo;. S&atilde;o etapas de um trabalho. O trabalho independente &eacute; certamente mais dif&iacute;cil e acidentado, mas os louros colhidos s&atilde;o ainda melhor apreciados.</p>
+<p>Outro aspecto que h&aacute; de se mencionar &eacute; a qualidade desse som, tanto em termos de produ&ccedil;&atilde;o quanto em termos de composi&ccedil;&atilde;o. Simplesmente esta banda chegou ao patamar &lsquo;gringo&rsquo; de qualidade e n&atilde;o deixa nada a desejar em rela&ccedil;&atilde;o aos grandes &lsquo;figur&otilde;es&rsquo; do g&ecirc;nero. As linhas de guitarra s&atilde;o de muito bom gosto e esbanjam esmero e t&eacute;cnica, sem deslizar para o cada vez mais chato &lsquo;technical&rsquo; Death Metal. S&atilde;o, em minha opini&atilde;o, o grande destaque no som do Cruscifire. A cozinha &eacute; competent&iacute;ssima e segura o peso perfeitamente. Os vocais tamb&eacute;m, apesar de a linha principal ser mais tradicionalzona, podemos verificar um certo dinamismo quando temos backings e em alguns momentos at&eacute; uns pig squeals. Embora nada deslocado. Est&aacute; tudo bem encaixadinho. No geral, o som se equilibra quase &agrave; perfei&ccedil;&atilde;o entre uma faceta voltada para a parte mel&oacute;dica e outra voltada para o r&iacute;tmico. Destaques para as faixas: &lsquo;Chaotic&rsquo;, &lsquo;The Chaos Season&rsquo; e &lsquo;A New Bloody Day&rsquo;.</p>
+<p>Mesmo que esta cr&iacute;tica seja um pouco retardat&aacute;ria e n&atilde;o esteja completamente &lsquo;antenada&rsquo; com o que a banda vem desenvolvendo atualmente, e que certamente esses quase dois anos colaboraram sobremaneira para a evolu&ccedil;&atilde;o e desenvolvimento do som do Cruscifire rumo ao pr&oacute;ximo full-lenght, me permito tecer ao menos alguns poucos apontamentos, totalmente opinativos e relativos: primeiro, acredito que a banda j&aacute; possui uma identidade muito caracter&iacute;stica, musicalmente falando, e que s&atilde;o fornecidos basicamente pelas linhas de guitarra e vocal. Segundo, as linhas de vocal poderiam se utilizar de um maior dinamismo e flexibilidade, como vemos em &lsquo;Untrue Illusion&rsquo; ainda de maneira embrion&aacute;ria. Digo, mesclar registros diferentes na mesma linha mestra e n&atilde;o utilizar os screams apenas como backing. Trazer essas linhas mais rasgadas e agudas (ou m&eacute;dias) pra frente. Acho que seria bastante interessante ouvir algo nesse sentido, embora n&atilde;o desmere&ccedil;a em nada a postura adotada neste play.</p>
+<p>Por fim, acredito que este primeiro registro do Cruscifire fornece uma excelente &lsquo;carta de entrada&rsquo; para a banda e garante-a como sendo uma das que produziu um dos melhores lan&ccedil;amentos daquele ano. Al&eacute;m, &eacute; claro, de elevar as expectativas para o pr&oacute;ximo lan&ccedil;amento. Finalizamos, esperando que a banda continue &lsquo;spreading terror everywhere&rsquo;.</p></div>
+
+<div class="rescds_tracklist">
+<div class="rescds_tracklist_topo">Tracklist:</div>
+<p>01. A Letter For My Enemy<br />02. Chaotic<br />03. The Chaos Season<br />04. Squeals From Slaughterhouse<br />05. A New Bloody Day<br />06. Smash Your Head<br />07. Sons Of Disgrace<br />08. Finish Him<br />09. Valley Of Suicidal<br />10. Untrue Illusion</p></div>
+
+<div class="rescds_compartilhar">
+<div class="rescds_compartilhar_topo">Compartilhar</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="text-align:left; margin-top:5px;" >
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_tweet"></a></div>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><g:plusone size="medium"></g:plusone></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button" addthis:url="http://www.goregrinder.net/index.php?s=10&id=66" style="font:10pt Arial, Helvetica, sans-serif;"><img src="imagens/sm-plus.gif" 
+        width="16" height="16" border="0" alt="Compartilhar" />&nbsp;Divulgue!</a></div>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000"
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+
+</div>
+
+<div class="rescds_moreabout">
+<div class="rescds_moreabout_topo">Mais sobre:</div>
+
+
+
+
+<div class='more_setores'><div class='more_titulo_setor'>Notícias <span class='more_noticia_maisde10'>(Últimas 10 publicadas)</span>:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index7574.html?s=3&amp;id=1319' title=' 03/08/12  - Cruscifire preparando novo álbum' class='more_txt_interno'>- Cruscifire preparando novo álbum</a></div><div class='more_txt_interno'><a href='indexd782.html?s=3&amp;id=1299' title=' 28/05/12  - Cruscifire libera álbum completo para audição' class='more_txt_interno'>- Cruscifire libera álbum completo ...</a></div><div class='more_txt_interno'><a href='indexf3c8.html?s=3&amp;id=1283' title=' 26/04/12  - Cruscifire publica show no YouTube' class='more_txt_interno'>- Cruscifire publica show no YouTub...</a></div><div class='more_txt_interno'><a href='index686b.html?s=3&amp;id=1265' title=' 10/03/12  - Cruscifire lança EP para download' class='more_txt_interno'>- Cruscifire lança EP para download</a></div><div class='more_txt_interno'><a href='indexa272.html?s=3&amp;id=1260' title=' 02/03/12  - Cruscifire anuncia parceria com GBSPro' class='more_txt_interno'>- Cruscifire anuncia parceria com G...</a></div><div class='more_txt_interno'><a href='indexf710.html?s=3&amp;id=1256' title=' 25/02/12  - Cruscifire solta prévia de novo EP' class='more_txt_interno'>- Cruscifire solta prévia de novo E...</a></div><div class='more_txt_interno'><a href='index5ec5.html?s=3&amp;id=1232' title=' 25/01/12  - Cruscifire exibe capa de novo álbum' class='more_txt_interno'>- Cruscifire exibe capa de novo álb...</a></div><div class='more_txt_interno'><a href='index0c65.html?s=3&amp;id=1224' title=' 15/01/12  - Cruscifire divulga nome e tracklist do novo EP' class='more_txt_interno'>- Cruscifire divulga nome e trackli...</a></div><div class='more_txt_interno'><a href='index381c.html?s=3&amp;id=1223' title=' 10/01/12  - Cruscifire anuncia novo merchandise oficial' class='more_txt_interno'>- Cruscifire anuncia novo merchandi...</a></div><div class='more_txt_interno'><a href='indexae7e.html?s=3&amp;id=1208' title=' 07/12/11  - Cruscifire: comemoração e promoção do novo cd' class='more_txt_interno'>- Cruscifire: comemoração e promoçã...</a></div><a href='index1da0.html?s=3&amp;noticia=Cruscifire'><div class='more_noticia_mais'><span class='more_noticia_mais_texto'>> Ler todas relacionadas <</span></div></a></div></div><div class='more_setores'><div class='more_titulo_setor'>Shows:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index23e2.html?s=4&amp;id=427' class='more_txt_interno'>11/08  - Horror Só Para Os Fortes</a></div><div class='more_txt_interno'><a href='index3491.html?s=4&amp;id=398' class='more_txt_interno'>26/02  - Death Head's Empire Fest</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Resenha:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index30c7.html?s=10&amp;id=66' class='more_txt_interno'>- <i>Chaos Season</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Entrevista:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index4bc7.html?s=13&amp;id=11' class='more_txt_interno'>- com <i>Victor</i> em 2006</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Videos:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='indexdbb6.html?s=17&amp;id=196' class='more_txt_interno'>- <i>Hanged On Misery</i></a></div><div class='more_txt_interno'><a href='indexc9ae.html?s=17&amp;id=157' class='more_txt_interno'>- <i>A Letter For My Enemy</i></a></div></div></div>
+        </div>
+</div>
+
+<p style="position:relative; float:left; width:100%; text-align:center;"><a href="#comentarios" class="txt-cur-album">Envie seu coment&aacute;rio sobre essa not&iacute;cia! </a></p>
+
+
+
+<div class="rescds_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="rescds_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="rcc_res_id" id="rcc_res_id" value="66">
+                  <input type="hidden" name="rcc_ver" id="rcc_ver" value="n">
+                </form>
+</div>
+
+
+
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=66 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:09:01 GMT -->
+</html>

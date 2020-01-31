@@ -1,0 +1,1654 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=19 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 19:46:22 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Coment&aacute;rios no site  [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+
+<script type="text/javascript" src="validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaSite()
+{
+  var obj = eval("document.forms[0].site");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf(":") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('URL incorreta! Digite com http:// no in&#237;cio');
+	obj.focus();
+  }
+}
+</script>
+<script type="text/javascript" language="javascript" src="jscripts/lytebox.js"></script>
+<link rel="stylesheet" href="jscripts/lytebox.css" type="text/css" media="screen" />
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var site = $("#site").val();
+		var mensagem = $("#mensagem").val();
+		var com_ver = $("#com_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_site.html', {nome: nome, email: email, site: site, mensagem: mensagem, com_ver: com_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#site").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:25px; padding-top:30px; padding-left:35px;">
+
+<p style="position:relative; float:left; width:100%; text-align:center;"><a href="#comentarios" class="txt-cur-album">Envie seu coment&aacute;rio sobre essa mat&eacute;ria! </a></p>
+
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:nocturnesortilege666@yahoo.com.br">Zamilak</a></span>&nbsp; 
+<a href=http/_www.metal-archives.html target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Hailz! Um grande pergaminho virtual para disseminar o metal extremo!!!<br />
+Zamilak,Guitar -Nocturne Sortilege</div>
+
+<div class="com_comentarios_base">
+30/01/12 &agrave;s 21:33 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:animalthrash@gmail.com">Thrash Maniac</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Thrashera porra! Conheçam essa tranqueira aqui do RJ! www.myspace.com/thrashera666 </div>
+
+<div class="com_comentarios_base">
+23/08/11 &agrave;s 00:19 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:nilbertoborges@rock.com">Nilberto Borges</a></span>&nbsp; 
+<a href=http://www.metalisland.webnode.com/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Saudações! Parabéns pelo excelente trabalho no site! Aceita parceria através de troca de banners? Hail!  \,,/</div>
+
+<div class="com_comentarios_base">
+16/03/11 &agrave;s 08:49 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:intrisicum@hotmail.com">André Luis Monteiro Araújo</a></span>&nbsp; 
+<a href=http://www.myspace.com/intrisicum target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Olá! Gostaria de parabenizar o zine e também saber como que faço para enviar o material de minha banda Intrisicum, de Doom/Gothic Metal, natural de Santos/SP, para vocês.<br /><br />
+Se for oportuno, aqui vai um link com as músicas da Demo, Release e Fotos:<br /><br />
+http://www.megaupload.com/?d=9OZP2WSI<br /><br />
+<br /><br />
+Obrigado pela atenção.<br /><br />
+<br /><br />
+Força e perseverança!<br /><br />
+<br /><br />
+André Luis Monteiro<br /><br />
+andre.monteiro_a@hotmail.com</div>
+
+<div class="com_comentarios_base">
+02/11/10 &agrave;s 19:51 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:noir75@hotmail.com">Monstromorgue</a></span>&nbsp; 
+<a href=http://www.myspace.com/monstromorgue target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ <br /><br />
+<br /><br />
+raw and old grindcore bands from putrid north-east from brazil. fucking harvest times.<br /><br />
+<br /><br />
+support it!<br /><br />
+<br /><br />
+http://www.4shared.com/file/m2Ay0YKR/Causa_De_Morte_-_Sua_Hora_Cheg.htm<br /><br />
+<br /><br />
+http://www.4shared.com/file/qmwR_HzE/3_WAY_-_MONSTROMORGUE__CICATRI.htm<br /><br />
+<br /><br />
+http://www.4shared.com/file/N9EKBuAe/Monstromorgue_-_Slave_of_toxic.htm<br /><br />
+<br /><br />
+http://www.4shared.com/file/BeUJ7TDB/monstromorgue_-_violenta_dizim.htm<br /><br />
+<br /><br />
+http://www.4shared.com/file/dnp9bW9-/causa_de_morte_-_bomba_bastard.htm<br /><br />
+<br /><br />
+http://www.4shared.com/file/cBuo3_M8/putrefao_humanaataque_cardiaco.htm<br /><br />
+<br /><br />
+http://www.4shared.com/file/HH0nH9Xw/Comendo_Lixo_-_Ensaio_Aberto.htm<br /><br />
+</div>
+
+<div class="com_comentarios_base">
+29/10/10 &agrave;s 12:50 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:mkm_koller@yahoo.com.br">Mat. Koller</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Olha só! O alison ! Grande banda esta Ukruku!<br /><br />
+é deste tipo de banda q o underground precisa!<br /><br />
+<br /><br />
+</div>
+
+<div class="com_comentarios_base">
+20/06/10 &agrave;s 20:39 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:revistadeathmetal@hotmail.com">Andrêy Ferraz</a></span>&nbsp; 
+<a href=www.myspace.com/fanzinedeathmetal.html target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Queria saber se há uma versão impressa do zine? Se tiver quanto custa? pois sou colecionador nato tenho mais de 600 exemplares!</div>
+
+<div class="com_comentarios_base">
+05/06/10 &agrave;s 09:55 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:allisonscum@hotmail.com">Allison_UKRURKU</a></span>&nbsp; 
+<a href=http://palcomp3.com/ukrurku/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Cara, valeu pelo apoio.<br /><br />
+Muito bom o site.</div>
+
+<div class="com_comentarios_base">
+10/05/10 &agrave;s 10:11 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:sandman_ph@hotmail.co">Paulo</a></span>&nbsp; 
+<a href=myspace.com/dranois7.html target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ acho muito bom o que vcs estão fazendo<br /><br />
+continuem fazendo esse trabalho <br /><br />
+<br /><br />
+</div>
+
+<div class="com_comentarios_base">
+27/04/10 &agrave;s 15:04 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:anaxmetal@yahoo.com.br">Gillian Relvas</a></span>&nbsp; 
+<a href=http://palcomp3.cifraclub.terra.com.br/anax/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Conheça minha banda o Anax.Death metal do RJ.Obrigado e sucesso<br /><br />
+Know my death metal band from Brazil called Anax.See u ..<br /><br />
+<br /><br />
+http://palcomp3.cifraclub.terra.com.br/anax/<br /><br />
+http://metalseek.de/Anax<br /><br />
+http://www.rockunderground-mag.com/a/anax/anax.html<br /><br />
+http://www.metal-archives.com/band.php?id=25301<br /><br />
+http://www.novometal.com/brasil/bandaexibir.php?id=127<br /><br />
+http://www.rockunderground-mag.com/demos_08.html<br /><br />
+http://www.spirit-of-metal.com/album-groupe-Anax-nom_album-Return_To_Hell-l-en.html<br /><br />
+http://projetometal.com/2008/10/anax-death-metal/<br /><br />
+http://www.metaldevastation.com.br/indexresenhas.htm<br /><br />
+http://www.parolesmania.com/paroles_anax_52153.html<br /><br />
+http://www.macaerock.com.br/ver_banda.asp?id=260<br /><br />
+http://www.jedbangers.com.ar/foro/viewtopic.php?p=666256<br /><br />
+ http://www.youtube.com/watch?v=M2s0svFN4r0<br /><br />
+http://www.youtube.com/watch?v=4DvH_TkgehQ<br /><br />
+http://www.youtube.com/watch?v=26kP_tx2Z9s<br /><br />
+http://www.youtube.com/watch?v=Q4eD0ZPtyzI<br /><br />
+http://www.youtube.com/watch?v=f-jrdl-c2zE<br /><br />
+http://bandasdegaragem.uol.com.br/hotsite/index.php?id_banda=26705</div>
+
+<div class="com_comentarios_base">
+03/03/10 &agrave;s 05:40 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:enterung@yahoo.com.br">Matheus Koller Menezes</a></span>&nbsp; 
+<a href=http://enterungvonbands.hdfree.com.br/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Agradecemos sempre pelo apoio do site, pela divulgação do Enterung Von Bands!<br /><br />
+Abraço a todos!</div>
+
+<div class="com_comentarios_base">
+14/02/10 &agrave;s 21:04 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+Fabiano Penna</span>&nbsp; 
+<a href=http://www.theordher.com/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Vlw Alexandro pela entrevista e pelo apoio ao The Ordher. Toda força ao Gore Grinder Zine!!</div>
+
+<div class="com_comentarios_base">
+14/02/10 &agrave;s 02:25 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:vitor.cuneo@gmail.com">Vito Cuneo</a></span>&nbsp; 
+<a href=http://www.myspace.com/bandaterrorzone target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Aee, curti o material do webzine, Tesão hein!<br /><br />
+Não parem de produzir o webzine! abraço<br /><br />
+Vito Terrorzone</div>
+
+<div class="com_comentarios_base">
+25/01/10 &agrave;s 17:19 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:ASURA666_3@hotmail.com">LORD DEMONIAC</a></span>&nbsp; 
+<a href=http://www.myspace.com/hordaziel target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ AZIEL(BRA) BRUTAL SATANIC BLACK METAL<br />
+http://www.myspace.com/hordaziel<br />
+http://www.palcoprincipal.com.br/hordaaziel<br />
+lançando cd my soul is possessed by satan</div>
+
+<div class="com_comentarios_base">
+07/11/09 &agrave;s 07:19 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:erod@ig.com.br">Edhy</a></span>&nbsp; 
+<a href=http://www.goregrinder.com.br/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Porra trupe como faço pra receber noticias e ficar mais antenado nesse brutalidade du caralho q eu curto mapcas e q vcs derramam em cima sem, putiz tem q pagar alguma coisa? E o MDK é Jundiaí mesmo?Aqui em Ribeirão Preto tem alguma banda de goregrin/grindcore q vala apena? Abçs<br /><br />
+erod@ig.com.br</div>
+
+<div class="com_comentarios_base">
+13/09/09 &agrave;s 13:10 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:robson_pig@hotmail.com">Pig (binho)</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ e aí carrascu, tudo certo????<br /><br />
+cara, gostaria de deixar aqui a minha gratidão por vc ter persistido e lutado sempre para manter o goregrinder e nos deixando sempre muito bem informados sobre o q rola por aí a fora no mundo do barulho ehehehe!!!.<br /><br />
+PARABÉNS por persistir sempre. sabemos q ñ é fácil manter um zine no ar. somente sendo verdadeiro mesmo e amando o q faz. tenho orgulho de ser teu amigo. continue com essa força sempre!!!<br /><br />
+abração<br /><br />
+Binho</div>
+
+<div class="com_comentarios_base">
+08/09/09 &agrave;s 08:36 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:clemilsontst@gmail.com">Clemilson Homen -rato</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Salve Carrasco, meu galo velho!<br /><br />
+Grande abraço pra você cara!</div>
+
+<div class="com_comentarios_base">
+28/08/09 &agrave;s 18:05 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:flavinho_o_gato@hotmail.com">Flavsson</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Super bacana o site, nota 10 mesmo. Valeu pelo apoio ao underground nacional e internacional!!<br /><br />
+<br /><br />
+Meu apoio e respeito sempre!</div>
+
+<div class="com_comentarios_base">
+21/08/09 &agrave;s 18:32 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:bsmoffete@hotmail.com">Wallas Soledade</a></span>&nbsp; 
+<a href=http://www.baixandogeral.biz/forum target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Salve! Gostaria de agradecer pela adição e força que o Gore Grinder.net da a Rotten Fetus!<br /><br />
+Abraço e continue a luta!</div>
+
+<div class="com_comentarios_base">
+06/08/09 &agrave;s 01:11 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+Daniel</span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Po muito bom o conteudo do site<br /><br />
+<br /><br />
+<br /><br />
+parabens ae cara e força nas correrias<br /><br />
+<br /><br />
+vlw</div>
+
+<div class="com_comentarios_base">
+03/08/09 &agrave;s 18:53 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:guillotine.prods@gmail.com">Alex Állen</a></span>&nbsp; 
+<a href=http://www.myspace.com/guillotineprods target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Salve Carrascu e GoreGrinder pelo espaço e força à GUILLOTINE PRODUCTIONS... É sempre uma honra e um grande prazer vir a este extremo ambiente! Força sempre, METAL UNION! Stay Brutal!</div>
+
+<div class="com_comentarios_base">
+28/07/09 &agrave;s 02:17 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:digital.pen@hotmail.com">Dpa Gore Grapchis</a></span>&nbsp; 
+<a href=http://www.myspace.com/digitalpenartstudio target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ site fudido esse, parabéns pelo trampo!!<br /><br />
+faço trabalhos de ilustração para capa de albuns, quem tiver interesse acesse:<br /><br />
+http://www.myspace.com/digitalpenartstudio<br /><br />
+<br /><br />
+Obrigado!!<br /><br />
+Thiago</div>
+
+<div class="com_comentarios_base">
+25/07/09 &agrave;s 21:38 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+SoMMeR</span>&nbsp; 
+<a href=http://www.detestorecords.blogspot.com/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Do caralho o site, zine, teu trampo em geral e dedicação por barulhos que tanto amamos!! Parabéns velho!!!</div>
+
+<div class="com_comentarios_base">
+29/06/09 &agrave;s 22:17 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:ferraz50@bol.com.br">Manoel</a></span>&nbsp; 
+<a href=http://www.myspace.com/stomachalcorrosion target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ AE CARRASCU!<br /><br />
+<br /><br />
+GRATO PELA ENORME FORÇA AO STOMACHALCORROSION, PARABENS PELO GRANDE TRABALHO!!<br /><br />
+<br /><br />
+FORÇA SEMPRE</div>
+
+<div class="com_comentarios_base">
+23/05/09 &agrave;s 18:25 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:shaygraloch@gmail.com">MShaygraloch</a></span>&nbsp; 
+<a href=http://www.myspace.com/echidnabrazilianblackmetal target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Quero parabenizar ao pessoal do GOREGRINDER pelo belo trabalho, Força ao Metal Nacional....<br /><br />
+Shaygraloch and Echidna</div>
+
+<div class="com_comentarios_base">
+05/05/09 &agrave;s 13:47 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+Gabee</span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ É issooo aeee!<br /><br />
+massssaa essa Bagaça.<br /><br />
+<br /><br />
+</div>
+
+<div class="com_comentarios_base">
+26/04/09 &agrave;s 17:17 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:drumcheck_inside@hotmail.com">Fekaloide</a></span>&nbsp; 
+<a href=index.html www.myspace.com/massofshit target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ dae carrascu como que ta cara?<br /><br />
+<br /><br />
+muito bom teu trabalho cara parabens ai<br /><br />
+<br /><br />
+quando vai rola uns shows ai em floripa?<br /><br />
+<br /><br />
+nos vemos no splatter... <br /><br />
+<br /><br />
+stay freak my friend.</div>
+
+<div class="com_comentarios_base">
+23/04/09 &agrave;s 12:55 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:billycaolho59@hotmail.com">Billy</a></span>&nbsp; 
+<a href=http://selvagens.cjb.net/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Carra, o zine tá muito foda, do carvalho mesmo!<br /><br />
+Bora marcar umas geladas eheouha!<br /><br />
+Abração meu velho!</div>
+
+<div class="com_comentarios_base">
+22/04/09 &agrave;s 08:17 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+Dio</span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Mtoo fodaaa o site!!!! <br /><br />
+abraçoss</div>
+
+<div class="com_comentarios_base">
+04/04/09 &agrave;s 23:39 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:digital.pen@hotmail.com">Downpressor</a></span>&nbsp; 
+<a href=http://www.myspace.com/humanityisover target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Po brother esse  zine é do caralho!<br /><br />
+forte abraço!</div>
+
+<div class="com_comentarios_base">
+28/03/09 &agrave;s 13:54 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:godshavoc@hotmail.com">Eufrasio Alves(Terror Fetus)</a></span>&nbsp; 
+<a href=www.myspace.com/terrorfetus.html target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ E ae carrasco... quero parabenizar pelo otimo Trabalho feito na sua zine. <br /><br />
+Me emocionei em recebe-la aqui com coletanea e Tudo mais...<br /><br />
+Porra do caralho!<br /><br />
+Continue firme na luta<br /><br />
+Sucesso a voce<br /><br />
+E todos seus parceiros!<br /><br />
+Ate</div>
+
+<div class="com_comentarios_base">
+08/02/09 &agrave;s 03:33 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:digital.pen@hotmail.com">Thiago Downpressor</a></span>&nbsp; 
+<a href=http://www.myspace.com/humanityisover target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ ótimo zine, excelente qualidade!<br /><br />
+continue na luta brother!!!<br /><br />
+www.myspace.com/humanityisover</div>
+
+<div class="com_comentarios_base">
+26/01/09 &agrave;s 20:01 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:danniloramone@hotmail.com">Dirtyandrotten</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ pois é eu também conheci o site a pouco tempo,atraves da comu no orkut,tempo esse suficiente pra me fazer vir aki e dizer q o site é do caralho mto completo boa entrevistas resenhas e tdo mais,ja deu ñ vô ficar aki puxando saco não pq não faz meu perfil (rsrs)<br /><br />
+<br /><br />
+AGORA QUANTO À PROMOÇÃO DO ZINE IMPRESSO:BEM QUE VOCÊS PODIAM MANDAR UM PRA MIM NO 0800 PQ TOW + LISO DO QUE VASILINA NO CÚ DE SILVIA SAINT!!!<br /><br />
+<br /><br />
+ABRAÇO A TODOS!</div>
+
+<div class="com_comentarios_base">
+12/01/09 &agrave;s 19:01 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:soaresfilho88@hotmail.com">Ezio Soares</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ parabéns pelo site, acabei de conhecê-lo e achei muito bom . continue insano !</div>
+
+<div class="com_comentarios_base">
+26/12/08 &agrave;s 21:45 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:vhbiro@yahoo.com.br">Vitor Hugo Franceschini</a></span>&nbsp; 
+<a href=http://vhblogmetal.blogspot.com/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Conheci a pouco tempo este excelente web zine e só tenho a elogiar. Parabéns a este excelente trabalho, ganharam mais um leitor e apoiador!!!</div>
+
+<div class="com_comentarios_base">
+03/12/08 &agrave;s 21:26 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:blastersanatorio@hotmail.com.br">BLASTER </a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ E AÊÊ CARRASCU , SEU MALDITO!!! ÉISSO AÍ <br /><br />
+FEZ UM TRAMPO FUDIDO AÍ ,MUITA LUTA NESSES 5 ANOS,DUCARALHO!!! QUERO PARABENIZALO PELA TUA FORÇA E DEVOÇÃO AO ÓDIO E CAOS EM PRO DE TEUS IRMÃOS HEELBANGERS!!!   É POR ISSO QUE...<br /><br />
+          O ÓDIO NUNCA MORRE !!!  <br /><br />
+               BLASTER - BH<br /><br />
+          BANGER ATÉ A MORTE !!!</div>
+
+<div class="com_comentarios_base">
+27/11/08 &agrave;s 11:26 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:indeathsembrace@pop.com.br">Delmon </a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Hailz Bastard Carrascu...<br />  Um salve para todos os BANGER&acute;s que se deliciam com este ARTEFATO de divulga&ccedil;&atilde;o da CENA EXTREMA NACIONAL!!!<br />  Parab&eacute;ns nobre e continue firme com seus prop&oacute;sitos, em breve surgir&aacute; um concorrente seu (ops! digo ALIADO!!!) kkkkkkkk<br />  <br />  Hail Busatan...<br />  <br />  Delmon &quot;Splinter&quot;<br />  In Death&acute;s Embrace Zine</div>
+
+<div class="com_comentarios_base">
+21/11/08 &agrave;s 11:22 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:vivianenihilisme@hotmail.com">Viviane Nihilisme</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Carrascu, <br />  &Eacute; uma satisfa&ccedil;&atilde;o para mim poder fazer parte de um projeto que leva t&atilde;o a s&eacute;rio as bandas e a cena underground! Muitos anos de sucesso ainda est&atilde;o por vir.<br />  Valeu pela parceria.<br />  Beijo.</div>
+
+<div class="com_comentarios_base">
+18/11/08 &agrave;s 15:44 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:bsmoffete@hotmail.com">Wallas</a></span>&nbsp; 
+<a href=http://www.myspace.com/rottenfetusbanda target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Salve!<br />  Parab&eacute;ns pelo webzine! Continuem trabalhando para melhorar a cena brasileira!<br />  Wallas e Rotten Fetus</div>
+
+<div class="com_comentarios_base">
+13/11/08 &agrave;s 13:30 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:alphavils@yahoo.com">GORE</a></span>&nbsp; 
+<a href=http://www.canalmetal.cjb.net/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ BARULHO!</div>
+
+<div class="com_comentarios_base">
+02/11/08 &agrave;s 03:44 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:cementerio.decadaverespodridos@gmail.com">Nauseatingore Disfigurement</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ EL NEWS - FANZINE: "SUPURATED TUMOR" SALE AL UNDER EN DICIEMBRE DEL 2008 CON MAS DE 140 PAGINAS EN TOTAL CON PURA INFO DE BANDAS "DEATHGRINDINGORE"; BANDAS Y ZINES AUN ES POSIBLE SALIR ENVIAR PROMO STUFF A:<br />
+"SUPURATED TUMOR"(NEWS - ZINE DEATHGRINDINGORE)<br />
+C/O LUIS CARVAJAL ABARCA<br />
+CASILLA 112 - ANTOFAGASTA - 2 REGION - CHILE...<br />
+POR INFO ESCRIBIR AL EMAIL:<br />
+CEMENTERIO.DECADAVERESPODRIDOS@GMAIL.COM<br />
+GTACIAS POR EL ESPACIO; ADEMAS SE VIENE OTRO ZINE BRUTAL LLAMADO: "EXHUMED OF PUTREFACTION ZINE"(CON UN TOTAL DE 100 PAGINAS + CDR COMPILATIONS; FANZINE DE CHILE); NO FUCKING RIP OFFS; BANDAS DEATHGRIND AND GOREGRIND; ENVIEN SU STUFF PARA REVIEW EN EL NEWS; FLYERS Y TODO SERA PUBLICADO.....................<br />
+</div>
+
+<div class="com_comentarios_base">
+30/10/08 &agrave;s 20:15 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:cementerio.decadaverespodridos@gmail.com">Nauseatingore Disfigurement</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ soy editor de un brutal news llamado: "SUPURATED TUMOR" EL CUAL ESTA 1000% DEDICADO A LA ESCENA "DEATHGRIND" AND "GOREGRIND"; MI 1ER USSUE ESTA CASI TERMINADO PERO AUN HAY TIEMPO POR SI ALGUNA BANDA BRUTAL SE INTERESA EN SALIR EN LAS PODRIDAS PAGINAS DE MI NEWS; LA DIRECCION ES:<br />
+"SUPURATED TUMOR"(NEWS - ZINE DEATHGRINDINGORE)<br />
+C/O LUIS ARTURO CARVAJAL ABARCA.<br />
+CASILLA 112 - ANTOFAGASTA - CHILE.<br />
+POR SI ALGUN ZINE-NEWS O BANDA BRUTAL DESEA ENVIAR SU STUFF PROMO PARA SER PUBLICADO; TENGO ESPACIO PARA ALGUNOS REVIEWS Y PROMOCION(FLYERS) ASI QUE TODO SERA PUBLICADO; ES UN NEWS TOTALMENTE ENFOCADO A LO MAS BRUTAL DE LO PATHOLOGICO Y NAUSEABUNDO; ADEMAS TENGO UNA DISTRO / TRADER LLAMADA: "INFECTIOUS GORE FETUS" DONDE PODRAS HACER TRADER DE CDR DE BANDAS(DEMOS NO OFICIALES) Y ZINES BRUTALES ANTIGUAS Y NUEVAS(VOY A RE- EDITAR TODO LO QUE HE REALIZADO ANTIGUAMENTE EN ZINES Y NEWS) ADEMAS DE VENTA DE CDS ORIGINALES; LA DISTRO SE LANZA EN DICIEMBRE CON UN BRUTAL CATALOGO DE MAS DE 100 PAGINAS; ASI QUE SI ALGUNA BANDA BRUTAL QUIERE SALIR EN LA DISTRO NO PROBLEMA; ADEMAS EL SITIO ESTA GENIAL PARA DAR A CONOCER LOS PROYECTOS UNDERGROUND; YO APOYO A TODA LA GENTE QUE DESEE SALIR EN MIS PAGINAS Y QUE TENGA UN PROYECTO BRUTAL(DEATHGRIND AND GOREGRIND); MI NEWS ES A LA ANTIGUA EN FOTOCOPIA PERO ORIGINAL YA QUE EL ART WORK ES DIBUJADO;AUN HAY TIEMPO Y GRACIAS POR EL ESPACIO DE VERDAD Y OJALA SIGAMOS APOYANDO A LA ESCENA BRUTAL QUE TANTO SE LO MERECE SOBRETODO EN MI PAIS DONDE HAY BUENAS BANDAS; SUERTE CON EL SITIO Y APOYANLO DE VERDAD..................<br />
+<br />
+NAUSEATINGORE DISFIGUREMENT<br />
+("SUPURATED TUMOR")</div>
+
+<div class="com_comentarios_base">
+07/10/08 &agrave;s 19:46 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:bandainfection@gmail.com">Cleyton INFECTION</a></span>&nbsp; 
+<a href=http://www.myspace.com/bandainfection target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Hailz.<br />
+<br />
+Sou de Manaus, muito bom o site, Parabéns por  mais um ano de existência, glórias é vítorias em Proul do verdadeiro Underground.<br />
+<br />
+Death metal Rules.</div>
+
+<div class="com_comentarios_base">
+18/09/08 &agrave;s 19:22 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:noir75@bol.com.br">MONSTROMORGUE</a></span>&nbsp; 
+<a href=http://www.myspace.com/monstromorgue target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Pela primeira vez que estou olhando o site,dá para imaginar o tamanho da força ao underground que acontece aqui! Queremos colaborar.</div>
+
+<div class="com_comentarios_base">
+09/07/08 &agrave;s 12:33 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:inhumanerites666@hotmail.com">Lord Azoth 666</a></span>&nbsp; 
+<a href=http://www.myspace.com/inhumanerites target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Salve Carrascu e Goregrinder, fudido o trabalho de vcs em prol do metal extremo, obrigado pelo apoio e conte com o Inhumane no pre for preciso HAIL </div>
+
+<div class="com_comentarios_base">
+03/06/08 &agrave;s 11:19 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:reggis_sathanas@hotmail.com">Filipi (Misdeed)</a></span>&nbsp; 
+<a href=http://www.myspace.com/misdeedblackmetal target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Ficou muito foda esse novo visual do GoreGrinder! Estais de parabens! Abraços!</div>
+
+<div class="com_comentarios_base">
+28/05/08 &agrave;s 12:52 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:antonis_armed@yahoo.gr">Antonis-armed</a></span>&nbsp; 
+<a href=http://armed-death.freehostia.com/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ hellenic cult black death metal band.<br />
+cd"return 1991-93..2006.." by in metal we trust records.<br />
+tape version of the cd by goat music records.<br />
+split 7"ep "mortis domini" coming soon.<br />
+new tape "ancient soul" by maltkross productions coming soon.</div>
+
+<div class="com_comentarios_base">
+25/05/08 &agrave;s 06:19 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:down2zero@hotmail.com">Splinter</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ aê cara, curti muito o seu site, descobri pelo CTR, parabéns! tá favoritado!</div>
+
+<div class="com_comentarios_base">
+10/05/08 &agrave;s 05:36 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:danielvialle@hotmail.com">Daniel</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ mt foda o site<br />
+vida longa ao goregrinder.net<br />
+abraco</div>
+
+<div class="com_comentarios_base">
+09/05/08 &agrave;s 22:53 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+Mané - Plague Rages</span>&nbsp; 
+<a href=http://www.myspace.com/plagueragesgrindcore target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Ae Carrascu, ficou foda o novo site cara, parabéns véio.<br />
+<br><br><br />
+Um grind abraço<br />
+<br><br><br />
+Mané</div>
+
+<div class="com_comentarios_base">
+15/04/08 &agrave;s 23:49 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:visaoundergroundzine@gmail.com">Elton Lima</a></span>&nbsp; 
+<a href=http://www.myspace.com/visaoundgzine target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Parabens pelo trabalho Carrascu !!!<br />
+Vida longa com esse Web Zine !!! Excelente design, otimas materias! <br />
+Abraço, e boa leituras p/ todos!!!</div>
+
+<div class="com_comentarios_base">
+04/04/08 &agrave;s 11:27 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto: calebe@univates.br">Calebe Harmony Fault</a></span>&nbsp; 
+<a href=http://www.fotolog.com/harmonyfault target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Caro amigo Carrascu,<br />
+<br />
+Parabéns pelo site - objetivo, gráfico e informativo.<br />
+Um colorado abraço da Harmony Fault</div>
+
+<div class="com_comentarios_base">
+04/04/08 &agrave;s 09:29 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:cauterizedprod@gmail.com">Gil (Lenhador)</a></span>&nbsp; 
+<a href=http://www.myspace.com/lenhadordisease target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Valeu por adicionar a música da Lenhador na página Carrascu!<br />
+<br />
+Abraço, parabéns pelo belo trabalho</div>
+
+<div class="com_comentarios_base">
+03/04/08 &agrave;s 17:03 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:yahoo.mail.faccelo245@yahoo.com.br">Marcelo Bezerra Da Silva</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ ola brothers do zine  goregrinder cheguei atrazado para participar das promoções do zine mais acredito que da proxima vez eu ganhe. é a primeira vez que entro no site e  ele é demais.um abraço</div>
+
+<div class="com_comentarios_base">
+03/04/08 &agrave;s 15:29 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:necropathologist@gmail.com">Necropathologist</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Daê Carrascu, tudo certo brother?<br />
+Porra!!! Esse site ficou du caralho heim...<br />
+GoreTube é genial, haha, muito bom mesmo, parabens véio!!!<br />
+Abraço.<br />
+</div>
+
+<div class="com_comentarios_base">
+27/03/08 &agrave;s 21:24 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:deathscum@hotmail.com">Thales - M.D.K.</a></span>&nbsp; 
+<a href=http:// www.myspace.com/mdkbrazil target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ E ai Carrascu seu pinguço safado!!! Tudo certo amigo??<br />
+<br />
+Fico fudido o novo site, ta de parabéns, melhor site de podrera do brasil!! Da orgulho mesmo em saber que tem pessoas competentes que tem este tipo de iniciativa de fazer um fudido site, com sorteios, entrevistas, resenhas, etc. Nos que somos do underground só temos que agradecer esta ferramenta de apoio!!!<br />
+Assim que sair nossos novos materiais vou cobrar vc de uma nova entrevista hein!!!<br />
+Grande abraço!!<br />
+<br />
+Thales e M.D.K.<br />
+</div>
+
+<div class="com_comentarios_base">
+25/03/08 &agrave;s 10:11 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:rafael.lamuria@gmail.com">Rafa (Lamuria/FxGxO)</a></span>&nbsp; 
+<a href=http://www.purevolume.com/fgo target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Ae Carrascu, ta do caralho!!<br />
+Layout nojento, gore!<br />
+parabens pela dedicaçao, o conteudo ta otimo, abraçao!</div>
+
+<div class="com_comentarios_base">
+18/03/08 &agrave;s 20:01 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:SCCJL@AMBEV.COM.BR">JUNIOR PORCO</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ É O MELHOR SITE DE GOREGRINDER , PARABÉNS AO MANO ,ESPERO SEMPRE MANTER ESTA AMIZADE QUE NÃO É PEQUENA, VALEU MANO UM ABRAÇO .</div>
+
+<div class="com_comentarios_base">
+29/02/08 &agrave;s 22:26 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:terceiromundochaos@gmail.com">ALEXANDRE - TERCEIRO MUNDO CHAOS DISCOS</a></span>&nbsp; 
+<a href=http://www.terceiromundochaos.rg3.net/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ FALA MEU IRMÃO TUDO BLZ....<br />
+CARA SEM COMENTÁRIOS O NOVO LAYOUT DO SITE CARA, ESTREMAMENTE BRUTAL!!! FORTE ABRAÇÃO MEU VÉIO!!! NOS VEMOS EM BREVE!!!</div>
+
+<div class="com_comentarios_base">
+27/02/08 &agrave;s 21:41 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:marquinhosovietico@yahoo.com.br">Marquinho Sovietico</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ muito  maneiro  esse  web zine  !!!<br />
+w.hammer   do internal breed que  me  mandou  o   link  gostei  mesmo !!<br />
+abraços </div>
+
+<div class="com_comentarios_base">
+27/02/08 &agrave;s 17:48 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:wagnerhammer@hotmail.com">W. Hammer - Internal Bleed</a></span>&nbsp; 
+<a href=http://www.myspace.com/internalbleed target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Conheço a pouco tempo o trabalho do GOREGRINDER, mas quero tambem parabenisalos pelo trabalho.<br />
+No que precisarem estaremos dando total apoio, muito bem sacada a estrutura do site.<br />
+Abração e muito metal nacional nessa porra ae velho!!<br />
+</div>
+
+<div class="com_comentarios_base">
+26/02/08 &agrave;s 14:01 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:seedsplatter@hotmail.com">Seed</a></span>&nbsp; 
+<a href=www.myspace.com/purezagenocida.html target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ aeee garotada insana<br />
+saquem ae nossos sons!<br />
+</div>
+
+<div class="com_comentarios_base">
+21/02/08 &agrave;s 20:55 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:ichthyosis@gmail.com">Bar</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ novas novidades.. parabens pelos 4 anos do webzine..<br />
+boa sorte e força.. mta podreira!!</div>
+
+<div class="com_comentarios_base">
+20/02/08 &agrave;s 20:22 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:marciukmargo@hotmail.com">Márcio Camargo</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Porra! o pessoal da GoreGrinder esta d parabens,um acervo muito bom sobre o Underground nacional...é isso galera força ao Underground Nacional,espero ver uma matéria com os kras do Clawn (Botucatu S/P) rsrs!  Valeu ai moçada quem baixar aqui no site concerteza estara bem informado da cena Underground Nacional...falo abraços! </div>
+
+<div class="com_comentarios_base">
+20/02/08 &agrave;s 07:21 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:rsgig@bol.com.br">Lopes</a></span>&nbsp; 
+<a href=http://www.harmonyfault.cjb.net/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Uuuuuuuuu, Aaaaaaaaaa,tá,tá,tá,ta,tá,ta,tá, Aaaaaaaaa, Uuuuuuuuu, tá,tá,tá,tá,tá, tsssss!<br />
+<br />
+Parabéns Véio!<br />
+<br />
+Mantenha Contato<br />
+Baita Abraço<br />
+Lopes</div>
+
+<div class="com_comentarios_base">
+17/02/08 &agrave;s 19:24 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:sexthorn69@hotmail.com">Dr Morbo</a></span>&nbsp; 
+<a href=http://www.myspace.com/doctormorbo target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ hails desde panama (central america)<br />
+abrazos y mucho gore porno splatter grind y death metal para mis nuevos amigos brasileros<br />
+su nuevo amigo<br />
+dr morbo<br />
+<br />
+bloody mortal ghouls zine<br />
+atomik surfing (banda)</div>
+
+<div class="com_comentarios_base">
+16/02/08 &agrave;s 23:34 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:danielmortificy@gmail.com">Daniel Mortificy</a></span>&nbsp; 
+<a href=http://www.myspace.com/mortificy target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Ae Carrascu! <br />
+<br />
+Fodão o novo layout e as novas sessões! Mais uma vez meus parabéns pelo trampo com o Goregrinder! Espero em breve estar dando um rolê aí no sul pra gente colocar a conversa em dia! <br />
+<br />
+Abração mermão, toda força ae com o Goregrinder, total apoio aqui!<br />
+<br />
+Daniel Silva</div>
+
+<div class="com_comentarios_base">
+16/02/08 &agrave;s 23:11 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:industrial_noise@zipmail.com.br">Trojillo(INDUSTRIAL NOISE)</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Caralho!!!<br />
+ficou foda o novo lay-out!!! totalmente podre como deve ser!! Que esse trabalho em prol do Underground se perpetue durante muitos outros anos!!!! <br />
+keep insane!!!!!</div>
+
+<div class="com_comentarios_base">
+14/02/08 &agrave;s 18:16 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+Rodrigo - Lastima</span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Fala meu camarada. Ficou fudido demais o novo layout do Goregrind Zine.<br />
+Extremaço e muito bem sacado.<br />
+Em breve to colando no Sul pra mais uma bagunça.<br />
+Abração</div>
+
+<div class="com_comentarios_base">
+14/02/08 &agrave;s 12:33 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:enriqueddo@hotmail.com">Enrique DxDxOx</a></span>&nbsp; 
+<a href=http://www.cgzine.blogger.com.br/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Falai Carrascu, muito foda o trampo novo layout e tudo mais! Boa sorte na execução dos trabalhos, apoio total a vc!<br />
+abraços!</div>
+
+<div class="com_comentarios_base">
+14/02/08 &agrave;s 02:15 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:ramonrauen@yahoo.com.br">Ramon</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Saudações Carrascu!<br />
+Parabéns pelo grande trabalho tu es um possante guerreiro! Sua luta com certeza fortalece e  muito, a cena Brasileira!<br />
+A União torna o Metal cada dia mais Potente!<br />
+Força e honra sempre Guerreiro!!!!!!!!<br />
+<br />
+Hail Satan!<br />
+<br />
+</div>
+
+<div class="com_comentarios_base">
+13/02/08 &agrave;s 17:59 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:killagainrec@yahoo.com.br">Antonio Rolldão </a></span>&nbsp; 
+<a href=www.killagainrec.html target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Saudações Carrascu e Gore Grinder  zine!!!<br />
+<br />
+Parabéns pelo novo layout e obrigado pela força de sempre!!<br />
+<br />
+Abraços.<br />
+<br />
+Antonio Rolldão (Kill Again records)<br />
+<br />
+METAL TO KILL BASTARD POSERS !!</div>
+
+<div class="com_comentarios_base">
+13/02/08 &agrave;s 14:14 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+Nimbea</span>&nbsp; 
+<a href=  http://www.myspace.com/nimbea   target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Está com um ambiente muito interessante. Penso que a página podia estar mais centrada, fica colada ao canto superior esquerdo...mas são promenores. Parabéns</div>
+
+<div class="com_comentarios_base">
+13/02/08 &agrave;s 13:14 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:reggis_sathanas@hotmail.com">Filipi</a></span>&nbsp; 
+comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Ficou mt bom o site carrascu! Ficou bem melhor o visual dele , mais podre possivel! Grande abraço!</div>
+
+<div class="com_comentarios_base">
+13/02/08 &agrave;s 10:45 Hs
+</div>
+
+</div>
+<div class="com_comentarios">
+
+<div class="com_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:mmictian@yahoo.com.br">M.Mictian</a></span>&nbsp; 
+<a href=http://www.unearthly.com.br/ target='_blank'><font style='color:#C30; font:10pt Arial;'>(Site)</font></a> comentou:
+</div>
+
+<div class="com_comentarios_texto">
+ Quero parabenizar ao pessoal do GOREGRINDER pelo belo trabalho pessoas asim que nos fazem estar sempre de pé trabalhando também em prol do METAL NACIONAL FORÇA SEMPRE </div>
+
+<div class="com_comentarios_base">
+12/02/08 &agrave;s 21:10 Hs
+</div>
+
+</div>
+
+
+<div class="com_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="com_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="com_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div align="left" style="width:100%; padding-left:20px; height:25px; float:left;" class="com_formulario_texto">Site: <input type="text" name="site" id="site" onBlur="ValidaSite();" value="" size="25" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="com_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="com_ver" id="com_ver" value="n">
+                </form>
+</div>
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=19 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 19:46:24 GMT -->
+</html>

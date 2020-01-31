@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=57 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:09:21 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<script type='text/javascript' language='javascript' src='jscripts/jquery-1.3.2.js'></script>
+<script type='text/javascript' language='javascript'>
+$(function($) {
+	// Quando o formulário for enviado, essa função é chamada
+	$('#form1').submit(function() {
+		// Colocamos os valores de cada campo em uma váriavel para facilitar a manipulação
+		var nome = $('#rcc_nome').val();
+		var email = $('#rcc_email').val();
+		var mensagem = $('#rcc_texto').val();
+		// Exibe mensagem de carregamento
+		// $('#status').html('<img src='loader.gif' alt='Enviando' />');
+		// Fazemos a requisão ajax com o arquivo envia.php e enviamos os valores de cada campo através do método POST
+		$.post('com_rescds.html', {nome: nome, email: email, mensagem: mensagem }, function(resposta) {
+				// Quando terminada a requisição
+				// Exibe a div status
+				$('#status').slideDown();
+				// Se a resposta é um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$('#status').html(resposta);
+				} 
+				// Se resposta for false, ou seja, não ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$('#status').html('Mensagem enviada com sucesso!');
+					// Coloca a mensagem no div de mensagens
+					// $('#mensagens').prepend('<strong>'+ nome +'</strong> disse: <em>' + mensagem + '</em><br />');
+					// Limpando todos os campos
+					$('#rcc_nome').val('');
+					$('#rcc_email').val('');
+					$('#rcc_texto').val('');
+				}
+		});
+	});
+});
+</script>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Resenha: CHAOS SYNOPSIS - Kvlt Of Dementia [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].rcc_email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<script type="text/javascript" language="javascript" src="jscripts/lytebox.js"></script>
+<link rel="stylesheet" href="jscripts/lytebox.css" type="text/css" media="screen" />
+
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<script type='text/javascript' src='jscripts/enlargeit.js'></script>
+<script type='text/javascript'>
+        enl_brdsize = 10;
+        enl_shadowintens = 10;
+        enl_center = 1;
+        enl_darkprct = 70;
+        enl_preload = 1;
+        enl_drgdrop = 0;
+        enl_darksteps = 1;
+        enl_buttonurl[0] = 'prev';
+        enl_buttontxt[0] = 'Anterior';
+        enl_buttonoff[0] = -216;
+        enl_buttonurl[1] = 'next';
+        enl_buttontxt[1] = 'Proximo';
+        enl_buttonoff[1] = -234;
+        enl_buttonurl[2] = 'close';
+        enl_buttontxt[2] = 'Fechar [Esc]';
+        enl_buttonoff[2] = -0;
+</script>
+
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var mensagem = $("#mensagem").val();
+		var rcc_res_id = $("#rcc_res_id").val();
+		var rcc_ver = $("#rcc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_rescds850a.html?id=57', {nome: nome, email: email, mensagem: mensagem, rcc_res_id: rcc_res_id, rcc_ver: rcc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+
+
+<a href="#" title="Clique para ampliar"><div class="rescds_capa"><img src="chaos%20synopsis_Kvlt%20of%20Dementia_20092fa8.jpg?imagem=imagens/resenhas/chaos%20synopsis_Kvlt%20of%20Dementia_2009.jpg&amp;w=300&amp;h=300" border="0" onclick="enlarge(this);" longdesc="imagens/resenhas/chaos%20synopsis_Kvlt%20of%20Dementia_2009.jpg"/></div></a>
+
+<div class="rescds_detalhes">
+<div class="rescds_detalhes_itens">Banda/Artista: <b>Chaos Synopsis</b></div>
+<div class="rescds_detalhes_itens">T&iacute;tulo: <b>Kvlt Of Dementia</b></div>
+<div class="rescds_detalhes_itens">Lan&ccedil;amento: <b>Free Mind Records</b></div>
+<div class="rescds_detalhes_itens">Ano: <b>2009</b></div>
+<div class="rescds_detalhes_itens"><span style="position:relative; float:left;">Contatos: </span><b><span style="position:relative; float:left; margin-left:2px; width:340px;">
+Chaos Synopsis: jairochaos@yahoo.com.br<br /><br />Contatos Metal Media Management: debora@freemindpress.net <br />Contatos Free Mind Records: contato@freemindrecords.com.br <br />Gravadora: Free Mind Records - http://www.freemindrecords.com.br/ </span></b></div>
+
+<div class="rescds_detalhes_itens">Site oficial: <b><a href="http://www.myspace.com/chaossynopsisbr" target="_blank">http://www.myspace.com/chaossynopsisbr</a></b></div>
+
+<div class="rescds_detalhes_itens">Resenha por <b><a href="mailto:alexneundorf@yahoo.com.br">Alex Neundorf</a></b></div>
+<div class="rescds_detalhes_itens" style="border-bottom:0px;">Publicada no dia <b>20/10/2009</b></div>
+</div>
+
+<div class="rescds_texto">Quando peguei nas m&atilde;os esse que &eacute; o primeiro trabalho full-lenght do <strong>Chaos Synopsis</strong> fiquei realmente muito entusiasmado para colocar para rodar. Tive contato pela primeira vez com a banda nas viagens pela net e pelos Myspaces, assim como tamb&eacute;m atrav&eacute;s da primeira colet&acirc;nea da comunidade do Orkut &ldquo;<em>Death Metal Brasil</em>&rdquo;, onde o som &ldquo;<em>2100 A.D.</em>&rdquo; compunha a s&eacute;tima faixa (um contato atrasado, uma vez que a banda j&aacute; havia lan&ccedil;ado dois outros materiais oficiais: o EP &ldquo;<em>Garden of Forgotten Shadows</em>&rdquo; de 2005 e &ldquo;<em>2100 A.D.</em>&rdquo; j&aacute; em 2008). Naquele momento j&aacute; tinha dito que era uma das bandas que despontavam dentre as outras que compunham aquele material.<br /><br />O <strong>Chaos Synopsis</strong> vem de S&atilde;o Jos&eacute; dos Campos/SP e conta atualmente com Jairo (Baixo e Vocais), JP (Guitarra e Backing Vocals) e Vitor (Bateria). Come&ccedil;ou suas atividades em 2005 e desde ent&atilde;o s&atilde;o uma presen&ccedil;a constante em shows pela regi&atilde;o sudeste. J&aacute; tocaram ao lado de grandes nomes do cen&aacute;rio brazuca e at&eacute; internacional, tais como <strong>Violator</strong>, <strong>Nervochaos</strong>, <strong>Sinister</strong>, <strong>Dismember</strong>, <strong>Mayhem</strong>, etc. <br /><br />Gravado entre 2008 e o come&ccedil;o de 2009, no est&uacute;dio do F&aacute;bio Zperandio (do <strong>Ophiolatry</strong>), o Laborat&oacute;rio 6, este trabalho &eacute; um exemplo de grava&ccedil;&atilde;o/mixagem. &Oacute;timo mesmo, porque n&atilde;o consigo identificar nada fora do lugar. Evidentemente que &eacute; a an&aacute;lise de um simples ouvinte.<br /><br />A arte da capa &eacute; assinada por Rafael Tavares (da <em>Digital Miasma</em>) e tamb&eacute;m &eacute; um aspecto a parte para ser analisado. Excelente!!! Conceito que ser&aacute; exemplificado nas letras: anti-clericalismo e cr&iacute;tica &agrave; igreja cat&oacute;lica. A capa mostra um padre, com ar diab&oacute;lico e santo ao mesmo tempo, dominando uma coitada de uma crian&ccedil;a crente (obrigando-a a rezar ou obrigando-a a crer). E a domina&ccedil;&atilde;o &eacute; meio que a la Pinhead (da j&aacute; enfadonha s&eacute;rie Hellraiser) com correntes que saem das m&atilde;os do padre e se prendem a carne do jovem atrav&eacute;s de ganchos. &Eacute; uma leitura interessante do que essa cambada de padres ped&oacute;filos fazem com as crian&ccedil;as, ou do que a igreja faz, &ldquo;catequizando&rdquo; a crian&ccedil;ada e tornando-as descerebradas. Toda esta cena est&aacute; encerrada dentro de uma daquelas celas estofadas dos manic&ocirc;mios. &Eacute; claro que um culto religioso &eacute; apropriadamente exemplificado pela imagem do manic&ocirc;mio. Internamente, o encarte n&atilde;o traz nada de especial. Bem simples. Apenas contendo algumas imagens que remetem aos temas das letras e tamb&eacute;m fotos estilizadas dos componentes (que ficou bem legal... os tr&ecirc;s aparecem devidamente trajados com camisas-de-for&ccedil;a).<br /><br />A primeira faixa &eacute; &ldquo;<em>Postwar Madness</em>&rdquo;. Um som maravilhoso que coube muito bem como abertura. Um riff muito cativante abre a m&uacute;sica e leva qualquer um a banguear sem parar. &Oacute;timo come&ccedil;o mesmo!!!  O andamento &eacute; bem tradicional, dentro do matiz em que o <strong>Chaos Synopsis</strong> se enquadra dentro do g&ecirc;nero Heavy Metal. Muita cad&ecirc;ncia, guitarras, baixo e batera precisos, brutalidade caracter&iacute;stica dos anos 90. Um som que se localiza em um espa&ccedil;o lim&iacute;trofe entre o Thrash e o Death Metal. Nos vocais, temos tamb&eacute;m um estilo bem caracter&iacute;stico dos anos 90, de escola europ&eacute;ia, explorando graves com timbre mais caracter&iacute;stico, mas tamb&eacute;m revezando com partes mais agudas (como no refr&atilde;o). Em minha opini&atilde;o, a la <strong>Napalm Death</strong> dos in&iacute;cios (mas tamb&eacute;m, em algum lugar, uma dose de <strong>Dismember</strong>). Em termos l&iacute;ricos (e aqui anoto o primeiro pecado), n&atilde;o h&aacute; nada de inovador: a letra trata de um cen&aacute;rio p&oacute;s-guerra como o t&iacute;tulo indica. A seguir, ouvimos &ldquo;<em>Sarcastic Devotion</em>&rdquo; que mant&eacute;m o ritmo e que d&aacute; seq&uuml;&ecirc;ncia ao play com um outro &oacute;timo riff introdut&oacute;rio.  E aqui aproveito para falar disso: &oacute;timos riffs est&atilde;o presentes nesse play!!! D&aacute; para perceber que os caras, ou pensam realmente na cria&ccedil;&atilde;o de riffs que propiciem quem ouve banguear, ou isso j&aacute; &eacute; natural para eles. Penso mesmo que as composi&ccedil;&otilde;es revelam algo bem cerebral por tr&aacute;s desse power-trio, uma vez que ouvimos uma intercala&ccedil;&atilde;o de riffs bem inteligente e interessante para quem ouve. Os riffs de introdu&ccedil;&atilde;o s&atilde;o sempre bem legais para bater-cabe&ccedil;a, os base de vocal seguram bem o andamento da parte cantada, aquelas &ldquo;pontes&rdquo; tamb&eacute;m s&atilde;o bem pensadas, n&atilde;o s&atilde;o somente uma parte &ldquo;jogada&rdquo; na m&uacute;sica para emendar dois riffs, geralmente s&atilde;o nessas &ldquo;pontes&rdquo; que ocorrem quebras de andamento que tornam as m&uacute;sicas &oacute;timas de ouvir. A terceira faixa do play &eacute; a &ldquo;<em>Only Evil Can Prevail</em>&rdquo;. Ela come&ccedil;a com uma pegada bem mais brutal que os dois sons de abertura e ai continua com o caracter&iacute;stico andamento cadenciado, alternando bons riffs. Entre os dois versos base de vocal h&aacute; uma quebra de andamento bem legal, que d&aacute; um toque ainda mais interessante a esse som. A bateria tamb&eacute;m merece um destaque a parte porque nessa m&uacute;sica, de forma mais clara, fica n&iacute;tida a desenvoltura de Vitor que soube muito bem intercalar as partes mais r&aacute;pidas com outras cheias de cad&ecirc;ncia e outras bem mais lentas que o geral. Em &ldquo;<em>LXXXVI</em>&rdquo; (ou &ldquo;<em>Oitenta e Seis</em>&rdquo;) temos continuidade no que j&aacute; se comentou at&eacute; aqui, mas diria que essa &eacute; at&eacute; aqui o som mais &ldquo;morno&rdquo;. H&aacute; uma parte mais para o meio da m&uacute;sica em que ocorre um bumbo duplo bem interessante e que d&aacute; uma velocidade que antecipa uma quebra mais lenta, acho que a mais lenta at&eacute; aqui, mas que confere um clima tamb&eacute;m interessante. Caminhando para a metade do play, temos o quinto som com &ldquo;<em>License to Kill</em>&rdquo;. &ldquo;<em>There&rsquo;s no need for us, humans, to worship any god. We are gods ourselves, we have the power to create life, and also, to destroy</em>&rdquo;, e assim inicia este r&aacute;pido som. N&atilde;o &eacute; nem preciso dizer que come&ccedil;a com uma altern&acirc;ncia de &oacute;timos riffs, batera e baixo precisos. Ressalto aqui novamente a parte l&iacute;rica, que, em minha opini&atilde;o, merecia mais esmero. A intro com a cita&ccedil;&atilde;o criou uma expectativa que n&atilde;o foi muito bem cumprida. N&atilde;o que comprometa a audi&ccedil;&atilde;o. Apenas acho que a banda precisa dedicar mais tempo e ter mais paci&ecirc;ncia, talvez, nesse momento das composi&ccedil;&otilde;es. A repeti&ccedil;&atilde;o do &uacute;ltimo verso poderia ter dado lugar a apresenta&ccedil;&atilde;o de uma nova id&eacute;ia complementar &agrave; letra. &Eacute; um ponto que eu pego-no-p&eacute; porque &eacute;, em minha opini&atilde;o, quesito importante na avalia&ccedil;&atilde;o de um material. Mas claro, &eacute; o debut e a estrada vai colaborar no amadurecimento dessa parte, visto que no mais, est&aacute; acima da m&eacute;dia. E pensando bem, &eacute; exatamente isso que talvez seja o ponto nevr&aacute;lgico dessa avalia&ccedil;&atilde;o: &eacute; um som que est&aacute; acima da m&eacute;dia, portanto cria uma expectativa exagerada, levando-se em considera&ccedil;&atilde;o que a banda est&aacute; debutando e tem pouco mais de quatro anos de exist&ecirc;ncia. A seguir, temos &ldquo;<em>Expired Faith</em>&rdquo; que &eacute; a faixa mais longa. Come&ccedil;a bem mais lenta e cadenciada, com riffs at&eacute; bem simples, mas nem por isso menos cativantes e bangueantes, vamos dizer assim. Termina com uma extensa parte sem vocais. Para quebrar mesmo, no &ldquo;ao vivo&rdquo;, suponho. &ldquo;<em>Blinding Chains</em>&rdquo; &eacute; a pr&oacute;xima e &eacute; uma quebradeira s&oacute;. Deve ser foda toc&aacute;-la &ldquo;ao vivo&rdquo; e vejo aqui uma &oacute;tima seq&uuml;&ecirc;ncia para o som anterior, n&atilde;o s&oacute; neste play, mas tamb&eacute;m nas performances &ldquo;ao vivo&rdquo;. Muito bom mesmo, gostei tamb&eacute;m em especial dos vocais dobrados em &ldquo;<em>WE PART WAYS</em>&rdquo;... &ldquo;<em>From a god that&rsquo;s dying day by day</em>&rdquo;. A oitava faixa recebe o sugestivo nome de &ldquo;<em>Spiritual Cancer</em>&rdquo;. Claro, &eacute; um sempre oportuno ataque a isso que conhecemos por &ldquo;religi&atilde;o&rdquo;. Concordo plenamente: C&acirc;ncer. &Eacute; uma excelente faixa, se as duas faixas introdut&oacute;rias n&atilde;o existissem seria meu destaque at&eacute; aqui. L&aacute; pelos meados desse som, ele descamba para uma quebradeira fudida. E ai retorna a cad&ecirc;ncia finalizando com um solo de guitarra (s&atilde;o poucos os solos de guitarra). Aproximamo-nos do fim do play e &ldquo;<em>2100 A.D.</em>&rdquo; &eacute; a pen&uacute;ltima faixa. J&aacute; havia ouvido esse som anteriormente e gostei bastante. &Eacute; um &oacute;timo som tamb&eacute;m e conduz bem para o fim desse material. Trata de um tema bem interessante de ser trabalhado: apocalipse. N&atilde;o o de tom b&iacute;blico, mas no sentido de um eminente &ldquo;fim do mundo&rdquo;. O tom da faixa &eacute; amea&ccedil;ador: 2100. Acho que &eacute; a letra mais bem trabalhada e a que traz uma id&eacute;ia bem mais interessante. &ldquo;<em>March of the Unholy</em>&rdquo; &eacute; a faixa mais curta e tamb&eacute;m ficou respons&aacute;vel por fechar esse material. Que som fudido para fechar esse play. Brutal de in&iacute;cio, altamente &ldquo;clim&aacute;tico&rdquo;, digamos assim. &Eacute; curto porque &eacute; bem r&aacute;pido. No geral, creio que seja o som mais direto mesmo. Muito bom, fechou com chave-de-ouro.<br /><br />Fazendo um joguinho de palavras, visto que n&atilde;o temos nada contra &ldquo;pecar&rdquo;, vamos apontar ent&atilde;o os &ldquo;pecados&rdquo; cometidos neste que &eacute;, vale lembrar, o primeiro full do <strong>Chaos Synopsis</strong>. Claro, a inten&ccedil;&atilde;o &eacute; colaborar! Se a banda achar oportuna e construtiva tome como sugest&otilde;es para os pr&oacute;ximos lan&ccedil;amentos que vir&atilde;o.  Com rela&ccedil;&atilde;o &agrave; parte das letras: acho interessante dedicar mais tempo na composi&ccedil;&atilde;o delas, n&atilde;o que eu tenha algo contra clich&ecirc;s, mas um pouco mais de esmero na sua constru&ccedil;&atilde;o &eacute; algo que poderia ser enfatizado no futuro. E al&eacute;m do mais, n&atilde;o &eacute; s&oacute; na parte &lsquo;musical&rsquo; que se encerra a identidade de uma banda, mas na parte l&iacute;rica tamb&eacute;m. Existem bandas (e mesmo g&ecirc;neros do Metal) que, por sinal, constru&iacute;ram suas identidades apenas enfatizando a parte l&iacute;rica (diferenciando-se dos clich&ecirc;s). Por mais que as letras de quase todos os sons contidos nesse debut estejam de alguma forma relacionados com o nome &ldquo;<strong>Chaos Synopsis</strong>&rdquo; e com a arte da capa, poderiam ser trabalhadas com maior profundidade, em termos de reflex&atilde;o mesmo sobre esses temas. Sempre que leio &ldquo;<strong>Chaos Synopsis</strong>&rdquo; logo penso em profundidade reflexiva, nada de nerdezas, mas algo mais &ldquo;demorado&rdquo; ao trabalhar as partes l&iacute;ricas acho que s&oacute; colaboraria para com a constru&ccedil;&atilde;o de uma identidade ainda mais forte para a banda. Afinal no que tange o nome &ldquo;<strong>Chaos Synopsis</strong>&rdquo; e na parte propriamente &ldquo;musical&rdquo; a banda esbanja intelig&ecirc;ncia. N&atilde;o que prejudique o trabalho, mas se a parte &lsquo;musical&rsquo; &eacute; trabalhada de uma forma mais cerebral, a parte complementar &lsquo;l&iacute;rica&rsquo; tamb&eacute;m poderia. Outro ponto: acho que h&aacute; sem d&uacute;vida um pezinho na parte mais brutal do Death Metal, e a banda demonstra que tem cacife para fazer assim tamb&eacute;m. Achei muito interessante os momentos que a banda mescla com mais &ecirc;nfase as partes cadenciadas (que s&atilde;o uma caracter&iacute;stica do som deles) e as partes com brutalidade em doses mais avan&ccedil;adas (como nas &uacute;ltimas faixas). Nesses momentos, o som do <strong>Chaos Synopsis</strong> parece localizar-se em um ponto de intera&ccedil;&atilde;o entre dois diferentes momentos da hist&oacute;ria do Death Metal. Gostei bastante de pensar nisso, ouvindo esse som.<br /><br />Os meus destaques v&atilde;o para as duas faixas de abertura mais a faixa que fecha o play. S&atilde;o simplesmente &oacute;timas. Tenho certeza que v&atilde;o agradar tanto aqueles que curtem um som mais anos 90, como aqueles que j&aacute; nasceram e viveram sob tutela dessa nova gera&ccedil;&atilde;o, acostumada com uma porradaria mais intensa. N&atilde;o tenho d&uacute;vida que, se a banda demonstrar nos pr&oacute;ximos trabalhos a mesma maturidade que demonstrou nesse debut (mas &eacute; claro, sempre avan&ccedil;ando e evoluindo), se mantiver seu nome bem divulgado, se conseguir executar uma agenda de apresenta&ccedil;&otilde;es constantes, se mantiver uma humildade necess&aacute;ria a qualquer crescimento, vai logo despontar como um importante nome dentre as bandas da atual safra. Penso at&eacute; que este material, mesmo sendo ainda um debut, mereceria um &ldquo;tour&rdquo; de divulga&ccedil;&atilde;o (que de certa forma j&aacute; vem ocorrendo), independente da escala: regional ou nacional, lugar e p&uacute;blico para este som &eacute; garantido que h&aacute;. No mais, excelente trabalho apresentado aqui por todos os envolvidos. Termino essa resenha perguntando: o que &eacute; o caos para voc&ecirc;? Se voc&ecirc; n&atilde;o tem uma defini&ccedil;&atilde;o ou ainda n&atilde;o pensou sobre isso (e olha que vivemos em um mundo ca&oacute;tico), neste debut voc&ecirc; ir&aacute; encontrar uma primeira parte (de muitas que, espero, vir&atilde;o) de uma sinopse para isso que chamamos &ldquo;caos&rdquo;.</div>
+
+<div class="rescds_tracklist">
+<div class="rescds_tracklist_topo">Tracklist:</div>
+01. Postwar Madness<br />02. Sarcastic Devotion<br />03. Only Evil Can Prevail<br />04. LXXXVI<br />05. License to Kill<br />06. Expired Faith<br />07. Blinding Chains<br />08. Spiritual Cancer<br />09. 2100 A.D.<br />10. March of the Unholy</div>
+
+<div class="rescds_compartilhar">
+<div class="rescds_compartilhar_topo">Compartilhar</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="text-align:left; margin-top:5px;" >
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_tweet"></a></div>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><g:plusone size="medium"></g:plusone></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button" addthis:url="http://www.goregrinder.net/index.php?s=10&id=57" style="font:10pt Arial, Helvetica, sans-serif;"><img src="imagens/sm-plus.gif" 
+        width="16" height="16" border="0" alt="Compartilhar" />&nbsp;Divulgue!</a></div>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000"
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+
+</div>
+
+<div class="rescds_moreabout">
+<div class="rescds_moreabout_topo">Mais sobre:</div>
+
+
+
+
+<div class='more_setores'><div class='more_titulo_setor'>Notícias <span class='more_noticia_maisde10'>(Últimas 10 publicadas)</span>:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index052b.html?s=3&amp;id=1377' title=' 02/02/13  - Chaos Synopsis com novo disco já disponível' class='more_txt_interno'>- Chaos Synopsis com novo disco já ...</a></div><div class='more_txt_interno'><a href='index16ec.html?s=3&amp;id=907' title=' 09/02/10  - Ocultan revela capa do novo álbum' class='more_txt_interno'>- Ocultan revela capa do novo álbum</a></div><div class='more_txt_interno'><a href='indexfbe0.html?s=3&amp;id=882' title=' 03/12/09  - Chaos Synopsis terá álbum lançado na Polônia' class='more_txt_interno'>- Chaos Synopsis terá álbum lançado...</a></div><div class='more_txt_interno'><a href='index2eb0.html?s=3&amp;id=795' title=' 28/06/09  - Chaos Synopsis lança o Kvlt ov Dementia' class='more_txt_interno'>- Chaos Synopsis lança o Kvlt ov De...</a></div><div class='more_txt_interno'><a href='index24dd.html?s=3&amp;id=777' title=' 28/05/09  - Chaos Synopsis solta single e cover online' class='more_txt_interno'>- Chaos Synopsis solta single e cov...</a></div><div class='more_txt_interno'><a href='index547d.html?s=3&amp;id=773' title=' 20/05/09  - Coletânea Death Metal Brasil finalmente é lançada' class='more_txt_interno'>- Coletânea Death Metal Brasil fina...</a></div><div class='more_txt_interno'><a href='indexcb51.html?s=3&amp;id=760' title=' 30/04/09  - Chaos Synopsis: novo CD sairá pela Free Mind Recs.' class='more_txt_interno'>- Chaos Synopsis: novo CD sairá pel...</a></div><div class='more_txt_interno'><a href='index4e5e.html?s=3&amp;id=755' title=' 16/04/09  - Chaos Synopsis com mudanças na formação' class='more_txt_interno'>- Chaos Synopsis com mudanças na fo...</a></div><div class='more_txt_interno'><a href='index0a94.html?s=3&amp;id=713' title=' 05/03/09  - Chaos Synopsis finaliza seu novo álbum' class='more_txt_interno'>- Chaos Synopsis finaliza seu novo ...</a></div><div class='more_txt_interno'><a href='index5b7f.html?s=3&amp;id=672' title=' 26/11/08  - Chaos Synopsis se preparando para gravar debut CD' class='more_txt_interno'>- Chaos Synopsis se preparando para...</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Resenha:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='indexea85.html?s=10&amp;id=57' class='more_txt_interno'>- <i>Kvlt Of Dementia</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Entrevista:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index8051.html?s=13&amp;id=64' class='more_txt_interno'>- com <i>Jairo</i> em 2011</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Videos:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index1319.html?s=17&amp;id=156' class='more_txt_interno'>- <i>Sarcastic Devotion</i></a></div><div class='more_txt_interno'><a href='indexe25e.html?s=17&amp;id=89' class='more_txt_interno'>- <i>Garden Of Forgotten Shadows</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>1 MP3 online:</div><div class='more_texto_setor'><script>
+	menuOpen=Array();
+	function changeMenu(id, name)
+	{
+		if(menuOpen[id]==0 || menuOpen[id]==undefined)
+		{
+			document.getElementById('menu_img_'+id).src='more-.gif';
+			document.getElementById('menuSource_'+id).style.display='block';
+			menuOpen[id]=1;
+		}
+		else
+		{
+			document.getElementById('menu_img_'+id).src='more.gif';
+			document.getElementById('menuSource_'+id).style.display='none';
+			menuOpen[id]=0;
+		}
+	}
+</script><div class='more_txt_interno'><a href='javascript:changeMenu(79);' class='more_txt_interno'> - <i>Postwar Madness</i> <img src='imagens/more.gif' border=0 id='menu_img_79'></a><div id='menuSource_79' style='float:right; display: none;'><object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0' width='35' height='18'>  <param name='movie' value='../www.goregrinder.net/mp3/Chaos_Synopsis_-_Postwar_Madness.swf' />  <param name='quality' value='high' />  <param name='wmode' value='transparent'>     <embed src='../www.goregrinder.net/mp3/Chaos_Synopsis_-_Postwar_Madness.swf'      quality='high'      type='application/x-shockwave-flash'      WMODE='transparent'      width='35'      height='18'      pluginspage='http://www.macromedia.com/go/getflashplayer' /></object></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Álbuns para baixar:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='indexea98.html?s=16' class='more_txt_interno'>- <i>2100 A.D.</i></a></div><div class='more_txt_interno'><a href='indexea98.html?s=16' class='more_txt_interno'>- <i>Garden Of Forgotten Shadows</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Site:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='http://www.myspace.com/chaossynopsisbr' target='_blank' class='more_txt_interno'>- www.myspace.com/chaossynopsisb ...</a></div></div></div>
+        </div>
+</div>
+
+<p style="position:relative; float:left; width:100%; text-align:center;"><a href="#comentarios" class="txt-cur-album">Envie seu coment&aacute;rio sobre essa not&iacute;cia! </a></p>
+
+<div class="rescds_comentarios">
+
+<div class="rescds_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:jairochaos@yahoo.com.br">Jairo</a></span>&nbsp; comentou:
+						   </div>
+
+<div class="rescds_comentarios_texto">
+ Excelente review e dicas anotadas, fico realmente feliz que tu tenha curtido e realmente ouvido o cd e destrinchado todo o conteúdo.
+Abraços.</div>
+
+<div class="rescds_comentarios_base">
+21/10/09 &agrave;s 07:19 Hs
+</div>
+
+</div>
+
+
+<div class="rescds_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="rescds_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="rcc_res_id" id="rcc_res_id" value="57">
+                  <input type="hidden" name="rcc_ver" id="rcc_ver" value="n">
+                </form>
+</div>
+
+
+
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=57 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:09:21 GMT -->
+</html>

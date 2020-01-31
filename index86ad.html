@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=96 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 18:49:48 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<script type='text/javascript' language='javascript' src='jscripts/jquery-1.3.2.js'></script>
+<script type='text/javascript' language='javascript'>
+$(function($) {
+	// Quando o formulário for enviado, essa função é chamada
+	$('#form1').submit(function() {
+		// Colocamos os valores de cada campo em uma váriavel para facilitar a manipulação
+		var nome = $('#rcc_nome').val();
+		var email = $('#rcc_email').val();
+		var mensagem = $('#rcc_texto').val();
+		// Exibe mensagem de carregamento
+		// $('#status').html('<img src='loader.gif' alt='Enviando' />');
+		// Fazemos a requisão ajax com o arquivo envia.php e enviamos os valores de cada campo através do método POST
+		$.post('com_rescds.html', {nome: nome, email: email, mensagem: mensagem }, function(resposta) {
+				// Quando terminada a requisição
+				// Exibe a div status
+				$('#status').slideDown();
+				// Se a resposta é um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$('#status').html(resposta);
+				} 
+				// Se resposta for false, ou seja, não ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$('#status').html('Mensagem enviada com sucesso!');
+					// Coloca a mensagem no div de mensagens
+					// $('#mensagens').prepend('<strong>'+ nome +'</strong> disse: <em>' + mensagem + '</em><br />');
+					// Limpando todos os campos
+					$('#rcc_nome').val('');
+					$('#rcc_email').val('');
+					$('#rcc_texto').val('');
+				}
+		});
+	});
+});
+</script>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Resenha: DESALMADO - Save Us From Ourselves [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].rcc_email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<script type="text/javascript" language="javascript" src="jscripts/lytebox.js"></script>
+<link rel="stylesheet" href="jscripts/lytebox.css" type="text/css" media="screen" />
+
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<script type='text/javascript' src='jscripts/enlargeit.js'></script>
+<script type='text/javascript'>
+        enl_brdsize = 10;
+        enl_shadowintens = 10;
+        enl_center = 1;
+        enl_darkprct = 70;
+        enl_preload = 1;
+        enl_drgdrop = 0;
+        enl_darksteps = 1;
+        enl_buttonurl[0] = 'prev';
+        enl_buttontxt[0] = 'Anterior';
+        enl_buttonoff[0] = -216;
+        enl_buttonurl[1] = 'next';
+        enl_buttontxt[1] = 'Proximo';
+        enl_buttonoff[1] = -234;
+        enl_buttonurl[2] = 'close';
+        enl_buttontxt[2] = 'Fechar [Esc]';
+        enl_buttonoff[2] = -0;
+</script>
+
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var mensagem = $("#mensagem").val();
+		var rcc_res_id = $("#rcc_res_id").val();
+		var rcc_ver = $("#rcc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_rescds8aa8.html?id=96', {nome: nome, email: email, mensagem: mensagem, rcc_res_id: rcc_res_id, rcc_ver: rcc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+
+
+<a href="#" title="Clique para ampliar"><div class="rescds_capa"><img src="Desalmado_Save%20us%20from%20ourselves_20182bd6.jpg?imagem=imagens/resenhas/Desalmado_Save%20us%20from%20ourselves_2018.jpg&amp;w=300&amp;h=300" border="0" onclick="enlarge(this);" longdesc="imagens/resenhas/Desalmado_Save%20us%20from%20ourselves_2018.jpg"/></div></a>
+
+<div class="rescds_detalhes">
+<div class="rescds_detalhes_itens">Banda/Artista: <b>Desalmado</b></div>
+<div class="rescds_detalhes_itens">T&iacute;tulo: <b>Save Us From Ourselves</b></div>
+<div class="rescds_detalhes_itens">Lan&ccedil;amento: <b>Black Hole Productions</b></div>
+<div class="rescds_detalhes_itens">Ano: <b>2018</b></div>
+<div class="rescds_detalhes_itens"><span style="position:relative; float:left;">Contatos: </span><b><span style="position:relative; float:left; margin-left:2px; width:340px;">
+<a href="https://www.facebook.com/desalmado.band/" target="_blank">https://www.facebook.com/desalmado.band/</a><br /><a href="http://blackholeprods.com/pt" target="_blank">http://blackholeprods.com/pt</a>&nbsp;</span></b></div>
+
+<div class="rescds_detalhes_itens">Site oficial: <b><a href="https://desalmado.bandcamp.com/" target="_blank">https://desalmado.bandcamp.com/</a></b></div>
+
+<div class="rescds_detalhes_itens">Resenha por <b><a href="mailto:cristianosteps@gmail.com">Cristiano Passos</a></b></div>
+<div class="rescds_detalhes_itens" style="border-bottom:0px;">Publicada no dia <b>21/03/2018</b></div>
+</div>
+
+<div class="rescds_texto"><p>Eu s&oacute; vim a conhecer a banda Desalmado h&aacute; cerca de dois anos atr&aacute;s, em um show que fizeram na minha cidade e que me impressionou muito pela pancadaria que os caras proporcionaram, mas tamb&eacute;m por uma certa criatividade instrumental n&atilde;o t&atilde;o comum no grindcore, manifesta especialmente nos detalhes. Afinal de contas, num primeiro momento, talvez o ouvinte pense estar diante de mais uma banda grindcore com tend&ecirc;ncia ao death metal, que &eacute; bem o que esses caras prop&otilde;em. Contudo, uma audi&ccedil;&atilde;o mais cuidadosa (ou um bom show, como esse a que eu fui, quando eles tocaram com Homicide e Offal) certamente separar&aacute; o Desalmado da grande massa de bandas gen&eacute;ricas que povoam a cena. Nada contra os gen&eacute;ricos, pois eu sei muito bem que ter uma banda underground n&atilde;o diz respeito somente a comandar uma nova revolu&ccedil;&atilde;o est&eacute;tica na sua arte, mas &eacute; l&oacute;gico que quando se trata de uma banda que almeja ir al&eacute;m do protesto e da divers&atilde;o, &eacute; preciso ter sua singularidade preservada, ou seja, aquele diferencial que justifique a maior exposi&ccedil;&atilde;o desejada pelo grupo.&nbsp;</p>
+<p>No caso do Desalmado, esse diferencial est&aacute; garantido em diversos aspectos, dentre os quais eu destacaria o trabalho primoroso do batera Ricardo N&uuml;tzmann (sei l&aacute;, talvez conte aqui o fato de eu ser baterista, mas &eacute; certo que o cara tem personalidade e precis&atilde;o e &eacute; criativo no uso dos tambores) e as bases de guitarra de Estevam Romera, que fogem do grindcore convencional, acrescentando tamb&eacute;m uma pitada de modernidade, com elementos que poderiam ser ouvidos em uma banda de post-metal ou mathmetal/mathcore, tamanha &eacute; a originalidade desse trampo. Os puristas, entretanto, podem ficar tranquilos, pois essas marcas mais contempor&acirc;neas n&atilde;o est&atilde;o &ldquo;na cara&rdquo;, mas entram como detalhes relevantes para compor a atmosfera de caos e agonia que o Desalmado oferece. Na verdade, baixo e vocal tamb&eacute;m comparecem com muito peso e agressividade no disco inteiro, criando uma barreira sonora consistente, marcada pela intensa velocidade e muita f&uacute;ria (os vocais de Caio Augusttus n&atilde;o deixam d&uacute;vida a esse respeito), tudo isso unido pelos graves de Bruno Teixeira nas quatro cordas, que d&atilde;o sustenta&ccedil;&atilde;o para a massa sonora do Desalmado.&nbsp;</p>
+<p>Al&eacute;m disso, todo o trabalho de composi&ccedil;&atilde;o apresenta uma complexidade incomum ao grind, aproximando a banda do death metal em muitos momentos, considerando as habilidades t&eacute;cnicas dos m&uacute;sicos, que certamente s&atilde;o da escola p&oacute;s-Nasum, com muitas influ&ecirc;ncias do Napalm Death em sua fase mais metal e Brutal Truth, por&eacute;m, sempre com aqueles resqu&iacute;cios de hardcore, com uma pegada dos antigos Extreme Noise Terror e Disrupt, s&oacute; pra citar alguns nomes relevantes que v&ecirc;m &agrave; mente ao ouvir o disco, o que n&atilde;o significa que a banda copie nenhum deles. As m&uacute;sicas mais longas e complexas, como a faixa-t&iacute;tulo e &ldquo;Bridges to a new dawn&rdquo;, resumem muito do que estou tentando dizer aqui. A primeira, &ldquo;Save us from ourselves&rdquo;, traz uma introdu&ccedil;&atilde;o com uma percuss&atilde;o excelente, mostrando a disposi&ccedil;&atilde;o do grupo em experimentar com sonoridades menos convencionais, que se funde ao peso absurdamente lis&eacute;rgico do riff principal da m&uacute;sica, lento e brutal como um mastodonte, resvalando em seguida para a porrada veloz mais caracter&iacute;stica do estilo. J&aacute; a segunda &eacute; a faixa mais chapada do disco e traz um clima hipn&oacute;tico em sua maior parte, apesar de intercalar tamb&eacute;m momentos de andamento m&eacute;dio com um breve trecho em blast beats, trazendo uma sonoridade rara que eu s&oacute; lembro de ter visto em forma&ccedil;&otilde;es inteligentes como Meant To Suffer, banda infelizmente j&aacute; extinta do interior paulista.</p>
+<p>Al&eacute;m dessas duas faixas, h&aacute; v&aacute;rios destaques no disco: &ldquo;Blessed by money&rdquo; &eacute; uma das minhas favoritas e tamb&eacute;m apresenta um arranjo instrumental mais intricado do que a m&eacute;dia do g&ecirc;nero, alternando entre o d-beat, passagens mais r&aacute;pidas, um refr&atilde;o com andamento m&eacute;dio e fort&iacute;ssimo (puta letra, ali&aacute;s!) e uma finaliza&ccedil;&atilde;o brutalmente pesada, angustiante, na qual o vocal traz urros desesperados, agonizantes, que se unem perfeitamente &agrave; faixa seguinte, a j&aacute; citada &ldquo;Bridges of a new dawn&rdquo;. &ldquo;It&rsquo;s not your business&rdquo; &eacute; uma das mais curtas do &aacute;lbum, mas isso n&atilde;o impede que a composi&ccedil;&atilde;o seja extremamente din&acirc;mica, assim como &ldquo;Black blood&rdquo;, outra faixa curta e grossa, mas muito bem trabalhada. Interessante perceber a escolha de uma abertura desenfreada para o material, com a alucinada e violenta &ldquo;Privilege walls&rdquo;, uma porrada objetiva que chama o ouvinte para a a&ccedil;&atilde;o direta, convidando-o a contra-atacar as for&ccedil;as do poder opressor, e de uma faixa mais elaborada e cadenciada para finalizar o disco, a maci&ccedil;a &ldquo;Exist and resist&rdquo;. Essa m&uacute;sica mostra que nem s&oacute; de velocidade vive o grindcore, mas sim de muito protesto e consci&ecirc;ncia, acima de tudo. Por isso, &eacute; tamb&eacute;m um chamado &agrave; resist&ecirc;ncia, que, nas palavras da banda, &eacute; nossa &uacute;nica forma de garantir a exist&ecirc;ncia. Essa &ldquo;evolu&ccedil;&atilde;o&rdquo; que ocorre ao longo do &aacute;lbum, na verdade, parece dizer que, apesar da pancadaria, h&aacute; muito mais camadas no som e na postura da banda que possa parecer &agrave; primeira vista, pois por tr&aacute;s de grossas paredes sonoras, h&aacute; muita intelig&ecirc;ncia e coer&ecirc;ncia no Desalmado.</p>
+<p>Ali&aacute;s, a riqueza do grupo est&aacute; tamb&eacute;m nas letras do Desalmado, as quais s&atilde;o um cap&iacute;tulo &agrave; parte nesta resenha, pois em tempos t&atilde;o estranhos da nossa cena underground, &eacute; louv&aacute;vel que bandas como esta assuma uma postura mais libert&aacute;ria e progressista. Afinal de contas, nunca vivemos um momento t&atilde;o marcado pelo conservadorismo e pelo vazio ideol&oacute;gico de uma cena que, historicamente, tem tudo para ser revolucion&aacute;ria, e n&atilde;o reacion&aacute;ria. Contudo, h&aacute; uma grande confus&atilde;o conceitual que parece embaralhar as mentes menos esclarecidas e que, aparentemente, n&atilde;o entenderam nada do que foi produzido em d&eacute;cadas de som extremo, o que tem levado muita gente boa a pensar que ser headbanger ou punk &eacute; apenas mandar um &ldquo;foda-se&rdquo; niilista a &ldquo;tudo que est&aacute; a&iacute;&rdquo;, aceitando sem questionar as premissas de um mundo dominado pela ambi&ccedil;&atilde;o capitalista ou, no pior dos casos, descambando para o autoritarismo. Felizmente, por&eacute;m, existem ainda bandas como o Desalmado, cujas coer&ecirc;ncia l&iacute;rica vem para demonstrar que ainda temos esperan&ccedil;a de que o underground recupere sua imagem (e a&ccedil;&atilde;o, sem trocadilhos!) revolucion&aacute;ria de outrora. Ent&atilde;o, nada melhor do que ouvir este disco em alto e bom som e com o encarte em m&atilde;os, pois a&iacute; toda essa obra faz muito mais sentido, n&atilde;o tenho d&uacute;vida!</p>
+<p>No mais, parab&eacute;ns ao selo Black Hole por mais essa escolha magistral e por estar na linha de frente do grindcore nacional quando se trata de lan&ccedil;amentos cheios de personalidade e criatividade, sem perder a ess&ecirc;ncia barulhenta e subversiva de um g&ecirc;nero feito para incomodar as estruturas do poder. E claro, parab&eacute;ns ao Desalmado pela condu&ccedil;&atilde;o engenhosa desse trabalho, que pode ostentar com dignidade o r&oacute;tulo de &ldquo;grindcore&rdquo; e ainda assim figurar com destaque no rol do g&ecirc;nero pela sua abordagem inteligente e diferenciada.</p></div>
+
+<div class="rescds_tracklist">
+<div class="rescds_tracklist_topo">Tracklist:</div>
+<p>1. Privilege walls<br />2. It&rsquo;s not your business<br />3. Save us from ourselves<br />4. Black blood<br />5. Blessed by money<br />6. Bridges to a new dawn<br />7. Corrosion<br />8. Binary collapse<br />9. Exist and resist</p></div>
+
+<div class="rescds_compartilhar">
+<div class="rescds_compartilhar_topo">Compartilhar</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="text-align:left; margin-top:5px;" >
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_tweet"></a></div>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><g:plusone size="medium"></g:plusone></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button" addthis:url="http://www.goregrinder.net/index.php?s=10&id=96" style="font:10pt Arial, Helvetica, sans-serif;"><img src="imagens/sm-plus.gif" 
+        width="16" height="16" border="0" alt="Compartilhar" />&nbsp;Divulgue!</a></div>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000"
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+
+</div>
+
+<div class="rescds_moreabout">
+<div class="rescds_moreabout_topo">Mais sobre:</div>
+
+
+
+
+<div class='more_setores'><div class='more_titulo_setor'>Notícia:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='http://www.goregrinder.net/index.php?s=3&amp;id=1074' title=' 19/05/11  - Oligarquia: primeiras datas do lançamento do CD' class='more_txt_interno'>- Oligarquia: primeiras datas do la...</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Shows:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index3ddc.html?s=4&amp;id=465' class='more_txt_interno'>03/02  - Estúdio Noise Terror</a></div><div class='more_txt_interno'><a href='index56c0.html?s=4&amp;id=455' class='more_txt_interno'>09/11  - Sattva Bordô</a></div><div class='more_txt_interno'><a href='index83a3.html?s=4&amp;id=440' class='more_txt_interno'>09/09  - Show No Hocus Pocus</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Resenhas:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index86ad.html?s=10&amp;id=96' class='more_txt_interno'>- <i>Save Us From Ourselves</i></a></div><div class='more_txt_interno'><a href='index4e77.html?s=10&amp;id=84' class='more_txt_interno'>- <i>In Grind We Trust</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Resenha curta:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='indexf248.html?s=11&amp;id=13' class='more_txt_interno'>- <i>Hereditas (EP Promo)</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Videos:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='indexd312.html?s=17&amp;id=210' class='more_txt_interno'>- <i>Todos VÃ£o Morrer</i></a></div><div class='more_txt_interno'><a href='indexe1bb.html?s=17&amp;id=199' class='more_txt_interno'>- <i>Canibal Social</i></a></div><div class='more_txt_interno'><a href='indexddb5.html?s=17&amp;id=172' class='more_txt_interno'>- <i>Cozido Para Animais</i></a></div><div class='more_txt_interno'><a href='indexab49.html?s=17&amp;id=134' class='more_txt_interno'>- <i>Hereditas</i></a></div><div class='more_txt_interno'><a href='indexc094.html?s=17&amp;id=38' class='more_txt_interno'>- <i>Em Sua Honra</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>1 MP3 online:</div><div class='more_texto_setor'><script>
+	menuOpen=Array();
+	function changeMenu(id, name)
+	{
+		if(menuOpen[id]==0 || menuOpen[id]==undefined)
+		{
+			document.getElementById('menu_img_'+id).src='more-.gif';
+			document.getElementById('menuSource_'+id).style.display='block';
+			menuOpen[id]=1;
+		}
+		else
+		{
+			document.getElementById('menu_img_'+id).src='more.gif';
+			document.getElementById('menuSource_'+id).style.display='none';
+			menuOpen[id]=0;
+		}
+	}
+</script><div class='more_txt_interno'><a href='javascript:changeMenu(82);' class='more_txt_interno'> - <i>Hereditas</i> <img src='imagens/more.gif' border=0 id='menu_img_82'></a><div id='menuSource_82' style='float:right; display: none;'><object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0' width='35' height='18'>  <param name='movie' value='mp3/Desalmado_-_Hereditas.swf' />  <param name='quality' value='high' />  <param name='wmode' value='transparent'>     <embed src='mp3/Desalmado_-_Hereditas.swf'      quality='high'      type='application/x-shockwave-flash'      WMODE='transparent'      width='35'      height='18'      pluginspage='http://www.macromedia.com/go/getflashplayer' /></object></div></div></div>
+        </div>
+</div>
+
+<p style="position:relative; float:left; width:100%; text-align:center;"><a href="#comentarios" class="txt-cur-album">Envie seu coment&aacute;rio sobre essa not&iacute;cia! </a></p>
+
+
+
+<div class="rescds_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="rescds_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="rcc_res_id" id="rcc_res_id" value="96">
+                  <input type="hidden" name="rcc_ver" id="rcc_ver" value="n">
+                </form>
+</div>
+
+
+
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=96 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 18:49:57 GMT -->
+</html>

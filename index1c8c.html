@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=42 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:09:40 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<script type='text/javascript' language='javascript' src='jscripts/jquery-1.3.2.js'></script>
+<script type='text/javascript' language='javascript'>
+$(function($) {
+	// Quando o formulário for enviado, essa função é chamada
+	$('#form1').submit(function() {
+		// Colocamos os valores de cada campo em uma váriavel para facilitar a manipulação
+		var nome = $('#rcc_nome').val();
+		var email = $('#rcc_email').val();
+		var mensagem = $('#rcc_texto').val();
+		// Exibe mensagem de carregamento
+		// $('#status').html('<img src='loader.gif' alt='Enviando' />');
+		// Fazemos a requisão ajax com o arquivo envia.php e enviamos os valores de cada campo através do método POST
+		$.post('com_rescds.html', {nome: nome, email: email, mensagem: mensagem }, function(resposta) {
+				// Quando terminada a requisição
+				// Exibe a div status
+				$('#status').slideDown();
+				// Se a resposta é um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$('#status').html(resposta);
+				} 
+				// Se resposta for false, ou seja, não ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$('#status').html('Mensagem enviada com sucesso!');
+					// Coloca a mensagem no div de mensagens
+					// $('#mensagens').prepend('<strong>'+ nome +'</strong> disse: <em>' + mensagem + '</em><br />');
+					// Limpando todos os campos
+					$('#rcc_nome').val('');
+					$('#rcc_email').val('');
+					$('#rcc_texto').val('');
+				}
+		});
+	});
+});
+</script>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Resenha: FLESH GRINDER - Crumb's Crunchy Delights Organization [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].rcc_email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<script type="text/javascript" language="javascript" src="jscripts/lytebox.js"></script>
+<link rel="stylesheet" href="jscripts/lytebox.css" type="text/css" media="screen" />
+
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<script type='text/javascript' src='jscripts/enlargeit.js'></script>
+<script type='text/javascript'>
+        enl_brdsize = 10;
+        enl_shadowintens = 10;
+        enl_center = 1;
+        enl_darkprct = 70;
+        enl_preload = 1;
+        enl_drgdrop = 0;
+        enl_darksteps = 1;
+        enl_buttonurl[0] = 'prev';
+        enl_buttontxt[0] = 'Anterior';
+        enl_buttonoff[0] = -216;
+        enl_buttonurl[1] = 'next';
+        enl_buttontxt[1] = 'Proximo';
+        enl_buttonoff[1] = -234;
+        enl_buttonurl[2] = 'close';
+        enl_buttontxt[2] = 'Fechar [Esc]';
+        enl_buttonoff[2] = -0;
+</script>
+
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var mensagem = $("#mensagem").val();
+		var rcc_res_id = $("#rcc_res_id").val();
+		var rcc_ver = $("#rcc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_rescds6396.html?id=42', {nome: nome, email: email, mensagem: mensagem, rcc_res_id: rcc_res_id, rcc_ver: rcc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+
+
+<a href="#" title="Clique para ampliar"><div class="rescds_capa"><img src="flesh%20grinder_Crumb_s%20Crunchy%20Delights%20Organization_20080bdf.jpg?imagem=imagens/resenhas/flesh%20grinder_Crumb_s%20Crunchy%20Delights%20Organization_2008.jpg&amp;w=300&amp;h=300" border="0" onclick="enlarge(this);" longdesc="imagens/resenhas/flesh%20grinder_Crumb_s%20Crunchy%20Delights%20Organization_2008.jpg"/></div></a>
+
+<div class="rescds_detalhes">
+<div class="rescds_detalhes_itens">Banda/Artista: <b>Flesh Grinder</b></div>
+<div class="rescds_detalhes_itens">T&iacute;tulo: <b>Crumb's Crunchy Delights Organization</b></div>
+<div class="rescds_detalhes_itens">Lan&ccedil;amento: <b>Black Hole Productions</b></div>
+<div class="rescds_detalhes_itens">Ano: <b>2008</b></div>
+<div class="rescds_detalhes_itens"><span style="position:relative; float:left;">Contatos: </span><b><span style="position:relative; float:left; margin-left:2px; width:340px;">
+<a href="http://www.fotolog.com/fleshgrinder" target="_blank">http://www.fotolog.com/fleshgrinder</a><br /><a href="http://fleshgrinder.blog.terra.com.br/" target="_blank">http://fleshgrinder.blog.terra.com.br/</a><br /><a href="mailto:fabio.gorresen@gmail.com">fabio.gorresen@gmail.com</a><br /><a href="mailto:khil@expresso.com.br">khil@expresso.com.br</a><br /><a href="mailto:rmurara@gmail.com">rmurara@gmail.com</a></span></b></div>
+
+<div class="rescds_detalhes_itens">Site oficial: <b><a href="http://www.myspace.com/fleshgrinderbr" target="_blank">http://www.myspace.com/fleshgrinderbr</a></b></div>
+
+<div class="rescds_detalhes_itens">Resenha por <b><a href="mailto:carrascu@bol.com.br">Carrascu</a></b></div>
+<div class="rescds_detalhes_itens" >Publicada no dia <b>10/10/2008</b></div>
+<div class="rescds_detalhes_itens" style="border-bottom:0px;">Nota: <b>10,0</b></div>
+</div>
+
+<div class="rescds_texto">Depois do apagado <em>Coroner&#39;s Inquest Suit</em>, lan&ccedil;ado em 2005 pela <em>Goregiastic Records</em>, o <strong>Flesh Grinder</strong> assinou com a <em>Black Hole</em> e fez um dos melhores &aacute;lbuns da hist&oacute;ria do Splatter/Gore nacional. O <em>Crumb&#39;s Crunchy Delights Organization</em> veio totalmente inspirado no cl&aacute;ssico absoluto <em>Bad Taste</em> (ou <em>Trash Nausea Total</em> como &eacute; conhecido por aqui) de Peter Jackson, e o trabalho desses caras ficou a altura de um dos melhores filmes de todos os tempos. Gravado no renomado Da Tribo Studio em S&atilde;o Paulo, a produ&ccedil;&atilde;o ficou a cargo de Ciero (<strong>Krisiun</strong>, <strong>Ratos de Por&atilde;o</strong>, <strong>Torture Squad</strong> entre outros), que fez um excelente trabalho com esse material. A capa, obviamente inspirada no filme supra citado, foi muito bem desenhada por Camilo Silva (que tamb&eacute;m criou o novo logo) e lembra muito o estilo de algumas capas do <strong>Impetigo</strong>, realmente ficaram excelentes todos os desenhos desse trampo gr&aacute;fico, principalmente o que est&aacute; sobre o CD, um desenho inspirado na cl&aacute;ssica cena onde Peter Jackson, com uma colher na m&atilde;o direita, &quot;almo&ccedil;a&quot; diretamente na cabe&ccedil;a de um cara engravatado, muito animal! Merece um poster!<br />Bom, o trampo gr&aacute;fico realmente ficou excelente, e &quot;inovador&quot; se comparar com todos os outros &aacute;lbuns anteriores do <strong>Flesh Grinder</strong>, que costumavam ser fotos reais extremamente gores, mas agora vamos ao que mais interessa - as m&uacute;sicas! A qualidade sonora teve uma grande evolu&ccedil;&atilde;o se comparada com o &aacute;lbum anterior, e n&atilde;o se resume apenas ao &oacute;timo trabalho do produtor Ciero, e sim principalmente ao fato delas estarem mais diretas e brutais, especialmente nos fudidos riffs da guitarra que ficaram estupidamente agressivos e sujos, na medida certa, como tamb&eacute;m a bateria que acompanha tudo sempre com criatividade e brutalidade, com um baixo distorcido que d&aacute; ainda mais sujeira nas m&uacute;sicas, deixando-as mais agressivas e pesadas. Os vocais distorcidos e guturais est&atilde;o realmente muito podres e desumanos, mas eu acho que poderiam ter dado um pouco mais de altura para eles, e os rasgados est&atilde;o sempre na medida certa, acrescentando muita insanidade nas m&uacute;sicas. O CD come&ccedil;a com uma das v&aacute;rias intros que esse &aacute;lbum tem, todas baseadas no filme homenageado, dando aquele clima que o pessoal viciado em filme trash sente quando v&ecirc; esse cl&aacute;ssico. Pouco mais de um minuto come&ccedil;a a quebraceira da <em>They Linke to Play With Their Food</em>, que logo de cara entra no m&aacute;ximo da brutalidade, mostrando riffs cortantes com vocais sempre intercalando entre os berrados sem distor&ccedil;&atilde;o e os guturais distorcidos. A criatividade &eacute; &oacute;tima, a varia&ccedil;&atilde;o n&atilde;o prejudica a brutalidade, muito pelo contr&aacute;rio, cada vez mais ela vai aumentando. Em seguida surge uma de muitas m&uacute;sicas que tem aquela pegada mais HC/Crust, com muito peso e vocais rasgada&ccedil;os, ela &eacute; curta e acaba bem estranho, somente o baixo distorcido e a bateria seguem e param logo depois, muito bom! <em>Gruesome Party</em> j&aacute; come&ccedil;a destruindo tudo, com um riff foda demais, realmente tenho que reafirmar: Os riffs desse CD est&atilde;o espetaculares! Muito bem definidos, com uma velocidade alt&iacute;ssima e bastante contrastados, ou seja, do extremo peso ao agudo cortante. Em seguida, <em>Special Pus Sauce</em> come&ccedil;a lenta, naquele &quot;tum p&aacute;&quot; Goregrind estilo <strong>Rompeprop</strong>, bem pesado com vocais ultra graves, intercalando com outras menos pesadas, mais levadas e soltas. A <em>I&#39;m With The Guts</em> &eacute; mais uma com introdu&ccedil;&atilde;o com cerca de 40 segundos, logo dando lugar a um bate estaca acompanhado de uma intercala&ccedil;&atilde;o r&aacute;pida entre vocais distorcidos e os berrados, e termina num instrumental bem lento e pesado. <em>Kicking A Decapitated Torso in The Balls</em> entra j&aacute; triturando tudo, com partes um pouco mais lentas que a britadeira inicial, seguida de uma parte mais Death Metal, com muito peso, por&eacute;m com uma bateria mais na levada. Outra introdu&ccedil;&atilde;o inicia a <em>Brains Are Spoon Food</em>, m&uacute;sica extremamente agressiva, onde a brutalidade aumenta gradativamente e os riffs cada vez mais violentos, essa m&uacute;sica &eacute; um pouco mais longa que as anteriores (quase 3 minutos), e na parte final dela o ritmo vai diminuindo aos poucos, chegando a momentos extremamentes pesados. &Eacute; dif&iacute;cil citar destaques num CD que &eacute; 100% destaque, mas a <em>Homo Sapiens Low-Calories Delicacies</em> realmente surpreende, &eacute; foda demais essa m&uacute;sica, uma das que eu mais gostei, pois al&eacute;m de ser muito brutal, seus riffs s&atilde;o de uma criatividade impressionante, realmente muito bons, inclusive nos momentos onde o ritmo &eacute; mais lento e cadenciado na m&uacute;sica, imposs&iacute;vel n&atilde;o agitar quando entram os vocais nervosos acompanhados de uma bateria avassaladora. Outra intro para come&ccedil;ar a <em>Sapiens Burger</em>, que segundo coment&aacute;rios que li por ae, &eacute; uma das m&uacute;sicas que o pessoal mais curtiu, deve ser por causa da pegada HC/Crust acompanhadas do vocal distorcido e um riff mais simples e lento na primeira parte, seguindo depois para partes mais dilacerantes onde os vocais berrados entram em cena, e essas duas partes se intercalam durante boa parte da m&uacute;sica, sendo que depois surge um momento mais pesado, ou seja, tem de quase tudo nessa m&uacute;sica, realmente n&atilde;o &eacute; a toa que falam bem dela. Mas a <em>Vomitous Delicious</em> faz mais o meu gosto, pois come&ccedil;a na brutalidade e com uns riffs que... t&aacute; louco, muito fodas, e a m&uacute;sica toda tem como &quot;pano de fundo&quot; sons de v&ocirc;mitos, tosses, mal estares, ou seja, cria a n&iacute;tida impress&atilde;o de &quot;trash nausea total&quot;, altas id&eacute;ia! Em seguida vem outra que o pessoal tem comentado muito, a <em>Suck My Spinning Steel</em> come&ccedil;a numa batida bem HC/Crust mesmo, como em outras m&uacute;sicas, com riffs mais simples, bem HC mesmo, intercalando com ligeiros momentos brutais, &eacute; uma &oacute;tima m&uacute;sica, que d&aacute; mais contraste em todo o contexto do CD. A pr&oacute;xima &eacute; a <em>We, The Food</em>, que come&ccedil;a bem Death Metal tradicional, a l&aacute; <strong>Death </strong>na &eacute;poca do <em>Human </em>(exagerei?), que depois p&aacute;ra e fica s&oacute; a guitarra destilando um puta riff veloz que logo em seguida cai num caos sonoro muito complexo com uma bateria arrebatadora, sempre seguida do baixo sujo e pesado, com muitas partes bastante t&eacute;cnicas e que variam bastante de ritmo. Outra pancadaria que eu destacaria no meio desse &aacute;lbum lotado de destaques &eacute; a <em>Kaihord</em>, com um riff de ficar na cabe&ccedil;a e uma bateria altamente veloz e brutal, os vocais extremamente raivosos te d&aacute; uma vontade impressionante de sair destruindo tudo pela frente, essa &eacute; uma m&uacute;sica onde a bateria varia mais que os riffs, ao contr&aacute;rio da maioria das outras. Uma curta intro inicia a brutal <em>Traditional CCD Fetus in Jelly Jar</em>, que &eacute; cheia de varia&ccedil;&otilde;es de ritmos, uma caracter&iacute;stica de boa parte das m&uacute;sicas do <strong>Flesh Grinder</strong>, e em meio a toda aquela barulheira pequenos solos d&atilde;o mais diversidade &agrave; m&uacute;sica. Esse CD &eacute; impressionante, d&aacute; vontade de dizer em todas as dezesseis faixas &quot;essa &eacute; outra que eu destacaria&quot; mas isso se tornaria repetitivo (s&eacute;rio?), ent&atilde;o o que dizer da <em>Trash Nausea Total</em>? Uma m&uacute;sica mais &quot;calma&quot; (essa foi sarc&aacute;stica), naquele feeling HC que o <strong>Flesh Grinder</strong> exibiu demais nesse &aacute;lbum e que ficaram excelentes, simples por&eacute;m n&atilde;o menos agressivos e podres, &eacute; um tipo de m&uacute;sica que leva o povo ao pogo violento em seus shows. Infelismente a &uacute;ltima do CD, intitulada <em>Stick All The Pieces in A Plastic Bag</em> essa n&atilde;o tem nem o que eu dizer, &eacute; na linha das outras, foda demais, brutal demais, criativa demais, com riffs... demais demais!!! J&aacute; ouvi tanto esse CD que tenho ele decorado na mente praticamente, eu diria que o n&iacute;vel dele &eacute; de <strong>Napalm Death</strong> pra cima (sem exageros agora), ou seja, a qualidade tanto de grava&ccedil;&atilde;o do que de criatividade nas m&uacute;sicas &eacute; do n&iacute;vel mais alto da podreira mundial, n&atilde;o &eacute; a toa que o <strong>Flesh Grinder</strong> &eacute; uma das melhores bandas de todos os tempos no Splatter/Gore desse planeta podre, que um dia h&aacute; de ser o grande fornecedor de carne humana interplanet&aacute;ria.</div>
+
+<div class="rescds_tracklist">
+<div class="rescds_tracklist_topo">Tracklist:</div>
+<ol><li>They Like to Play with Their Food</li><li>Watch Out... Here Comes Derek</li><li>Gruesome Party</li><li>Special Pus Sauce</li><li>I&#39;m with the Guts</li><li>Kicking a Decapitated Torso in the Balls</li><li>Brains are Spoon Food</li><li>Homo Sapiens Low-calories Delicacies</li><li>Sapiens Burger</li><li>Vomitous Delicious</li><li>Suck my Spinning Steel</li><li>We, the Food&nbsp;&nbsp; &nbsp;</li><li>Kaihoro</li><li>Traditional CCD Fetus in Jelly Jar</li><li>Trash Nausea Total</li><li>Stick all the Pieces in a Plastic Bag</li></ol></div>
+
+<div class="rescds_compartilhar">
+<div class="rescds_compartilhar_topo">Compartilhar</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="text-align:left; margin-top:5px;" >
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_tweet"></a></div>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><g:plusone size="medium"></g:plusone></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button" addthis:url="http://www.goregrinder.net/index.php?s=10&id=42" style="font:10pt Arial, Helvetica, sans-serif;"><img src="imagens/sm-plus.gif" 
+        width="16" height="16" border="0" alt="Compartilhar" />&nbsp;Divulgue!</a></div>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000"
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+
+</div>
+
+<div class="rescds_moreabout">
+<div class="rescds_moreabout_topo">Mais sobre:</div>
+
+
+
+
+<div class='more_setores'><div class='more_titulo_setor'>Notícias <span class='more_noticia_maisde10'>(Últimas 10 publicadas)</span>:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index6f76.html?s=3&amp;id=1381' title=' 02/02/13  - Flesh Grinder divulga capa e tracklist de EP' class='more_txt_interno'>- Flesh Grinder divulga capa e trac...</a></div><div class='more_txt_interno'><a href='indexdf85.html?s=3&amp;id=1362' title=' 07/12/12  - Flesh Grinder lançará novo trabalho em janeiro' class='more_txt_interno'>- Flesh Grinder lançará novo trabal...</a></div><div class='more_txt_interno'><a href='index3c1b.html?s=3&amp;id=1136' title=' 06/08/11  - Flesh Grinder agora se torna um quarteto' class='more_txt_interno'>- Flesh Grinder agora se torna um q...</a></div><div class='more_txt_interno'><a href='indexcf20.html?s=3&amp;id=878' title=' 13/11/09  - Mass of Shit encerra suas atividades' class='more_txt_interno'>- Mass of Shit encerra suas ativida...</a></div><div class='more_txt_interno'><a href='index547d.html?s=3&amp;id=773' title=' 20/05/09  - Coletânea Death Metal Brasil finalmente é lançada' class='more_txt_interno'>- Coletânea Death Metal Brasil fina...</a></div><div class='more_txt_interno'><a href='indexf7cb.html?s=3&amp;id=769' title=' 12/05/09  - Flesh Grinder: Lançado split com Squash Bowels' class='more_txt_interno'>- Flesh Grinder: Lançado split com ...</a></div><div class='more_txt_interno'><a href='index8d66.html?s=3&amp;id=702' title=' 10/02/09  - Flesh Grinder e Squash Bowels lançarão split CD' class='more_txt_interno'>- Flesh Grinder e Squash Bowels lan...</a></div><div class='more_txt_interno'><a href='index34da.html?s=3&amp;id=651' title=' 27/10/08  - Carcass em São Paulo: Shows de abertura cancelados' class='more_txt_interno'>- Carcass em São Paulo: Shows de ab...</a></div><div class='more_txt_interno'><a href='index246d.html?s=3&amp;id=626' title=' 21/08/08  - Funeratus: Novo site e abertura para o Carcass' class='more_txt_interno'>- Funeratus: Novo site e abertura p...</a></div><div class='more_txt_interno'><a href='index828a.html?s=3&amp;id=617' title=' 12/08/08  - Flesh Grinder lança split com Mixomatosis' class='more_txt_interno'>- Flesh Grinder lança split com Mix...</a></div><a href='index972f.html?s=3&amp;noticia=flesh%20grinder'><div class='more_noticia_mais'><span class='more_noticia_mais_texto'>> Ler todas relacionadas <</span></div></a></div></div><div class='more_setores'><div class='more_titulo_setor'>Shows:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index0d00.html?s=4&amp;id=420' class='more_txt_interno'>07/07  - Rotten Metal Fest</a></div><div class='more_txt_interno'><a href='index115e.html?s=4&amp;id=416' class='more_txt_interno'>16/06  - Drink & Noise</a></div><div class='more_txt_interno'><a href='index9c82.html?s=4&amp;id=386' class='more_txt_interno'>11/02  - Black Hole Fest 2</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Resenhas:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index2427.html?s=10&amp;id=83' class='more_txt_interno'>- <i>Nomina Anatomica</i></a></div><div class='more_txt_interno'><a href='index1c8c.html?s=10&amp;id=42' class='more_txt_interno'>- <i>Crumb's Crunchy Delights Organization</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Resenha de show:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='indexc90d.html?s=21&amp;ss=1&amp;id=13'  class='more_txt_interno'>- The Matter Of Splatter 2 (17/10/08)</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Entrevista:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='indexe619.html?s=13&amp;id=16' class='more_txt_interno'>- com <i>Daniel</i> em 2006</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Videos:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index9a1e.html?s=17&amp;id=142' class='more_txt_interno'>- <i>Blood (Blood Tribute)</i></a></div><div class='more_txt_interno'><a href='index0eda.html?s=17&amp;id=28' class='more_txt_interno'>- <i>TBNCIH - Necroconsume</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Site:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='http://www.myspace.com/fleshgrinderbr' target='_blank' class='more_txt_interno'>- www.myspace.com/fleshgrinderbr ...</a></div></div></div>
+        </div>
+</div>
+
+<p style="position:relative; float:left; width:100%; text-align:center;"><a href="#comentarios" class="txt-cur-album">Envie seu coment&aacute;rio sobre essa not&iacute;cia! </a></p>
+
+<div class="rescds_comentarios">
+
+<div class="rescds_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:morphis666@hotmail.com">Anderson</a></span>&nbsp; comentou:
+						   </div>
+
+<div class="rescds_comentarios_texto">
+ Este trabalho realmente é violento e magnífico!!!!
+</div>
+
+<div class="rescds_comentarios_base">
+10/09/11 &agrave;s 17:29 Hs
+</div>
+
+</div>
+
+
+<div class="rescds_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="rescds_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="rcc_res_id" id="rcc_res_id" value="42">
+                  <input type="hidden" name="rcc_ver" id="rcc_ver" value="n">
+                </form>
+</div>
+
+
+
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=42 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:09:40 GMT -->
+</html>

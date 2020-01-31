@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=14&id=6 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:08:27 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Mat&eacute;ria Especial: PÚBLICO UNDERGROUND [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var site = $("#site").val();
+		var mensagem = $("#mensagem").val();
+		var esc_esp_id = $("#esc_esp_id").val();
+		var esc_ver = $("#esc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_mat3a9f.html?id=6', {nome: nome, email: email, site: site, mensagem: mensagem, esc_esp_id: esc_esp_id, esc_ver: esc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#site").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<div class="mat_topo">
+
+<div class="mat_imagem"><img src="P_BLICO%20UNDERGROUND4046.jpg?imagem=imagens/materias/P_BLICO%20UNDERGROUND.jpg&amp;w=350&amp;h=350" border="0" /></div>
+
+Em todo show, uma banda de Metal almeja, sem d&uacute;vida, tocar para um bom p&uacute;blico. Acreditamos que n&atilde;o h&aacute; d&uacute;vidas em rela&ccedil;&atilde;o a isto: uma banda de Metal geralmente &eacute; criada para tocar em p&uacute;blico. Quando o p&uacute;blico &eacute; escasso, muitas vezes a banda reclama da organiza&ccedil;&atilde;o que n&atilde;o fez um bom trabalho de divulga&ccedil;&atilde;o do evento. Os organizadores, por sua vez, passam a culpa do problema para a falta de apoio do p&uacute;blico com shows undergrounds. J&aacute; o p&uacute;blico reclama de diversos problemas ou, se quer d&atilde;o aten&ccedil;&atilde;o para o problema. &Eacute; um empurra-empurra dos tr&ecirc;s principais lados que constituem um evento. Mas o foco principal dessa mat&eacute;ria &eacute; debater o que h&aacute; de errado com o p&uacute;blico underground hoje em dia, que nas maiorias dos eventos, comparecem em baixo n&uacute;mero. Independente da posi&ccedil;&atilde;o de algumas bandas, que preferem tocar para poucos Headbangers desde que esses sejam realmente "verdadeiros", ou seja, honestos com o Metal, a maioria das bandas preferem a chamada "casa cheia". A quest&atilde;o da qualidade do p&uacute;blico tamb&eacute;m &eacute; pertinente e &nbsp;deve ser refletida, pois n&atilde;o adianta casa cheia de pessoas que nem sabem o que est&aacute; se passando no palco. O baixo comparecimento do p&uacute;blico em shows undergrounds podem ser explicados de variadas maneiras, mas quase sempre ir&atilde;o mencionar alguns pontos comuns, tais como:&nbsp;<br />- O excesso de shows e festivais de Metal (que de certa forma acompanha essa trajet&oacute;ria de populariza&ccedil;&atilde;o que o Heavy Metal em geral vem assumindo nos &uacute;ltimos tempos que acabam esgotando com o poder aquisitivo do p&uacute;blico, afinal, haja grana para comparecer a tantos shows);&nbsp;<br />- Conseq&uuml;entemente ao &iacute;tem anterior, surgem as competi&ccedil;&otilde;es entre promotores de shows nas divulga&ccedil;&otilde;es de seus eventos, que acabam por marcar datas que rivalizam com outras, ou seja, shows que acontecem em um mesmo momento numa regi&atilde;o pr&oacute;xima, que acaba dividindo o p&uacute;blico e com isso afetando ambas organiza&ccedil;&otilde;es;&nbsp;<br />- Num caso mais remoto, a crise financeira e o encarecimento das entradas. Remoto pelo fato de, na maioria dos eventos undergrounds, os pre&ccedil;os das entradas s&atilde;o bastante acess&iacute;veis;&nbsp;<br />- Uma maior incid&ecirc;ncia de shows internacionais no Brasil, que tamb&eacute;m corroem a grana da galera;&nbsp;<br />- A quest&atilde;o da sucess&atilde;o das gera&ccedil;&otilde;es de Headbangers, ou em outros termos, a renova&ccedil;&atilde;o da galera que ouve Metal, que &eacute; apontada, quase que de forma un&acirc;nime, como problem&aacute;tica (uma vez que a populariza&ccedil;&atilde;o do Metal, aliada a outros ingredientes como a divulga&ccedil;&atilde;o de uma m&iacute;dia pouco especializada, que faz quest&atilde;o de apontar &iacute;cones pop tipo Avril Lavigne, Evanescense, Marilyn Manson como sendo Heavy Metal, assim como um certo esquecimento das verdadeiras ra&iacute;zes da cultura Metal, colaboram para uma aliena&ccedil;&atilde;o e ignor&acirc;ncia do p&uacute;blico);&nbsp;<br />- A falta de vontade, ou a apatia e acomoda&ccedil;&atilde;o, de uma gera&ccedil;&atilde;o marcada por coisas sem valor e sem futuro como os programas de TV atuais (por exemplo: Malha&ccedil;&atilde;o, os programas infantis que tratam os jovens e crian&ccedil;as como imbecis, os jornais que mentem, escondem e maquiam os fatos, etc);&nbsp;<br />- A vontade de ter uma banda por parte de uma grande parcela desse p&uacute;blico que n&atilde;o sabe se colocar como p&uacute;blico (e isso tamb&eacute;m se aplica a todos aqueles componentes de banda que n&atilde;o sabem ser p&uacute;blico quando n&atilde;o est&atilde;o tocando, ou seja, n&atilde;o sabem prestigiar o show das outras bandas).&nbsp;<br />Essa lista poderia se estender mais ainda. Enfim, muito poderia se dizer sobre esse assunto, mas a fim de sermos objetivos, perguntamos:<br /><br />
+<div class="mat_pergunta">O que em sua opinião reflete essa falta de público em shows de Metal underground, ou de outra forma, como você explica essa ausência? Como você se comporta em um show com público diminuto? Existe uma solução para que os eventos não levassem prejuízos financeiros por conta do baixo comparecimento do público?</div>
+<br /><br />
+Essa mat&eacute;ria foi elaborada por <b><a href="mailto:carrascu@bol.com.br">Carrascu</a> e <a href="mailto:alexneundorf@yahoo.com.br">Alex Neundorf</a></b>, e publicada no dia <b>09/09/2010</b>.
+
+</div>
+
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Lopes&nbsp;
+<span class="mat_respostas_descricao">(Organizador do Enterung Von Bands)</span></div>
+<div>Passados dez anos da nossa primeira dor de cabeça para organizar um evento com bandas podreira aqui no Rio Grande do Sul, é quase impossível acreditar que estiveram presentes, naquela baita e maldita noite de março, seiscentos e cinqüenta pagantes, uns setecentos malucos se contarmos os integrantes (desintegrantes?) das lindas bandas. Estávamos, ainda que ao final, nos anos noventa, na áurea época do grande Sarcastic e tínhamos, senso comum, bandas de “som pesado” conhecidas até por pessoas, ditas normais, que sequer sabiam o significado de Heavy Metal. Devo aqui citar os mineiros do Sepultura que influenciaram muitos de nós, se não todos, trazendo para essa “bagaça” meninos cabeludos que não lavavam as longas madeixas. Risos.</div><div>Hoje, já no século vinte e um, enchemos a cara para comemorarmos se em nossas porcarias de gigs estiverem presentes mais de cem pagantes, quem dera duzentos, aí então poderíamos morrer! Sem falar no valor da entrada que é sempre simbólico e as bandas ficam sem pizza e docinhos e quando rola um cachê de uma dúzia de cerveja é uma alegria só, geralmente é meia dúzia mesmo. Que horror. Pensei nos motivos de termos tão poucos “pirambentos” para “dar uma olhadinha” nas bandas que estão com o pé no lado (desculpe o trocadilho) extremo do barulhão grande. Fica o registro que a maioria dos “amigores” presentes são, como se diz: “das antigas”. Agora! Headbangers do sexo feminino são ausência constante e raríssimas solteiras, não dá outra, são sempre motivo de encrenca das grandes. Mais risos.</div><div>Nossa cultura de palavrão prejudica, e em muito, a sagacidade da cena mais grind, goregrind, grindgore, como queira, pois nesse canto, bem ao sul do Brasilsão, pouco se vê meninos com camisetas com aqueles nojentos logos indecifráveis ou então acompanhadas daquelas estampas de fedorentas capinhas proibidas em boas escolas. Blusas, coisinhas mais lindas, como Shamatari ou Lymphatic Phlegm na rua é algo fora de questão, com sorte uma ou duas, por aqui, eu vi. N ossa forma de criar a gurizada está fazendo com que simplesmente nem percebam o rock mais extremão, e eles estão, bem mais, interessados no seu momento piá e valorizam, penso eu, demasiadamente, o agora e nem dão bola para a luta no underground. “Essas coisas de louco!”. Aliás, pouco lhes interessa saber de batalhar por nada que não tenha imediatos resultados o que, já consenso, não é o caso. Uma pena tudo isso, mas para não dizer que perdemos a brutal peleia, ainda nos restam raros adolescentes vestindo camisetas de metal ou, quem sabe, uma menina, com orgulho, estampando o logo da banda thrash metal do seu mano.</div><div>Portanto está realmente difícil termos a casa lotada em apresentações de bandas que utilizam baixas afinações para lá de podres e tem um suíno frontman, a não ser por um ou outro evento, aqui e acolá, que realmente surpreendem. O público desgraçado é bastante limitado, apenas dezenas de fãs em milhares de centenas de quilômetros e, ainda, no geral, são consideráveis as ocorrência em datas próximas e em cidades, muitas vezes, não tão longínquas o que acaba esquartejando a platéia e provocando o choro, depressão, infecção letal e até um suicidiozinho do tristonho organizador. Mesmo assim, ainda temos garra para continuar e nem que seja necessário, não raro, pagar para organizar assim o faremos! Pois isso é uma doença, meter essas paradas vicia e, já no fund o do poço, não queremos parar. Até poderemos fenecer por essa nobre causa, mas morreremos, então, caindo na gaitada ao sacudirmos, na primeira fila, a cabeça como nunca!</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Dimitri Brandi&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda de Thrash/Death <a href="http://www.myspace.com/psychoticeyesbrazil" title="" target="_blank">Psychotic Eyes</a>)</span></div>
+<div>Venho reclamando disso há muito tempo. Um dos primeiros textos que escrevi para o blog do Psychotic Eyes tratava exatamente das dificuldades de uma banda underground no Brasil. Uma das dificuldades é o baixo comparecimento do público nos eventos. Esse texto refletia bem o que eu pensava na época (2003), antes de lançarmos nosso primeiro CD. Hoje, passados muitos anos, refleti bastante sobre o assunto e penso de maneira diferente. Até o próprio texto (que vocês me enviaram) me fez ver algumas coisas que eu não havia percebido.&nbsp;</div><div>Acho que começamos com uma confusão. Não é verdade dizer que "o público não vai nos shows underground". A situação é bem pior. A frase verdadeira seria "não existe público de shows underground". Porque quem não vai em show underground não é "público", esse conceito só se aplica a quem vai nos eventos, então você pode ter eventos com mais ou menos pagantes, mas o público underground não existe mais. Outra confusão que nós fazemos é "show underground é barato e show internacional é caro". Também é mentira. Numa sociedade capitalista, as coisas custam o tanto quanto as pessoas se dispõem a pagar por elas. Se alguém paga R$ 200 para ver o Nightwish, mas não pagam R$ 5 para entrar num festival com 10 bandas underground, é porque o cara acha que o Nightwish vale R$ 200, mas as bandas underground não valem cinqüenta centavos cada uma. É cruel, é ridículo, é deprimente, mas infelizmente é verdadeiro. Isso só vai mudar se a cabeça do público mudar, e esse cara parar de dar mais valor a uma coisa e menos à outra.</div><div>Quando falo que estamos errados e fazendo confusão, faço com um grande teor de autocrítica, pois eu também já pensei assim. Aí ficava revoltado, com saudade daquela época em que os eventos underground eram lotados, querendo que aquele tempo voltasse. Mas ele não vai voltar, e acho que por uma série de fatores. Temos é que aprender a viver na sociedade de hoje, que causou essa situação. Outra coisa que não percebemos é que o público sumiu não só dos shows underground. Sumiu também de outras atividades culturais e sociais. Até jogo de futebol hoje tem pouco público, e os times da Europa sobrevivem de venda de merchandising. Igual as bandas da Europa, que também ganham mais com a venda de itens de marketing do que com shows e CDs. Nisso tudo a música e a arte viraram aspectos secundários da indústria de publicidade. O KISS continua lançando seus bonecos e lucrando horrores com eles, e de vez em nunca faz um disco.</div><div>Porque isso? Eu acho que é a mistura de quatro características generalizadas da sociedade atual: consumismo, individualismo, imediatismo e superficialidade. Esses quatro cavaleiros do apocalipse pós modernos acabaram com muitas coisas, não só com a cena metal underground. Acabaram também com os sindicatos, com o cinema de arte e até (felizmente) com as gravadoras e a indústria musical.</div><div>O consumismo impulsiona todo mundo a comprar coisas. Arte não é coisa. Um CD pode ser consumido, mas a música que tem dentro dele, não. Música você tem que ouvir, apreciar, se emocionar, ainda que essa emoção canalizada pela música seja a revolta ou a raiva. Mas hoje muita música não é ouvida, só serve de desculpa para o consumo de alguma coisa. Um mp3player, um iPOD, um celular moderno que toca música. Tem gente até que consome downloads. São aqueles caras que baixam 300 discos por dia, mas não ouvem nenhum. Aí fazem propaganda dos GB que tem no HD, ou postam esses discos em blogs, comunidades e fóruns, e dessa forma se tornam mais respeitados dentro daquela comunidade. Antes não era assim, era bem diferente. Quem teve a experiência de trocar fitas cassete entende a diferença. O mp3 não é como a fita cassete, pois para gravar uma fita você precisava de um amigo que fizesse isso para você. Não tinha fitas por aí de graça para quem quisesse. E tinha um limite de quantas vezes uma fita podia ser copiada sem perda de qualidade, então alguém próximo tinha que ter o disco original. Hoje você baixa música de uma banda que nunca ouviu falar, num site hospedado na Tanzânia, cujos arquivos foram ripados por alguém que você não sabe nem o nome. Não tem mais interação nenhuma entre pessoas, só entre máquinas.</div><div>Isso toca em outro ponto que eu falei: o individualismo. Se antes ouvir música era uma atividade coletiva, hoje é individual ao extremo. E esse individualismo é reforçado pela cultura consumista. Pois é melhor para o capitalismo, dá mais lucros, que cada pessoa tenha o seu iPOD que vai ouvir com fones de ouvido, do que a família inteira ter somente um aparelho de som e utilizá-lo coletivamente. Isso não é só com música, hoje as famílias ricas têm uma televisão para cada morador da casa. Às vezes um computador para cada um. Mais de um celular, tudo isso multiplicando o consumo e radicalizando o individualismo, a solidão e o isolamento. Daqui a pouco vai ter até show individual. Você entra no site da banda e vê ela tocando. Só para você, ninguém mais. Não precisa comprar ingresso, não precisa disputar o melhor lugar, não vai ter ninguém suado do seu lado cantando desafinado a letra errada. Ops. Acho que isso já existe e se chama YouTube.</div><div>Tem também o imediatismo. Todo mundo quer tudo agora. Quer comprar pela internet e receber no mesmo dia. Quer baixar um CD antes dele ser lançado. Quer ver o filme do Wolverine antes dele ficar pronto. Todo mundo quer ser o primeiro e no dia seguinte já é tudo velho. Só que isso não funciona com shows. Para ir a um show você tem que se preparar, comprar o ingresso antes, sair de casa, se deslocar, esperar para entrar, esperar a banda tocar. E não escolhe a lista de músicas. Se a banda resolver não tocar a música que você mais gosta, problema seu. E depois do show tem que voltar para casa, acordar cedo no dia seguinte. Isso afeta principalmente os shows underground, pois os eventos acontecem em lugar com pior estrutura, mais longes, às vezes na periferia. E em qualquer evento underground tem bandas que você não conhece, então não tem tanta vontade de ver.</div><div>Aí chegamos na superficialidade. Hoje a maioria pensa assim: "se eu não conheço, não presta". Não existe mais curiosidade, vontade de conhecer o novo, de descobrir novos sons, de se surpreender. Nada disso tem valor na sociedade atual. O chique é o previsível, o superficial, o raso. Coisas difíceis, como ler um livro, interpretar uma letra, acompanhar uma história fragmentada, estudar, tudo isso está fora de moda. Isso se reflete em todas as artes, mas atinge também o metal. Pois metal é uma música difícil de ouvir, têm que prestar atenção, perceber as mudanças de ritmo, de tonalidade, as melodias são longas e complexas. Mesmo quem não tem formação musical, mas é fã de metal, admira essas flutuações, aquela coisa "Master of Puppets", em que a música conta uma história com momentos tristes, alegres, violentos, melancólicos, tudo na mesma faixa, às vezes em alguns segundos.&nbsp;</div><div>Mais uma vez, quem perde mais é o underground. Pois num show underground, geralmente a qualidade de som não é 100%, então você já precisa prestar mais atenção na banda do que precisaria num show mainstream. E, como você não conhece todas as músicas, às vezes está tendo o primeiro contato com aquela obra. Se não prestar atenção, se estiver bêbado, se estiver mais preocupado com a menina do lado, vai achar uma merda ou não vai entender nada da música. Por isso que hoje os shows underground que atraem mais público são os de bandas covers, seguidos por aquelas que copiam estilos já estabelecidos, sem espaço para inovação.</div><div>O que a gente não pode esquecer é: "nem sempre foi assim". A geração atual, que começou a ouvir música nos anos 2000, tem que saber que as coisas mudaram muito, em poucos anos. Que as bandas de hoje, quando começaram a tocar, viviam num mundo que parece de outro planeta. Um disco demorava meses para chegar na loja. E mais alguns meses para você conseguir ouvir. Se tinha grana para comprar, beleza, senão tinha que esperar um amigo gravar em fita. E você ia ouvir essa fita no som de casa, com os amigos, a família reclamando e pedindo para abaixar. Não existia fone de ouvido nem celular. Ninguém ouvia música na rua, tinha o momento para isso, quando se chegava em casa. Claro que tudo era mais difícil, mas essa dificuldade valorizava o momento, aumentava o prazer e a sensação de apreciação de uma obra de arte, não somente de consumo.</div><div>E o metal underground era um fenômeno coletivo. Todo mundo ia nos shows, porque eram OS SHOWS, não tinha escolha, não tinha evento internacional. &nbsp;E a banda que estava tocando no palco eram seus conhecidos, podia ser você, seu irmão. Isso dava um sentido de irmandade, de coletivo, que hoje não temos mais. A banda conseguir gravar um disco era uma vitória, todo mundo valorizava e se orgulhava. Hoje, ao contrário, como qualquer um consegue gravar um disco, ninguém valoriza nada.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Fábio Bloody&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda de Thrash Metal <a href="http://www.bloody.com.br/" title="" target="_blank">Bloody</a>)</span></div>
+<div>Essa é uma questão realmente foda dentro do cenário underground. Apesar das bandas estarem cada vez mais profissionais, investindo em seus trabalhos, em equipos, merchandising, levando pros bangers o que podemos dar de melhor, mesmo assim o público é fraco.&nbsp;</div><div>Em minha opinião, existem 3 motivos que enfraquecem a cena, começando com a organização dos eventos. Hoje muitos organizadores visam somente a parte financeira do negócio. Não há nada de errado nisso, o problema é que eles não dão uma estrutura que justifique a cobrança dos valores de entrada e dos produtos a serem consumidos dentro do evento, afinal os bangers são consumidores também, e como consumidores, você não volta em um lugar onde o banheiro está imundo, a cerveja é cara e quente, não tem nada pra comer, o lugar não tem um mínimo de ventilação e por aí vai. Sem falar que muitas vezes são as bandas que levam seus equipos pra poder dar mais qualidade pros bangers no show e quem leva a grana no final são os organizadores, porque pras bandas, rola só a ajuda de custo e olhe lá!!!</div><div>Passando por esse problema, vem o fato de muitas bandas não se valorizarem e irem tocar em troca de cerveja. Coloca no papel o quanto é gasto em cordas pros instrumentos, baquetas, regulagens, amplis que queimam, etc. As bandas deveriam cobrar o mínimo. Porque pra você ter uma banda hoje, mesmo que seja só por diversão, vai uma puta grana, as bandas deveriam valorizar mais seus trabalhos e criar uma bola de neve positiva dentro da cena, assim os organizadores sabem que eles poderão pagar pra uma banda e o público sabe que poderá ir ao evento e encontrará músicos de qualidade, com equipos de qualidade, uma organização de qualidade e um show de qualidade.</div><div>Mas o pior fator de todos, na minha opinião, é a falta de união das bandas e bangers. Existem muitas panelinhas dentro da cena underground e isso enfraquece demais algo que era pra ser muito forte, como foi no passado. Hoje o pessoal está mais preocupado se o cara tem grana ou não, se a banda está aparecendo um pouco mais, se o cara tem uma banda e aparece outra banda já vira uma ameaça, se o cara é anticristo ou religioso, se o cara toca de bermuda ou calça, se o cara toma leite ao invés de cachaça, essas coisas que não deveriam ser relevantes.&nbsp;</div><div>Aqui na região tem muitas bandas de metalcore, e você tem que ver como esses caras são unidos, os shows são lotados, a mulekada apóia as bandas, as bandas se apóiam, com isso o movimento vai crescendo e ganhando força. É disso que precisamos no meio metal, mais união de todos, porque sabemos que fazemos por amor mesmo, é claro que pra gente das bandas, seria muito foda poder levar a vida tocando, mas sabemos que essa realidade é distante ainda, então unidos podemos melhorar a qualidade dos shows, profissionalizar a cena e trazer os bangers de volta.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Larissa Benvenuti Varella&nbsp;
+<span class="mat_respostas_descricao">(Criadora do Metal Face Zine)</span></div>
+<div>Nessas últimas décadas está cada vez mais evidente a Indústria cultural tomando conta dos meios de comunicação, popularizando e banalizando o que antes era de domínio dos verdadeiros apreciadores. Essa alienação causa desconforto em quem colecionou e acompanhou a evolução das suas bandas preferidas e agora está ao alcance de todos num clicar de mouse. Nietzsche já se referia a esse fato e podemos trazê-la para o metal, ou seja, repúdio todo e qualquer espírito de rebanho.</div><div>O fato de haver pouco público em shows vem das duas partes. Uma, porque os organizadores não estudam antes o seu público, seus gostos, o poder aquisitivo, o preço excessivo de ingresso e cerveja. Isso claro, depende da cidade. Já fui a festivais com um cast de peso com entrada a 8 reais, cerveja de garrafa a R$2,50 e a show com apenas uma banda que a cidade já está saturada por R$15,00 e a lata R$3,00. Tendo esses shows 2 ou 3 vezes no mês, pessoal vai a falência, aí não é obrigação do público estar presente para a cena não morrer, isso depende da produção ter consciência e se custar caro trazer uma banda de fora, que aprecie o que temos dentro do seu território. Maioria das bandas quer apenas mostrar seu som, sem cachê e se a banda é boa, preço acessível, com uma boa divulgação, o público vai comparecer, mas como falei inicialmente, a indústria cultural preza o lucro (claro que não todas produtoras), infelizmente, vivemos em um país que nada é fácil e tudo custa caro.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Baron Erick Von Causatan&nbsp;
+<span class="mat_respostas_descricao">(Dono da <a href="http://www.vampiriarecords.com/" title="" target="_blank">Vampiria Records</a> e produtor de shows)</span></div>
+<div>O que vemos hoje podem ser analisadas de 3 maneiras diferentes:</div><div><br></div><div>1 . Olhando pela visão da banda, muitas vezes vemos os produtores não dar a mesma atenção (leia-se promoção) igual para todos os eventos que organizam, com isso determinado tipo de público pode ficar distante do evento, sendo exatamente este o público da banda. As bandas às vezes vêem um público parado de braços cruzados e analisando o som das bandas, indo agitar mesmo quando acontece da banda tocar um cover (sem considerar que em shows de banda covers o público agita do começo ao fim). Isso faz com que a banda acabe não tendo aquela apresentação que ela poderia oferecer ao público.</div><div>2 . Olhando do lado do público, eles querem ver basicamente as melhores bandas possíveis, não são de arriscar muitos eventos underground sem algum nome mais conhecido, mesmo que dentro do underground. Aí temos a reclamação do público para com o produtor, o público reclama bastante da qualidade de determinadas casas referente à qualidade do som considerando sempre ser a culpa do produtor ou ainda vemos o público reclamar pelo preço de um determinado evento em sua cidade, mesmo que o mesmo esteja dentro dos padrões de custos (o público vê o preço da portaria em comparação com os nomes oferecidos, mas esquece de avaliar o custo da produção em si como promoção/divulgação, som, salão e outros pontos envolvidos).</div><div>3 . Olhando do lado do produtor, eles vão reclamar de bandas que não ajudam na promoção dos eventos; do público que só pede bandas de renome, mas que nunca apóiam nem os eventos menores, por isso o produtor deixa de arriscar certos nomes. O produtor reclama do público por ficar na porta e passar a noite na frente do local, mas não entra para curtir o evento. Também reclama do público que apenas deseja ver covers e não apóia os eventos com bandas autorais.</div><div><br></div><div>Basicamente o que veio a cabeça para falar de cada um como pontos principais são estes, olhando pelos 3 pontos de vista. A partir disso podemos ver que na verdade o cenário atual não espalha mais aquela essência do Metal do começo, não vemos mais aquela participação e integração de todos os lados que envolvem um cenário. O que vemos na verdade é produtores “disputando” entre si as mesmas datas, na mesma região, sem qualquer contato mínimo para evitar este tipo de coisa. Até mesmo dentro da própria cidade acontece esse tipo de situação, os bares/produtores colocam bandas do mesmo estilo tocando ao mesmo tempo e claro que teremos um público dividido e no final um resultado ruim para todos: público, bandas e produtores.&nbsp;</div><div>Essa situação gera dívidas, um tipo de disputa que no final ninguém ganha, bandas desanimadas achando que elas são as culpadas pelo baixo público e um público que perdeu um bom show que talvez ele possa não ter a chance de ver novamente.&nbsp;</div><div>Nos tempos atuais onde vemos entre set/10 e dez/10 nada mais nada menos que quase 40 bandas internacionais (do underground ao mainstream) passando pelo Brasil, a disputa de público nos shows underground e para os grandes eventos é maior ainda e claro que o underground sempre vai perder, se os estilos das bandas forem próximos.</div><div>Como diz o velho ditado “a corda sempre estoura do lado mais fraco” e é assim que acontece com os eventos atualmente, os produtores underground tem que disputar as datas livres “no tapa” e torcer para que o público tenha grana para dar atenção ao seu evento.</div><div>Afora tudo isso, temos também as bandas que precisam de um retorno para os seus shows, mesmo eu não seja um cachê efetivo, mas uma banda que já está na estrada à algum tempo precisa de pelo menos um transporte garantido, uma ajuda de acordo mesmo, se possível até um lanche no final do show. Isso é um básico que não vejo como algo caro, às vezes tem produtores que enchem o bolso de dinheiro e nem uma garrafa de água entrega para uma banda, esse tipo de coisa é um absurdo!!</div><div>As bandas tem que receber respeito do produtor, afinal são as bandas que vão fazer o evento acontecer, o produtor é apenas um pedaço do todo nesse meio de eventos. Ele é apenas a forma de promover o encontro entre público e bandas.</div><div>Se esse respeito não existe, o evento já está meio perdido. As bandas desejam sempre tocar para espaços lotados, mas elas devem contribuir com uma boa ajuda na promoção do vento que vai se apresentar, muitas vezes a banda chega há muitas pessoas que o produtor nem sabe que existem, isso é importante para o evento funcionar de forma redonda.</div><div>O público também tem que entender que é o evento underground que vai ajudar nomes maiores a tocarem em sua cidade, sem o underground fazer mover as engrenagens menores do movimento, nada mais acontece com eventos maiores. Uma cidade nunca vai ter uma cena funcionando apenas com os grandes nomes, mas se houver aquele apoio nas bases logo poderá acontecer um esforço maior para algo ainda melhor, onde o próprio público e as bandas underground terão benefício ao se apresentar ao lado de bandas com maior renome nacional ou mesmo internacional.</div><div>Como lemos na apresentação da matéria, a própria mídia não especializada afeta certos fatores dentro do Metal, como é o fato de que certas casas limam o espaço para nossos eventos devido a má fama que a essa imprensa cria. Esse fator acaba travando as engrenagens de algo que já funciona de forma quase forçada.</div><div>O público não sabe qual é o esforço do produtor em colocar aquelas bandas juntas em determinado local, não sabe o que um produtor tem que ouvir de certos donos de casa. As próprias bandas acabam sofrendo situações que não precisariam, mas seguem adiante da melhor forma possível, não é fácil, mas vão seguindo o seu caminho.</div><div>O público passa por N situações para chegar em um evento, mas quando está lá muitos passam uma noite como se fosse a última de sua vida, aproveitando cada nota e gota de cerveja possível, enquanto outros sentam ou cruzam os braços e ficam lá no fundo só olhando.</div><div>No final das contas, precisamos sim é que cada um entenda a situação dos outros dois lados e que um apóie o outro e assim os eventos voltem a ter público, melhores condições de som, de bandas melhores cada vez mais, de nomes underground junto aos de renome e com produtores cada vez mais conscientes e de melhor qualidade para oferecer o melhor possível ao público e músicos.</div><div>Tudo isso junto faria dos atuais eventos muito melhores e não eventos que poderiam ter 300 pessoas com apenas 30 pessoas. Não vermos um show de bandas covers em um bar com excelente estrutura e casa cheia, enquanto uma banda autoral está num bar ruim, com péssimo som e com meia dúzia de pessoas olhando.</div><div>Todos precisam deixar de reclamar e começar a opinar e dar idéias, apoiar o que acontece em sua cidade, indo aos eventos que tem estilos que lhe agrada e assim é claro que o produtor poderá oferecer aos poucos melhores condições para todos e no final todo mundo vai estar em um grande ambiente, ouvindo excelentes bandas e com casa cheia com ótimo som.</div></div>
+
+<div class="mat_compartilhar">
+<div class="mat_compartilhar_topo">Compartilhe essa mat&eacute;ria!</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="width:400px; vertical-align:central;">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<g:plusone size="medium"></g:plusone>
+<a class="addthis_button">Divulgue!</a>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000" 
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+<meta property="og:image" content="http://www.goregrinder.net/imagens/materias/P_BLICO UNDERGROUND.jpg" /></div>
+
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:blackt-shirt@hotmail.com'>Rodrigo ( Organizador Do Warriors Of Metal - Korzus - Torture Squad - Machinage - Psychotic Eyes)</a></span>
+<a href='www.rockt-shirt.com%20%20-%20%20www.btsmetalradio.html' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Na minha opinião a falta de publico para eventos underground é bem simples, se deve a desmotivação do publico, não pelo metal, mas sim pelo metal NACIONAL, basta comparar, quando alguem traz uma banda underground internacional a chance de ter pelo menos 800 pessoas na casa é bem alta (visto que geralmente o ingresso é um absurdo!!) porem quando voce organiza um evento só com nomes do underground nacional voce tem um publico de no maximo 200 (quando chega a esse numero nos produtores damos pulos de alegria!!! (risos)). Acho que o problema que estamos passando atualmente é um publico que prefere pagar R$ 80,00 por uma banda underground de fora, do que R$ 25,00 em uma nacional, e olha R$ 25,00 é muito tem shows com otimas bandas nacionais por menos ainda!!!
+Mas por outro lado não podemos jogar a culpa apenas no publico! Afinal temos a galera que comparece os Headbangers que voce sempre ve nos show underground!! 
+Nos produtores tambem temos uma parcela na culpa, afinal porque temos que trazer bandas de fora sendo que temos otimas bandas nacionais? Não que devessemos parar de trazer bandas de fora, mas valorizar as nossas primeiro antes de trazer as de fora!!
+E claro que a midia tambem tem sua culpa nisso! cade as revistas e sites interresados nesse tipo de publico?? (LOGICAMENTE NÃO PODEMOS GENERALIZAR!!! TEMOS ALGUMAS REVISTAS E SITES ESPECIALIZADOS SIM!!!! POREM QUAL O RAIO DE ALCANCE DOS MESMOS???? QUAIS EMPRESAS AJUDAM ESSAS ZINES?????? QUEM PATROCINA ELAS????) A resposta é simples NIGUEM!!!! ai vem o obvio como um cara que está disposto a fazer uma zine underground (ou mesmo as que ja existem) consegue fazer isso sem dinheiro? sem patrocinio??
+Ou seja, o problema é uma grande falta de interresse por quase todos os lados.
+E ai vem o maior de todos a INTERNET!!! que por um lado ajuda, afinal voce divulga seu evento para 1.000 pessoas com apenas 1 clique, bandas novas divulgam seu cd em minutos, disponibilizam sua musica para apreciação gratuita e ate mesmo para download, mas será que isso é certo? Acho que não, pois quando as bandas novas dão suas musicas de graça as gravadoras desistem de lançar o cd dessa banda, afinal ela ja deu as musicas pra todo mundo, quem vai querer comprar o CD??? se bem que ainda exista pessoas dispostas a pagar por cds originais. 
+Acho que no final da contas nos que vivemos os velhos tempos estamos ficando velhos mesmo e não conseguimos acompanhar as novas "tendencias", ou a coisa esta avacalhando mesmo!! (risos risos).
+ </div>
+
+<div class="mat_comentarios_base">
+19/04/11 &agrave;s 17:34 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:delmon_666@hotmail.com'>Delmon "Splinter"</a></span>
+&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Bom, concordo plenamente com as palavras do Dimitri, creio não ser necessário me prolongar no meu comentário, apenas afirmar que eu já fui contrário ao mp3 e os downloads gratuitos, por achar que isso um dia iria acabar com a cena underground. Hoje percebo, que longe disso, essa facilidade têm outra finalidade, o PROBLEMA maior são nas pessoas que se acostumaram com as facilidades "demais", como disse o feliz Dimitri, tudo na mão, agora, com apenas um clique... Isso não está acabando somente com a cena underground, e sim com TODAS as culturas, fazendo com que algumas famílias gastem grana para incentivar o filho a escrever!!! Isso é um absurdo, existem pessoas que mal assinam o nome durante o dia todo. SÓ TECLA, manda mensagem e por aí vai... E quem diria que gastávamos uns dois dias pra escrever uma carta bem feita, preocupados com o que o outro banger iria pensar, que tínhamos de confeccionar nossos próprios envelopes (usando flyer´s de shows!!!), reaproveitar sêlos (passando cola sobre eles!!! que chegavam a ser usados umas 5 vezes... RISOS, RISOS, RISOS...), que recebia um flyer de um evento com no mínimo 3 meses antes, pra juntar grana, ver horário de busão, de trem (detalhe: Tinha que ir até a rodô e à estação!!!) sem essa de ver no site tal... putz... Essa facilidade toda nos deixa mais obesos, acomodados, escravos mesmo, eu diria... E pensar que quando alguém entra no meu "Old Car" e vê o toca-fitas, e fica impressionado... O quê é isso? Toca-fitas? quê isso cara, hj em dia tem mp3, carrossel e mais num sei o que lá... E eu simplesmente respondo: A exclusividade de se ter uma toca-fitas e ainda ter o trabalho de virar o lado B, toda vez que acabar o Lado A, é que dá mais sentido e mais prazer em apreciar este trabalho... que na grande maioria das vezes, trata-se de uma Demo Tape dos anos 90 e/ou 80... Bons tempos aqueles. Mas sejamos racionais, as facilidades vieram para nos ajudar, NÓS É QUE PRECISAMOS NOS COÇAR E VOLTAR A TERMOS ATITUDES DE VERDADEIROS GUERREIROS...
+Eu continuo a ir nos eventos que acho pertinentes... Tudo bem que ir ver o show do Carcass talvez seja mais interessante que o Chamas Impuras no Interior, mas como sou "viciado" nisso, como disse o caríssimo Lopes eu vou nos dois... Ainda sim, prefiro shows pequenos e grandes do que os mega eventos...
+Penso que em todas as ponderações citadas acima, que você ORGANIZADOR, que você MÚSICO, que você LEITOR E PÚBLICO que perdeu seu precioso tempo (que podia ter baixado mais um milhão de mp3 pela net) para ler essa matéria, que REVEJA SUAS ATITUDES... QUE SÓ VOCÊ PODE MUDAR ESSA HISTÓRIA, QUE POSSAMOS "JUNTOS" FAZER O METAL EXTREMO BRASILEIRO VOLTAR AO SEU LUGAR DE DESTAQUE....
+<...></div>
+
+<div class="mat_comentarios_base">
+20/11/10 &agrave;s 22:57 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:vinicius@baronshell.com'>Vinicius Vidal</a></span>
+<a href='www.baronshell.html' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Tema pertinente, excelente.
+
+Na verdade acho que o problema não está no show que eu considero o "final" numa linha deste cenário. O problema está no meio, na valorização da coisa mesmo.
+
+Por exemplo, sempre fui curioso, qdo moleque mesmo tento Metallica e Sabbath pra ouvir eu ficava imaginando como eram os sons daquelas bandas menores que eram destacadas em pequenas colunas na Rock Brigade, isto em 91, 92. Como naquela época ñ havia MySpace e nem internet, eu precisava enviar carta e pedir o material. Essa troca me deixava feliz por ser atendido pela banda, alguns até me ligavam, como me ligou uma vez o Max do Krisiun perguntando se eu gostei, qdo eles eram quase nada ainda e eu comprei a demo. Essa troca acrescentou mto, fiquei feliz pá burro.
+
+Mas este é meu exemplo como um cara curioso que sempre fui. O que sempre vi é uma banalização na divulgação de certas bandas e na forma como elas mesmo se portam. Tem banda que faz um material foda, mas que não tem cacoete de divulgação mesmo e pra piorar não temos veículos que divulguem de verdade estas bandas como elas merecem ser divulgadas, que façam perguntas, que tirem informações, que espalhem notícias relevantes, que valorize a arte, que  façam os membros conversarem, que crie expectativa no público para um lançamento e para o show e que crie essa coletividade toda. Acaba que vira algo frio e sem conversa.
+
+Outro exemplo: estava conversando com o Luiz Tseaboth (que acabou de comentar) em um eventinho de Death Metal aqui na Augusta, São Paulo outro dia, e tocamos no nome do Corpse Grinder e fiquei mto feliz. Porra nego, eu gosto mto do Corpse Grinder, mas foi a primeira vez que troquei idéia sobre esta banda com um banger, e é um absurdo, pois é uma puta banda foda que tem 19 anos de existência, mas que ninguém dá a menor bola, esse ninguém eu digo: mídia especializada como Roadie Crew e Rock Brigade que atinge milhares de pessoas. Legal que zines espalhem, mas zine tem alcance pequeno, blogs especializados idem.
+
+Na minha opinião o que falta é divulgação, boa divulgação, que cause interesse, tesão, vontade. Infelizmente isto tem morrido na cena metal. Já na cena grind e metalcore isso tem mais, existe um público que conversa, que sabe o que ocorre, o que está acontecendo e tá pegando.
+
+Tempos atrás eu me afastei da cena, o Baron's Hell praticamente morreu e foquei na minha profissão, e com quase 3 anos de hiato só ouvindo o q tinha na minha coleção e ignorando todo o resto pq ñ tinha tempo mesmo, te digo, pra quem tá de fora é como se nada existisse, dava até impressão que o metal havia morrido no Brasil. Pra ver o que tava rolando eu precisei buscar fontes precisas (como este GoreGrinder, a revista Lucifer Rising e alguns zines impressos q fui atrás) pq é impossível sacar alguma coisa qdo vc quer saber de metal, da cena local, e espera q comprando uma revista especializada como a Roadie Crew vá sacar, porém na capa da revista tem Scorpions, Nightwish, Edguy, Iron Maiden e Dio. Se vc comparar é exatamente como era a capa das Rock Brigade em 91, excluindo o Nightwish e Edguy q não existiam.
+
+E como não existe esta "divulgação", este "interesse" em bandas novas e locais, não vai existir mesmo público para show underground. Mesmo que faça em lugares melhores e mais acessíveis. 
+Mas nem tudo está morto, tem um pessoal aqui de SP que organiza o Night of Living Thrashers, um fest que reune bandas crossover, eu fui em duas edições e te digo, foi do caralho, intenso, lotado, participativo, sabe qtas bandas gringas havia? Uma, o Dr. Living Dead que é totalmente desconhecido e é novinho tbém. O resto era tdo banda nova, pequena, de Brasilia, Osasco, Porto Alegre, SP, Sorocaba, etc, etc, etc. Mas fui dar uma olhada de perto e vi que existe uma cena de molecada, vivente na periferia, q conversa pelo orkut, espalha mp3 entre si, a maioria de hc, thrash, punk, crust e grindcore e no máximo um death metalzinho, essa molecada é sedenta por eventos, por cenário, eles sentem que fazem parte do baguio. Pq isto não ocorre no resto do país? Em outras estilos mais extremos? Fica a questão ae.</div>
+
+<div class="mat_comentarios_base">
+10/09/10 &agrave;s 21:02 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:tseaboth@gmail.com'>Luiz Tseaboth</a></span>
+<a href='baronshell.html' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Algumas opniões pessoais:
+1 - Preços absurdos das bebidas oferecidas dentro dos locais (e olha que eu não toma mais nada alcoolico, exemplo: R$4,00 um refrigerante é uma piada de mal gosto).
+2 - Horários que te forçam a esperar uma eternidade para as bandas começarem a tocar, abertura da casa 22h00 e com mais 1h30 de atraso para começar a tocar a primeira banda, 2h30 finalização dos shows, agonizando 2h00 ou mais para o começo do funcionamento de transporte publico.
+3 - muitos shows no mesmo dia, e quando existe um show de uma banda que lhe agrade, fazem uma mistureba com o cast, desagradando maioria.
+4 - Pessoal novo não apoia porra nenhuma as bandas autorais, preferim ir me shows covers manjados.
+5 - Qualidade das casas de shows underground abaixo do mínimo aceitável, banheiros sem condições, fora as acomodações.
+6 - Falta de educação do publico que ainda não aprendeu a usar banheiro de maneira correta e se organizar de forma educada para assitir um show de maneira confortável.
+7 - sugestão de horários para shows: começarem às 18h00 e terminarem as 23h00, ou começarem as 00h00 e terminarem às 05h00, são horários que permitem transito livre nos meios de transporte publico e sem estender o horário dos shows, passar mais de 5h00 em pé não é agradável para ninguem.</div>
+
+<div class="mat_comentarios_base">
+10/09/10 &agrave;s 08:39 Hs
+</div>
+
+</div>
+
+
+<div class="mat_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="mat_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="mat_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; height:25px; float:left;" class="mat_formulario_texto">Site <span style="font:9px Tahoma, Geneva, sans-serif;">(opcional)</span>: <input type="text" name="site" id="site" value="" size="50" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="mat_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="esc_esp_id" id="esc_esp_id" value="6">
+                  <input type="hidden" name="esc_ver" id="esc_ver" value="n">
+                </form>
+</div>
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=14&id=6 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:08:27 GMT -->
+</html>

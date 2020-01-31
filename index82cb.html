@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=14&id=13 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:07:30 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Mat&eacute;ria Especial: Direitos Autorais [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var site = $("#site").val();
+		var mensagem = $("#mensagem").val();
+		var esc_esp_id = $("#esc_esp_id").val();
+		var esc_ver = $("#esc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_mat6e03.html?id=13', {nome: nome, email: email, site: site, mensagem: mensagem, esc_esp_id: esc_esp_id, esc_ver: esc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#site").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<div class="mat_topo">
+
+<div class="mat_imagem"><img src="Direitos%20Autorais84c5.jpg?imagem=imagens/materias/Direitos%20Autorais.jpg&amp;w=350&amp;h=350" border="0" /></div>
+
+<p>
+<p>Um dos temas de discuss&atilde;o mais presentes na esfera das artes na &uacute;ltima d&eacute;cada, pelo menos, diz respeito &agrave; quest&atilde;o em torno do direito autoral. Mais recentemente, as pol&ecirc;micas e como&ccedil;&atilde;o globais acerca das propostas de regulamenta&ccedil;&atilde;o da internet e a&ccedil;&otilde;es criminalizando o compartilhamento de arquivos por esse meio, colocaram o assunto na pauta do dia e tornaram-no, possivelmente, um dos principais problemas a serem resolvidos nesse in&iacute;cio de ano.</p>
+<p>Para in&iacute;cio de conversa, o &lsquo;direito autoral&rsquo;, como o pr&oacute;prio nome j&aacute; sugere, diz respeito a um conjunto de regulamenta&ccedil;&otilde;es que visam garantir n&atilde;o s&oacute; a propriedade intelectual da obra espec&iacute;fica, mas tamb&eacute;m avalizar a explora&ccedil;&atilde;o comercial da obra pelo seu autor, impedindo que terceiros gerem dividendos sobre propriedade alheia, ou seja, atrav&eacute;s daquilo que um dos grupos envolvidos chama &lsquo;pirataria&rsquo;, mas que os defensores do relaxamento das regras que regem o &lsquo;direito autoral&rsquo; chamam de &lsquo;compartilhamento&rsquo;.</p>
+<p>De toda forma, procurando ser mais espec&iacute;fico, com o advento e progresso da internet p&uacute;blica, aliado ao crescimento do g&ecirc;nero Metal como uma express&atilde;o art&iacute;stica popular (vide bandas de massa como Metallica e Iron Maiden, por exemplo), os problemas envolvendo &lsquo;direito autoral&rsquo; e &lsquo;pirataria&rsquo; tornaram-se, sen&atilde;o a principal, ao menos uma das principais bandeiras levantadas no front musical. Um dos casos mais importantes envolvendo uma banda de Metal e essa discuss&atilde;o foi o agora famoso caso Napster, que colocou em choque a citada rede de compartilhamento e a banda Metallica no ano de 2000.</p>
+<p>No entanto, o problema &eacute; complicado. De um lado, temos o argumento que defende o direito autoral como um meio n&atilde;o s&oacute; de garantir a subsist&ecirc;ncia dos seus autores e que igualam a autoria art&iacute;stica como um trabalho assim como qualquer outro, mas tamb&eacute;m como uma forma de garantir um meio prop&iacute;cio e seguro a atividade criativa, portanto, ao avan&ccedil;o da arte, &agrave; inova&ccedil;&atilde;o. De outro lado, os defensores de um relaxamento do copyright, ou mesmo, da sua aboli&ccedil;&atilde;o, advogam n&atilde;o s&oacute; a redu&ccedil;&atilde;o da vigil&acirc;ncia da internet, mas principalmente, a ideia de compartilhamento como uma forma de espalhar a cultura e, dessa forma, colaborando no seu desenvolvimento, uma vez que um corpo muito maior de potenciais cr&iacute;ticos surgiria e, mesmo, operando em transforma&ccedil;&otilde;es da obra original.</p>
+</p><br /><br />
+<div class="mat_pergunta">Apesar da complexidade do tema, resolvemos nos aventurar e questionar, não só o que você considera sendo uma solução justa para a querela ‘direito autoral’ versus ‘compartilhamento/pirataria’, mas também qual cenário futuro você consegue observar, quando aliamos a questão do direito autoral e a sobrevivência do gênero Metal, ou ainda mais especificamente, do Metal Extremo.</div>
+<br /><br />
+Essa mat&eacute;ria foi elaborada por <b><a href="mailto:alexneundorf@yahoo.com.br">Alex Neundorf</a>, <a href="mailto:carrascu@bol.com.br">Carrascu</a>, <a href="mailto:arrudalaskos@hotmail.com">Andr&eacute; Arruda</a>, <a href="mailto:cristianosteps@gmail.com">Cristiano Passos</a></b>, e publicada no dia <b>17/06/2012</b>.
+
+</div>
+
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Cynthia&nbsp;
+<span class="mat_respostas_descricao">(Integrante das bandas <a href="http://www.myspace.com/terrorgasmogore" title="" target="_blank">Terrorgasmo</a> e <a href="http://www.myspace.com/necrosers" title="" target="_blank">Necrose</a>.)</span></div>
+<div>Nunca pensei em viver da música. Me divirto um monte com ela, expresso o que penso e faço amigos pra todo o sempre. Pra mim, trabalho é bem diferente de lazer. Mas, pra quem se sustenta com ela, a questão do direito autoral pesa num lugarzinho crucial dentro do nosso santo sistema: o bolso.</div><div>Ironicamente o capitalismo, a tecnologia, a modernidade e a parafernália toda em que nos metemos nos possibilitou o maravilhoso adendo do download, aí já era. Bom, não é bem assim... fãs ainda querem sentir nas mãos a capinha original, ler os encartes, botar no play o CD, o disco, a fita... embora sejam minoria. Um paliativo seria cobrar pelo download, mas isso não impediria que o primeiro a baixar o arquivo o compartilhasse gratuitamente no minuto seguinte. Eu mesma baixo uma pá de bandas que não conheço pra ver qual é, mas se gosto do som, adquiro o CD.&nbsp;</div><div>Contra ou a favor, é um fenômeno que estamos vivenciando, experimentando, colhendo as consequências no exato instante em que ele se manifesta. O futuro está aqui. Nada a concluir.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Oscar Casarini&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda&nbsp;<a href="http://www.redfront.com.br/" title="" target="_blank">Red Front</a>.)</span></div>
+Realmente é um tema complicado, porém acho que não tem mais volta, o compartilhamento de arquivos já se tornou uma prática normal e voltar atrás com isso é praticamente impossível. O que vejo como solução é tornar o preço mais acessível para o comprador final. Para se ter uma ideia, o custo de um CD completo (mídia, caixa, encarte, etc.) não sai mais que 2 reais (isso em baixa quantidade), em grande quantidade esse preço cai bastante. Então porque vender um CD a 40 reais? Não é muita coisa? Se o valor fosse acessível, a pirataria perderia a força que tem.</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Vakka&nbsp;
+<span class="mat_respostas_descricao">(Do site <a href="http://www.intervalobanger.com/" title="" target="_blank">Intervalo Headbanger</a>.)</span></div>
+<div>Cara, eu entendo o lance todo de direitos autorais de duas maneiras: &nbsp;</div><div><br></div><div>1. O mundo da música profissional e nisso eu quero dizer literalmente. Artistas e profissionais que realmente ganham dinheiro com a música sendo tocada em rádios, televisão, filmes e etc.&nbsp;</div><div><br></div><div>2. O mundo amador, que é de fato o que a galera das bandas e selo menores do underground vivem. Que também investem grana, mas tem retorno do material físico que vendem e não propriamente são beneficiadas pelos direitos.&nbsp;</div><div><br></div><div>As bandas de Metal (claro que to falando as de selos menores e não dos Metallicas, Ozzys e afins) eles batalham pra sobreviver. Gastam pra gravar um disco, lançar o disco e tendo um material, põe debaixo do braço e saem fazendo show. Mas veja, vencer essa batalha de sair da garagem da vó e ter um selo que acredita no teu som e investe uma grana na sua banda, hoje em dia já é uma vitória.&nbsp;</div><div><br></div><div>Pra esses caras, direito autoral é uma fábula. Ter seu som divulgado em blogs de download, webradios, YouTube e outros meios é na verdade um fator positivo. Nego pode se interessar pelo teu som, chamar pra tocar em algum lugar, você ganha uma breja e vende teu disco (quando tem disco pra vender).&nbsp;</div><div><br></div><div>A galera cresceu, todo mundo sabe que não vai ser o James Hetfield, nego só toca e investe porque ama música, ama o que faz e se sente motivado a fazer. Do it yourself mesmo, sem choro.&nbsp;</div><div><br></div><div>Quanto à bandas mainstream que realmente vivem disso, bom, fuck off. Eu vivo em outro mundo.</div><div><br></div><div>No blog não rola CD pra download porque a proposta é outra, gosto de falar de música. Me sinto em um bate-papo com os camaradas no boteco escrevendo pro IB. Acho que sou da última geração que viu todos os formatos rolando. Lembro do dia que minha mãe chegou com um aparelho de som da Sony que tinha o toca-disco e já vinha com um rack pra CD. Eu devia ter uns 9/10 anos.&nbsp;</div><div><br></div><div>Claro que o vinil, como o foco que era na época, não durou mais muito tempo. Mas eu ainda tive coleções de vinil, CD e Tape... Mas hoje produzir tudo isso sai caro, pra essas bandas que vem do undergroud, fazem seu corre sozinhos e tem como se mostrar pro mundo de uma forma gratuita, quase que tudo homemade, a palavra direito autoral é só uma penumbra bem clarinha do que eles veem rolando no mainstream, nada mais, nada menos.&nbsp;</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">André Luiz&nbsp;
+<span class="mat_respostas_descricao">(Vocalista da <a href="http://www.offalgore.com/" title="" target="_blank">Offal</a> e <a href="http://www.facebook.com/pages/Lymphatic-Phlegm/142893512431553" title="" target="_blank">Lymphatic Phlegm</a>.)</span></div>
+<div>Bom... Primeiramente acho que devemos separar bem as coisas, para ser mais preciso devemos saber quem é quem no meio disto tudo, a que segmento cada um pertence! Você faz parte de uma gravadora major, vende milhões de cópias, possui um público exorbitante como as bandas supracitadas ou faz parte do medíocre “underground”? Digo, o verdadeiro “underground”, entre aspas, pois não vejo mais as coisas funcionando como antigamente, na verdade nunca foi uma maravilha, porém nos dias de hoje tudo está muito pior e mais a frente veremos a razão disto tudo! Abordar este tema dentro desse segmento é muito mais interessante, pois temos muitos argumentos para que assim seja, pois do lado de lá tudo vai continuar acontecendo como sempre, ou seja, com download ou não, de graça ou não, bom ou ruim, essas bandas vão continuar vendendo milhares de cópias, milhões talvez e não vai ser algo assim que vai prejudicá-los, pelo contrário... Agora... Falando da nossa realidade, de bandas que lançam um disco de 500 ou 1000 cópias, que fazem parte de pequenos selos independentes, que tocam em eventos que são sinônimos de prejuízo, que vendem o almoço para garantir o jantar, aí... Aí temos um cenário bastante distinto, na verdade temos um grande problema! No meio disso tudo desde 1997 quando lancei minha primeira DT, sempre vi as coisas de um ângulo bastante diferente, pois JAMAIS cogitamos algo sobre o que diz respeito a “direito autoral”, isso é muito amplo e não cabe para gêneros extremos e com públicos bastante restritos como o Gore Grind, por exemplo! O tempo passou, as coisas aconteceram, diversos materiais foram sendo lançados e NUNCA, em momento algum assinamos um contrato ou qualquer coisa assim, até mesmo quando houve proposta de grandes selos do gênero, a coisa sempre funcionou na palavra mesmo, ou seja, este segmento é bastante limitado, intrínseco, para um público específico, a demanda é pequena, então esse tipo de coisa nunca existiu! Óbvio que com o passar do tempo houve uma expansão, o gênero obteve um maior número de adeptos, quando tínhamos quatro ou cinco bandas do gênero eram muitas, hoje temos dezenas talvez, mas queiram ou não, essas bandas fazem com que o gênero se propague, se popularize, muitas vezes da pior maneira possível, mas...! A questão é... Se a demanda fosse proporcional a essa expansão, tudo seria mais interessante? Sim, haveria estabilidade dos selos, maior número de lançamentos, maior possibilidade de lançamentos em formatos profissionais de bandas novas, etc, etc, etc... Hoje temos algumas bandas legais que não conseguem oficializar um bom lançamento exatamente pela dificuldade que os selos possuem em “esvaziar” seus estoques e gerar capital para que novos lançamentos sejam produzidos, afinal não há como apenas injetar dinheiro em novos lançamentos e não obter retorno, retorno para cobrir os custos de produção e possibilitar novos lançamentos, ao contrário do que muitos pensam, o objetivo não é lucrar! E a realidade é essa, selos já encerraram suas atividades por essa razão, outros que existem não possuem o andamento produtivo que gostariam, outros ainda se mantêm por conseguirem fazer as coisas “girarem” mesmo que com muita dificuldade e demora, enfim... Onde quero chegar com isso tudo? Simples... O surgimento das formas alternativas de obtenção de música muitas vezes de forma gratuita sendo o principal deles o famigerado download são os responsáveis diretos por esse declínio e estagnação do segmento, ou seja, a grande maioria das pessoas não tem mais interesse no material físico, afinal qual a razão de comprar um CD se eu posso conseguir ele de graça, com encarte e tudo mais? Qual a razão? Eis a diferença de quem está nisso de verdade ou apenas por moda, passa-tempo ou, seja lá o que for! Já ouvi falar que não podemos culpar a nova geração, pois eles já começaram no meio disso tudo com as coisas funcionando desse jeito, tudo bem, ótimo! Mas o ponto principal é que a maioria das pessoas que possuem o hábito da obtenção gratuita de música, em especial música “underground” não são da nova geração, das que eu conheço NENHUMA, então...</div><div><br></div><div>Cada um faz o que quiser, ninguém é obrigado a nada, foda-se... Só não me venha dizer que curte som, que apóia a “cena” e blá, blá, blá... PORRAAAAAAA NENHUMA, curtir som é outra coisa, apoio é outra coisa... Vocês são lixo e não enganam mais ninguém, somente a si próprios! Usa camisetinha de banda, mas não tem um material sequer original das mesmas em casa, ahhh, mas tem a discografia completa no HD, enfia ele no cu! Conhece e é “amiguinho (a)” do pessoal das bandas, mas nunca comprou material algum das mesmas, se tem alguma coisa é porque ganhou, fica mendigando preço de ingresso, mas está sempre na frente do local dos shows enchendo a cara, pra isso sempre tem dinheiro! Comprar um CD de R$ 10.00/15.00? Foda-se, vou encher o rabo de cerveja e gastar muito mais do que isso, depois eu “baixo” essa merda e esses otários que se fodam! Vai a shows de bandas internacionais e paga uma nota no ingresso sem reclamar, sem falar em outros custos, o engraçado é que muitas vezes mal conhece a banda, mas mesmo assim vai para ficar se “pagando” depois que viu tal banda e isso e aquilo, pffttt! Já repararam que quando uma banda de fora vem para o Brasil todo mundo conhece e é fan pra caraleooo? Aí todo mundo corre pra baixar a discografia completa da banda, afinal tenho que parecer um grande fan de longa data! Passa o dia postando videozinhos de bandas foda no Facebook que nunca tinha ouvido falar, você acha que alguém vai te respeitar por isso? Você continua sendo o mesmo monte de merda de sempre, o mesmo! Suas ações representam muito bem o que você é, parabéns e muito obrigado pelo seu “apoio”!</div><div>Sabemos muito bem quem são vocês, FODA-SE você e qualquer filho da puta que promova e pratique qualquer tipo de disponibilização gratuita de música “underground” em sua totalidade, em especial blogs de download ou similares! Porra, quer ajudar na divulgação? Coloca uma ou duas músicas e não o disco inteiro seu arrombado do caralhooo! Se for uma demo ou algo inicial tudo bem, fala com a banda e tal... Mas você coloca o disco todo que acabou de sair para download e que custa R$ 10.00/15.00 e acha que está ajudando alguém? Quem, seu merda?</div><div>Felizmente os gringos existem, consumindo material original custe o que custar, indo a shows (Por que será que os grandes eventos de música extrema são todos no exterior?), produzindo, lançando material aos montes, fazendo a coisa acontecer, felizmente! Cenário futuro? Esse mesmo, nada vai mudar, pelo contrário, acho que só tende a piorar na verdade! Obrigado ao Cris e ao Carrascu pelo convite para falar um pouco sobre esse tema e obrigado a todos os amigos que consomem material original, que sabem qual a satisfação de receber uma caixa cheia de discos, de sentar para ouvir tudo com calma, ler os encartes, sentir aquele cheirinho da impressão, o peso, ficar maravilhado com as cores de um vinil ou com aquele em formato de serra... Bom quem sabe do que eu estou falando sabe que isso não tem preço, grande abraço! Você? Vai lá encher o seu IPOD, depois de cheio IPOD enfiar ele no cu e sair correndo por aí!</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Enrique&nbsp;
+<span class="mat_respostas_descricao">(Editor do <a href="http://www.cgzine.blogger.com.br/" title="" target="_blank">CG Zine</a>.)</span></div>
+<div>Sobre o direito autoral, existem alguns pontos a serem observados, de acordo com o que penso:&nbsp;</div><div>1. Enquanto garantia de recebimento da execução do teu trabalho (ECAD, alguém lembra? Eu só vi funcionar para sertanejo...);&nbsp;</div><div>2. Enquanto impacto na venda de material físico (CD, vinil e tape) do artista e;&nbsp;</div><div>3. O que isso causa a gravadora que lançou referido trabalho.</div><div>Nestes pontos e focado no Metal Extremo, eu entendo que seria necessário um "mix" de variáveis do modelo atual, pois o artista teria retorno da ampla divulgação de seu trabalho versus o aumento de agendamento de eventos, sendo o material físico a ser produzido com mais chamativos (versões especiais, numeradas, brindes, etc...), pois o público específico para Rock, ainda mais do Metal Extremo, é acima de tudo um apreciador do material físico, até pelo lado "colecionável" da coisa. Isso repercute como as gravadoras assimilariam essa modalidade, talvez diminuindo produções e focando em edições especiais, etc.. enfim, o certo seria: o modelo tradicional de direito autoral/CD prensado/ser contra compartilhamento/"milhões de cópias vendidas" é hoje um modelo não mais funcional.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Glésio Torres&nbsp;
+<span class="mat_respostas_descricao">(Dono&nbsp;do selo <a href="http://oldgrindereddaysrecs.webs.com/" title="" target="_blank">Old Grindered Days</a>.)</span></div>
+<div>A meu ver o compartilhamento em massa de músicas e de muitas outras coisas tem seu lado positivo e seu lado ruim. O lado positivo é que hoje temos uma infinidade de informação sendo enviada de um lado a outro do globo, quase que instantaneamente. Para bandas e zines isso é muito bom, de certa forma. Eu lanço um CD hoje e amanhã pessoas da Arábia já terão acesso a ele com apenas alguns cliques. Isso é uma maravilha, porra! Porém, com esse advento, muitas produções perderam seu campo de atuação. Muitas gravadoras quebram no nosso underground, porque o cara prefere baixar o álbum a comprar ele. Isso é um fato. Já em relação às bandas de massa como as citadas, eu não vejo problema algum em eles levarem alguns calotes virtuais e se foderem um pouco, afinal fazer dinheiro é com eles mesmos, e nós aqui sabemos que essa palhaçada de direito autoral só visa encher de grana os bolsos de grandes filhos da puta empresários da "música pesada". Programas de compartilhamento como Soulseek nunca deixarão de existir, e daqui pra frente a tendência é aumentar ainda mais, pois notem que estamos vivendo uma época em que tudo se resume a clique. O cara não vai no show underground que tem na sua cidade, nem compra o disco da banda de algum chegado, ele prefere clicar no YouTube e ver lá. Mas não perde nem deixa de comprar um disco de uma banda gringa "consagrada".</div><div>Então eu penso que da mesma forma que isso ajuda, fode também. Para bandas pequenas que precisam de uma divulgação e muitas vezes de um retorno financeiro com o material que produziram é um tapa na cara a onda do compartilhamento. No nosso meio, poucas são as pessoas que podem lançar um álbum (seja ele demo, CD, vinil, etc) e dizer que não irá vender ou que ele é só para trocas. Tudo tem gasto. A gritante maioria tira o pão da boca de seus filhos para lançar algum material (meu caso) e com isso um retorno financeiro ao menos em relação ao que é investido seria mais que justo. Em relação às grandes bandas e às grandes gravadoras, sinceramente eu não penso muito nelas, e de coração, queria que a maioria se lascasse.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Rodrigo Da Silva&nbsp;
+<span class="mat_respostas_descricao">(Guitarrista da banda de Thrashcore <a href="http://www.facebook.com/pages/Skombrus/141682335934231" title="" target="_blank">Skombrus</a>.)</span></div>
+<div>No meu entendimento o que incentivou o chamado "compartilhmento/pirataria" foi a somatória de alguns fatores como a economia deficiente e desorganizada de diversos países, o altíssimo preço de CDs e DVDs e afins e a enorme facilidade de troca entre usuários destas mídias via internet, entre outros. Talvez o fator que mais tenha exercido força para o início deste "movimento em prol da troca de arquivos" seja o preço de CDs que não condiz com a situação em que nós nos encontramos. O que as grandes gravadoras fizeram foi dar um enorme tiro no próprio pé. Se colocar um CD no mercado por um preço absurdo não for uma tremenda burrice e uma grande falta de respeito não sei mais o que isto pode ser. Nos dias de hoje, com o barateamento das gravações, com a facilidade de distribuição e com um enorme público para diversos estilos musicais, como as gravadoras se acham no direito de cobrar preços exorbitantes por seus produtos? Será que elas se esquecem que hoje o músico é livre, que ele, por intermédio da internet, não depende mais destas enormes corporações? Nos dias de hoje produtos oficiais, no âmbito musical, são itens de luxo. E o mais deplorável é que até as pequenas gravadoras trilham este caminho de preços altos.</div><div>Na minha opinião não deve-se combater o compartilhamento/pirataria. O que deve-se fazer é achar meios de se conviver com esta situação. Milhares de bandas conseguem atingir um número gigantesco de pessoas devido a este compartilhamento. As bandas podem até perder em vendas de CDs/DVDs mas acabam ganhando muito mais em shows devido à enorme divulgação que conseguem.</div><div>O compartilhamento/pirataria não vai acabar com os CDs, o que pode sim acabar com ele é a ganância. Imagine-se chegando na sua loja de CDs preferida e achando os mesmos por preços justos, 10, 15 reais sei lá. O que você faz? Compra o CD original com encarte, com uma qualidade enorme, fotos e durabilidade grande ou vai para casa baixar o MP3 de qualidade péssima???? Eu prefiro comprar o CD original e desfrutar da sua qualidade por anos.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Gil Dessoy&nbsp;
+<span class="mat_respostas_descricao">(Dono da <a href="http://www.cianetodiscos.com/" title="" target="_blank">Cianeto Discos</a> e da <a href="http://www.cauterizedprod.com/" title="" target="_blank">Cauterized Prods</a>.&nbsp;)</span></div>
+<div><span style="font-size: 10pt; ">No Brasil, direito autoral é folclore. Todo mundo fala sobre, mas ninguém nunca viu. Ao menos, é isso o que eu ouví falar por aí, de gente que entende da coisa. Portanto, ninguém realmente fiscaliza nada, a não ser o ECAD que quiz dar uma de bonzão esses dias, e quebrou a cara por ter sua "equipe" formada por imbecís que nem sabem o que fazem. Ninguém ganha nada aqui com direito autoral.</span></div><div>Novamente, citando nosso belíssimo país, caso alguém realmente decidir que algo realmente deveria ser ficalizado, certamente não iria funcionar (a fiscalização), nada funciona nessa bosta.</div><div>Banda que quiser vender algum CD, tem que tocar ao vivo, e vender barato. CD a R$15,00 é caro hoje em dia, pra banda underground de música extrema, o povo não paga. Ter banda/selo/distro no Brasil e visar lucro, é até bobo, tem que fazer por amor. Tem que deixar a porra toda de graça pra download, e, quem ainda gosta de ter o material físico, sempre vai saber onde encontrar, em edições a cada dia, mais limitadas.</div><div>Brasileiro não sabe respeitar a arte, e adora dar calote, então, download é perfeito pra esse povo lindo e burro.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Marcelo&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.reverbnation.com/pentacrosticbr" title="" target="_blank">Pentacrostic</a>.)</span></div>
+<div>Pergunta interessante... Antes mesmo dessa "popularização" tecnológica, nosso gênero musical difundiu-se aliado à venda da mídia vigente na época [o consagrado vinil (em formatos "LPs”, "Eps", "flexy discs", "Picture discs", etc.) e as fitas K7s], muito em grande parte por material copiado em fitas K7s.</div><div>À época, me refiro à década de 80. Pela pequena quantidade de material físico nacional, digamos "original" (vinil), disponível para compra em lojas especializadas, o grande "difusor" do gênero foi a "pirataria" em forma da fita K7.</div><div>&nbsp;</div><div>Material de qualidade apenas importado. Juntavam-se os amigos, faziam a conhecida "vaquinha", comprava-se um ou mais vinis "gringos" por mês, que eram copiados pelos mesmos em K7s, para apreciação doméstica. Esta servia como "moeda de troca" na apreciação de outras bandas as quais os mesmos não conheciam. Não se esqueçam dos chamados "sons inéditos", aqueles que o sujeito conseguia a "muito custo", pois tinha um "correspondente" nos EUA ou Europa, pela troca de material nacional, e escondia no fundo da gaveta para se vangloriar que "apenas ele tinha"! Quem melhor divulgava as bandas?</div><div>&nbsp;</div><div>Essa "pirataria" foi a queda ou o "boom" do Metal na época? Foi a divulgadora ou o bloqueio de um estilo musical restrito que solidificou-se sem a existência de internet e MP3 e recursos financeiros em um pais de 3º mundo como o nosso? O fã deixou de assistir aos shows e comprar material de suas bandas preferidas?</div><div>&nbsp;</div><div>Em relação às gravadoras, organizadores, agentes, empresários e afins, as bandas sempre ficaram com a menor fatia. O verdadeiro "banger" sempre comprará o material original pelo fato de esperar um melhor álbum no próximo trabalho de seu artista preferido. Mesmo que nem sempre conte com recursos financeiros, ele sabe que isso é a base para a longevidade da banda. Agora, a pessoa sem recursos financeiros deve ser proibida de ouvir seu artista preferido pelo fato de não poder comprar o material original? Você acha que o METAL é conhecido em cada pequeno, longínquo e desconhecido país do globo pela venda de material original?!?</div><div>&nbsp;</div><div>No meu ponto de vista, as bandas se adequaram e evoluíram musical, econômica e tecnologicamente aos tempos atuais, fazendo bom uso da tecnologia e economia vigentes a seu favor; enquanto que os que lucravam nos bastidores tiveram sua fatia drasticamente reduzida, pelo pouco trabalho e inadequação a época. Mal acostumados pelos "esquemas fonográficos milionários", perfeitos e imutáveis até então, começaram uma "caça as bruxas tecnológica" pela perda de dividendos e comodidade. Não acho que uma banda morrerá de fome pelo fato de seu material ter sido divulgado em forma de mídia digital num país desconhecido. LP ou CD? Fita K7 ou mídia digital? Gravadora, empresário ou fã? Quem você acha que melhor divulga a essência musical e ideológica de uma banda? Quem tem maiores possibilidades de acabar com o futuro e sobrevivência do METAL EXTREMO?</div><div>&nbsp;</div><div>A "democratização da tecnologia" também assegura a sobrevivência das bandas e músicos iniciantes. Isso equaliza a antiga diferença de se ter ou não recursos financeiros para compor, gravar e divulgar o próprio material e que hoje pode ser apreciado por qualquer fã em cada pequeno, longínquo e desconhecido país do globo em tempo real. Analisando friamente, quem assegura o futuro e a sobrevivência do METAL EXTREMO são os verdadeiros HEADBANGERS que têm Metal correndo em suas veias e que não compram o álbum da banda apenas pela música tema da novela do horário nobre. Se não tivermos quem ouça e goste do nosso trabalho, o que importa se é vinil, fita K7, CD ou MP3? Uma solução justa? Adequação temporal!</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Inkubus&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.imperadorbelial.com/" title="" target="_blank">Imperador Belial</a>.)</span></div>
+<div>Bem, essa é uma questão complexa e tem múltiplos aspectos mas vou tentar não me estender muito. Acredito que o direito autoral deve ser preservado pois é ele que garante a sobrevivência de muitas bandas e selos.</div><div><br></div><div>Sou absolutamente contra o download ilegal, se uma banda ou selo coloca o trabalho a disposição para ser baixado gratuitamente ou se cobra um preço simbólico pelo download, tudo bem. Mas se a obra foi colocada para download por terceiros acho uma atitude anti-ética e anti-Metal, principalmente quando se trata de bandas undergrounds.&nbsp;</div><div><br></div><div>Quem disponibiliza uma obra para download ilegal não tem ideia dos custos, trabalho e dedicação envolvidos por trás, pois uma banda gasta com aquisição/manutenção de equipamentos, ensaios, processo de gravação/mixagem/masterização e os selos por sua vez gastam com arte gráfica, prensagem, divulgação, distribuição do material e ambos merecem ter um retorno digno do investimento que tiveram.</div><div><br></div><div>Quem se considera headbanger e fã de alguma banda deveria adquirir o material oficial e apoiar a banda que curte e não "roubar" na net seu material.</div><div><br></div><div>Acredito que o verdadeiro headbanger sempre irá prestigiar as bandas merecedoras e apoiar a cena, adquirindo material oficial das bandas e comparecendo aos shows, porém este headbanger está cada vez mais raro de se encontrar.</div><div><br></div><div>Enquanto as pessoas que se dizem envolvidas com o Metal continuarem a fazer downloads, o número de bandas e selos lançando albuns só tende a dimunir cada vez mais, e isso se reflete também em outros aspectos da cena como por exemplo o número de pagantes em um show. Há 10, 15 anos atrás era comum show underground com 400, às vezes até 700, 800 pagantes, hoje em dia quando tem 200 pagantes num show é motivo para se comemorar, coincidência??? Pensem e reflitam.&nbsp;</div><div><br></div><div>Saiam da frente de seus computadores a vão aos shows bater cabeças, comprem zines, demos e CDs ao invés de baixarem e movimentem a cena!!</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Débora Brandão&nbsp;
+<span class="mat_respostas_descricao">(Dona da <a href="http://www.metalmedia.com.br/" title="" target="_blank">Metal Media</a>.)</span></div>
+<div>Realmente é um assunto complexo e delicado. Se de um lado o músico/compositor/banda perde dinheiro com a violação de seus direitos autorais, por outro lado, o mesmo ganha uma promoção massiva e gratuita de sua obra.</div><div>&nbsp;</div><div>Não acho que exista uma solução simples para esta situação, o download ilegal pune de forma sumária especialmente os músicos independentes que investem recursos próprios para lançar seu material e dependem diretamente deste retorno para viabilizar um sucessor deste trabalho. Só que esta mesma banda independente não teria o alcance que a internet lhe dá mundialmente apenas com recursos próprios.</div><div>&nbsp;</div><div>Uma opção seria a banda lançar seu material tanto virtualmente quanto físico, mas em menores quantidades, transformando o produto físico em uma espécie de "souvenir" para os fãs que comparecem aos shows e querem uma lembrança mais palpável de seus novos ídolos. Os shows seriam também a forma do grupo se recapitalizar para o lançamento de novos trabalhos e consequentemente de novos shows.</div><div>&nbsp;</div><div>Mas, como tudo tem seu porém, esta não é uma situação tão simples de ser realizada em países de terceiro mundo e em desenvolvimento, como o Brasil. Nosso país carece de um circuito de shows, produtores profissionais e honestidade, em ambos os lados, mas não generalizando.</div><div>&nbsp;</div><div>Essa busca pelo meio termo da luta "Direitos Autorais versus Compartilhamento Ilegal" ainda vai longe e teremos muitos capítulos para os próximos anos.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Oscar&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.myspace.com/queiron" title="" target="_blank">Queiron</a>.)</span></div>
+<div>Muito se fala e ouve sobre essa questão, no que diz respeito à pirataria, ela no nosso caso ainda é benéfica, pois apesar dos 17 anos de estrada ela é um fantástico propagador de nossa música, uma vez que ainda contamos com tiragens limitadas de nossos CDs. É sabido do descaso com várias bandas nacionais, que podiam estar em outros patamares. Enfim esse não é o foco!</div><div>&nbsp;</div><div>Penso que são vários os fatores e um misto de bagunça generalizada que contribui para que a pirataria exista, um deles é exploração das gravadoras em cima das obras, isso sem falar nos contratos absurdos. Não sei como funciona em outros países, mas compare o preço em reais de um CD Importado e um Nacional, você se surpreenderá. A causa? Os impostos, e a sua vontade e seriedade ao levantar no domingo de manha e exercer o voto! Alerta aos músicos, pagamos verdadeiras fortunas por algo de qualidade.</div><div>&nbsp;</div><div>Estamos em um tempo onde as coisas estão rápidas, a comunicação o acesso à informação, hoje nos deparamos com uma enxurrada de bandas e lançamentos como nunca já visto em tempos remotos, não bastando muita coisa de ótima qualidade.</div><div>&nbsp;</div><div>Bom, sendo modesto vamos dizer que temos em média 100 lançamentos por mês a 25,00 cada, são 2.500,00 por mês, isso sem levar em conta, a cerveja do fim de semana e alguns shows a pelo menos 100,00, dentre outros gastos diários. Coloque na ponta do lápis, e se você ao menos tentar consumir metade disso tudo, já estará quebrado financeiramente, ora se levarmos em conta nosso país, 90% da população não ganha o suficiente pra manter tal luxo, penso que em outros países não seja tão diferente. É fato, quantos CDs e DVDs você comprou neste mês? Se for mais que cinco, aposto que no próximo mês você dirá que sua cota encerrou por este ano!</div><div>&nbsp;</div><div>É como disse, é uma bagunça generalizada, misto de exploração, gestão publica e muita oferta, a consequência? Pirataria! A saída? Por hora não vejo uma, e talvez se enxergasse alguma, estaria sendo indicado a um Prêmio Nobel!</div><div>&nbsp;</div><div>Fecho dizendo: Viver de musica está cada vez mais ligado à sorte. Nós, diante de tantas dificuldades ainda fazemos por amor a musica!</div></div>
+
+<div class="mat_compartilhar">
+<div class="mat_compartilhar_topo">Compartilhe essa mat&eacute;ria!</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="width:400px; vertical-align:central;">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<g:plusone size="medium"></g:plusone>
+<a class="addthis_button">Divulgue!</a>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000" 
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+<meta property="og:image" content="http://www.goregrinder.net/imagens/materias/Direitos Autorais.jpg" /></div>
+
+
+
+<div class="mat_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="mat_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="mat_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; height:25px; float:left;" class="mat_formulario_texto">Site <span style="font:9px Tahoma, Geneva, sans-serif;">(opcional)</span>: <input type="text" name="site" id="site" value="" size="50" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="mat_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="esc_esp_id" id="esc_esp_id" value="13">
+                  <input type="hidden" name="esc_ver" id="esc_ver" value="n">
+                </form>
+</div>
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=14&id=13 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:07:30 GMT -->
+</html>

@@ -1,0 +1,22 @@
+<br />
+<b>Warning</b>:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: gd-jpeg: JPEG library reports unrecoverable error:  in <b>/home/goregrinder/www/imgcrtz.php</b> on line <b>4</b><br />
+<br />
+<b>Warning</b>:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: 'imagens/agenda/PVH_Metal_Fest_3.png' is not a valid JPEG file in <b>/home/goregrinder/www/imgcrtz.php</b> on line <b>4</b><br />
+<br />
+<b>Warning</b>:  imagesy() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/imgcrtz.php</b> on line <b>6</b><br />
+<br />
+<b>Warning</b>:  imagesx() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/imgcrtz.php</b> on line <b>7</b><br />
+<br />
+<b>Warning</b>:  Division by zero in <b>/home/goregrinder/www/imgcrtz.php</b> on line <b>8</b><br />
+<br />
+<b>Warning</b>:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in <b>/home/goregrinder/www/imgcrtz.php</b> on line <b>11</b><br />
+<br />
+<b>Warning</b>:  imagecopyresized() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/imgcrtz.php</b> on line <b>12</b><br />
+<br />
+<b>Warning</b>:  imageinterlace() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/imgcrtz.php</b> on line <b>16</b><br />
+<br />
+<b>Warning</b>:  imagejpeg() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/imgcrtz.php</b> on line <b>17</b><br />
+<br />
+<b>Warning</b>:  imagedestroy() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/imgcrtz.php</b> on line <b>18</b><br />
+<br />
+<b>Warning</b>:  imagedestroy() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/imgcrtz.php</b> on line <b>19</b><br />

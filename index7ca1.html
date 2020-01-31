@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=73 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:08:50 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<script type='text/javascript' language='javascript' src='jscripts/jquery-1.3.2.js'></script>
+<script type='text/javascript' language='javascript'>
+$(function($) {
+	// Quando o formul·rio for enviado, essa funÁ„o È chamada
+	$('#form1').submit(function() {
+		// Colocamos os valores de cada campo em uma v·riavel para facilitar a manipulaÁ„o
+		var nome = $('#rcc_nome').val();
+		var email = $('#rcc_email').val();
+		var mensagem = $('#rcc_texto').val();
+		// Exibe mensagem de carregamento
+		// $('#status').html('<img src='loader.gif' alt='Enviando' />');
+		// Fazemos a requis„o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÈs do mÈtodo POST
+		$.post('com_rescds.html', {nome: nome, email: email, mensagem: mensagem }, function(resposta) {
+				// Quando terminada a requisiÁ„o
+				// Exibe a div status
+				$('#status').slideDown();
+				// Se a resposta È um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$('#status').html(resposta);
+				} 
+				// Se resposta for false, ou seja, n„o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$('#status').html('Mensagem enviada com sucesso!');
+					// Coloca a mensagem no div de mensagens
+					// $('#mensagens').prepend('<strong>'+ nome +'</strong> disse: <em>' + mensagem + '</em><br />');
+					// Limpando todos os campos
+					$('#rcc_nome').val('');
+					$('#rcc_email').val('');
+					$('#rcc_texto').val('');
+				}
+		});
+	});
+});
+</script>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Resenha: GS TRUDS - Only Tia Gertrudes Is Real [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].rcc_email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<script type="text/javascript" language="javascript" src="jscripts/lytebox.js"></script>
+<link rel="stylesheet" href="jscripts/lytebox.css" type="text/css" media="screen" />
+
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<script type='text/javascript' src='jscripts/enlargeit.js'></script>
+<script type='text/javascript'>
+        enl_brdsize = 10;
+        enl_shadowintens = 10;
+        enl_center = 1;
+        enl_darkprct = 70;
+        enl_preload = 1;
+        enl_drgdrop = 0;
+        enl_darksteps = 1;
+        enl_buttonurl[0] = 'prev';
+        enl_buttontxt[0] = 'Anterior';
+        enl_buttonoff[0] = -216;
+        enl_buttonurl[1] = 'next';
+        enl_buttontxt[1] = 'Proximo';
+        enl_buttonoff[1] = -234;
+        enl_buttonurl[2] = 'close';
+        enl_buttontxt[2] = 'Fechar [Esc]';
+        enl_buttonoff[2] = -0;
+</script>
+
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as fun√ß√µes necess√°rias para envio do formul√°rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formul√°rio for enviado, essa fun√ß√£o √© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma v√°riavel para facilitar a manipula√ß√£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var mensagem = $("#mensagem").val();
+		var rcc_res_id = $("#rcc_res_id").val();
+		var rcc_ver = $("#rcc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requis√£o ajax com o arquivo envia.php e enviamos os valores de cada campo atrav√©s do m√©todo POST
+		$.post('com_rescds8431.php?id=73', {nome: nome, email: email, mensagem: mensagem, rcc_res_id: rcc_res_id, rcc_ver: rcc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisi√ß√£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta √© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, n√£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+
+
+<a href="#" title="Clique para ampliar"><div class="rescds_capa"><img src="GS%20Truds_Only%20Tia%20Gertrudes%20is%20Real_2013a759.jpg?imagem=imagens/resenhas/GS%20Truds_Only%20Tia%20Gertrudes%20is%20Real_2013.jpg&amp;w=300&amp;h=300" border="0" onclick="enlarge(this);" longdesc="imagens/resenhas/GS%20Truds_Only%20Tia%20Gertrudes%20is%20Real_2013.jpg"/></div></a>
+
+<div class="rescds_detalhes">
+<div class="rescds_detalhes_itens">Banda/Artista: <b>GS Truds</b></div>
+<div class="rescds_detalhes_itens">T&iacute;tulo: <b>Only Tia Gertrudes Is Real</b></div>
+<div class="rescds_detalhes_itens">Lan&ccedil;amento: <b>Esporro Sonoro Prods./Gallery Prods./MVCS Prod./Metal Island/Tenebrarum</b></div>
+<div class="rescds_detalhes_itens">Ano: <b>2013</b></div>
+<div class="rescds_detalhes_itens"><span style="position:relative; float:left;">Contatos: </span><b><span style="position:relative; float:left; margin-left:2px; width:340px;">
+<a href="http://www.metal-archives.com/bands/GS_Truds/51783" target="_blank">http://www.metal-archives.com/bands/GS_Truds/51783</a></span></b></div>
+
+<div class="rescds_detalhes_itens">Site oficial: <b><a href="https://myspace.com/gstrudsbanda" target="_blank">https://myspace.com/gstrudsbanda</a></b></div>
+
+<div class="rescds_detalhes_itens">Resenha por <b><a href="mailto:cristianosteps@gmail.com">Cristiano Passos</a></b></div>
+<div class="rescds_detalhes_itens" style="border-bottom:0px;">Publicada no dia <b>28/01/2014</b></div>
+</div>
+
+<div class="rescds_texto"><p>O c&ocirc;mico na cena underground, principalmente em se tratando de metal, &eacute; ainda algo visto com muita desconfian&ccedil;a. Tal suspei&ccedil;&atilde;o que se lan&ccedil;a sobre o humor &eacute; estranha, principalmente se levarmos em considera&ccedil;&atilde;o que, no dia a dia, muitos dos headbangers com os quais convivo s&atilde;o pessoas bem-humoradas que costumam inclusive rir de si mesmos com frequ&ecirc;ncia ou tirar sarro uns dos outros. No meio punk, a comicidade, em suas formas mais sarc&aacute;sticas, at&eacute; &eacute; bem aceita, desde que tenha um fundo cr&iacute;tico e &aacute;cido. Ou seja, se a proposta for s&eacute;ria, se pode at&eacute; fazer uma ironia ou tirar uma onda com a cara de algu&eacute;m, mas sem perder o foco. Em resumo, a piada pela piada em si, de fato, &eacute; quase uma heresia no meio underground. Tanto &eacute; verdade que grupos que por acaso ousem se aventurar pelo terreno do c&ocirc;mico e do nonsense s&atilde;o sempre considerados menores, como se o que eles fizessem n&atilde;o tivesse sequer valor musical ou art&iacute;stico, mesmo que eles saibam tocar e dominem com perfei&ccedil;&atilde;o o c&oacute;digo metal ou punk. Na melhor das hip&oacute;teses, v&atilde;o ganhar a pejorativa pecha de for fun, como se fazer com&eacute;dia n&atilde;o fosse nada al&eacute;m de um passatempo de crian&ccedil;as ou desocupados. <br />&nbsp;<br />Mesmo assim, felizmente, algumas bandas de metal persistem na ideia de trazer o bom humor para sua produ&ccedil;&atilde;o e o fazem de forma bastante consistente, talvez iluminados por algum resqu&iacute;cio do trabalho comicamente corrosivo do falecido Frank Zappa, ao qual se deve adicionar uma boa dose de coragem para enfrentar as cr&iacute;ticas do povo &ldquo;s&eacute;rio&rdquo; do underground. Esse &eacute; o caso do GS Truds, banda veteran&iacute;ssima na cena, mas pouco citada pelos &ldquo;troos&rdquo;, que certamente devem achar que &eacute; s&oacute; mais uma banda for fun. Tendo lan&ccedil;ado apenas 4 demos em sua longa trajet&oacute;ria (a banda existe desde 1987!), provavelmente por n&atilde;o desfrutar do mesmo prest&iacute;gio que as bandas s&eacute;rias, essa banda cearense s&oacute; agora conseguiu lan&ccedil;ar seu debut, o pesado &ldquo;Only Tia Gertrudes is real&rdquo;, uma paulada thrashcore de arrepiar o mais exigente f&atilde; de crossover.&nbsp; <br />&nbsp; <br />Al&eacute;m de ser uma banda veterana, o que mostra ineg&aacute;vel empenho e dedica&ccedil;&atilde;o acima da m&eacute;dia, o som que Luiz Lemos (vocal), Carlos Menezes (baixo), Paulo Henrique (guitarra) &ndash; contando com o apoio do batera Acacio Vidal &ndash; fazem &eacute; realmente uma prova inconteste de que eles entendem do assunto e, apesar da atitude bem-humorada, n&atilde;o est&atilde;o pra brincadeira quando o assunto &eacute; fazer m&uacute;sica pesada de qualidade. O lance &eacute; s&eacute;rio: porrada pra todo lado, guitarras muito pesadas e cortantes, vocais urrados no melhor estilo HC e cozinha alternando entre partes r&aacute;pidas e outras mais cadenciadas, como pede o bom crossover. Ali&aacute;s, musicalmente falando, as refer&ecirc;ncias s&atilde;o as melhores poss&iacute;veis: h&aacute; um pouco de Nuclear Assault, Psychic Possessor e at&eacute; do velho Anthrax, nos seus discos mais pesados, mas a maior influ&ecirc;ncia mesmo vem de bandas como S.O.D. e, principalmente, do R.D.P. dos tempos do &ldquo;Cada dia mais sujo e agressivo&rdquo;, &ldquo;Brasil&rdquo; e &ldquo;Anarkophobia&rdquo;. H&aacute; que se considerar ainda que parte desse sarcasmo do GS Truds, de certa forma, tamb&eacute;m encontra eco nos trabalhos do RDP, posto que os paulistanos sempre tiveram uma tend&ecirc;ncia &agrave; ironia e ao deboche em termos de atitude e letras. <br /><br />Por falar nas letras, estas retratam, em portugu&ecirc;s coloquial, um universo bem suburbano, em sua maioria, com diversas refer&ecirc;ncias a putas e botecos (&ldquo;Puta purulenta&rdquo;), loca&ccedil;&otilde;es de periferia (&ldquo;Terror no beco da poeira&rdquo;), igrejas evang&eacute;licas (&ldquo;Sat&atilde; obreiro da universal&rdquo;) e lendas urbanas (&ldquo;V&eacute;io do saco&rdquo;), evidenciando, de forma irreverente, uma realidade bem brasileira. Nesse mesmo sentido, a banda faz gra&ccedil;a com a religi&atilde;o em &ldquo;Maldi&ccedil;&atilde;o do ovo&rdquo;, que retrata o caso de uma galinha preta que pariu um pinto anticristo ao som de Slayer, com a cena underground, ao criticar os embalistas de hoje em dia em &ldquo;Retroboy&rdquo;, abrindo ainda um espa&ccedil;o para as letras de inspira&ccedil;&atilde;o gore/terror bem &agrave; sua maneira, ou seja, com uma veia c&ocirc;mica que chega a beirar o puro nonsense. Nessa toada, seguem as &oacute;timas &ldquo;Churrasco dos vermes&rdquo;, &ldquo;Ataque das borboletas canibais&rdquo; e &ldquo;Velma, a barata zumbi&rdquo;. <br />&nbsp;<br />Dentre todas as faixas, embora elas formem um todo bastante homog&ecirc;neo, eu destacaria as excelentes &ldquo;Churrasco dos vermes&rdquo; e a cadenciada &ldquo;Ataque das borboletas canibais&rdquo; &ndash; sem d&uacute;vida a m&uacute;sica mais foda do disco, que p&otilde;e qualquer veterano a bater cabe&ccedil;a e deve abrir uma roda gigante ao vivo. Tamb&eacute;m curti muito &ldquo;Maldi&ccedil;&atilde;o do ovo&rdquo;, &ldquo;Terror no beco da poeira&rdquo; e os riffs empolgantes de &ldquo;Puta purulenta&rdquo;, o que n&atilde;o significa que os outros sons sejam ruins, longe disso!&nbsp; <br />&nbsp;<br />Assim, &ldquo;Only Tia Gertrudes is real&rdquo; &eacute; um puta disco de thrashcore, mas que corre o risco de ser esquecido pela cena diehard, que infelizmente leva o mundo a s&eacute;rio demais e, por sua vez, esquece que, se n&atilde;o fosse a irrever&ecirc;ncia de certas cabe&ccedil;as mais arejadas no mundo das artes, talvez ainda estiv&eacute;ssemos produzindo m&uacute;sica erudita e o que chamamos de underground seria um lugar t&atilde;o &ldquo;divertido&rdquo; quanto um jogo de golfe num resort burgu&ecirc;s ou um recital de poesia parnasiana. Enfim, com um disco assim, o GS Truds felizmente abre uma brecha na sisudez metaleira e prova que se pode fazer a ra&ccedil;a bater cabe&ccedil;a e rir de si mesma sem que com isso se perca a autenticidade. Em tempos de &ldquo;troos&rdquo; ca&ccedil;ando as bruxas na rede social e outras manifesta&ccedil;&otilde;es de seriedade mal&eacute;vola e desnecess&aacute;ria mundo afora, &eacute; um al&iacute;vio poder ouvir um som empolgante assim e lembrar que, antes de tudo, rir &eacute; sempre o melhor rem&eacute;dio, mesmo na cena underground.</p></div>
+
+<div class="rescds_tracklist">
+<div class="rescds_tracklist_topo">Tracklist:</div>
+<p>1. Puta purulenta <br />2. Maldi&ccedil;&atilde;o do ovo <br />3. Retroboy <br />4. Churrasco dos vermes <br />5. Ataque das borboletas canibais <br />6. Sat&atilde; obreiro da universal <br />7. Terror no beco da poeira <br />8. V&eacute;io do saco <br />9. Velma, a barata zumbi</p></div>
+
+<div class="rescds_compartilhar">
+<div class="rescds_compartilhar_topo">Compartilhar</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="text-align:left; margin-top:5px;" >
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_tweet"></a></div>
+<!-- Inclua esta tag onde desejar que o bot√£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><g:plusone size="medium"></g:plusone></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button" addthis:url="http://www.goregrinder.net/index.php?s=10&id=73" style="font:10pt Arial, Helvetica, sans-serif;"><img src="imagens/sm-plus.gif" 
+        width="16" height="16" border="0" alt="Compartilhar" />&nbsp;Divulgue!</a></div>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000"
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+
+</div>
+
+<div class="rescds_moreabout">
+<div class="rescds_moreabout_topo">Mais sobre:</div>
+
+
+
+
+<div class='more_setores'><div class='more_titulo_setor'>Resenha:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index7ca1.html?s=10&amp;id=73' class='more_txt_interno'>- <i>Only Tia Gertrudes Is Real</i></a></div></div></div>
+        </div>
+</div>
+
+<p style="position:relative; float:left; width:100%; text-align:center;"><a href="#comentarios" class="txt-cur-album">Envie seu coment&aacute;rio sobre essa not&iacute;cia! </a></p>
+
+
+
+<div class="rescds_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="rescds_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="rcc_res_id" id="rcc_res_id" value="73">
+                  <input type="hidden" name="rcc_ver" id="rcc_ver" value="n">
+                </form>
+</div>
+
+
+
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=73 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:08:50 GMT -->
+</html>

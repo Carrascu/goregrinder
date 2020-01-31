@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=14&id=12 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:08:15 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Mat&eacute;ria Especial: Pagar Para Tocar [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var site = $("#site").val();
+		var mensagem = $("#mensagem").val();
+		var esc_esp_id = $("#esc_esp_id").val();
+		var esc_ver = $("#esc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_mat4ef9.html?id=12', {nome: nome, email: email, site: site, mensagem: mensagem, esc_esp_id: esc_esp_id, esc_ver: esc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#site").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<div class="mat_topo">
+
+<div class="mat_imagem"><img src="Pagar_para_tocar9fb3.jpg?imagem=imagens/materias/Pagar_para_tocar.jpg&amp;w=350&amp;h=350" border="0" /></div>
+
+<p>
+<p>Em um contexto onde podemos ao mesmo tempo verificar a populariza&ccedil;&atilde;o do estilo (e sub-estilos) Heavy Metal e as facilidades para se formar e divulgar uma banda, associadas a uma necessidade quase impositiva de &lsquo;fazer sucesso&rsquo; presente no imagin&aacute;rio social, cada vez mais presenciamos o fen&ocirc;meno (que sempre existiu e que ficou conhecido como o tal do &lsquo;jab&aacute;&rsquo;) de bandas dispostas a investir, &agrave;s vezes, altas quantias de dinheiro para alavancar seu nome na cena.</p>
+<p>Pagar para tocar n&atilde;o se resume apenas &agrave;quelas bandas que pagam uma nota para abrir shows de bandas famosas (geralmente gringas), mas &eacute; muito mais amplo que isso. Pagar para tocar, pode-se interpretar tamb&eacute;m, muitas vezes o fato de n&atilde;o se cobrar o justo e merecido cache. Porqu&ecirc;? Bom, n&atilde;o &eacute; novidade para ningu&eacute;m que o Underground &eacute; muito pequeno e restrito em se tratando de oportunidades para as bandas.&nbsp;</p>
+<p>Shows raramente lotam e d&atilde;o algum lucro para o organizador, ent&atilde;o d&aacute; para entender quando o mesmo n&atilde;o paga as bandas, pois muitas vezes n&atilde;o h&aacute; retorno financeiro suficiente para garantir a manuten&ccedil;&atilde;o do evento. Da mesma forma, e do outro lado dessa rela&ccedil;&atilde;o, ter uma banda &eacute; arcar com muitos gastos, desde a compra de instrumentos musicais, manuten&ccedil;&atilde;o dos mesmos, aluguel de hor&aacute;rio para ensaios em est&uacute;dios at&eacute; as passagens de &ocirc;nibus ou custo de combust&iacute;vel para se deslocar at&eacute; o ensaio. Quando se trata de tocar em outra cidade os custos s&atilde;o ainda mais altos. Para pessoas de baixa renda que montam uma banda, isso &eacute; sentido de uma forma ainda mais forte, mas h&aacute; casos de bandas que arcam com isso de maneira natural e quase indolor. Essas, que muitas vezes contam com "paitroc&iacute;nios", conseguem abrir shows de bandas grandes pagando uma nota para o produtor. Dificilmente d&aacute; errado para um organizador desse porte, pois al&eacute;m de receber das bandas de abertura, ainda se aproveitam do fato do p&uacute;blico n&atilde;o se queixar de pagar car&iacute;ssimo por ingressos de eventos com bandas famosas.&nbsp;</p>
+<p>Essa realidade &eacute; muito oposta com eventos de menor porte, os realmente Undergrounds. Nesse caso, h&aacute; at&eacute; reclama&ccedil;&otilde;es e tentativas de entrar de gra&ccedil;a por parte de pessoas que se julgam apoiadores da cena, mas que preferem gastar a grana em cacha&ccedil;a ao inv&eacute;s de pagar um simb&oacute;lico valor de &lsquo;entrada&rsquo;. N&atilde;o precisa ser nenhum g&ecirc;nio para notar que o organizador desse tipo de evento se complica muito mais e, por consequ&ecirc;ncia, as bandas que gastaram uma grana para estarem ali, independente se vieram de outras cidades ou estados.</p>
+<p>Gastos sempre haver&atilde;o, mas um fato curioso no Underground &eacute; o chamado "mercen&aacute;rio". Classificam assim muitos organizadores de eventos Undergrounds que cobram um valor um pouco mais alto do que 10 ou 15 reais em um evento que geralmente d&aacute; 200 ou 300 pessoas. Esses que os classificam dessa forma n&atilde;o tem no&ccedil;&atilde;o dos gastos das bandas e do organizador, que est&atilde;o ali trabalhando, ao contr&aacute;rio do p&uacute;blico que est&aacute; curtindo.</p>
+<p>Por outro lado h&aacute; a vis&atilde;o de custear um 'hobby', tal qual ocorre como qualquer outro. Ou seja, cientes de que o Underground n&atilde;o lhe d&aacute; lucros financeiros por v&aacute;rios motivos, muitos optam em ter uma banda exclusivamente por prazer, mesmo que essa lhe custe alguma grana, e n&atilde;o se importam com isso. Tocar em outros lugares, para alguns, vale a pena mesmo que tenham de tirar dinheiro do bolso para estar l&aacute;, em cima do palco, j&aacute; que em alguns casos esses mesmos pagariam do bolso a entrada para apenas estar vendo os shows.</p>
+<p>De toda forma, tal tema possui muitas possibilidades de discuss&atilde;o e debate, abrindo vertente para diferentes argumentos. Nessa mat&eacute;ria queremos coletar opini&otilde;es de v&aacute;rios lados e tentar entender os motivos que levam uma banda, na maioria das vezes, a arcar com preju&iacute;zos para se manter na ativa.</p>
+</p><br /><br />
+<div class="mat_pergunta">Qual a sua opinião sobre o famoso ‘jabá’, ou então, sendo mais abrangente, sobre uma banda tirar dinheiro do próprio bolso para se manter na ativa ou ascender na cena?</div>
+<br /><br />
+Essa mat&eacute;ria foi elaborada por <b><a href="mailto:alexneundorf@yahoo.com.br">Alex Neundorf</a>, <a href="mailto:carrascu@bol.com.br">Carrascu</a> e <a href="mailto:arrudalaskos@hotmail.com">Andr&eacute; Arruda</a></b>, e publicada no dia <b>25/01/2012</b>.
+
+</div>
+
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Cristiano Martinez&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.myspace.com/vomepotro" title="" target="_blank">Vomepotro</a>)</span></div>
+<div>Infelizmente essa é uma grande realidade e que faz com que muitos desistam de seguir em frente! Tudo que envolve música esta relacionada a dinheiro, mas acredito que seria necessária toda uma mudança pra que as coisas funcionem, a primeira coisa é que uma banda não é obrigada a se sujeitar a tocar sem as mínimas condições e nem tocar sem pelo menos o pagamento dos custos da viagem pelo organizador do show, bandas que aceitam qualquer tipo de negócio estão prejudicando quem faz um trabalho sério!!!! No entanto existem muitas pessoas que não "organizam" shows e sim são aventureiros que por amor ao metal se acham no direito de organizar eventos e que não sabem como funcionam tudo que envolve o mesmo, sendo assim acabam prejudicando as bandas, pois acreditam que qualquer coisa que estiver disponível e que faça barulho para uma banda tocar está bom, então fica a pergunta, porque ensaiar tanto e fazer um som de qualidade? Sabendo dessas condições muitas vezes o público não apoia o evento e a desculpa é que o metal morreu e ninguém mais vai aos shows para prestigiar!!!</div><div>&nbsp;</div><div>Pra finalizar não condeno quem paga para tocar e quem sou eu para julgar alguém, cada um faz o que acha melhor e vai aonde pode $$$, só acho que a única diferença é que não adianta pagar para tocar ou ficar se "auto-intitulando” isso ou aquilo sendo que a mesma ainda não é nada disso e o público que deveria fazer isso muitas vezes nem gosta da banda ou nem conhece direito. Os fãs de Heavy Metal tem o poder de aclamar um artista e não ela mesma, então ai é que mora o perigo, pois a banda acaba se queimando ao invés de se promover!!! A galera tem que gostar da sua banda não você ficar implorando para que as pessoas façam isso por você!!!</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Sandro Muniz&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda&nbsp;<a href="http://xn--www-4m0a.myspace.com/â€‹fatesprophecy" title="" target="_blank">Fates Prophecy</a>.)</span></div>
+<div>Uma banda sempre irá precisar investir... mas existe uma linha muito tênue entre “investir” e “pagar para aparecer”...</div><div>&nbsp;</div><div>Infelizmente o famoso “jabá” prejudica todas as bandas da cena, inclusive as que estão pagando “jabás”. Hoje em dia quase nenhuma banda consegue receber um cachê justo (na realidade algumas não conseguem nem receber) por conta dessa atitude. O Fates já foi convidado diversas vezes para abrir shows e nunca cedemos ao fato de pagar para tocar. Na minha cabeça quando somos convidados temos que receber, pra mim não existem “bandas de abertura” ou “bandas convidadas” e sim o show de “duas bandas”.</div><div>&nbsp;</div><div>Quando se participa de um evento beneficente jamais iríamos cobrar nada, do contrário, como podemos tocar sem receber? Já imaginou seu chefe chegar e falar “olha tem que bater o ponto às 8h, tem 1h de almoço e sai às 18h, mas como nossa empresa é uma multinacional conceituada você não irá receber, pois estará melhorando seu currículo”!!! Isso não existe, e com a falta de lugares para se tocar, o excesso de bandas covers (que não tenho nada contra) acaba acontecendo isso, as oportunidades que são poucas acabam se tornando um leilão de “quem cobra menos cachê até quem pague para tocar”.</div><div>&nbsp;</div><div>Fala-se muito da cena metal brasileira... ela realmente existe, mas o dia que deixarem a “panela” de lado e passarem a olhar as grandes bandas que temos na cena, das quais se for nomear aqui não haverá espaço pela quantidade de grandes bandas nacionais que não tem a menor ajuda ou apoio da mídia (e não é por falta de talento ou grandes trabalhos) infelizmente a grande maioria das bandas dependem unicamente do ótimo trabalho musical e nada mais.</div><div>&nbsp;</div><div>O problema é que temos um dos maiores (senão o maior) público de metal do mundo, no entanto são poucos os que saem para prestigiar (por diversos motivos). Uma das soluções, na minha opinião, seria uma participação maior do nosso público para prestigiar nossas bandas, com isso todos ganhariam, o público que com isso teriam mais opções de shows com ingressos bem mais em conta (a um custo menor para um produtor / dono de casa de show) pois seria mais acessível e mais em conta contratar bandas nacionais, as bandas teriam mais oportunidades para mostrar seus trabalhos e receberiam por isso e todos ficariam satisfeitos.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">M. Mictian&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://theunearthly.com/" title="" target="_blank">Unearthly</a>.)</span></div>
+Eu desde que fundei o Unearthly sempre fui contra pagar para tocar e felizmente nunca nos dobramos a essa prática, já fomos convidados para vários shows que teríamos que pagar e nunca demos o braço a torcer mesmo que ficasse-mos de fora do evento, eu sempre defendi que as bandas tem é que receber para fazer shows essa é minha posição e a mantenho até hoje e mesmo não nos apresentando em vários shows que se cobram pra tocar fico feliz por me manter firme, apesar que hoje em dia conseguimos um status que não se cogita mais o Unearthly ter que pagar jabá pra se apresentar em eventos grandes.</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Alex Zuchi&nbsp;
+<span class="mat_respostas_descricao">(Vocalista da <a href="http://www.reverbnation.com/intormentbr" title="" target="_blank">In Torment</a>.)</span></div>
+<div>A questão do jabá pode ser interpretada de várias maneiras e depende da visão e/ou objetivos de uma banda, quer ela seja iniciante ou mais antiga. Há casos em que funciona e impulsiona carreiras. Pessoalmente, porém, não concordo em pagar para tocar em um evento. Dentro do IN TORMENT, acreditamos que essa não é a melhor forma de estar presente em um evento com um alcance maior. Tentamos ainda acreditar que se uma banda possui talento e sua sonoridade tenha relação com a banda principal, ela esteja apta a desempenhar um bom papel. Sabemos que na prática a coisa não funciona dessa forma, mas não queremos fazer parte desse tipo de atividade nem queremos manter contato com esse tipo de “produtor”. Tenho visto ainda, muitas bandas totalmente amadoras pagando caro para abrir para bandas gringas. Essas bandas deveriam primeiramente criar boas músicas, ensaiar muito, desenvolver um show interessante e com presença de palco. Ao limitarem-se exclusivamente a inserção forçada em eventos maiores, essas bandas apenas tem conseguido ser motivo de chacotas por parte do público. Já testemunhei isso ocorrer em mais de uma ocasião.</div><div>O segundo ponto, que se refere a tirar dinheiro do próprio bolso para manter a banda na ativa, acredito ser uma prática perpetuada por quase 100% das bandas underground. Tocar metal requer amor pela música e força para encarar adversidades. O sujeito precisa realmente se desvincular da opinião do grande público. Tem que haver prazer em se levar adiante às atividades de uma banda pequena. Tem que se acreditar no que se faz e tirar dinheiro do bolso para concretizar ideias.</div><div>Há a questão do cachê, que na verdade limita-se a uma “ajuda de custo”, uma ajuda que muitas vezes não custeia o próprio transporte da banda. Para mim, esse é o ponto mais crítico em toda a cena. Já fomos tratados como “mercenários” por alguns ditos “produtores” por exigirmos coisas “que somente uma banda rock star poderia pedir” (irônico) como: ajuda no transporte, água no palco, alimentação...</div><div>Enfim, é difícil se manter ativo na cena underground nacional com todas as dificuldades econômicas que enfrentamos diariamente. É preciso muito empenho e luta para tentar elevar sua banda &nbsp;a um novo patamar. Porém, acreditamos que ainda vale a pena tentar.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Marcio Pandolfi&nbsp;
+<span class="mat_respostas_descricao">(Dono do blog <a href="http://oarrancatoco.blogspot.com/" title="" target="_blank">O Arranca Toco</a>.)</span></div>
+<div>Essa é uma relação de prostituição, mesmo que às avessas. Existem patamares diferentes, em que mesmo dentro do Underground há um certo "mainstream"; Bandas conhecidas dentro desse circuito, que tocam pra 100, 200 pessoas, mas que é desconhecida do "grande público" em geral. Estas bandas tem uma certa estrutura e até um grau de exigência pra tocar em determinados lugares. Muitas vezes para alcançar um nível mais alto, "crescem o olho", ou seja, se "vendem" em busca de maior visibilidade. Nem que para isso topem em entrar pro "esquema" tradicional (jabá), abrindo mão de serem Underground. Tudo pelo $uce$$o.</div><div><br></div><div>Diferente no caso de bandas que pagam pra tocar, por não haver outro jeito. Há milhares de bandas em eventos, cuja organização ou mais precisamente o local, não pagam estas bandas. Seja por não haver caixa suficiente ou por mesquinharia mesmo. No final das contas, cada banda investe em seu trabalho, já que não há como fazer música de graça ou sobreviver dela mesma. O "hobby" de tocar movido pelo espírito e o sentimento em fazer um som, esbarra nessas questões que muitas vezes se tornam um estorvo e colaboram para abreviar uma carreira musical que poderia ser mais longa e duradoura.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Marcelo Miranda&nbsp;
+<span class="mat_respostas_descricao">(Integrante do duo&nbsp;<a href="http://www.olameinsof.com/" title="" target="_blank">Olam Ein Sof</a>.)</span></div>
+<div>Realmente é um assunto que pode ser encarado de inúmeros pontos de vista, pois tudo no mundo independente do que façamos e qual propósito, e mais ainda gostando ou não vai envolver o famoso dinheiro.</div><div>&nbsp;</div><div>Isso já é algo muito maior do que as vezes pensamos, realmente é como o sistema está embasado e sendo vivido, até que alguém consiga eliminar isso, algo próximo será criado por conta que ele só simboliza a troca entre serviços ou produtos. Porém o problema é que o dinheiro, no meu ponto de vista, tomou valores maiores do que realmente ele vale, e virou o objetivo da grande maioria dos seres humanos.</div><div>&nbsp;</div><div>Para muitos o dinheiro ainda está associado a ser ganho com um trabalho que não gosta para ser gasto com algo que gosta, manter sua ideologia, prazer, hobbies e afins. Por conta disso, quando tratamos da arte de forma geral, os pensamentos ficam mais confusos. Pois a arte, a música no caso da discussão, pode ser feita por qualquer um e de qualquer forma, não precisando realmente da pessoa ser um profissional nisso. E no metal, especificamente nesses anos todos, vejo que no Brasil foi muito associado somente com ideologia, rebeldia, hobby, e tudo mais; sem problemas e deve ser assim, porém não impede de tudo isso ser feito e ter uma postura também profissional, no sentido que vai gerar dinheiro para alguém de alguma forma e tudo isso podia ter um subsistência se as pessoas envolvidas realmente se informassem melhor, não ficassem presas a discursos sem fundamentos, e não misturassem gostos, egos, ganhos, gastos e tudo o que se envolve para fazer eventos e shows. E, principalmente, se aqueles que realmente têm possibilidades de fazer algo tivessem feito, revistas, lojas especializadas, produtores de médio e grande porte, que realmente só apostam nos gringos e não apoiam em nada a cena local.</div><div>&nbsp;</div><div>Tudo que falo não é porque vi outros comentarem e sim por estar há mais de 20 anos na música, no underground e em outros movimentos musicais, pois vivo hoje em dia exclusivamente da música, e já pensei de várias formas sobre isso. Já estive em todos os lados. Então pagar para tocar não é justo mesmo de forma alguma. Hoje penso que se um produtor não tiver capacidade de organizar um evento de verdade é melhor não organizar. Se a pessoa não sabe buscar patrocínios, valorizar o que ela faz, não deve se meter nisso e deve procurar outra atividade. Cada um leva uma banda como quiser, para todos é um prazer, talvez o maior da vida, mas nesse todo alguns tem isso também como profissão, então é saber separar quem é quem. Lógico que como qualquer negócio que comece, às vezes, dependemos de dinheiro vindo de outra fonte, mas sempre da para notar quem é quem.</div><div>&nbsp;</div><div>Outro lance que as pessoas têm que saber diferenciar é o que é arte e um simples momento de fama. Se você faz o que acredita mesmo, será atemporal, e não terá desespero para aparecer, isso comento, pois pensará mais antes de querer gastar muito para subir logo, isso é complicado, o preço é alto e muitas vezes não levam a nada. Quem fica é porque fez sua parte com honras e verdade e não porque comprou um lugar. É só ver na grande mídia o que lembramos que fez sucesso rápido e hoje nem lembramos.</div><div>&nbsp;</div><div>E ao público respeitar o artista nacional como alguém que deve ser valorizado, pois isso vem também da nossa cultura de valorizar tudo que vem fora, é antigo e está incrustado em nossa mente como brasileiros. E não precisamos de nos enganar, é só ver como atuamos mesmo, pagamos muito para ver um gringo e não sabemos nem o que acontece na rua do lado de nossa casa.</div><div>&nbsp;</div><div>Concluindo: a hora que realmente nos respeitarmos e termos orgulho real do que somos e do que fazemos todas essas questões serão tratadas de forma natural: tem um show que tem gastos para ser produzido, tem custos com bandas, parte técnica, a pessoa ou equipe que organiza, o público pagar e curtir... é muito simples.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Paulo Henrique&nbsp;
+<span class="mat_respostas_descricao">(Editor do&nbsp;<a href="http://metalmaniacszine.blogspot.com/" title="" target="_blank">Metal Maniacs Zine</a>.)</span></div>
+<div>Bom pagar para tocar ou o famoso e insano “pay to play” é uma coisa grosseira e absurda, na minha opinião, e isso que não possuo mais banda, hoje em dia vemos muito disso no mundo e aqui no Brasil, produtores que visam apenas lucros, não se importando com o público. Este meio Jabazeiro está envolvido no meio musical como um todo, e não apenas no circuito underground do rock, mas irei falar dentro do underground. Aqui em Sampa é triste e existe muito disso realmente, algumas casas, bares, produtoras, tiram a responsabilidade de suas costas, responsabilidade essa que seria de divulgação de tal evento geralmente. Já fui em muito local onde o “cara” enche um bar com até 12 bandas, faz alguns poucos cartazes e fica a cargo da banda a “divulgação”, que seria em vender determinados números de ingressos, geralmente de 10 a 20 ingressos... Na realidade, a banda irá vender esses ingressos para seus chegados, familiares, etc., e geralmente pagando pelos restantes dos ingressos não vendidos: Geralmente a casa não teria um ambiente destinado para suportar tais números de bandas e fora ainda que há aquela velha briga por horário, pois nenhuma banda quer ser a última a subir ao palco, pois o público iria embora com os seus amigos após encerrar seu espetáculo. Geralmente a banda arca com as despesas do próprio bolso para poder tocar, algumas vezes não conseguem vender os ingressos acordados, então ficam na divida, trazendo ou não público.</div><div>&nbsp;</div><div>Uma coisa que a banda tem que ver é, são músicos e devem ser tratados como tais, devem receber o cache, pois existem gastos, com transporte até o evento, estúdio para ensaio, instrumentos, alimentação, cervejas, divulgação, etc. Hoje em dia manter uma banda existem muitos sacrifícios e gastos, e na grande maioria dos casos, o músico, ele trabalha para poder arcar com suas despesas diárias, sendo que a banda não lhe dá um retorno financeiro para poder viver exclusivamente da sua musica. Tocar de graça em um evento gratuito, eu acho uma forma de divulgação muito boa para a banda pois poderá mostrar seu trabalho ao público e divulgar as suas ideias. Agora existem as bandas que por outro lado não se importam com isso, o importante para elas é terem seu logo vinculado ao cartaz e se sentirem rock stars. Já vi um monte de banda pagando “vendendo ingressos” para veicular sua banda em algum show de alguma banda internacional, apenas para dizerem que sua banda abriu para determinada banda. Pô, se os caras vão pagar o cache para determinada banda, sinceramente, eles podem pagar para essas bandas de abertura. O que eu quero dizer com isso seria: as “produtoras” tiram de suas costas o que realmente eles deveriam fazer, divulgação, espaço apropriado para comportar o número de pessoas, as vezes você vai em um ambiente onde a casa não tem aparelhagem apropriada, sendo a cargo da banda se locomover com seus instrumentos e aparelhos, tais como caixas, mesa de som etc., a banda que literalmente não tem como se locomover com toda a sua aparelhagem ficaria com o som estragado, devido a não poder utilizar os equipamentos completos. Mas também o que mais ajuda a isso é o publico, geralmente o cara não quer desembolsar 10 a 15 reais em um evento, e fica enchendo a cara de cachaça do lado de fora, e tentam entrar ao evento quando metade das bandas já até tocaram. Aqui em sampa já vi muitos caras fazendo eventos com trocentas bandas e colocando bandas de renome em seus eventos... e se a banda não consegue vender o número estabelecido de ingressos seu logo no cartaz é removido, sobrando espaço apenas para bandas que conseguiram tal feito. Já fui em eventos onde tinham em seus flyers de divulgação até 15 bandas, e chegando no local apenas 5 a 6 bandas realmente tocaram. E o mais foda disso tudo é que algumas bandas são lesadas por caras desse tipo de pensamento, se fodem pagando para poder tocar e mostrar ao público seu trabalho. No final, montam eventos com esquemas do mesmo tipo, fazendo isso um ciclo vicioso, já que foram usados, irão usar o mesmo meio para poder ter algum tipo de lucro. Detalhe não estou colocando todos no mesmo patamar, apenas estou passando uma ideia do que acho do assunto. Se você tem uma banda, deve sim receber pelo seu trabalho e não pagar literalmente para subir ao palco.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Eduardo&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.reverbnation.com/bestialblackdeath" title="" target="_blank">Bestial</a>.)</span></div>
+Nós somos contra, mas cada um é livre para fazer o que quiser para o interesse de sua banda.</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Calebe&nbsp;
+<span class="mat_respostas_descricao">(Baterista da banda <a href="http://www.harmonyfault.com/" title="" target="_blank">Harmony Fault</a>.)</span></div>
+<div>Pagar para tocar, eis um dos tabus que cercam o nosso querido underground. Não vamos falar do jabá propriamente dito, isto é, pagar para abrir shows ou até mesmo para tocar em rádios. Agora, indiretamente, via de regra, paga-se para tocar. Sim, porque existem gastos para ensaiar, manter os instrumentos, adquirir equipamentos, locomoção para as gigs, etc.</div><div><br></div><div>Primeiramente, temos bem claro o tamanho da responsabilidade e do risco de organizar eventos underground, até porque já organizamos vários. Assim, entendemos quando não é possível repassar alguma grana para as bandas. No fundo, na maioria das vezes o próprio organizador acaba tendo que tirar do próprio bolso para cobrir os gastos do evento. Será que não é à toa que o número de promotores de shows undergrounds é escasso?</div><div><br></div><div>Por outro lado, caso o evento for lucrativo, nada mais justo do que dividir uma parte da grana entre as bandas participantes, até porque sem elas não rolaria gig alguma...</div><div><br></div><div>Além disso, tem-se que pagar para tocar está longe de ser a situação ideal, porém a banda que solicita uma ajuda de custo para cobrir os gastos acaba sendo mal vista. Ajuda de custo não é cachê, que fique claro. Esse auxílio é interessante para o deslocamento da banda, mas quando a ajuda não é possível, enfim, dá-se um jeito de tocar, de um modo ou de outro.</div><div><br></div><div>Outro ponto a ser abordado é que pelo underground afora não é raro a presença da turma que faz plantão na portaria do evento para mendigar desconto no ingresso ou até mesmo conferir o show sem pagar nada. Também existem aqueles que optam apenas por encher a cara (e seus congêneres) e ficam na rua. E o pior, são os primeiros a decretar a estagnação ou a morte do underground! No fim, o que se escuta é “porra, tá caro o ingresso hein!”, ou ainda, “dá um desconto aí pra comprar o teu CD”. De mais a mais, são seres sem comprometimento com a cena e o tempo se encarregará de mostrar quem é quem.</div><div><br></div><div>Particularmente, a Harmony Fault é um hobby para nós. Assim, já sabemos e nos preparamos de antemão para os gastos relacionados com ensaios, gigs, etc.. No fim das contas, é mais ou menos como se a gente jogasse futebol nos fins de semana e tivesse que pagar o aluguel da quadra, o fardamento, a ceva depois do jogo, etc.</div><div><br></div><div>Enfim, pagando ou não, prejuízo ou não, isso tudo não importa. O underground não é o ambiente para se ganhar dinheiro. Agora, fazer novos contatos, conhecer novas bandas, tocar ao vivo e praticar o estilo que se aprecia e poder dividir uma cerveja gelada com os amigos, isso não tem preço.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Toxic Carnage&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.myspace.com/infernalwar666blackmetal" title="" target="_blank">Infernal War 666</a>.)</span></div>
+<div>Nos últimos três anos que passaram creio que acabei conhecendo muito mais sobre rock, hard e funk music (1960 e 70) do que em toda minha vida, até então. Digo isso, pois me formei nas "categorias de base" do metal extremo de oitenta e noventa o que, apesar de maravilhoso, deixou-me um pouco distanciado de outras experiências musicais. O que não julgo como bom ou ruim. São experiências diferentes, apenas. Com isso, quero dizer que hoje tenho me dedicado a conhecer bandas que não obtiveram sucesso, não se notabilizaram como bandas mainstream, e muitas vezes não gozaram de longevidade, vindo a lançar um, dois ou três vinis. Um exemplo é uma banda que conheci há pouco, que lançou um único play, chamada The adventures of Robert Savage. Achei uma puta banda, que não deve nada pra muitas outras consagradas, seja pelo gosto popular ou pela media. Porém, uma pergunta que deve ser colocada nessa oportunidade é: por que uma banda tão boa, com uma raiz musical tão forte, não obteve um respaldo (o chamado "sucesso"), talvez muito mais merecido do que uma grande quantidade de bandas médias e boas que se tornaram ícones ou, no mínimo, bem lembradas na história do rock? É aqui que pretendo ancorar meu ponto de vista sobre o "uso do dinheiro", o "jaba", ou qualquer outra definição para bandas que alcançam prestígio através do "quanto possuem" ($).</div><div>&nbsp;</div><div>Não é de hoje que muitas bandas conquistam espaço como empresas, concorrendo e fazendo uso de seus capitais financeiros e culturais (sua maior possibilidade de acesso do que outros) o que garante, com toda certeza, uma soma não desprezível de bandas horríveis, sem personalidade, artisticamente falidas, pois são apenas apostadores, especuladores (no sentido econômico mesmo), que procuram sondar os tipos de sonoridades mais "aprazíveis" e destacadas em cada época, para a partir daí produzirem músicas que o rebanho (ou que chamam de público) possa legitimar como "bom", como "sonzeira", como "puta banda". Esse jogo entre o "público médio" e a "banda", onde um se ampara no outro, onde esse procura o sucesso e aquele procura heróis, gera um ciclo vicioso, onde a banda não mais impõe limites para obter sucesso, e onde o público se torna aquele que qualifica aquele artista (a banda) como bom ou ruim. Essa interdependência, na minha opinião, é o que é mais explorado pelos especuladores, pelos que sacrificam qualquer qualidade artística, qualquer produção honesta, pelo "popular", "médio", aquilo que a maioria avaliza e diz ser a "boa música".</div><div>&nbsp;</div><div>Não é preciso dizer muito, para concluir que esta é uma condição que não se limita ao meio musical. É um reflexo do mundo em que vivemos, cada vez mais amplo e interconectado (de culturas mil, transformadas e engolidas por uma única cultural global), cada vez mais pautado em valores muito menos culturais e artísticos do que financeiros. Aonde a ideia de sucesso é a base de confirmação dos êxitos de uma vida ou de uma arte. Num mundo como esse, sem dúvida é muito mais fácil fazer sucesso no meio musical, quando se tem dinheiro, seja para pagar para abrir para bandas gringas, seja mesmo para financiar em todos os meios possíveis sua própria banda. Isso é tão óbvio, que merece ser dito novamente, para que não seja esquecido (como diria Nelson Rodrigues). Existe inúmeros exemplos de bandas medíocres, que estão por aí, fazendo shows, gravando álbuns (algo maravilhoso para qualquer banda, sem dúvida), mas não na mesma proporção que bandas que morreram ou morrerão como cults ou simplesmente lembradas por "aquele grande álbum". Acho que no contexto em que vivemos, onde as bandas valorizadas e pretigiadas são muitas vezes (mas nem sempre) as que possuem maior capital, assistimos a morte de muitos gênios criadores, muitas vezes antes de nascerem para o mundo.&nbsp;</div><div><br></div><div>Por isso continuo com a ideia de cultivar os mortos, ressuscitá-los em meus ouvidos. Por isso The adventure of Robert Savage e tantas outras aventuras que não pudemos viver, pois não lhes foi dado a mesma sorte de permanecer na memória dos vivos tempo suficiente. Vamos lá, como um mago ou historiador, ressuscitar as vozes esquecidas no meio da polifonia dominante do mundo moderno! Talvez não possamos impedir o avanço dessa rede de esgoto musical (chamada de media), porém podemos ainda permanecer inquietos, levantando questionamentos como esse, sobre o que ainda podemos valorizar como arte, como música, como metal, como rock n roll, dentro de um mundo onde o que conta é o que aparece, o que é lembrado através do dinheiro e não do talento. &nbsp;</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Kexo&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.infamousglory.com/" title="" target="_blank">Infamous Glory</a>.)</span></div>
+<div>Cara a real é que esse assunto é muito polêmico justamente por ter muitos aspectos que você mesmo enumerou no texto acima. O lance do jabá eu sempre achei ridículo por ser uma ferramenta que segrega as bandas, não por qualidade e sim por poder aquisitivo ou por patrocínio, o que eu acho que é nocivo para legitimidade do meio musical como um todo. No underground nós vivemos um paradoxo, porque o underground teoricamente é um ambiente independente e livre dos laços capitalistas do mainstream. Porem ao mesmo tempo o underground tenta emular os mesmos tramits do mainstream mesmo sem o giro do dinheiro. E por isso agente se depara com esses problemas; de bandas bancando suas próprias viagens, shows muito caros, shows muito baratos, qualidade de som horrorosa e falta de estrutura. Dentro do underground atual apenas 5% das bandas conseguem sustentar seu trabalho sem gastar nem um real, ganhando algo a mais é uma porcentagem menor ainda. Nesse caso é quase impossível uma banda que em algum sentido não se banque.</div><div>Em minha opinião o que falta para um melhor aproveitamento do nosso underground aqui é um pouco de bom senso de todas as partes. Organizadores e produtores, tratando as bandas com um pouquinho (não precisa ser muito) de profissionalismo proporcionando uma estrutura um pouco melhor, shows melhores organizados e bem pensados. E o publico tem que parar com essa mentalidade de que apoiar a cena é andar com uma camisa velha de uma banda que 3 caras conhecem e sim comprando o material das bandas locais, entrando nos shows e apoiando as bandas. Penso que só essa mudança de mentalidade e essa harmonia entre essas 3 partes, banda, produtores e público já resolveria muito dos problemas que enfrentamos hoje.&nbsp;</div></div>
+
+<div class="mat_compartilhar">
+<div class="mat_compartilhar_topo">Compartilhe essa mat&eacute;ria!</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="width:400px; vertical-align:central;">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<g:plusone size="medium"></g:plusone>
+<a class="addthis_button">Divulgue!</a>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000" 
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+<meta property="og:image" content="http://www.goregrinder.net/imagens/materias/Pagar_para_tocar.jpg" /></div>
+
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:dimitribrandi@gmail.com'>Dimitri Brandi </a></span>
+<a href='http://www.psychoticeyes.com/' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Excelente matéria!
+
+O Psychotic Eyes jamais pagou pra tocar, mas quase nunca recebemos cachê, salvo de organizadores extremamente dedicados, como o próprio Baron Von Causatan que comentou acima. 
+
+Se for para ter gasto, prefiro organizar o show eu mesmo.
+
+Já vi o absurdo de organizadores de shows internacionais promoverem "leilão" entre bandas nacionais. A que pagar mais, fica com o direito de fazer a abertura.
+
+Quando nos ofereceram essa "proposta", enviei a seguinte mensagem, jamais respondida pelo organizador:
+
+Agradeço a atenção, mas não pagamos para abrir shows. Somos uma banda com mais de dez anos de carreira, e sabemos que isso não dá nenhum retorno. 
+
+Desculpe a sinceridade, mas acho que vocês deveriam rever essa política, pois foi essa prática reiterada que minou a cena metal no Brasil. Escolha as bandas de abertura pela qualidade, selecione aquelas que você acha que vão contribuir com o evento, atrair mais público, enriquecer o show, agradar aos fãs do XXXXXX. Ou seja, aquelas que vão acrescentar alguma coisa ao show. Não escolha pelo quanto elas vão pagar, pois assim você está prejudicando a todos os envolvidos. A banda vai tocar sem merecer, somente porque pagou por isso. Se acha que nenhuma banda nacional merece, faça sem banda de abertura.
+
+Essa situação de bandas pagando para abrir shows é injusta com todo mundo. E o público percebe que a banda não merece e só está lá porque pagou. Com o tempo, o público se desinteressou pelas bandas brasileiras, porque acha que nenhuma presta, que não mostra qualidade de som, de composição, nem presença de palco à altura das estrangeiras. Não conseguimos criar uma demanda por bandas nacionais, como existe em todos os países do mundo e poderia muito bem existir aqui.
+
+Entendo as dificuldades de organizar shows de metal no Brasil, sei dos custos envolvidos e da possibilidade de prejuízo. Sei porque já organizei shows também. Mas nada justifica usar o músico como fonte de renda. As bandas têm que ser pagas, a renda do evento vai vir dos ingressos, de eventual patrocínio e da venda de bebidas e alimentação pela casa. O músico tem direito ao seu cachê. Assim como o XXXXX vai receber para tocar, eu não vou pagar para mostrar meu trabalho.
+</div>
+
+<div class="mat_comentarios_base">
+25/01/12 &agrave;s 15:24 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:contact@vampiriarecords.com'>Baron Von Causatan</a></span>
+<a href='http://www.vampiriarecords.com/' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Tendo envolvimento tanto como músico e produtor em eventos, digo de forma pessoal, que acho tal questão uma vergonha.
+Bandas que se sujeitam a pagar para tocar é algo totalmente irracional. Conheço bandas que para se apresentar por 30 minutos, ou menos, em eventos que tinham som péssimo e quantidade de público super baixa comparado ou valor investido, passaram pelo menos 6 meses pagando empréstimos e o retorno no final foi mínimo comparado com a possibilidade que tiveram.
+Com a Bestial Atrocity nunca paguei para tocar, assim como nunca aceitaria tal situação. Uma vez deveríamos tocar com uma banda gringa, o produtor pediu para ajudar na venda de ingressos, aceitei e disse que a banda tocaria sem receber nada, mas não daria um centavo. Depois a conversa mudou, que se não tivesse a venda dos ingressos totais confirmada, a banda teria que pagar a diferença...claro que na hora todos da banda concordaram que próximo do dia do show de que não iríamos tocar.
+Nunca cobrei um centavo de banda para participar de eventos meus, pelo contrário adquirir dívidas por isso, algumas pagando até hoje, mas nunca peguei um centavo de nenhuma banda. A banda, seja ela a principal ou de abertura, em meu ponto de vista, deve ter o mesmo trato e ter o direito de receber a mesma atenção e ter a mesma qualidade de equipamento.
+Se, no caso de uma abertura de uma banda gringa, você não recebe uma ajuda de custo para tocar e chegar ao local tudo bem, mas que ao menos tenha o direito de ter um tratamento digno e acesso as bandas principais para pelo menos ter uma interação com todo mundo.
+Já passei por situações assim, não recebi o transporte, mas ao menos fui bem tratado cada segundo no evento por produção, banda principal e tudo mais.
+Pena que isso não acontece sempre e provavelmente nunca vai deixar de acontecer de se cobrarem das bandas de abertura enquanto houverem bandas que se sujeitam a tal situação.
+</div>
+
+<div class="mat_comentarios_base">
+25/01/12 &agrave;s 14:57 Hs
+</div>
+
+</div>
+
+
+<div class="mat_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="mat_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="mat_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; height:25px; float:left;" class="mat_formulario_texto">Site <span style="font:9px Tahoma, Geneva, sans-serif;">(opcional)</span>: <input type="text" name="site" id="site" value="" size="50" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="mat_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="esc_esp_id" id="esc_esp_id" value="12">
+                  <input type="hidden" name="esc_ver" id="esc_ver" value="n">
+                </form>
+</div>
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=14&id=12 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:08:15 GMT -->
+</html>

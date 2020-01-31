@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=94 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 18:49:57 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<script type='text/javascript' language='javascript' src='jscripts/jquery-1.3.2.js'></script>
+<script type='text/javascript' language='javascript'>
+$(function($) {
+	// Quando o formulário for enviado, essa função é chamada
+	$('#form1').submit(function() {
+		// Colocamos os valores de cada campo em uma váriavel para facilitar a manipulação
+		var nome = $('#rcc_nome').val();
+		var email = $('#rcc_email').val();
+		var mensagem = $('#rcc_texto').val();
+		// Exibe mensagem de carregamento
+		// $('#status').html('<img src='loader.gif' alt='Enviando' />');
+		// Fazemos a requisão ajax com o arquivo envia.php e enviamos os valores de cada campo através do método POST
+		$.post('com_rescds.html', {nome: nome, email: email, mensagem: mensagem }, function(resposta) {
+				// Quando terminada a requisição
+				// Exibe a div status
+				$('#status').slideDown();
+				// Se a resposta é um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$('#status').html(resposta);
+				} 
+				// Se resposta for false, ou seja, não ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$('#status').html('Mensagem enviada com sucesso!');
+					// Coloca a mensagem no div de mensagens
+					// $('#mensagens').prepend('<strong>'+ nome +'</strong> disse: <em>' + mensagem + '</em><br />');
+					// Limpando todos os campos
+					$('#rcc_nome').val('');
+					$('#rcc_email').val('');
+					$('#rcc_texto').val('');
+				}
+		});
+	});
+});
+</script>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Resenha: NUNCA - Kânon I [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].rcc_email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<script type="text/javascript" language="javascript" src="jscripts/lytebox.js"></script>
+<link rel="stylesheet" href="jscripts/lytebox.css" type="text/css" media="screen" />
+
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<script type='text/javascript' src='jscripts/enlargeit.js'></script>
+<script type='text/javascript'>
+        enl_brdsize = 10;
+        enl_shadowintens = 10;
+        enl_center = 1;
+        enl_darkprct = 70;
+        enl_preload = 1;
+        enl_drgdrop = 0;
+        enl_darksteps = 1;
+        enl_buttonurl[0] = 'prev';
+        enl_buttontxt[0] = 'Anterior';
+        enl_buttonoff[0] = -216;
+        enl_buttonurl[1] = 'next';
+        enl_buttontxt[1] = 'Proximo';
+        enl_buttonoff[1] = -234;
+        enl_buttonurl[2] = 'close';
+        enl_buttontxt[2] = 'Fechar [Esc]';
+        enl_buttonoff[2] = -0;
+</script>
+
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var mensagem = $("#mensagem").val();
+		var rcc_res_id = $("#rcc_res_id").val();
+		var rcc_ver = $("#rcc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_rescdse783.html?id=94', {nome: nome, email: email, mensagem: mensagem, rcc_res_id: rcc_res_id, rcc_ver: rcc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+
+
+<a href="#" title="Clique para ampliar"><div class="rescds_capa"><img src="Nunca_K_non%20I_20173f8d.jpg?imagem=imagens/resenhas/Nunca_K_non%20I_2017.jpg&amp;w=300&amp;h=300" border="0" onclick="enlarge(this);" longdesc="imagens/resenhas/Nunca_K_non%20I_2017.jpg"/></div></a>
+
+<div class="rescds_detalhes">
+<div class="rescds_detalhes_itens">Banda/Artista: <b>Nunca</b></div>
+<div class="rescds_detalhes_itens">T&iacute;tulo: <b>Kânon I</b></div>
+<div class="rescds_detalhes_itens">Lan&ccedil;amento: <b>Bucho Discos, Resistência Underground Distro, Back On Tracks Records, Poeira Maldita</b></div>
+<div class="rescds_detalhes_itens">Ano: <b>2017</b></div>
+<div class="rescds_detalhes_itens"><span style="position:relative; float:left;">Contatos: </span><b><span style="position:relative; float:left; margin-left:2px; width:340px;">
+<a href="mailto:nuncacrust@gmail.com">nuncacrust@gmail.com</a><br /><a href="https://www.facebook.com/nuncagrindcore/" target="_blank">https://www.facebook.com/nuncagrindcore/</a><br /><a href="https://www.buchodiscos.com/" target="_blank">https://www.buchodiscos.com/</a><br /><a href="https://www.facebook.com/resistenciaundergrounddistro/" target="_blank">https://www.facebook.com/resistenciaundergrounddistro/</a><br /><a href="http://www.backontracks.net/" target="_blank">http://www.backontracks.net/</a><br /><a href="https://www.facebook.com/PoeiraMalditaLongplay/" target="_blank">https://www.facebook.com/PoeiraMalditaLongplay/&nbsp;</a></span></b></div>
+
+<div class="rescds_detalhes_itens">Site oficial: <b><a href="https://nuncacrust.bandcamp.com/" target="_blank">https://nuncacrust.bandcamp.com/</a></b></div>
+
+<div class="rescds_detalhes_itens">Resenha por <b><a href="mailto:cristianosteps@gmail.com">Cristiano Passos</a></b></div>
+<div class="rescds_detalhes_itens" style="border-bottom:0px;">Publicada no dia <b>04/02/2018</b></div>
+</div>
+
+<div class="rescds_texto"><p>Por mais de duas d&eacute;cadas, o black metal foi o subg&ecirc;nero underground que sempre fez quest&atilde;o de trilhar seu pr&oacute;prio caminho e tal autonomia trouxe diversas consequ&ecirc;ncias para o estilo, algumas interessantes, outras nem tanto. Por vezes, essa independ&ecirc;ncia resvalou para a mediocridade e o radicalismo niilista, beirando a teorias esdr&uacute;xulas e ideologias duvidosas, no caso das bandas de orienta&ccedil;&atilde;o nazifascista, ao satanismo infantil e, por outras, tangenciando a mais absoluta genialidade, com obras de profundo car&aacute;ter existencial, compostas por m&uacute;sicos talentosos e criativos, al&eacute;m de permitir a gesta&ccedil;&atilde;o de tend&ecirc;ncias de intelig&ecirc;ncia e sensibilidade incompar&aacute;veis, dada a plasticidade est&eacute;tica do black metal, que, ainda que haja discord&acirc;ncias, o permite se fundir a g&ecirc;neros aparentemente inconcili&aacute;veis, como a m&uacute;sica eletr&ocirc;nica, o folk, o rock alternativo, o punk, entre outros. Bem, esse embate de for&ccedil;as por vezes opostas, entretanto, tem sido ben&eacute;fico para a pr&oacute;pria cena, pois &eacute; essa disputa pelo t&iacute;tulo de &ldquo;verdadeiro&rdquo; black metal que acaba por produzir os rebentos mais inusitados do g&ecirc;nero.&nbsp;</p>
+<p>No campo ideol&oacute;gico, por exemplo, a ascens&atilde;o de for&ccedil;as conservadoras deu impulso a uma rea&ccedil;&atilde;o que, a despeito das cr&iacute;ticas dos puristas, cada vez mais vem mostrando a sua cara, especialmente nos tempos bicudos em que vivemos. Assim, diversos grupos t&ecirc;m surgido ao redor do globo dispostos a representar essa tend&ecirc;ncia mais contempor&acirc;nea do black metal, chamada por alguns de &ldquo;blackened crust&rdquo;, que nada mais &eacute; do que a fus&atilde;o entre o black metal e o hardcore, buscando aliar tudo que h&aacute; de mais cru e agressivo de ambas as tend&ecirc;ncias. Apesar de a mistura parecer estranha e at&eacute; indigesta para os mais conservadores e para aqueles que conheceram o black metal somente ap&oacute;s a d&eacute;cada de 1990, h&aacute; na origem de ambos os estilos muito em comum. Basta pensar que um dos pioneiros do black metal, Quorton, afirmou v&aacute;rias vezes que seu primeiro &aacute;lbum tinha muito mais influ&ecirc;ncia do GBH do que do Venom, como muito pensavam. Ali&aacute;s, a pr&oacute;pria musicalidade do Venom, o pai do estilo, devia muito ao som punk. Do outro lado da hist&oacute;ria, n&atilde;o h&aacute; como ouvir o debut do Crude SS sem pensar em Hellhammer, posto que h&aacute; semelhan&ccedil;as sonoras ineg&aacute;veis entre ambas as bandas.&nbsp;</p>
+<p>Nesse sentido, o NUNCA, banda da cidade de Itapira, S&atilde;o Paulo, abra&ccedil;a as duas tend&ecirc;ncias musicais com for&ccedil;a e traz a p&uacute;blico um lan&ccedil;amento magistral sob todos os &acirc;ngulos. Em termos l&iacute;ricos, destaque para a maturidade do grupo, por trazer temas de forte car&aacute;ter subjetivo e que beiram &agrave; mais pura poesia, gritando raivosamente sobre a solid&atilde;o, o suic&iacute;dio, a mis&eacute;ria e a depress&atilde;o, entre outros, e apesar do clima de negatividade, o sopro de originalidade que eles lan&ccedil;am sobre a cena &eacute; algo extremamente positivo. Interessante que cada letra vem acompanhada de uma reflex&atilde;o dos membros da banda sobre o tema em quest&atilde;o, algo que n&atilde;o se v&ecirc; na cena underground com muita facilidade. Ali&aacute;s, a &uacute;nica vez que eu tinha visto isso foi no disco da banda Iskra (CAN), lan&ccedil;ado no Brasil pela Criminal Attack Records. Por isso, o cd, envelopado, vem com um livreto contendo todo esse material, al&eacute;m de ilustra&ccedil;&otilde;es, fotos e demais elementos que deixam claro o posicionamento antifascista do Nunca.</p>
+<p>Bem, toda essa parte l&iacute;rica se encaixa perfeitamente &agrave; musica apresentada pela banda, que prescinde de uma classifica&ccedil;&atilde;o e precisa, situando-se entre o black metal, pelos vocais gritados e as guitarras r&aacute;pidas, e o hardcore, pelas bases simples e que chamam qualquer um pra roda de pogo, embora traga tamb&eacute;m pinceladas de doom e death metal. Enfim, como qualquer m&uacute;sica extrema muito boa, os sons do Nunca n&atilde;o se prestam a uma classifica&ccedil;&atilde;o tradicional, caracter&iacute;stica que certamente n&atilde;o &eacute; gratuita, considerando a necessidade da banda de quebrar paradigmas e superar aspectos obsoletos da nossa cena underground. Ali&aacute;s, por falar em cena, aqui temos tr&ecirc;s m&uacute;sicos com ampla experi&ecirc;ncia no underground, com d&eacute;cadas de estrada, o que provavelmente explica a liberdade com que a banda transita entre os subg&ecirc;neros da m&uacute;sica extrema sem pretens&atilde;o de agradar os mais ortodoxos.&nbsp;</p>
+<p>Apesar dessa liberdade est&eacute;tica, o cd inteiro &eacute; bem coerente e traz somente pedradas sonoras de objetividade ineg&aacute;vel. S&atilde;o 8 faixas curt&iacute;ssimas, sem firulas, que completam pouco mais de 15 minutos de audi&ccedil;&atilde;o intensa. &ldquo;Yami no Shison&rdquo;, cantada em japon&ecirc;s (uma homenagem ao HC daquele pa&iacute;s, que est&aacute; entre as influ&ecirc;ncias do Nunca), &eacute; a mais curta de todas e resume a sensa&ccedil;&atilde;o de desespero que o material provoca, mas faixas como &ldquo;Cil&iacute;cio&rdquo; (porrada de arrepiar!) e &ldquo;Black Bloc&rdquo; mant&ecirc;m a proximidade forte com o hardcore, ao passo que sons como &ldquo;Homem-Deus&rdquo;, &ldquo;Corda&rdquo; ou &ldquo;Ru&iacute;na&rdquo; trazem muito da influ&ecirc;ncia met&aacute;lica dos membros da banda. O fato de o material ser curto e grosso n&atilde;o &eacute; nenhum dem&eacute;rito, j&aacute; que n&atilde;o cansa o ouvinte e facilita o repeat da audi&ccedil;&atilde;o. Particularmente, ouvi o disco um sem-n&uacute;mero de vezes sem parar e terminei com a sensa&ccedil;&atilde;o de que precisava de mais um &aacute;lbum do Nunca. Ali&aacute;s, a banda j&aacute; tem material novo circulando e, em breve, pretendo resenh&aacute;-lo aqui tamb&eacute;m.</p>
+<p>Pra finalizar, vale reafirmar que o disco &eacute; sensacional e vem preencher uma lacuna na cena nacional, que ainda tem poucos representantes nessa linha mais black/crust (o finado Subterror e a banda M&aacute;cula seriam mais dois membros desse seleto grupo, ao qual veio se juntar a banda Necrogosto, de SP). Sem sombra de d&uacute;vida, &eacute; um material indispens&aacute;vel para aqueles ouvintes de mente mais arejada e que sabem o quanto black metal e hardcore t&ecirc;m em comum. Ent&atilde;o, que venham mais bandas como o Nunca para acabar com a mesmice e espantar o fantasma do conservadorismo que, este sim, nada tem a ver com o verdadeiro esp&iacute;rito underground.</p></div>
+
+<div class="rescds_tracklist">
+<div class="rescds_tracklist_topo">Tracklist:</div>
+<p>1. Homem-Deus</p>
+<p>2. Acalanto</p>
+<p>3. Black Bloc</p>
+<p>4. Yami no Shison</p>
+<p>5. Irrevers&iacute;vel</p>
+<p>6. Ru&iacute;na</p>
+<p>7. Cil&iacute;cio</p>
+<p>8. Corda</p></div>
+
+<div class="rescds_compartilhar">
+<div class="rescds_compartilhar_topo">Compartilhar</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="text-align:left; margin-top:5px;" >
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_tweet"></a></div>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><g:plusone size="medium"></g:plusone></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button" addthis:url="http://www.goregrinder.net/index.php?s=10&id=94" style="font:10pt Arial, Helvetica, sans-serif;"><img src="imagens/sm-plus.gif" 
+        width="16" height="16" border="0" alt="Compartilhar" />&nbsp;Divulgue!</a></div>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000"
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+
+</div>
+
+<div class="rescds_moreabout">
+<div class="rescds_moreabout_topo">Mais sobre:</div>
+
+
+
+
+<div class='more_setores'><div class='more_titulo_setor'>Notícias <span class='more_noticia_maisde10'>(Últimas 10 publicadas)</span>:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='http://www.goregrinder.net/index.php?s=3&amp;id=1188' title=' 25/10/11  - Thrashera lança split CD com Galope Mortal' class='more_txt_interno'>- Thrashera lança split CD com Galo...</a></div><div class='more_txt_interno'><a href='http://www.goregrinder.net/index.php?s=3&amp;id=899' title=' 26/01/10  - Predator divulga nota sobre acusação' class='more_txt_interno'>- Predator divulga nota sobre acusa...</a></div><div class='more_txt_interno'><a href='http://www.goregrinder.net/index.php?s=3&amp;id=885' title=' 03/12/09  - Ocultan muda de formação' class='more_txt_interno'>- Ocultan muda de formação</a></div><div class='more_txt_interno'><a href='http://www.goregrinder.net/index.php?s=3&amp;id=824' title=' 21/08/09  - Postwar lança uma prévia do debut no Myspace' class='more_txt_interno'>- Postwar lança uma prévia do debut...</a></div><div class='more_txt_interno'><a href='http://www.goregrinder.net/index.php?s=3&amp;id=678' title=' 09/12/08  - Chakal relança dois LP's em um CD pela Cogumelo' class='more_txt_interno'>- Chakal relança dois LP's em um CD...</a></div><div class='more_txt_interno'><a href='http://www.goregrinder.net/index.php?s=3&amp;id=447' title=' 26/07/07  - Genital Tumour anuncia o seu fim' class='more_txt_interno'>- Genital Tumour anuncia o seu fim</a></div><div class='more_txt_interno'><a href='http://www.goregrinder.net/index.php?s=3&amp;id=348' title=' 15/09/06  - Genocidio gravará DVD no final do mês em SP' class='more_txt_interno'>- Genocidio gravará DVD no final do...</a></div><div class='more_txt_interno'><a href='http://www.goregrinder.net/index.php?s=3&amp;id=297' title=' 20/07/06  - Genocidio gravará DVD ao vivo em São Paulo' class='more_txt_interno'>- Genocidio gravará DVD ao vivo em ...</a></div><div class='more_txt_interno'><a href='http://www.goregrinder.net/index.php?s=3&amp;id=204' title=' 18/05/06  - Obscura Metal Fest reúne sete bandas em BH' class='more_txt_interno'>- Obscura Metal Fest reúne sete ban...</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Resenha:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index7250.html?s=10&amp;id=94' class='more_txt_interno'>- <i>Kânon I</i></a></div></div></div>
+        </div>
+</div>
+
+<p style="position:relative; float:left; width:100%; text-align:center;"><a href="#comentarios" class="txt-cur-album">Envie seu coment&aacute;rio sobre essa not&iacute;cia! </a></p>
+
+
+
+<div class="rescds_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="rescds_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="rcc_res_id" id="rcc_res_id" value="94">
+                  <input type="hidden" name="rcc_ver" id="rcc_ver" value="n">
+                </form>
+</div>
+
+
+
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=94 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 18:49:58 GMT -->
+</html>

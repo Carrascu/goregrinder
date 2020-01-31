@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=14&id=5 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:08:31 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Mat&eacute;ria Especial: Zines Impressos [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var site = $("#site").val();
+		var mensagem = $("#mensagem").val();
+		var esc_esp_id = $("#esc_esp_id").val();
+		var esc_ver = $("#esc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_matd61c.html?id=5', {nome: nome, email: email, site: site, mensagem: mensagem, esc_esp_id: esc_esp_id, esc_ver: esc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#site").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<div class="mat_topo">
+
+<div class="mat_imagem"><img src="Zines%20Impressos3831.jpg?imagem=imagens/materias/Zines%20Impressos.jpg&amp;w=350&amp;h=350" border="0" /></div>
+
+Os anos 80 foram palco de in&uacute;meras revolu&ccedil;&otilde;es no cen&aacute;rio Heavy Metal em geral. Das mudan&ccedil;as na pr&oacute;pria sonoridade do estilo at&eacute; a forma&ccedil;&atilde;o da mentalidade daqueles que seguem (ou seguiam) o Underground, transformando-o em um verdadeiro estilo de vida. A par dessas mudan&ccedil;as que tornaram o Heavy Metal um fen&ocirc;meno muito mais complexo, sempre houveram aqueles entusiastas que, mesmo n&atilde;o possuindo uma banda e mesmo n&atilde;o almejando lucros com esse novo mercado, dedicaram parte de suas vidas a divulgar e trabalhar em prol das bandas em espec&iacute;fico, e do pr&oacute;prio Underground em um sentido mais geral. Mesmo n&atilde;o sendo profissionais no meio jornal&iacute;stico, v&aacute;rios zines surgiram na base da vontade, ou seja, seguindo aquela ideologia D.I.Y. (ou &quot;fa&ccedil;a voc&ecirc; mesmo&quot;). Hoje em dia muita gurizada que curte som a pouco tempo, quase n&atilde;o conhece os zines impressos e, principalmente, a hist&oacute;ria que est&aacute; por tr&aacute;s desse fen&ocirc;meno. Mal sabem eles que esse meio de comunica&ccedil;&atilde;o foi a origem de todas as trocas de informa&ccedil;&otilde;es existentes dentro do mundo Underground, por d&eacute;cadas. Por isso mesmo, acabou por fazer parte de sua raiz e de sua identidade, aspecto que &eacute; dos mais importantes para nossa cena. Os webzines, blogs e MySpaces principalmente, divulgam muito facilmente uma banda Underground hoje em dia (e mesmo em escala mundial), por&eacute;m, antigamente essa divulga&ccedil;&atilde;o se dava principalmente por trocas, cartas, bate-papos em shows e pelos zines impressos. Estes&nbsp; possu&iacute;am uma maneira peculiar de produ&ccedil;&atilde;o, feitos de maneira arcaica, com muitos recortes, desenhos feitos a m&atilde;o, imagens retiradas de outras revistas, etc., e que eram colados em uma folha que serviria como matriz, e a partir disso xerocados e distribu&iacute;dos. Al&eacute;m dos formatos que eram escritos a m&atilde;o. Esse &uacute;ltimo tipo, claro, era muito mais raro devido a sua dificuldade de edi&ccedil;&atilde;o, por&eacute;m se parar para pensar que antigamente era muito dif&iacute;cil achar uma lojinha de xerox como hoje &eacute; de extrema facilidade encontrar em cada canto, ent&atilde;o deduzimos um pouco a enorme vontade do guerreiro zineiro daquela &eacute;poca em reproduzir o seu trabalho em prol ao Underground. O que queremos destacar &eacute; a grande vontade, ra&ccedil;a e determina&ccedil;&atilde;o que zineiros antigos tinham para fazer um zine impresso, ao contr&aacute;rio de hoje em dia que, com a ajuda da computa&ccedil;&atilde;o gr&aacute;fica, se torna um trabalho mais f&aacute;cil, mas isso em termos comparativos pois ainda &eacute; complicado fazer um. Vamos entrevistar pessoas que viveram essa &eacute;poca onde esse meio de comunica&ccedil;&atilde;o era muito mais valorizado do que hoje em dia, por&eacute;m ainda com sua devida import&acirc;ncia na contribui&ccedil;&atilde;o em prol ao Underground, que deve muito o seu crescimento durante os anos aos zines impressos. Com base nisso, temos v&aacute;rias quest&otilde;es para explorar, lembrando que esse espa&ccedil;o &eacute; para a discuss&atilde;o, portanto, seria saud&aacute;vel que novas perguntas fossem gestadas no espa&ccedil;o destinado a discuss&atilde;o.<br /><br />PS.: <em>Algumas respostas est&atilde;o separadas por cada pergunta, e outras s&atilde;o &uacute;nicas englobando todas elas. As que est&atilde;o separadas, come&ccedil;am com R01, R02 e assim por diante, de acordo com a ordem das perguntas.</em><br /><br />
+<div class="mat_pergunta">O que mudou de forma mais significativa, partindo do fenômeno dos zines impressos para os atuais webzines? Qual a importância dos zines impressos no nosso cenário atual? Zines impressos perderam espaço com a chegada da internet? Qual a importância dos zines impressos na história do nosso Underground?</div>
+<br /><br />
+Essa mat&eacute;ria foi elaborada por <b><a href="mailto:carrascu@bol.com.br">Carrascu</a>, <a href="mailto:rodrigo_simetti@hotmail.com">Rodrigo Simetti</a> e <a href="mailto:alexneundorf@yahoo.com.br">Alex Neundorf</a></b>, e publicada no dia <b>05/08/2009</b>.
+
+</div>
+
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Delmon&nbsp;
+<span class="mat_respostas_descricao">(Editor do zine In Death's Embrance)</span></div>
+<div>R01: Para mim a mudança mais significativa foi a redução do custo para a produção e a facilidade de acesso. Porém ainda existem muito mais zines impressos do que webzines, acredito ser pela dificuldade em se criar um site, ou mesmo a falta de interesse dessa molecada de hoje que aprendeu a ter tudo na mão. Não querendo ser saudosista, mas antigamente era tudo mais difícil, o acesso às informações eram muito piores, mas mesmo assim sempre estávamos bem informados sobre o que tava rolando na cena, sempre sabíamos sobre os shows, e estes então, eram divulgados no mínimo três meses de antecedência. Hoje não, com a internet todos divulgam no mesmo mês, ou até na mesma semana, apenas online através de orkut e myspace... Por isso a frequência está muito ruim nos eventos... Banger criado em orkut não sabe das dificuldades, não dá o devido valor aos eventos e as bandas, não compra CD nacional (só baixa mp3...) e por aí vai....</div><div>R02: A importância foi e sempre será a mesma. Extremamente importante, pelo fato de fazermos parte de uma cultura underground, uma cultura especializada para pessoas especializadas. Os zines impressos têm um maior cuidado e um maior esmero em sua confecção, fazendo com que o leitor não somente admire apenas as informações ali contidas, mas também o</div><div>trabalho envolto desse artefato, tais como a diagramação, efeitos gráficos e ilustrações. Alguns Webzines seguem o mesmo conceito, mas não são todos... Alguns caem no esquecimento muito rápido pela falta de material para divulgar, porque hoje tudo está online, tudo tem que ser diário e etc. E acredito que no caso do movimento extremo underground nada é assim, as coisas tem de ser feitas com muita luta, muito esforço, tudo muito difícil, a correria é intensa, mas as coisas demoram a acontecer.</div><div>R03: Acredito que perder espaço talvez não, pois não é "tão" fácil de se fazer um webzine, tendo como maior problema a atualização intensa e "quase que diária", para que atraia a atenção do internauta. O interessante dos zines impressos, é que com a imensa demora para a sua confecção, acaba que abarrotando de matéria, fazendo com que o leitor demore a ler tudo aquilo, dando mais ênfase, mais valor ao trabalho desenvolvido. O verdadeiro objetivo do WebZine é acabar ou diminuir o custo para a confecção do artefato de divulgação mencionado, porém tem que pagar para manter um site, ou se fizer um blog, tem que ter internet banda larga... Isso também é um custo, talvez bem diferente do gasto com xerox, pois você irá utilizar a internet para inúmeras coisas e trabalhos de pesquisa.</div><div>R04: Historicamente, se não fossem os zines impressos não haveriam as revistas, não haveriam os webzines, não haveriam os myspaces, os websites e nem haveria uma cena respeitada em todo o mundo, como é a nossa cena e com uma grande quantidade de apreciadores, músicos, editores e artista dentro da cena underground mundial. RESPEITE OS ZINES IMPRESSOS, COMPRE ZINES IMPRESSOS, PARTICIPE DE ZINES IMPRESSOS E QUE TODOS NÓS POSSAMOS CRESCER CADA VEZ MAIS JUNTOS... Assim como estão crescendo os Webzines e toda essa globalização que está cada dia mais acentuada. Estamos abarrotados de informação a todo momento, temos de aprender a filtrar essas informações, a selecionar estas informações, para que não nos perdamos em nossa própria tecnologia... Acho muito engraçado a retomada "brutal" de inúmeros valores, cultura e objetos antigos, como o vinyl por exemplo... Creio que a retomada dos zines impressos também venha a acontecer, pois acho muito mais prazeroso ler deitado numa cama aconchegante escutando uma boa música, do que pregado na frente de um monitor o dia todo... Que o crescimento seja CONJUNTO... e que juntos Webzines e zines impressos possamos fortalecer cada vez mais a nossa cultura... Hailz warrior´s from Brazil...</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Elton Felipedes De Campos&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.sadsy.net/" title="" target="_blank">Sadsy</a>)</span></div>
+Hoje em dia, mudou-se o foco de ação dos zines, mas eles continuam com seu papel de ser a voz das pessoas que gostam de determinado tipo de coisas, a pena é que com a internet perdemos muitos veículos de comunicação underground, mas criamos muitos zines que já viraram "parada principal" para os grupos que desejam mostrar sua arte e sua música, acredito que a internet tenha facilitado o aumento da quantidade de zines, mas ainda há espaço para os bons zines impressos, que foram obrigados a se tornarem revistas, perderam aquele charme e a rusticidade, mas em compensação tem mais público, e fora que a facilitação do envio e edição dos zines impressos facilitou a propagação da informação, os Zines em si tem uma grande importância no nosso underground, pois nós temos que ter um canal para manter contato com outras pessoas, e também procurar opinições de pessoas que ouvem o mesmo estilo que você, também facilita na procura de material para compra, tais como Demos, CDs, revistas, filmes e outras tranqueiras que eu comprei graças a indicação de bons zines lembrando que não é só de Heavy Metal que os zines feitos por headbangers tratam, também temos a chance de trocar "figurinhas" sobre literatura e filmes. Acho que hoje em dia o panorama é melhor para a distribuição e veiculação, mas o problema maior é atrair o público heavy metal para ler e procurar informação, estamos vivendo em uma era de pessoas alienadas. Mas acho que isso um dia vai passar, e vamos resgatar nossos tempos de esperar o carteiro trazendo o zine pra ver se saiu matéria de determinada banda.</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Sokram Malediction&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda Aasverus)</span></div>
+Apesar de não ter pegado a época áurea dos zines impressos, peguei justamente esta transição do impresso para o digital. O que mais mudou no quesito impresso e webzines foi uma maior facilidade na troca de informações, divulgação das bandas de uma forma mais abrangente e custos, entre outros. Em nosso cenário o zine impresso ainda é muito respeitado, apesar da diminuição. Mas o que acontece é a dificuldade para fazer um, sendo que para adquirir um, você tem que depositar o dinheiro no banco ou ir numa agência dos correios enviar a carta e para buscar também. Será que o underground ficou mais acomodado? O impresso é algo mágico, quando você recebe imagina o quanto ele viajou para chegar a tuas mãos, é algo mais visceral! Além de ser mais restrito, não é qualquer um que vai ter o contato com ele. A web quanto o impresso, tem suas vantagens e desvantagens, temos que ser sábios para utilizar tais meios de divulgação.</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Eduardo Vomitorium&nbsp;
+<span class="mat_respostas_descricao">(Editor do blog <a href="http://vom-it-yourself.blogspot.com/" title="" target="_blank">Vom It Yourself</a> e integrante da banda Feculent Goretomb)</span></div>
+Mermão, acho que a velocidade da informação é algo que assusta, não só com relação a webzines, mas na cultura e no jornalismo independente de uma forma geral. A velocidade traz praticidade, facilidade, custos mais baixos, isso não é um problema, é uma solução, o problema é a acomodação que esta velocidade e praticidade trazem. Temos uma cultura errada de substituir coisas, sempre foi assim. Como indivíduos vivendo em um meio social, somos movidos pela “industria” mesmo que indiretamente, e quer queiram ou não a “morte” de determinadas coisas, formatos, ideias ou qualquer porra dessas, depende de quem consome, de quem gosta, de quem as vive. Mas no meio disso tudo tem um pequeno detalhe, estamos falando do mal, velho, barulhento, afrontador e querido Underground, aquele lá que se vangloria de não pertencer aos nichos padronizados, que nunca se rendeu aos apelos midiáticos massivos e que nunca precisou de nada de “fora” para respirar. A tecnologia, a internet tem um poder absurdo, é inegável as melhoras que isso tudo trouxe, só acho que uma coisa não substitui outra, é simples. Os zines de papel, xerocados e feitos na maioria das vezes na marra, são um veículo de informação maravilhoso, a parte visual, o tato, a forma de se conseguir, de interagir... tudo isso é algo único, não é uma coisa saudosista, é como ver um filme no cinema, ou ouvir um disco olhando a capa e o encarte, ou qualquer atividade dessas. Os webzines, da mesma maneira, são um maravilhoso veículo de informação, eu posso ver informações de outros lugares sem gastar tanto, posso interagir imediatamente, posso ter diversas notícias de diversos lugares em uma horinha, só não sei porque diabos uma coisa tem que substituir a outra, acho até essa discussão um pouco absurda, pois chegamos a um ponto onde a tecnologia está aos poucos enterrando o que tínhamos de mais precioso que era a força de vontade para se conseguir qualquer coisa, um disco, uma demo, um zine, um livro, um filme ou até uma fitinha gravada. Não vou entrar muito nesta questão de história, da importância dos zines impressos, até porque esses fatos são pungentes demais, só pra tentar ilustrar mais ou menos, a única forma de se ler resenha de uma demo era em um zine impresso, hoje mermão, em uma tarde o nego pega a discografia completa com capa e o caralho... então pra que ele vai querer um zine de papel xerocado, com uma infinidade de resenhas e coisas legais? Pois ele faz tudo no computador, se informa, ouvi previamente, e baixa o disco, o maior problema é que só se faz isso, e ta aumentando cada vez mais, então certas coisas como zines de papel, distros, selos, estão perdendo o sentido de existir. Só queria terminar perguntando a todo mundo que ta lendo isso: Que diabos essa geração internet, mp3... carrega dentro do cérebro, que espécie de sentimento elas tem com relação a contra cultura underground em geral, seja na parte da música ou literatura, cinema, hq’s... qual a vantagem de se conhecer tudo por cima e não conhecer NADA na essência? Eu sinceramente não tenho resposta, e não dou a mínima pra nova geração formada pelos bites, mas na boa mermão, a maior diferença entre um webzine e um zine impresso é apenas o formato, quem gosta realmente dessa merda toda, vai caçar a informação, o som, a essência onde for, seja pela net, pelas cartas, em qualquer buraco sujo. Pra mim o underground é uma estrutura celular, e uma célula precisa da outra pra funcionar, então tudo faz parte da mesma coisa, bandas, zines, selos, distros, web, sistema postal, desenhistas, galera que fotografa shows... tudo faz parte duma coisa, e uma depende da outra para viver, mas aos poucos essa nova geração que se acostumou a não tirar a bunda da frente do computador para ouvir música, ler, ver uma banda ao vivo ou ver um filme... está aleijando o underground, e o colapso está mais próximo do que se imagina, a tecnologia veio somar e não substituir.</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Roberto Ceccato&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.myspace.com/predatordeath" title="" target="_blank">Predator</a>)</span></div>
+<div>R01: Quando começamos com o Predator em 1996 a forma de divulgação que mais usávamos era a carta(social), recebíamos dezenas de cartas por semana. Nessa época muitos eram os zines impressos que estavam na ativa. Me lembro quando saímos na capa de um zine de Passo Fundo no lançamento da primeira demo em 1999. Recordações a parte, as mudanças são enormes. Temos a tecnologia a nosso favor e acredito que se usada de forma correta somente vai ajudar. O formato impresso, apesar de ser em número menor, ainda representa muito bem o nosso underground. Porém, com o custo alto e a falta de apoio está cada vez mais raro encontrarmos o artefato na forma tradicional. A alternativa de webzine é uma solução para continuar um trabalho de apoio a cena. O que devemos ter em mente é que sem nosso apoio a cena perde em tudo. Aos poucos vemos zines e revistas encerrarem suas atividades, gravadoras praticamente sem lançar material underground, etc. O apoio a quem mais rala também é o menor, por isso cabe a nós headbangers apoiar a cena de forma como acontecia nos anos 80 e 90 e fazer o uso da tecnologia a nosso favor.</div><div>R02: Os zines impressos continuam sendo de total importância no nosso cenário atual! O zine impresso tem o poder de registro histórico do momento em que estamos vivendo. Podemos pegar nossos zines antigos e ver como era a cena há 10-15 anos atrás. Sabemos que o zine impresso, apesar de estar cada vez mais escasso, é objeto de desejo dos verdadeiros apreciadores do Metal underground. Através dos zines impressos é que podemos conhecer o que as bandas estão fazendo e o que acontece na nossa cena underground. Que bandas estão surgindo, quais bandas estão na ativa, shows undergrounds, tours, festivais e tudo mais.</div><div>R03: Durante a tour que fiz com o Predator de 2007 até agora, tive o privilégio de conhecer muitos amigos “zineiros” que continuam na batalha para manter firme o formato antigo, apesar de todas as dificuldades. Mas é inegável que a maioria dos zines impressos da antiga, passaram para o formato web ou encerraram de vez as atividades. Eu acredito que a tendência é o formato web continuar crescendo cada vez mais, apesar de termos ótimos zines impressos. Eu sou a favor e apoio colecionando todos os zines impressos que encontro. Também compro apenas Cds originais, demos das bandas e não baixo música da internet. Posso estar sendo radical, mas é a minha maneira de demonstrar o meu apoio e respeito as pessoas que dedicam suas vidas ao Underground. Apesar de ser radical nesse sentido, leio e participo de vários webzines, uso myspace para conhecer as bandas novas e novos lançamentos.</div><div>R04: Acredito que o poder de registro dos zines impresso é o fator que o faz desse formato tão importante e ainda cultuado. Toda a história do metal nacional dos anos 80-90 foi registrada pelos zines impressos. Em um webzine é difícil conseguirmos acompanhar matérias mais antigas, principalmente relacionada a fatos históricos da cena que aconteceram quando a internet não era tão popular. A minha opinião é que todos os veículos de comunicação que tem como objetivo apoiar a cena é de fundamental valor, seja no formato tradicional ou web, o importante é informar os maníacos com sede pelas novidades do Metal. Cabe a nós apoiarmos esses veículos de comunicação e fazer com que continuem ajudando a cena a crescer e se fortalecer! Vida longa ao zines!</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Vinícius Vidal&nbsp;
+<span class="mat_respostas_descricao">(Editor do site <a href="http://baronshell.com/" title="" target="_blank">Baron's Hell</a>)</span></div>
+<div>R01: A agilidade com certeza. Webzine é muito mais rápido e simples, não existe o trabalho de montar uma edição, na maioria dos casos é abrir o administrador da ferramenta que funciona no webzine e adicionar a informação (seja notícia ou matéria/entrevista, etc). Porém se ganhou na agilidade perdeu na qualidade e dedicação, por ser muito fácil e simples, fazer um webzine não tem mais aquele sabor e gosto que outrora teve/tem no zine impresso. Fazer um zine demanda cuidado e vontade, muita vontade. E hoje em dia existem muitos webzines que são ruins, mal-feitos e até mesmo inúteis, já que não cumprem como cumpriam os antigos zines onde existiam/existem várias informações. E poderiam ser fodaços como é o GoreGrinder e um ou outro como o 13 Days of dirth, entre alguns que restam (muitos morreram desde a propagação da web no Brasil lá em 98), afinal é sim muito mais simples você aprender a montar um site com qualidade hoje em dia do que montar impressos a anos atrás. Nem precisa de tanto mas se conseguir representar o espírito zineiro já tá mais do que ótimo, aliás esse é o ponto, espírito zineiro, alguns tem seja com webzine, zine impresso ou no papel de pão, outros querem falar das bandas famosas que gostam e acabam sendo mais do mesmo.</div><div>R02: Acredito que é e ainda será muito importante os zines impressos. É muito diferente pegar um zine impresso na mão, levar com você e lê-lo seja no banheiro, busão ou outro lugar que interessar, mesmo que você pegue o zine e não o leia no momento como é um material físico sempre estará na mão e quando você menos perceber já leu e releu o zine, entendeu as opiniões e ficou com gostinho de quero mais, fora que todos as matérias, resenhas e opiniões as divulgações feitas ali conseguiram ser lidas. Mas estou falando aí da praticidade do material físico, quanto ao cenário, divulgação, etc, lógico que não sou hipócrita e ignorar a web quando eu mesmo já estou lá, realmente para divulgar notícias e agenda de eventos é óbvio que pela internet é muito mais eficiente e rápido, principalmente porque notícias e shows são coisas que acontecem todo momento e se a notícia/show não forem algo muito fora do dia-a-dia nem precisam do registro mesmo do zine impresso. Pra mim zines impressos são importantes na cena atual quando conseguem exibir matérias e opiniões que são vitais para a continuidade, informação e fortalecimento da cena, que merecem essa divulgação, o registro, seja entrevistas, resenhas de materiais, shows e opiniões sobre a cena mesmo ou algum outro assunto específico. Até porque como zines são complicados de serem produzidos, não há problema em ser por exemplo semestral ou anual, mas se ele conseguir transmitir de uma forma geral como está o cenário atual como um registro histórico mesmo (eu considero assim todos os zines que possuo guardado aqui, algo em torno de 300, por aí), o que aconteceu nesses meses, qual é o pensamento atual, etc já é um grande feito que fará que essa importância não diminua.</div><div>R03: Como disse na anterior, não acho que perderam realmente, o que aconteceu foi que muita gente por motivos financeiros e agilidade já prefira dedicar o trampo na web mesmo, ou seja, o que aconteceu foi uma adaptação, e isso é em todas as mídias (zine é um tipo de mídia, diferente na essência, mas é). Hoje em dia no lugar de programas de rádio temos podcasts, programas de tv surgem como videocast, até os blogs que tomaram lugar de muitos portais (que haviam tomado lugar de jornais impressos) hoje perdem algum espaço para o microblogging do twitter, ou seja, é a agilidade e pressa na meta-informação. Porém com tudo isso acontecendo a informação fica em todo lugar e em lugar algum e de certa forma hoje em dia temos menos opínião crítica e debate, é algo normal de acontecer quando se dá voz a todos e não acho que é ruim, é só uma forma. Daí acho que o zine impresso entra com esse papel, como geralmente quem faz zine é também um formador de opinião, afinal ele não quer montar um veículo só pela função de divulgar por divulgar, ele quer emitir algo que considera importante e necessário dentro daquele contexto. Ou seja, zines não perderam espaço, mas se não se adaptarem muitos perdem sim a razão de ser, afinal ser por ser pode ter algum valor pelo esforço desprendido, mas será datado, repetitivo, vazio e inútil (como muitas revistas que ainda existem por aqui), daí nem compensa fazer um. A pergunta que fica é, existem tantos zineiros ainda no underground? Ou um monte de espalhador de informação? Existe essa vontade?</div><div>R04: Nem precisa dizer muito, afinal quem não percebe essa importância realmente não tem noção do que é o underground e porque não o metal mesmo, zines impressos são mais ou menos como o papiro do metal e do nosso underground, é onde é descrevido o que aconteceu, onde bandas surgem de verdade, onde o registro é e foi feito. É aquilo, se algo é dito e não é registrado acaba morrendo, perde-se o valor. Zines tiveram e tem esse papel. Os impressos principalmente porque lá no final dos 70 e começo de 80 existiam somente eles, a partir de um que nasceu a revista de rock mais famosa aqui no Brasil que é a Rock Brigade, que muita gente se envolveu na cena porque acabou a partir daí conhecendo a banda x ou y, o estilo específico e o movimento que existem onde eles não tem acesso, zines impressos mostraram o que se faziam lá fora e influenciaram bangers daqui. É preciso dizer também que os zines impressos são também um espaço precioso por ser isento de manipulação, de propaganda, de publicidade e poderes. E como tudo, é uma pena que os zines impressos diminuíram a rotatividade e alguns morreram, mas a gente entende pela dificuldade que sabemos que existem nesse tipo de mídia.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Baalrak&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.myspace.com/massacreaqueronte" title="" target="_blank">Aqueronte</a>)</span></div>
+Em toda a história do cenário underground os Zines impressos tiveram papel importantíssimo para a disseminação e divulgação da cultura metal em todos os segmentos, pois foram eles, na época em que não se tinha inernet para acessar arquivos de musicas com tamanha facilidade, que tiveram a coragem de mostrar e divulgar notícias e bandas de todos os cantos do país, através de correspondências e trocas. Isso ainda hoje acontece e muito, eu. por exemplo tenho ainda alguns zines guardados de recordação e a Aqueronte já participou com entrevistas, ou resenhas &nbsp;ou biografias de vários zines impressos, Zine impresso é cult e a sua importância é valida desde o seu surgimeto. Muita coisa mudou desses tempos atrás até os dias atuais, com o advento da internet , principalmente, houve uma queda na publicação destes materiais mas muitos ainda continuam a ser editados e agora usando a tecnologia a seu favor, utilizando-se de email para entrevistar bandas e acertar trocas e depois editando e impreimendo estes materiais e trocando,vendendo, ou mesmo distribuindo gratuitamente. Além disso, muitos zines acabaram tornando-se revistas de grande porte, como por exemplo, a veterana Rock Brigade. Portanto, pode-se concluir que os Zines impressos nunca perderam seu espaço, muito menos sua importância dentro do underground, sempre estarão presentes lado a lado com os Webzines que também dão sua significativa contribuição para a divulgação do cenário underground.</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Alexandre Probst Justino&nbsp;
+<span class="mat_respostas_descricao">(Editor do <a href="http://www.orkut.com.br/Main#Community.aspx?cmm=56293500" title="" target="_blank">Agenda Underground</a>)</span></div>
+<div>R01: Os zines eram bons, nem todos eram profissionais ,mas havia um trabalho de pesquisa por bandas, e uma troca forte de material, amizades criadas por cartas e divulgações de eventos, faziam amizades e eventos serem fortes, porém, a internet veio para ficar, as pessoas tem q se adaptar, e vejo os webzines como uma otima oportunidade para pessoas, bandas no geral divulgarem seu material a um numero centenas de vezes maior, então a mudança significativa esta no fato de agora você atingir um publico maior.</div><div>R02: Nenhuma. Honestamente falando, hoje em dia, alguém ficar recortando fotos ,colando, tirando xerox não tem mais importância. è duro dizer isso, mas nem as revistas são lidas, muitas simplesmente acabaram,quem dira zines.</div><div>R03: Digamos que não ouve perda de espaço, apenas as formas de comunicação que tem evoluido, chegará uma era em que msn ,orkut serão ferramentas atrasadas e quem viver delas não estará pronto para as mudanças. Por esse motivo não apoio mais as bandas lançarem ainda material em K7 e vinil.</div><div>R04: Foram as primeiras revistas. A Brigade nasceu de um zine. Era assim que conseguiamos saber de shows, novas bandas, conhecer mais pessoas que curtiam nosso som, debater e até discutir. Para a história do underground em si, zines são tão importantes quanto a roda na história da humanidade, o que falta é alguns aprenderem que desde a roda ja vieram os carros.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Ivan&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.myspace.com/warmagedoomofficial" title="" target="_blank">Warmagedoon</a>)</span></div>
+<div>R01: Mudou totalmente a forma e a velocidade de como as novidades são e estão sendo divulgadas pelo simples fato da tecnologia, pois hoje podemos divulgar qualquer notícia, qualquer fato que julgarmos ser necessário em segundos, basta um clicar e a notícia se torna algo dividido para qualquer indivíduo que esteja conectado, porém se tornou algo comum e até certo ponto infame, pois com isso muitos boatos são jogados ao vento e trazendo mais desunião entre alguns. Hoje temos centenas de webzines que fazem verdadeiras operações de guerra em disseminar notícias e bandas, e isso é ótimo, pois estas ferramentas se tornaram fundamentais.</div><div>R02: Os zines impressos se tornaram objetos “Cult” nos dias atuais e poucos são lidos e encarados como deveriam, ou seja, ler e dar valor ao trabalho que fora feito com empenho e determinação. Obviamente poucos de nossa atual cena já teve contato com um zine impresso, seja pela falta de interesse no mesmo ou pelo simples fato de renegar tal objeto em detrimento de acessar internet. Mas é inegável o legado dos zines impressos, pois sem eles, muitas bandas que hoje fazem parte de nossas influências como bandas, não seriam nem conhecidas por nós, pois muitas delas, especialmente as bandas das décadas passadas e que hoje ainda são referências do estilo. Em resumo, qual a importância dos zines impressos? Fundamentais eu diria.</div><div>R03: Com certeza perderam espaço, tanto pela praticidade, quanto pela logística. Vejo como exemplo, a transição do Vinil para o CD, no começo dos anos 90, muitos tentaram resistir e vejo uma ode ao vinil nos últimos anos, mas isso é apenas nostálgico, sem querer desmerecer quem cultua tal costume. Hoje como no passado, temos webzines que nem valem a clicada, bem como alguns zines impressos nem serviam para, bem, não precisa falar isso aqui.</div><div>R04: A importância foi fundamental, um alicerce com certeza, pois por muitos anos foi um dos principais meios de comunicação entre bangers, produtores de shows e bandas de todo o planeta e por si só já deveria ser respeitado. Sem dúvida a cena era forte em virtude de verdadeiros guerreiros zineiros, que deixavam um tempo para confeccionar tais objetos, alguns com mais e outros com menos esmero, mas de uma maneira ou de outra, era selecionada por seu público como deveria, pela qualidade e valor e assim lido e espalhado por todos cantos. E parabenizo o Goregrinder pela matéria, pela iniciativa e pela oportunidade.</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Petter Baiestorf&nbsp;
+<span class="mat_respostas_descricao">(Dono da <a href="http://www.canibalfilmes.bulhorgia.com.br/" title="" target="_blank">Canibal Filmes</a>)</span></div>
+<div>Comecei a editar zines em 1992, se não me engano, numa época em que os fanzines impressos estavam ganhando muita força e serviam como principal canal para informações sobre cultura underground. Editei vários títulos, com destaque ao "Arghhh" (zine que editei entre 1992 e 2003, durando 32 números, tiragem que chegou - em alguns números - a mil cópias tendo entre 32 e 64 páginas), dedicado aos quadrinhos, cinema obscuro, literatura splatter e bandas de gore grind. Parei de editar zines impressos porque não encontrava mais público disposto a "encomendar" o zine pelo correio. De uma tiragem de mil exemplares foi caindo até o &nbsp;ridículo de 50 cópias no último número do "Arghhh". Depois desta introdução vou tentar responder as perguntas.</div><div>R01: Acho que o contato entre leitores e o editor e colaboradores dos zines. Antes o cara recebia muitas cartas de leitores falando sobre as matérias e discutindo os assuntos abordados nos zines impressos. Tive um blog tempos depois em parceria com uma ex-namorada e não consegui me adaptar aos tempos da NET justamente por sentir falta deste contato com o público. Hoje em dia ninguém comenta nada, o editor fica praticamente sem contato com seus leitores. Dificilmente voltarei a editar um blog, já um zine impresso é algo que tenho vontade de retomar, principalmente um zine impresso em gráfica de quadrinhos/cinema obscuro para vender nas mostras de filmes. Em 2005 editei um folheto poético chamado "Urtiga" que eu dava de graça ao pessoal que aparecia nas minhas palestras sobre produção cinematográfica independente e esse contato com o público era bem gratificante.</div><div>R02: Acho que hoje em dia o público leitor de zines prefere ficar olhando sites. Infelizmente se perdeu o hábito de ler/acompanhar as edições impressas dos zines. Acho que são bem poucos os zines que insistem em se manter na ativa de maneira impressa. Vejo mais zines (folhetos na verdade) punks ou de poesia sendo editados de maneira impressa. É uma arte que não deveria ser perdida. E já respondendo aqui mesmo a pergunta seguinte: Sim, eu sou um dos que acredita que os zines impressos perderam espaço para os webzines, já que os leitores continuam os mesmos, ou seja, pessoal em busca de informação sobre a cultura independente/underground.</div><div>R04: Agora respondendo como produtor de filmes e não mais como ex-editor que planeja voltar a editar um zine impresso um dia desses. A importância dos zines impressos é muita, nos anos 90 eu tive meus filmes divulgados na imprensa oficial (jornais como Folha de São Paulo, Estadão, O Globo e revistas como Isto É e Veja) e nunca deram tanto retorno quanto os zines impressos me davam. Nos anos 90 existiam uma infinidade de editores engajados em divulgar a arte independente e funcionava como um canal eficiente de divulgação. Nos anos 90 (e também parte dos anos 2000) o editor Edgar Guimarães editava um guia de zines impressos chamado "QI" (se não me falha a memória já que sou meio lesado, hauahuahauahauahauahauahauaahau) e trazia contatos de milhares de editores e todo mundo conhecia todo mundo e a troca de informações era intensa. O assunto "zines impressos" daria muito assunto para um bom documentário sobre a imprensa alternativa dos anos 90. Última informação pra quem se interessa em saber mais sobre o universo dos zines impressos dos anos 90: Adquiram o livro "Almanaque de Fanzines" que é uma ótima fonte para saber como funcionava tudo antes da NET existir (ou se popularizar, no caso).</div></div>
+
+<div class="mat_compartilhar">
+<div class="mat_compartilhar_topo">Compartilhe essa mat&eacute;ria!</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="width:400px; vertical-align:central;">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<g:plusone size="medium"></g:plusone>
+<a class="addthis_button">Divulgue!</a>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000" 
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+<meta property="og:image" content="http://www.goregrinder.net/imagens/materias/Zines Impressos.jpg" /></div>
+
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:FLEURYX@GMAIL.COM'>LUCIANO FLEURY</a></span>
+<a href='http://necromantical screams mag. (impresso)/' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ A QUESTÃO É ONDE A INTERNET VAI PARAR? É MUITA INFORMAÇÃO A VELOCIDADE DA LUZ SEM CONTAR QUE DE 1994 PRA CÁ A COISA É SÓ GRANA, A VELHA FÓRMULA TALVEZ RESURJA COMO SISTEMA DE PROTESTO, o que nao morrerá jamais É A CULTURA UNDERGROUND, FIZ TRES EDIÇOES ENTRE 90 E 91 LEMBRO DA PÁ DE FLYERS CAINDO QUANDO ABRIA A CARTA ERA MUITO PRAZEROZO! NAO É FRIO COMO HOJE E COMO É BOM REENCONTRAR AMIGOS DA ÉPOCA! CHEGEI A EDITAR COM FITA K7(...) O LEGADO FICA EM ABERTO! 
+
+UNDERGROUND WAYS!
+
+KEEP THE FIGHT!</div>
+
+<div class="mat_comentarios_base">
+13/02/12 &agrave;s 00:43 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:ROLISBOA13@HOTMAIL.COM'>RODRIGO LISBOA SANTOS</a></span>
+<a href='32403159.html' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ GRAVEI DUAS DT. UMA COM A BANDA GORE NOISE E OUTRA COM A SARCOMA, SOU UM EX-BATERISTA, TENHO34 ANOS
+  DOIS FILHOS, FIZ MINHA PARTE NA CULTURA ALTERNATIVA DO METAL EXTREMO, SOU SATISFEITO COM O MEU TRABALHO, CONHECI A CENA DEATHCORE MAS NÂO ME CONSIDERO UM REAL DEATHSTER,  ACHO QUE FALTA
+  UM POUCO MAIS DE RAZÂO PRA ME COLOCAR COMO UM GRINDER OU UMDEATHSTER, GOSTO MUITO DE METAL MAS NAO PRETENDO MORRER POR ELE, O AMOR È MUITO MAIS COMPENSADOR.</div>
+
+<div class="mat_comentarios_base">
+27/03/10 &agrave;s 16:38 Hs
+</div>
+
+</div>
+
+
+<div class="mat_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="mat_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="mat_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; height:25px; float:left;" class="mat_formulario_texto">Site <span style="font:9px Tahoma, Geneva, sans-serif;">(opcional)</span>: <input type="text" name="site" id="site" value="" size="50" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="mat_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="esc_esp_id" id="esc_esp_id" value="5">
+                  <input type="hidden" name="esc_ver" id="esc_ver" value="n">
+                </form>
+</div>
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=14&id=5 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:08:31 GMT -->
+</html>

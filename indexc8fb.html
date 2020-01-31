@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=65 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 19:47:57 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<script type='text/javascript' language='javascript' src='jscripts/jquery-1.3.2.js'></script>
+<script type='text/javascript' language='javascript'>
+$(function($) {
+	// Quando o formulário for enviado, essa função é chamada
+	$('#form1').submit(function() {
+		// Colocamos os valores de cada campo em uma váriavel para facilitar a manipulação
+		var nome = $('#rcc_nome').val();
+		var email = $('#rcc_email').val();
+		var mensagem = $('#rcc_texto').val();
+		// Exibe mensagem de carregamento
+		// $('#status').html('<img src='loader.gif' alt='Enviando' />');
+		// Fazemos a requisão ajax com o arquivo envia.php e enviamos os valores de cada campo através do método POST
+		$.post('com_rescds.html', {nome: nome, email: email, mensagem: mensagem }, function(resposta) {
+				// Quando terminada a requisição
+				// Exibe a div status
+				$('#status').slideDown();
+				// Se a resposta é um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$('#status').html(resposta);
+				} 
+				// Se resposta for false, ou seja, não ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$('#status').html('Mensagem enviada com sucesso!');
+					// Coloca a mensagem no div de mensagens
+					// $('#mensagens').prepend('<strong>'+ nome +'</strong> disse: <em>' + mensagem + '</em><br />');
+					// Limpando todos os campos
+					$('#rcc_nome').val('');
+					$('#rcc_email').val('');
+					$('#rcc_texto').val('');
+				}
+		});
+	});
+});
+</script>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Resenha: OFFAL - Macabre Rampages And Splatter Savages [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].rcc_email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<script type="text/javascript" language="javascript" src="jscripts/lytebox.js"></script>
+<link rel="stylesheet" href="jscripts/lytebox.css" type="text/css" media="screen" />
+
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<script type='text/javascript' src='jscripts/enlargeit.js'></script>
+<script type='text/javascript'>
+        enl_brdsize = 10;
+        enl_shadowintens = 10;
+        enl_center = 1;
+        enl_darkprct = 70;
+        enl_preload = 1;
+        enl_drgdrop = 0;
+        enl_darksteps = 1;
+        enl_buttonurl[0] = 'prev';
+        enl_buttontxt[0] = 'Anterior';
+        enl_buttonoff[0] = -216;
+        enl_buttonurl[1] = 'next';
+        enl_buttontxt[1] = 'Proximo';
+        enl_buttonoff[1] = -234;
+        enl_buttonurl[2] = 'close';
+        enl_buttontxt[2] = 'Fechar [Esc]';
+        enl_buttonoff[2] = -0;
+</script>
+
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var mensagem = $("#mensagem").val();
+		var rcc_res_id = $("#rcc_res_id").val();
+		var rcc_ver = $("#rcc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_rescdsf8d4.html?id=65', {nome: nome, email: email, mensagem: mensagem, rcc_res_id: rcc_res_id, rcc_ver: rcc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+
+
+<a href="#" title="Clique para ampliar"><div class="rescds_capa"><img src="Offal_Macabre%20Rampages%20and%20Splatter%20Savages_20104185.jpg?imagem=imagens/resenhas/Offal_Macabre%20Rampages%20and%20Splatter%20Savages_2010.jpg&amp;w=300&amp;h=300" border="0" onclick="enlarge(this);" longdesc="imagens/resenhas/Offal_Macabre%20Rampages%20and%20Splatter%20Savages_2010.jpg"/></div></a>
+
+<div class="rescds_detalhes">
+<div class="rescds_detalhes_itens">Banda/Artista: <b>Offal</b></div>
+<div class="rescds_detalhes_itens">T&iacute;tulo: <b>Macabre Rampages And Splatter Savages</b></div>
+<div class="rescds_detalhes_itens">Lan&ccedil;amento: <b>Black Hole Productions</b></div>
+<div class="rescds_detalhes_itens">Ano: <b>2010</b></div>
+<div class="rescds_detalhes_itens"><span style="position:relative; float:left;">Contatos: </span><b><span style="position:relative; float:left; margin-left:2px; width:340px;">
+<a href="rescdscontatosf8d4.html?id=65" rel="lyteframe" rev="width: 600px; height: 450px; scrolling: yes;"><div class="rescds_botao_contatos">Clique para ler todos os contatos</div></a>
+</span></b></div>
+
+<div class="rescds_detalhes_itens">Site oficial: <b><a href="http://www.offalgore.com/" target="_blank">http://www.offalgore.com</a></b></div>
+
+<div class="rescds_detalhes_itens">Resenha por <b><a href="mailto:cristianosteps@gmail.com">Cristiano Passos</a></b></div>
+<div class="rescds_detalhes_itens" style="border-bottom:0px;">Publicada no dia <b>29/06/2012</b></div>
+</div>
+
+<div class="rescds_texto"><p>Bicho, vou ser sincero: tem algo melhor do que colocar um disquinho pra rolar e sentir, j&aacute; nos primeiros acordes, uma emo&ccedil;&atilde;o t&atilde;o intensa quanto aquele orgasmo perfeito do &uacute;ltimo m&eacute;nage &agrave; trois? Pois &eacute;, tem coisas que s&atilde;o assim, e o &ldquo;novo&rdquo; do Offal &eacute; certamente um exemplo que se encaixa bem no caso acima, pois os caras conseguiram protagonizar um dos melhores momentos do death metal mundial. Tudo bem, algum leitor (se houver algum) mais jovem ansioso por lan&ccedil;amentos mais recentes poder&aacute; dizer que o disco em quest&atilde;o j&aacute; n&atilde;o &eacute; mais uma novidade, pois foi lan&ccedil;ado em 2010 pela Black Hole Productions. Em dois anos, dizem, muita coisa acontece e, no caso do underground, realmente muita coisa acontece mesmo, dada a profus&atilde;o de bandas e lan&ccedil;amentos dessa opulenta cena, que est&aacute; sempre parindo mais um rebento insano de alguma mente doentia ao redor do mundo. Por&eacute;m, o caso de &ldquo;Macabre rampages and splatter savages&rdquo; &eacute; daqueles em que o tempo &eacute; o que menos importa, pois o que Andr&eacute; Luiz (vocal), Jo&atilde;o Carlos Ongaro (baixo), Tersis Zonato (guitarra e voz) e Eduardo Tobe (bateria) nos mostram aqui &eacute; mais um lan&ccedil;amento que transcende o tempo, atravessando-o para se tornar item obrigat&oacute;rio na categoria dos cl&aacute;ssicos.</p>
+<p>Imediatamente, a primeira refer&ecirc;ncia que vem &agrave; mente assim que se come&ccedil;a a ouvir o artefato &eacute; Autopsy, claro, e 90% dos marginais que adoram animar seu dia ouvindo um death metal de tend&ecirc;ncia gore poder&atilde;o perceber essa ben&eacute;fica influ&ecirc;ncia. Contudo, o Offal n&atilde;o se at&eacute;m apenas a essa inspira&ccedil;&atilde;o principal: uma audi&ccedil;&atilde;o mais atenta do CD mostra claramente que os curitibanos est&atilde;o bem embasados quando se trata de &ldquo;background&rdquo; met&aacute;lico, indo muito al&eacute;m da lenda criada por Chris Reifert. Assim, em seu segundo &ldquo;full-length&rdquo;, o Offal traz na bagagem diversas outras influ&ecirc;ncias, advindas, em sua maioria, da mesma &eacute;poca em que surgiu o Autopsy, certamente, como Exit-13, Carcass e toda aquela gera&ccedil;&atilde;o de bandas extremas norte-americanas que deu &agrave; luz o famigerado Grindcore, como Master, Funeral Bitch, Deathstrike, Repulsion, Majesty e Nausea (afinal, essa foi uma das principais fontes met&aacute;licas em que o Napalm Death bebeu para criar o &ldquo;Scum&rdquo;), bem como as inglesas Bolt Thrower e Cancer. Com essa base respeitavelmente pesada, tem como um disco desses ser ruim? &nbsp;Evidentemente que n&atilde;o, mas de nada adianta fazer essa afirma&ccedil;&atilde;o sem dizer como cheguei &agrave; conclus&atilde;o acima, certo?&nbsp;</p>
+<p>Talvez por isso, o disco cheira &agrave; podrid&atilde;o exacerbada desde o seu in&iacute;cio, quando &ldquo;Offal&rdquo;, a primeira faixa, instrumental, entra solene, como um death/doom metal que se arrasta l&uacute;gubre como um animal asqueroso cujos movimentos gosmentos preparam os ouvidos para &ldquo;Feast for the dead&rdquo;, um dos destaques do CD, com uma pegada ineg&aacute;vel daquele death metal old school que faz a alegria de qualquer demente! Com uma batida em midtempo, &eacute; imposs&iacute;vel n&atilde;o sacudir o corpo na levada da batera e n&atilde;o sair &ldquo;assoviando&rdquo; o solinho de guitarra que fecha as primeiras estrofes, digno de um Exit-13, com toda a certeza, assim como as guitarras que embalam a segunda parte da m&uacute;sica, mais lenta ainda e com um clima totalmente doom. A prop&oacute;sito, o guitarrista Tersis &eacute; foda e detona no seu instrumento, criando bases e solos altamente cativantes, com uma dose exata de melodia, trampo que ele mant&eacute;m nas faixas seguintes, &ldquo;Trial of the undead&rdquo; e &ldquo;Putr-essence&rdquo;, duas porradas irretoc&aacute;veis do melhor death metal, daquelas que colocam qualquer metalzinho contempor&acirc;neo pretensioso no seu devido lugar, ou seja, no lixo! &nbsp;Vale registrar que o final dessa terceira faixa tamb&eacute;m &eacute; memor&aacute;vel, uma base arrastada, agonizante, d&aacute; o tom de terror dos seus &uacute;ltimos dois minutos, evidenciando outra inspira&ccedil;&atilde;o essencial do disco: os filmes de horror de Dario Argento, Lucio Fulci e Joel M. Reed, entre outros.&nbsp;</p>
+<p>Ali&aacute;s, as refer&ecirc;ncias ao cinema doentio e marginal s&atilde;o escancaradas, tanto pela dedicat&oacute;ria aos mestres, como pelo uso de diversos trechos de filmes, como &ldquo;Zombie&rdquo;, &ldquo;The Return of the Evil Dead&rdquo;, &ldquo;Bloodsucking Freaks&rdquo; etc. como intros para alguns dos sons (inclusive, na medida certa, sem abusar do recurso!). Dessa forma, o cinema B entra aqui como verdadeiro &ldquo;leitmotiv&rdquo; de &ldquo;Macabre rampages&rdquo;, conferindo unidade ao produto final, imprimindo-lhe at&eacute; mesmo um ritmo narrativo original, aspectos que marcam t&atilde;o profundamente o ouvinte que, certamente, contribuem tamb&eacute;m para torn&aacute;-lo um lan&ccedil;amento de maior longevidade, no sentido mnem&ocirc;nico mesmo, pois na segunda audi&ccedil;&atilde;o j&aacute; &eacute; poss&iacute;vel reconhecer diversos momentos do CD. Bem, n&atilde;o sei ao certo qual foi a inten&ccedil;&atilde;o da banda em entremear as m&uacute;sicas com tantos trechos e refer&ecirc;ncias ao cinema, mas a impress&atilde;o que eu tenho &eacute; de que o pr&oacute;prio &ldquo;Macabre rampages and splatter savages&rdquo; foi concebido como um filme digno de um Petter Baierstof, combinando podrid&atilde;o e pervers&atilde;o, tendo como pano de fundo o suspense e a tens&atilde;o proporcionados por essa trilha sonora do metal da morte!</p>
+<p>A prop&oacute;sito, voltando ao CD, &ldquo;The eyegouging&rdquo; &eacute; o seu som mais curto, com menos de um minuto de dura&ccedil;&atilde;o, lembrando as experi&ecirc;ncias do primeiro disco da banda e mostrando a latente influ&ecirc;ncia grind/gore da banda, que, se n&atilde;o est&aacute; expl&iacute;cita, est&aacute; ali no fundo, para quem conhece a hist&oacute;ria dos membros do Offal. &ldquo;The cold grips of death&rdquo; chega detonando com um death metal &agrave; velha escola, caindo depois no clim&atilde;o &ldquo;off&aacute;lico&rdquo;, ou seja, macabro, denso, assustador, coisa pra fazer o seu vizinho tremer de medo! &ldquo;Flesh freak&rdquo;, por sua vez, inicia uma esp&eacute;cie de trilogia instrumental, unindo-se a &ldquo;Deep red &ndash; The blood is running cold&rdquo; e &ldquo;Terrore in Giallo&rdquo; para dar ao disco exatamente o peso do terror criado em cada parte dessa obra-prima do underground. Vale destacar que as m&uacute;sicas instrumentais foram arranjadas por Tersis Zonato (que tamb&eacute;m toca no Axecuter e Lutemkrat), que fez um puta trabalho em cada um delas, mostrando que boa parte do brilho desse disco se deve a sua compet&ecirc;ncia, com certeza. Por falar nisso, compet&ecirc;ncia &eacute; o que n&atilde;o falta a nenhum dos membros da banda: o baixista mant&eacute;m o peso necess&aacute;rio, o batera &eacute; avassalador e preciso e o vocalista Andr&eacute; dispensa qualquer coment&aacute;rio, pois ele garante o posto de um dos melhores na sua fun&ccedil;&atilde;o hoje, sem d&uacute;vida. Infelizmente, neste ano de 2012, o baterista teve que deixar a banda por raz&otilde;es pessoais, mas tor&ccedil;o para que eles logo consigam arranjar algu&eacute;m que realize um trabalho t&atilde;o fudido nas baquetas para dar sequ&ecirc;ncia a essa trajet&oacute;ria death/gore em clara ascens&atilde;o.</p>
+<p>Por fim, cabe mencionar o trabalho de primeira feito pela Black Hole (como sempre, ali&aacute;s) e toda a maravilhosamente l&uacute;gubre arte do CD, elemento indispens&aacute;vel para os apreciadores de um bom encarte e que nunca trocariam esse prazer por uma mera c&oacute;pia em MP3, certo? Finalizando, eu diria que a impress&atilde;o que fica &eacute; que &ldquo;Macabre rampages and splatter savages&rdquo; foi minuciosamente constru&iacute;do, detalhe a detalhe, resultando em um equil&iacute;brio raro no metal extremo atual entre a sonoridade cl&aacute;ssica do underground e produ&ccedil;&atilde;o bem cuidada da contemporaneidade. Afinal, sabendo aproveitar os recursos atualmente dispon&iacute;veis, o Offal conseguiu manter a atmosfera org&acirc;nica, independente e original que consagrou toda uma cena dedicada ao mais macabro death metal nesses quase 30 anos de hist&oacute;ria do estilo. Assim, seja em 1985, 1990, 2010 ou 2012, como eu disse no in&iacute;cio, o tempo aqui &eacute; que menos importa, pois &ldquo;Macabre rampages&rdquo; coloca o Offal em p&eacute; de igualdade com os pais a quem eles devem parte de sua &ldquo;educa&ccedil;&atilde;o&rdquo;, tornando-se simplesmente eterno.</p></div>
+
+<div class="rescds_tracklist">
+<div class="rescds_tracklist_topo">Tracklist:</div>
+<p>01. Offal<br />02. Feast for the dead<br />03. Trial of the undead<br />04. Putr-essence<br />05. The eyegouging<br />06. The cold grips of death<br />07. Flesh freak<br />08. Mortuary waste<br />09. Onslaught of dismemberment<br />10. Deep red &ndash; The blood is running cold<br />11. Death&rsquo;s curse<br />12. Terrore in Giallo</p></div>
+
+<div class="rescds_compartilhar">
+<div class="rescds_compartilhar_topo">Compartilhar</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="text-align:left; margin-top:5px;" >
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_tweet"></a></div>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><g:plusone size="medium"></g:plusone></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button" addthis:url="http://www.goregrinder.net/index.php?s=10&id=65" style="font:10pt Arial, Helvetica, sans-serif;"><img src="imagens/sm-plus.gif" 
+        width="16" height="16" border="0" alt="Compartilhar" />&nbsp;Divulgue!</a></div>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000"
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+
+</div>
+
+<div class="rescds_moreabout">
+<div class="rescds_moreabout_topo">Mais sobre:</div>
+
+
+
+
+<div class='more_setores'><div class='more_titulo_setor'>Notícias <span class='more_noticia_maisde10'>(Últimas 10 publicadas)</span>:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index5342.html?s=3&amp;id=1416' title=' 23/10/13  - Offal já tem novo baterista' class='more_txt_interno'>- Offal já tem novo baterista</a></div><div class='more_txt_interno'><a href='indexe531.html?s=3&amp;id=1411' title=' 20/08/13  - Offal na procura de novo baterista' class='more_txt_interno'>- Offal na procura de novo baterist...</a></div><div class='more_txt_interno'><a href='index705b.html?s=3&amp;id=1403' title=' 14/04/13  - Zombie Cookbook com nova camiseta disponível' class='more_txt_interno'>- Zombie Cookbook com nova camiseta...</a></div><div class='more_txt_interno'><a href='index0197.html?s=3&amp;id=1390' title=' 09/03/13  - Zombie Cookbook: Detalhes sobre o Split com Offal' class='more_txt_interno'>- Zombie Cookbook: Detalhes sobre o...</a></div><div class='more_txt_interno'><a href='index16b1.html?s=3&amp;id=1340' title=' 09/10/12  - Offal apresenta novo baterista' class='more_txt_interno'>- Offal apresenta novo baterista</a></div><div class='more_txt_interno'><a href='indexda52.html?s=3&amp;id=1325' title=' 24/08/12  - Offal assina com a Razorback Recordings' class='more_txt_interno'>- Offal assina com a Razorback Reco...</a></div><div class='more_txt_interno'><a href='index1bd7.html?s=3&amp;id=1323' title=' 14/08/12  - Zombie Cookbook preparando split com Offal' class='more_txt_interno'>- Zombie Cookbook preparando split ...</a></div><div class='more_txt_interno'><a href='index869e.html?s=3&amp;id=1267' title=' 16/03/12  - Offal anuncia saída de baterista' class='more_txt_interno'>- Offal anuncia saída de baterista</a></div><div class='more_txt_interno'><a href='index64b4.html?s=3&amp;id=979' title=' 10/09/10  - Offal lança seu segundo álbum' class='more_txt_interno'>- Offal lança seu segundo álbum</a></div><div class='more_txt_interno'><a href='index7057.html?s=3&amp;id=957' title=' 28/06/10  - Offal divulga arte do novo album' class='more_txt_interno'>- Offal divulga arte do novo album</a></div><a href='index0f78.html?s=3&amp;noticia=Offal'><div class='more_noticia_mais'><span class='more_noticia_mais_texto'>> Ler todas relacionadas <</span></div></a></div></div><div class='more_setores'><div class='more_titulo_setor'>Biografia:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index2de2.html?s=21&amp;ss=2&amp;id=21' class='more_txt_interno'>A hist&oacute;ria da Offal (Death/Gore)</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Show:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index9c82.html?s=4&amp;id=386' class='more_txt_interno'>11/02  - Black Hole Fest 2</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Resenhas:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='indexd25f.html?s=10&amp;id=91' class='more_txt_interno'>- <i>Horrorfiend</i></a></div><div class='more_txt_interno'><a href='indexe477.html?s=10&amp;id=80' class='more_txt_interno'>- <i>Dementia Trash / Motel Hell (split 7")</i></a></div><div class='more_txt_interno'><a href='indexc8fb.html?s=10&amp;id=65' class='more_txt_interno'>- <i>Macabre Rampages And Splatter Savages</i></a></div><div class='more_txt_interno'><a href='index1de9.html?s=10&amp;id=38' class='more_txt_interno'>- <i>Offal</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Resenha de show:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='indexc90d.html?s=21&amp;ss=1&amp;id=13'  class='more_txt_interno'>- The Matter Of Splatter 2 (17/10/08)</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Entrevista:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='indexbb68.html?s=13&amp;id=31' class='more_txt_interno'>- com <i>André</i> em 2008</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Videos:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index7445.html?s=17&amp;id=143' class='more_txt_interno'>- <i>Trial Of The Undead</i></a></div><div class='more_txt_interno'><a href='index5f85.html?s=17&amp;id=13' class='more_txt_interno'>- <i>Torso</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>1 MP3 online:</div><div class='more_texto_setor'><script>
+	menuOpen=Array();
+	function changeMenu(id, name)
+	{
+		if(menuOpen[id]==0 || menuOpen[id]==undefined)
+		{
+			document.getElementById('menu_img_'+id).src='more-.gif';
+			document.getElementById('menuSource_'+id).style.display='block';
+			menuOpen[id]=1;
+		}
+		else
+		{
+			document.getElementById('menu_img_'+id).src='more.gif';
+			document.getElementById('menuSource_'+id).style.display='none';
+			menuOpen[id]=0;
+		}
+	}
+</script><div class='more_txt_interno'><a href='javascript:changeMenu(74);' class='more_txt_interno'> - <i>Anal-thorized Autopsy</i> <img src='imagens/more.gif' border=0 id='menu_img_74'></a><div id='menuSource_74' style='float:right; display: none;'><object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0' width='35' height='18'>  <param name='movie' value='mp3/OFFAL_-_ANAL-THORIZED_AUTOPSY.swf' />  <param name='quality' value='high' />  <param name='wmode' value='transparent'>     <embed src='mp3/OFFAL_-_ANAL-THORIZED_AUTOPSY.swf'      quality='high'      type='application/x-shockwave-flash'      WMODE='transparent'      width='35'      height='18'      pluginspage='http://www.macromedia.com/go/getflashplayer' /></object></div></div></div>
+        </div>
+</div>
+
+<p style="position:relative; float:left; width:100%; text-align:center;"><a href="#comentarios" class="txt-cur-album">Envie seu coment&aacute;rio sobre essa not&iacute;cia! </a></p>
+
+
+
+<div class="rescds_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="rescds_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="rcc_res_id" id="rcc_res_id" value="65">
+                  <input type="hidden" name="rcc_ver" id="rcc_ver" value="n">
+                </form>
+</div>
+
+
+
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=65 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 19:48:06 GMT -->
+</html>

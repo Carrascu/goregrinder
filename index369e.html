@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=87 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 18:50:20 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<script type='text/javascript' language='javascript' src='jscripts/jquery-1.3.2.js'></script>
+<script type='text/javascript' language='javascript'>
+$(function($) {
+	// Quando o formul·rio for enviado, essa funÁ„o È chamada
+	$('#form1').submit(function() {
+		// Colocamos os valores de cada campo em uma v·riavel para facilitar a manipulaÁ„o
+		var nome = $('#rcc_nome').val();
+		var email = $('#rcc_email').val();
+		var mensagem = $('#rcc_texto').val();
+		// Exibe mensagem de carregamento
+		// $('#status').html('<img src='loader.gif' alt='Enviando' />');
+		// Fazemos a requis„o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÈs do mÈtodo POST
+		$.post('com_rescds.html', {nome: nome, email: email, mensagem: mensagem }, function(resposta) {
+				// Quando terminada a requisiÁ„o
+				// Exibe a div status
+				$('#status').slideDown();
+				// Se a resposta È um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$('#status').html(resposta);
+				} 
+				// Se resposta for false, ou seja, n„o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$('#status').html('Mensagem enviada com sucesso!');
+					// Coloca a mensagem no div de mensagens
+					// $('#mensagens').prepend('<strong>'+ nome +'</strong> disse: <em>' + mensagem + '</em><br />');
+					// Limpando todos os campos
+					$('#rcc_nome').val('');
+					$('#rcc_email').val('');
+					$('#rcc_texto').val('');
+				}
+		});
+	});
+});
+</script>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Resenha: WHIPSTRIKER - Only Filth Will Prevail [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].rcc_email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<script type="text/javascript" language="javascript" src="jscripts/lytebox.js"></script>
+<link rel="stylesheet" href="jscripts/lytebox.css" type="text/css" media="screen" />
+
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<script type='text/javascript' src='jscripts/enlargeit.js'></script>
+<script type='text/javascript'>
+        enl_brdsize = 10;
+        enl_shadowintens = 10;
+        enl_center = 1;
+        enl_darkprct = 70;
+        enl_preload = 1;
+        enl_drgdrop = 0;
+        enl_darksteps = 1;
+        enl_buttonurl[0] = 'prev';
+        enl_buttontxt[0] = 'Anterior';
+        enl_buttonoff[0] = -216;
+        enl_buttonurl[1] = 'next';
+        enl_buttontxt[1] = 'Proximo';
+        enl_buttonoff[1] = -234;
+        enl_buttonurl[2] = 'close';
+        enl_buttontxt[2] = 'Fechar [Esc]';
+        enl_buttonoff[2] = -0;
+</script>
+
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as fun√ß√µes necess√°rias para envio do formul√°rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formul√°rio for enviado, essa fun√ß√£o √© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma v√°riavel para facilitar a manipula√ß√£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var mensagem = $("#mensagem").val();
+		var rcc_res_id = $("#rcc_res_id").val();
+		var rcc_ver = $("#rcc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requis√£o ajax com o arquivo envia.php e enviamos os valores de cada campo atrav√©s do m√©todo POST
+		$.post('com_rescds1398.html?id=87', {nome: nome, email: email, mensagem: mensagem, rcc_res_id: rcc_res_id, rcc_ver: rcc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisi√ß√£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta √© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, n√£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+
+
+<a href="#" title="Clique para ampliar"><div class="rescds_capa"><img src="Whipstriker_Only%20Filth%20Will%20Prevail_2016a316.jpg?imagem=imagens/resenhas/Whipstriker_Only%20Filth%20Will%20Prevail_2016.jpg&amp;w=300&amp;h=300" border="0" onclick="enlarge(this);" longdesc="imagens/resenhas/Whipstriker_Only%20Filth%20Will%20Prevail_2016.jpg"/></div></a>
+
+<div class="rescds_detalhes">
+<div class="rescds_detalhes_itens">Banda/Artista: <b>Whipstriker</b></div>
+<div class="rescds_detalhes_itens">T&iacute;tulo: <b>Only Filth Will Prevail</b></div>
+<div class="rescds_detalhes_itens">Lan&ccedil;amento: <b>Morbid Tales Records</b></div>
+<div class="rescds_detalhes_itens">Ano: <b>2016</b></div>
+<div class="rescds_detalhes_itens"><span style="position:relative; float:left;">Contatos: </span><b><span style="position:relative; float:left; margin-left:2px; width:340px;">
+<a href="mailto:whipstriker@yahoo.com.br">whipstriker@yahoo.com.br</a><br /><a href="http://morbidtales-records.loja2.com.br/" target="_blank">http://morbidtales-records.loja2.com.br/</a>&nbsp;</span></b></div>
+
+<div class="rescds_detalhes_itens">Site oficial: <b><a href="https://whipstriker.bandcamp.com/" target="_blank">https://whipstriker.bandcamp.com</a></b></div>
+
+<div class="rescds_detalhes_itens">Resenha por <b><a href="mailto:cristianosteps@gmail.com">Cristiano Passos</a></b></div>
+<div class="rescds_detalhes_itens" style="border-bottom:0px;">Publicada no dia <b>18/09/2016</b></div>
+</div>
+
+<div class="rescds_texto"><p>Formado em 2008, no Rio de Janeiro, o Whipstriker &eacute; uma das bandas brasileiras mais bem-sucedidas nos &uacute;ltimos anos, tanto em termos de shows (inclusive fora do pa&iacute;s), quanto de lan&ccedil;amentos, contando com mais de 25 registros entre o ano de funda&ccedil;&atilde;o e 2016. Muita gente, ent&atilde;o, fica se perguntando qual a f&oacute;rmula para ostentar um curr&iacute;culo t&atilde;o invej&aacute;vel, principalmente por se tratar de uma banda fiel &agrave;s suas ra&iacute;zes profundamente fincadas no underground. Este novo disco, &ldquo;Only filth will prevail&rdquo;, terceiro &ldquo;full-length&rdquo; da banda, talvez me ajude a entender que for&ccedil;as movem o Whipstriker rumo ao topo do submundo metalpunk, pois com tamanha pauleira, &eacute; pra l&aacute; que a banda caminha, sem d&uacute;vida!</p>
+<p>Em primeiro lugar, basta observar a arte do petardo para perceber que a ess&ecirc;ncia est&eacute;tica do underground est&aacute; presente em todos os cantos do disco. Concebida no tradicional preto-e-branco que acompanha a cena desde os prim&oacute;rdios, a capa &ndash; assinada por nada mais, nada menos que o mestre Mark Riddick &ndash; retrata um cen&aacute;rio p&oacute;s-apocal&iacute;ptico em que somente restar&atilde;o sobre a face da terra arrasada os abjetos, os exclu&iacute;dos e toda sorte de renegados que est&atilde;o &agrave; margem da sociedade dos &ldquo;cidad&atilde;os de bem&rdquo;. Os tra&ccedil;os do artista s&atilde;o perfeitos e o desenho inteiro &eacute; cheio de detalhes interessantes, que tornam a capa um atrativo &agrave; parte (ali&aacute;s, uma camiseta com esse desenho ficaria animal!). Esses detalhes s&atilde;o ampliados no decorrer do encarte, ilustrando as letras do disco.</p>
+<p>Por falar em letras, est&aacute; a&iacute; mais um elemento que, por si s&oacute;, j&aacute; prende a aten&ccedil;&atilde;o dos man&iacute;acos que curtem dissecar o material como um todo, em vez de se ater apenas &agrave; m&uacute;sica. N&atilde;o que estas sejam complexas demais ou filos&oacute;ficas, longe disso! Elas s&atilde;o simples, no geral, e lan&ccedil;am m&atilde;o de uma linguagem b&aacute;sica, que, ali&aacute;s, &eacute; do conhecimento de boa parte do p&uacute;blico f&atilde; do g&ecirc;nero. Por&eacute;m, o cara que tem algo a dizer &ndash; no caso, Victor Vasconcellos, mentor do Whipstriker &ndash; consegue faz&ecirc;-lo exatamente com essa simplicidade, deixando nas entrelinhas pormenores que apontam para um sentido muito mais amplo e realista do que pode parecer inicialmente. Afinal, ao ver tantos &ldquo;Satans&rdquo;, &ldquo;hells&rdquo; e &ldquo;deaths&rdquo;, pode-se ser induzido ao erro de julgar o Whipstriker como mais uma banda sat&acirc;nica escrevendo sobre temas que n&atilde;o t&ecirc;m nada a ver com a realidade. Contudo, basta ouvir &ldquo;Flag of cruelty&rdquo; &ndash; que retrata a viol&ecirc;ncia urbana, especialmente a carioca, mas que pode ser aplicada a qualquer periferia deste pa&iacute;s &ndash; para se perceber altas doses de realismo no aspecto l&iacute;rico, bem como &ldquo;Flames of hate&rdquo; ou &ldquo;Satan&rsquo;slave&rdquo;, nas quais as figuras &ldquo;do mal&rdquo; s&atilde;o usadas como met&aacute;fora para uma realidade cruel e sanguin&aacute;ria, abordada com pessimismo e desprezo profundos.</p>
+<p>Al&eacute;m disso tudo, o elemento mais importante a compor a &ldquo;f&oacute;rmula do sucesso&rdquo; do Whipstriker &ndash; sua m&uacute;sica, obviamente &ndash; &eacute; indiscutivelmente empolgante e poderosa, numa propor&ccedil;&atilde;o tamanha que faria at&eacute; os defuntos da terra devastada baterem cabe&ccedil;a! Da mesma forma que as letras, o som do Whipstriker n&atilde;o tem mist&eacute;rio, n&atilde;o! Cada som &eacute; uma porrada direta no est&ocirc;mago, sem firulas, sem exibicionismos t&eacute;cnicos, sem aquela busca doida por originalidade que, por vezes, acaba comprometendo a fun&ccedil;&atilde;o cat&aacute;rtica inerente ao som pesado. Aqui temos apenas o que lhe &eacute; fundamental: riffs cortantes e absurdamente selvagens, baixo pesad&atilde;o e grosso, bateria hipn&oacute;tica, marcada pela objetividade, al&eacute;m de vocais guturais &ndash; embora intelig&iacute;veis &ndash; que seguem a velha escola Lemmy/Cronos, ou seja, aquela voz rouca e grave que n&atilde;o d&aacute; muito margem a arroubos oper&iacute;sticos ou melodias em excesso. A coisa aqui &eacute; crua e violenta! Ali&aacute;s, se compararmos esse disco com os dois anteriores, veremos sim uma evolu&ccedil;&atilde;o, mas em dire&ccedil;&atilde;o a uma maior agressividade, e n&atilde;o ao contr&aacute;rio. Se em &ldquo;Crude Rock&rsquo;n&rsquo;Roll&rdquo; (2010), o som j&aacute; demonstrava essa pegada, mas ainda sem tamanho peso, e no segundo &ndash; o excelente &ldquo;Troopers of Mayhem&rdquo; (2013) &ndash; as guitarras soaram mais sujas, neste disco a combina&ccedil;&atilde;o de muito peso e muita sujeira faz de &ldquo;Only the filth will prevail&rdquo; o melhor lan&ccedil;amento da banda at&eacute; aqui.&nbsp;</p>
+<p>E essa combina&ccedil;&atilde;o &eacute; coerentemente mantida no disco inteiro. Assim, quando entra &ldquo;Waiting for the doomsday&rdquo;, sente-se o cheiro da atmosfera underground de imediato, seguindo-se em p&eacute;rolas como &ldquo;Nuclear metal blood&rdquo;, cuja rifferama &eacute; de quebrar o pesco&ccedil;o, ou &ldquo;Electric bloodbath&rdquo;, que tem um jeit&atilde;o bem Mot&ouml;rhead e guitarras empolgantes. Ali&aacute;s, Victor Vasconcellos realmente manja dos riffs, pois todas as m&uacute;sicas t&ecirc;m bases muito marcantes e simples, embora &ldquo;Flag of cruelty&rdquo; tenha nascido j&aacute; com cara de hino metalpunk, mostrando que &eacute; com simplicidade que se constroem os melhores riffs. O mesmo se repete em &ldquo;Armageddon delight&rdquo;, outra paulada veloz com cara de hino, que pode ser colocada na galeria das sonzeiras inesquec&iacute;veis sem precisar de firula alguma. Mesmo quando o assunto &eacute; som arrastado, a banda deixa sua indel&eacute;vel marca em &ldquo;Flames of hate&rdquo;, que traz &agrave; mente bandas como Venom, Bulldozer e Warfare l&aacute; dos meados da d&eacute;cada de 1980 direto para 2016.</p>
+<p>No fim de tudo, pode-se dizer que a f&oacute;rmula da banda &eacute; mesmo a mais b&aacute;sica poss&iacute;vel e, talvez por isso mesmo, seja uma das maneiras mais bem-sucedidas de se fazer som underground e deixar sua marca em meio &agrave; mir&iacute;ade de lan&ccedil;amentos da cena. Bastam uns bons riffs, um vocal ensandecido, estruturas simples, umas boas letras com um refr&atilde;o memor&aacute;vel e muita, mas muita honestidade e dedica&ccedil;&atilde;o aut&ecirc;ntica ao que se faz e est&aacute; pronto mais um combo de destrui&ccedil;&atilde;o auditiva em massa, com garantia de perman&ecirc;ncia no pante&atilde;o dos discos cl&aacute;ssicos. Mas n&atilde;o se engane, por que n&atilde;o &eacute; de sucesso comercial que estamos falando: tudo isso aqui &eacute; feito pelo Whipstriker sem perder a ess&ecirc;ncia underground, porque, afinal de contas, &eacute; pra isso que estamos aqui, n&atilde;o &eacute; mesmo? Certamente, a cena underground agradece &ndash; e vai agradecer ainda por muito tempo &ndash; por mais essa porrada anticomercial de qualidade indiscut&iacute;vel!</p></div>
+
+<div class="rescds_tracklist">
+<div class="rescds_tracklist_topo">Tracklist:</div>
+<p>1. &nbsp;Waiting for the doomsday<br />2. &nbsp;Satan&rsquo;slave<br />3. &nbsp;Nuclear metal blood<br />4. &nbsp;Electric bloodbath<br />5. &nbsp;Flames of hate<br />6. &nbsp;Flag of cruelty<br />7. &nbsp;Armless dance<br />8. &nbsp;Death vigilance<br />9. &nbsp;Armageddon delight</p></div>
+
+<div class="rescds_compartilhar">
+<div class="rescds_compartilhar_topo">Compartilhar</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="text-align:left; margin-top:5px;" >
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_tweet"></a></div>
+<!-- Inclua esta tag onde desejar que o bot√£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><g:plusone size="medium"></g:plusone></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button" addthis:url="http://www.goregrinder.net/index.php?s=10&id=87" style="font:10pt Arial, Helvetica, sans-serif;"><img src="imagens/sm-plus.gif" 
+        width="16" height="16" border="0" alt="Compartilhar" />&nbsp;Divulgue!</a></div>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000"
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+
+</div>
+
+<div class="rescds_moreabout">
+<div class="rescds_moreabout_topo">Mais sobre:</div>
+
+
+
+
+<div class='more_setores'><div class='more_titulo_setor'>NotÌcia:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='http://www.goregrinder.net/index.php?s=3&amp;id=1379' title=' 02/02/13  - Whipstriker e Power From Hell em split LP' class='more_txt_interno'>- Whipstriker e Power From Hell em ...</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Shows:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index73af.html?s=4&amp;id=391' class='more_txt_interno'>27/01  - Leprosys Metal Fest</a></div><div class='more_txt_interno'><a href='indexbdfe.html?s=4&amp;id=379' class='more_txt_interno'>21/01  - Underground ProduÁıes Apresenta</a></div><div class='more_txt_interno'><a href='index25fc.html?s=4&amp;id=383' class='more_txt_interno'>13/01  - Show Em Recife</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Resenha:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index369e.html?s=10&amp;id=87' class='more_txt_interno'>- <i>Only Filth Will Prevail</i></a></div></div></div>
+        </div>
+</div>
+
+<p style="position:relative; float:left; width:100%; text-align:center;"><a href="#comentarios" class="txt-cur-album">Envie seu coment&aacute;rio sobre essa not&iacute;cia! </a></p>
+
+
+
+<div class="rescds_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="rescds_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="rcc_res_id" id="rcc_res_id" value="87">
+                  <input type="hidden" name="rcc_ver" id="rcc_ver" value="n">
+                </form>
+</div>
+
+
+
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=87 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 18:50:28 GMT -->
+</html>

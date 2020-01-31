@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=53 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:09:25 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<script type='text/javascript' language='javascript' src='jscripts/jquery-1.3.2.js'></script>
+<script type='text/javascript' language='javascript'>
+$(function($) {
+	// Quando o formulário for enviado, essa função é chamada
+	$('#form1').submit(function() {
+		// Colocamos os valores de cada campo em uma váriavel para facilitar a manipulação
+		var nome = $('#rcc_nome').val();
+		var email = $('#rcc_email').val();
+		var mensagem = $('#rcc_texto').val();
+		// Exibe mensagem de carregamento
+		// $('#status').html('<img src='loader.gif' alt='Enviando' />');
+		// Fazemos a requisão ajax com o arquivo envia.php e enviamos os valores de cada campo através do método POST
+		$.post('com_rescds.html', {nome: nome, email: email, mensagem: mensagem }, function(resposta) {
+				// Quando terminada a requisição
+				// Exibe a div status
+				$('#status').slideDown();
+				// Se a resposta é um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$('#status').html(resposta);
+				} 
+				// Se resposta for false, ou seja, não ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$('#status').html('Mensagem enviada com sucesso!');
+					// Coloca a mensagem no div de mensagens
+					// $('#mensagens').prepend('<strong>'+ nome +'</strong> disse: <em>' + mensagem + '</em><br />');
+					// Limpando todos os campos
+					$('#rcc_nome').val('');
+					$('#rcc_email').val('');
+					$('#rcc_texto').val('');
+				}
+		});
+	});
+});
+</script>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Resenha: M.D.K. - Cuntanasia [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].rcc_email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<script type="text/javascript" language="javascript" src="jscripts/lytebox.js"></script>
+<link rel="stylesheet" href="jscripts/lytebox.css" type="text/css" media="screen" />
+
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<script type='text/javascript' src='jscripts/enlargeit.js'></script>
+<script type='text/javascript'>
+        enl_brdsize = 10;
+        enl_shadowintens = 10;
+        enl_center = 1;
+        enl_darkprct = 70;
+        enl_preload = 1;
+        enl_drgdrop = 0;
+        enl_darksteps = 1;
+        enl_buttonurl[0] = 'prev';
+        enl_buttontxt[0] = 'Anterior';
+        enl_buttonoff[0] = -216;
+        enl_buttonurl[1] = 'next';
+        enl_buttontxt[1] = 'Proximo';
+        enl_buttonoff[1] = -234;
+        enl_buttonurl[2] = 'close';
+        enl_buttontxt[2] = 'Fechar [Esc]';
+        enl_buttonoff[2] = -0;
+</script>
+
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var mensagem = $("#mensagem").val();
+		var rcc_res_id = $("#rcc_res_id").val();
+		var rcc_ver = $("#rcc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_rescds3ca5.html?id=53', {nome: nome, email: email, mensagem: mensagem, rcc_res_id: rcc_res_id, rcc_ver: rcc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+
+
+<a href="#" title="Clique para ampliar"><div class="rescds_capa"><img src="M.D.K._Cuntanasia_2008a282.jpg?imagem=imagens/resenhas/M.D.K._Cuntanasia_2008.jpg&amp;w=300&amp;h=300" border="0" onclick="enlarge(this);" longdesc="imagens/resenhas/M.D.K._Cuntanasia_2008.jpg"/></div></a>
+
+<div class="rescds_detalhes">
+<div class="rescds_detalhes_itens">Banda/Artista: <b>M.D.K.</b></div>
+<div class="rescds_detalhes_itens">T&iacute;tulo: <b>Cuntanasia</b></div>
+<div class="rescds_detalhes_itens">Lan&ccedil;amento: <b>Last House On The Right</b></div>
+<div class="rescds_detalhes_itens">Ano: <b>2008</b></div>
+<div class="rescds_detalhes_itens"><span style="position:relative; float:left;">Contatos: </span><b><span style="position:relative; float:left; margin-left:2px; width:340px;">
+Andr&eacute; L. Lazarini<br />Caixa Postal 3016<br />CEP: 13215-970<br />Jundia&iacute;/SP<br /><br /><a href="mailto:mdkandre@hotmail.com">mdkandre@hotmail.com</a><br /><a href="mailto:deathscum@hotmail.com">deathscum@hotmail.com</a><br /><a href="mailto:damage_381@hotmail.com">damage_381@hotmail.com</a><br /><a href="mailto:andremdk@terra.com.br">andremdk@terra.com.br</a></span></b></div>
+
+<div class="rescds_detalhes_itens">Site oficial: <b><a href="http://www.myspace.com/mdkbrazil" target="_blank">http://www.myspace.com/mdkbrazil</a></b></div>
+
+<div class="rescds_detalhes_itens">Resenha por <b><a href="mailto:carrascu@bol.com.br">Carrascu</a></b></div>
+<div class="rescds_detalhes_itens" >Publicada no dia <b>30/08/2009</b></div>
+<div class="rescds_detalhes_itens" style="border-bottom:0px;">Nota: <b>9,5</b></div>
+</div>
+
+<div class="rescds_texto">Muito respeitada na cena Goregrind nacional, e com um devido reconhecimento a n&iacute;vel mundial, a <strong>M.D.K.</strong> lan&ccedil;a seu segundo full lenght para incrementar ainda mais o sua extensa discografia. Intitulado &quot;<em>Cuntanasia</em>&quot;, o novo &aacute;lbum vem com 15 faixas de um grosseiro e excelente Goregrind com muita qualidade, mostrando uma supera&ccedil;&atilde;o em compara&ccedil;&atilde;o com o &quot;<em>Splatterguts</em>&quot;, seu debut CD de 2005. Dessa vez, o trampo gr&aacute;fico contou com uma simples folha de 24x12, impressas nos dois lados, sem letras e com informa&ccedil;&otilde;es diversas sobre a grava&ccedil;&atilde;o desse material e fotos da banda, tudo na parte interna. Na parte externa temos duas capas! Sim, a capa frontal, ou melhor, a capa que vem por padr&atilde;o na parte da frente quando voc&ecirc; adquire esse CD &eacute; um desenho de uma mulher pendurada pelas m&atilde;os e pelos p&eacute;s, pelada, sobre uma serra daquelas fixas sobre uma mesa, cortando sua barriga e jorrando muito sangue pelo cen&aacute;rio, que &eacute; completado com um cara dando pauladas em suas costas sendo observado por duas pessoas encapuzadas e vestidas de preto. Ficou muito doentia essa id&eacute;ia, dando a n&iacute;tida impress&atilde;o do que est&aacute; por vir no CD. E na parte de dentro, quando voc&ecirc; abre a caixa acr&iacute;lica e olha na esquerda, existe outra capa alternativa, que na minha opini&atilde;o ficou ainda melhor que a frontal! &Eacute; muito dif&iacute;cil descrev&ecirc;-la pois &eacute; um desenho com muitos detalhes, mas os que chamam mais aten&ccedil;&atilde;o &eacute; obviamente o cirurgi&atilde;o &agrave; esquerda de um corpo com pernas abertas e uma buceta enorme e bem aberta de onde sai uma tripa. A parte dos peitos dessa mulher &eacute; centralizada entre as letras MDK, e abaixo delas tem o logo da banda. Um puta de um desenho foda pra caralho e de &oacute;tima criatividade e dem&ecirc;ncia gore. Todo esse trampo gr&aacute;fico foi feito por Thiago Fediuk da Digital Pen Art (<a href="http://www.myspace.com/digitalpenartstudio" target="_blank">www.myspace.com/digitalpenartstudio</a>) em conjunto com Erik Thurn da Digital Skeleton (<a href="http://digitalskeleton.deviantart.com/" target="_blank">http://digitalskeleton.deviantart.com</a>), Josh Hartnett da The Art Workshop (<a href="http://www.theartworkshop.com/" target="_blank">http://www.theartworkshop.com</a>) e Fauzi (<a href="mailto:locaporr@hotmail.com">locaporr@hotmail.com</a>) que est&atilde;o de parab&eacute;ns pelo excelente trampo nas partes externas dessa folha. O &uacute;nico lado ruim desse lan&ccedil;amento, ao meu ver, foi justamente a falta de mais encarte, pois ficou muito pobre apenas uma folha com esses dois excelentes desenhos e mais a parte interna com informa&ccedil;&otilde;es e um monte de fotos dos membros da banda. Al&eacute;m desses desenhos que citei, existem outros t&atilde;o bons quanto na parte de tr&aacute;s e sobre o CD, al&eacute;m de uma foto de uma pessoa esga&ccedil;ando o seu &acirc;nus, isso na parte que fica atr&aacute;s do encaixe do disco. Agora falando do &aacute;udio, a parte mais importante de todo esse trabalho. &quot;<em>Sodomia Sangrenta</em>&quot; come&ccedil;a com uma introdu&ccedil;&atilde;o de cerca de um minuto, logo em seguida entra todo o poderio da guitarra, que n&atilde;o conta com o &quot;pano de fundo&quot; de um baixo, mas tamb&eacute;m pudera, essa guitarra est&aacute; absurdamente muito bem preenchida, com muito peso, sujeira e brutalidade, que logo em seguida recebe o apoio da ultra insana bateria que n&atilde;o &eacute; retona como em muitas bandas brutais por ae, aqui o que se ouve &eacute; uma completa loucura sonora tocada de uma maneira enlouquecida e destruidora, com &oacute;tima qualidade de grava&ccedil;&atilde;o. No CD anterior, o &quot;<em>Splatterguts</em>&quot; de 2005, havia um pequeno problema quando a bateria ficava na britadeira por muito tempo - o som da caixa ia desaparecendo aos poucos. A banda se tocou disso e acertou em cheio no timbre da caixa, que agora aguenta uma britadeira ensurdecedora. O <strong>M.D.K.</strong> tamb&eacute;m caprichou nos vocais quando gravaram esse CD, o que j&aacute; era muito bom agora est&aacute; espetacular. Um dos grandes destaques desse play s&atilde;o os &quot;Pig vocals&quot; acompanhados de vocais dementes, outros mais guturais, e sempre mantendo a inten&ccedil;&atilde;o de preencher bem as tijoladas sonoras que esse trio faz com grande compet&ecirc;ncia. As podreiras doentias dos vocais ficaram realmente foda&ccedil;os, eu n&atilde;o sei ao certo mas imagino que os caras tiveram bastante trabalho para grav&aacute;-los, pois s&atilde;o muitos v&ocirc;mitos, gritos su&iacute;nos, berros, guturais e tudo de mais extremo em termos de vocais. Apesar das 15 faixas presentes, 9 possu&iacute;rem intros, a prioridade foi mesmo fazer sons podres, sujos, brutais, dilacerantes... &eacute; lindo demais esse CD! Com certeza est&aacute; entre os melhores Goregrind brazuca que j&aacute; ouvi, isso se n&atilde;o for atualmente a melhor coisa do estilo. Uma boa varia&ccedil;&atilde;o de ritmo &eacute; demonstrada na &quot;<em>Sem&eacute;n e Secre&ccedil;&atilde;o</em>&quot;, que come&ccedil;a com uma intro sexualmente selvagem, onde ouve-se um homem bufando comendo uma mulher que geme horrores, e logo depois de 20 segundos de putaria entra um Porn&ocirc; Goregrind muito pesado e podre, que n&atilde;o dura muito para cair na insanidade sonora que &eacute; uma caracter&iacute;stica marcante nas faixas do &quot;<em>Cuntanasia</em>&quot;. Falando nisso, a faixa t&iacute;tulo &eacute; um tes&atilde;o! Com apenas 57 segundos, a estupidez barulhenta e nojenta extremada aqui &eacute; de sair cortando corpos em rodas nos shows desses dementes, fant&aacute;stica! A &quot;<em>Retalhados e Untados nos Excrementos</em>&quot; come&ccedil;a na alta velocidade e brutalidade, uma das mais extremas do CD, com vocais, guitarras e bateria sempre no m&aacute;ximo da estupidez sonora, fazendo um barulho ensurdecedor que faz qualquer amante do estilo delirar e se deliciar com esses ru&iacute;dos em massa. Muitas das faixas s&atilde;o assim, &eacute; uma caracter&iacute;stica da banda que se preocupou em fazer um som mais extremo poss&iacute;vel, e um outro exemplo seria a &quot;<em>Parafilia</em>&quot;, que apesar de extrema tem partes mais cadenciadas, outra marca da banda para intercalar com a maioria da brutalidade que produz. Essa faixa come&ccedil;a com uma intro que, pra explicar melhor, come&ccedil;a assim &quot;aaahhh vou gozar&quot; entre gemidos e mais gemidos... s&atilde;o 18 segundos nessa putaria com bastante eco para chocar mesmo quem n&atilde;o est&aacute; acostumado a ouvir esse tipo de coisa. J&aacute; a &quot;<em>Moedor de Cad&aacute;ver</em>&quot; n&atilde;o chega a ser extremamente brutal em termos de velocidade, ela apresenta maior cad&ecirc;ncia do que as outras, mas sempre com muito peso e, como em todos os outros sons, muitos vocais insanos e dementes. Assim como o in&iacute;cio da &quot;<em>Necrofeast</em>&quot;, depois de sua intro, come&ccedil;a lentona tamb&eacute;m, mas n&atilde;o demora muito para eles quebrarem tudo numa carnificina barulhenta que a <strong>M.D.K.</strong> faz com muita autoridade no assunto.<br />A <strong>M.D.K.</strong> &eacute; o tipo de banda que investe mesmo na qualidade de seus materiais, aqui nesse CD &eacute; poss&iacute;vel perceber muito bem isso. Em tempos onde boa parte das bandas de Goregrind n&atilde;o priorizam qualidade na grava&ccedil;&atilde;o e at&eacute; no material f&iacute;sico que lan&ccedil;am, &eacute; de dar grande destaque para essa preocupa&ccedil;&atilde;o que a banda tem com seus lan&ccedil;amentos. Depois de 30 minutos de muito noise brutal e insano, os t&iacute;mpanos saem completamente satisfeitos se a inten&ccedil;&atilde;o era bombarde&aacute;-los com muito barulho sujo de extrema qualidade. A evolu&ccedil;&atilde;o da <strong>M.D.K.</strong> &eacute; muito percept&iacute;vel em termos comparativos com o seu debut CD &quot;<em>Splatterguts</em>&quot;. Aqui a brutalidade, qualidade e insanidade s&atilde;o os principais fatores que elevam a banda a um patamar mais extremo dentro desse estilo, sendo refer&ecirc;ncia quando se fala de Goregrind de qualidade!</div>
+
+<div class="rescds_tracklist">
+<div class="rescds_tracklist_topo">Tracklist:</div>
+01. Sodomia Sangrenta&nbsp;<br />02. Mortal Gore Incesto&nbsp;<br />03. Maggot Cunt Fucker&nbsp;<br />04. Canibal S&aacute;dico&nbsp;<br />05. Anomalia Sexual Pervertida&nbsp;<br />06. Sem&eacute;n e Secre&ccedil;&atilde;o&nbsp;<br />07. Suculento Torso&nbsp;<br />08. Catasexual Times&nbsp;<br />09. Cuntanasia&nbsp;<br />10. Sopa de Carne Cadav&eacute;rica&nbsp;<br />11. Retalhados e Untados no Excrementos&nbsp;<br />12. Parafilia&nbsp;<br />13. Moedor de Cadaver&nbsp;<br />14. Necrofeast&nbsp;<br />15. Alcoholic Gore System</div>
+
+<div class="rescds_compartilhar">
+<div class="rescds_compartilhar_topo">Compartilhar</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="text-align:left; margin-top:5px;" >
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_tweet"></a></div>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><g:plusone size="medium"></g:plusone></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button" addthis:url="http://www.goregrinder.net/index.php?s=10&id=53" style="font:10pt Arial, Helvetica, sans-serif;"><img src="imagens/sm-plus.gif" 
+        width="16" height="16" border="0" alt="Compartilhar" />&nbsp;Divulgue!</a></div>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000"
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+
+</div>
+
+<div class="rescds_moreabout">
+<div class="rescds_moreabout_topo">Mais sobre:</div>
+
+
+
+
+<div class='more_setores'><div class='more_titulo_setor'>Notícias <span class='more_noticia_maisde10'>(Últimas 10 publicadas)</span>:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index0c5a.html?s=3&amp;id=1349' title=' 31/10/12  - M.D.K. lança seu terceiro álbum' class='more_txt_interno'>- M.D.K. lança seu terceiro álbum</a></div><div class='more_txt_interno'><a href='index60ae.html?s=3&amp;id=1329' title=' 04/09/12  - M.D.K. divulga informações sobre novo álbum' class='more_txt_interno'>- M.D.K. divulga informações sobre ...</a></div><div class='more_txt_interno'><a href='indexdc8a.html?s=3&amp;id=1085' title=' 02/06/11  - M.D.K. e Expurgo divulgam capa de split-CD' class='more_txt_interno'>- M.D.K. e Expurgo divulgam capa de...</a></div><div class='more_txt_interno'><a href='indexcdcb.html?s=3&amp;id=1051' title=' 08/04/11  - M.D.K. gravará sons para novos materiais em maio' class='more_txt_interno'>- M.D.K. gravará sons para novos ma...</a></div><div class='more_txt_interno'><a href='indexb565.html?s=3&amp;id=850' title=' 27/09/09  - More Gore Than Before 4: Vendas de ingressos' class='more_txt_interno'>- More Gore Than Before 4: Vendas d...</a></div><div class='more_txt_interno'><a href='indexb3d5.html?s=3&amp;id=814' title=' 12/08/09  - More Gore Than Before 4: Data e bandas confirmadas' class='more_txt_interno'>- More Gore Than Before 4: Data e b...</a></div><div class='more_txt_interno'><a href='index6199.html?s=3&amp;id=796' title=' 30/06/09  - Splatter Night XIII tem seu cast revelado' class='more_txt_interno'>- Splatter Night XIII tem seu cast ...</a></div><div class='more_txt_interno'><a href='index1a92.html?s=3&amp;id=771' title=' 19/05/09  - M.D.K. e Expurgo lançarão split por selo finlandês' class='more_txt_interno'>- M.D.K. e Expurgo lançarão split p...</a></div><div class='more_txt_interno'><a href='index8342.html?s=3&amp;id=748' title=' 09/04/09  - M.D.K. e Expurgo lançarão split CD em julho' class='more_txt_interno'>- M.D.K. e Expurgo lançarão split C...</a></div><div class='more_txt_interno'><a href='index4dc5.html?s=3&amp;id=732' title=' 25/03/09  - More Gore Than Before 4: Primeiras informações' class='more_txt_interno'>- More Gore Than Before 4: Primeira...</a></div><a href='index37b1.html?s=3&amp;noticia=M.D.K.'><div class='more_noticia_mais'><span class='more_noticia_mais_texto'>> Ler todas relacionadas <</span></div></a></div></div><div class='more_setores'><div class='more_titulo_setor'>Show:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index1928.html?s=4&amp;id=423' class='more_txt_interno'>11/08  - Visceral Fest</a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Resenhas:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='indexeb2e.html?s=10&amp;id=53' class='more_txt_interno'>- <i>Cuntanasia</i></a></div><div class='more_txt_interno'><a href='index9237.html?s=10&amp;id=18' class='more_txt_interno'>- <i>Splatterguts</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Videos:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index6028.html?s=17&amp;id=115' class='more_txt_interno'>- <i>Semen E Secreção</i></a></div><div class='more_txt_interno'><a href='index5f7f.html?s=17&amp;id=4' class='more_txt_interno'>- <i>Live In Jundiaí 2007</i></a></div></div></div><div class='more_setores'><div class='more_titulo_setor'>1 MP3 online:</div><div class='more_texto_setor'><script>
+	menuOpen=Array();
+	function changeMenu(id, name)
+	{
+		if(menuOpen[id]==0 || menuOpen[id]==undefined)
+		{
+			document.getElementById('menu_img_'+id).src='more-.gif';
+			document.getElementById('menuSource_'+id).style.display='block';
+			menuOpen[id]=1;
+		}
+		else
+		{
+			document.getElementById('menu_img_'+id).src='more.gif';
+			document.getElementById('menuSource_'+id).style.display='none';
+			menuOpen[id]=0;
+		}
+	}
+</script><div class='more_txt_interno'><a href='javascript:changeMenu(60);' class='more_txt_interno'> - <i>Mortal Gore Incesto</i> <img src='imagens/more.gif' border=0 id='menu_img_60'></a><div id='menuSource_60' style='float:right; display: none;'><object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0' width='35' height='18'>  <param name='movie' value='../www.goregrinder.net/mp3/M.D.K._-_Mortal_Gore_Incesto.swf' />  <param name='quality' value='high' />  <param name='wmode' value='transparent'>     <embed src='../www.goregrinder.net/mp3/M.D.K._-_Mortal_Gore_Incesto.swf'      quality='high'      type='application/x-shockwave-flash'      WMODE='transparent'      width='35'      height='18'      pluginspage='http://www.macromedia.com/go/getflashplayer' /></object></div></div></div><div class='more_setores'><div class='more_titulo_setor'>Site:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='http://www.myspace.com/mdkbrazil' target='_blank' class='more_txt_interno'>- www.myspace.com/mdkbrazil</a></div></div></div>
+        </div>
+</div>
+
+<p style="position:relative; float:left; width:100%; text-align:center;"><a href="#comentarios" class="txt-cur-album">Envie seu coment&aacute;rio sobre essa not&iacute;cia! </a></p>
+
+<div class="rescds_comentarios">
+
+<div class="rescds_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:makaluzo@ukr.net">Makaluzo</a></span>&nbsp; comentou:
+						   </div>
+
+<div class="rescds_comentarios_texto">
+ Ainda não há comentários. Eu quero ir a este site.</div>
+
+<div class="rescds_comentarios_base">
+30/05/11 &agrave;s 05:23 Hs
+</div>
+
+</div>
+<div class="rescds_comentarios">
+
+<div class="rescds_comentarios_titulo">
+<span class="txt-com-nome">
+<a href="mailto:erikthurm@yahoo.com.br">Erik Thurm</a></span>&nbsp; comentou:
+						   </div>
+
+<div class="rescds_comentarios_texto">
+ Another great release from the guys who brought you the "Splatterguts", expect 'no less' than 15 tracks of pure goregrinding insanity. </div>
+
+<div class="rescds_comentarios_base">
+05/09/09 &agrave;s 00:06 Hs
+</div>
+
+</div>
+
+
+<div class="rescds_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="rescds_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="rcc_res_id" id="rcc_res_id" value="53">
+                  <input type="hidden" name="rcc_ver" id="rcc_ver" value="n">
+                </form>
+</div>
+
+
+
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=53 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:09:25 GMT -->
+</html>

@@ -1,0 +1,20 @@
+<br />
+<b>Warning</b>:  getimagesize(imagens/temp_1402011242.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in <b>/home/goregrinder/www/img.php</b> on line <b>20</b><br />
+<br />
+<b>Warning</b>:  Division by zero in <b>/home/goregrinder/www/img.php</b> on line <b>22</b><br />
+<br />
+<b>Warning</b>:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in <b>/home/goregrinder/www/img.php</b> on line <b>31</b><br />
+<br />
+<b>Warning</b>:  imagecreatefromjpeg(imagens/temp_1402011242.jpg) [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: failed to open stream: No such file or directory in <b>/home/goregrinder/www/img.php</b> on line <b>32</b><br />
+<br />
+<b>Warning</b>:  imagecopyresized() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/img.php</b> on line <b>33</b><br />
+<br />
+<b>Warning</b>:  imageinterlace() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/img.php</b> on line <b>34</b><br />
+<br />
+<b>Warning</b>:  imagejpeg() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/img.php</b> on line <b>35</b><br />
+<br />
+<b>Warning</b>:  imagedestroy() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/img.php</b> on line <b>36</b><br />
+<br />
+<b>Warning</b>:  imagedestroy() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/img.php</b> on line <b>37</b><br />
+<br />
+<b>Warning</b>:  imagejpeg() expects parameter 1 to be resource, boolean given in <b>/home/goregrinder/www/img.php</b> on line <b>40</b><br />

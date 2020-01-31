@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=13 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:10:18 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<script type='text/javascript' language='javascript' src='jscripts/jquery-1.3.2.js'></script>
+<script type='text/javascript' language='javascript'>
+$(function($) {
+	// Quando o formul·rio for enviado, essa funÁ„o È chamada
+	$('#form1').submit(function() {
+		// Colocamos os valores de cada campo em uma v·riavel para facilitar a manipulaÁ„o
+		var nome = $('#rcc_nome').val();
+		var email = $('#rcc_email').val();
+		var mensagem = $('#rcc_texto').val();
+		// Exibe mensagem de carregamento
+		// $('#status').html('<img src='loader.gif' alt='Enviando' />');
+		// Fazemos a requis„o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÈs do mÈtodo POST
+		$.post('com_rescds.html', {nome: nome, email: email, mensagem: mensagem }, function(resposta) {
+				// Quando terminada a requisiÁ„o
+				// Exibe a div status
+				$('#status').slideDown();
+				// Se a resposta È um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$('#status').html(resposta);
+				} 
+				// Se resposta for false, ou seja, n„o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$('#status').html('Mensagem enviada com sucesso!');
+					// Coloca a mensagem no div de mensagens
+					// $('#mensagens').prepend('<strong>'+ nome +'</strong> disse: <em>' + mensagem + '</em><br />');
+					// Limpando todos os campos
+					$('#rcc_nome').val('');
+					$('#rcc_email').val('');
+					$('#rcc_texto').val('');
+				}
+		});
+	});
+});
+</script>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Resenha: OPHIOLATRY & ABHORRENCE - Split CD [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].rcc_email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<script type="text/javascript" language="javascript" src="jscripts/lytebox.js"></script>
+<link rel="stylesheet" href="jscripts/lytebox.css" type="text/css" media="screen" />
+
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<script type='text/javascript' src='jscripts/enlargeit.js'></script>
+<script type='text/javascript'>
+        enl_brdsize = 10;
+        enl_shadowintens = 10;
+        enl_center = 1;
+        enl_darkprct = 70;
+        enl_preload = 1;
+        enl_drgdrop = 0;
+        enl_darksteps = 1;
+        enl_buttonurl[0] = 'prev';
+        enl_buttontxt[0] = 'Anterior';
+        enl_buttonoff[0] = -216;
+        enl_buttonurl[1] = 'next';
+        enl_buttontxt[1] = 'Proximo';
+        enl_buttonoff[1] = -234;
+        enl_buttonurl[2] = 'close';
+        enl_buttontxt[2] = 'Fechar [Esc]';
+        enl_buttonoff[2] = -0;
+</script>
+
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as fun√ß√µes necess√°rias para envio do formul√°rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formul√°rio for enviado, essa fun√ß√£o √© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma v√°riavel para facilitar a manipula√ß√£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var mensagem = $("#mensagem").val();
+		var rcc_res_id = $("#rcc_res_id").val();
+		var rcc_ver = $("#rcc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requis√£o ajax com o arquivo envia.php e enviamos os valores de cada campo atrav√©s do m√©todo POST
+		$.post('com_rescds6e03.html?id=13', {nome: nome, email: email, mensagem: mensagem, rcc_res_id: rcc_res_id, rcc_ver: rcc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisi√ß√£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta √© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, n√£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+
+
+<a href="#" title="Clique para ampliar"><div class="rescds_capa"><img src="OPHIOLATRY%20_%20ABHORRENCE_split%20CD_2005fc91.jpg?imagem=imagens/resenhas/OPHIOLATRY%20_%20ABHORRENCE_split%20CD_2005.jpg&amp;w=300&amp;h=300" border="0" onclick="enlarge(this);" longdesc="imagens/resenhas/OPHIOLATRY%20_%20ABHORRENCE_split%20CD_2005.jpg"/></div></a>
+
+<div class="rescds_detalhes">
+<div class="rescds_detalhes_itens">Banda/Artista: <b>OPHIOLATRY & ABHORRENCE</b></div>
+<div class="rescds_detalhes_itens">T&iacute;tulo: <b>Split CD</b></div>
+<div class="rescds_detalhes_itens">Lan&ccedil;amento: <b>Malignant Art DistribuiÁ„o</b></div>
+<div class="rescds_detalhes_itens">Ano: <b>2005</b></div>
+<div class="rescds_detalhes_itens"><span style="position:relative; float:left;">Contatos: </span><b><span style="position:relative; float:left; margin-left:2px; width:340px;">
+<a href="rescdscontatos6e03.html?id=13" rel="lyteframe" rev="width: 600px; height: 450px; scrolling: yes;"><div class="rescds_botao_contatos">Clique para ler todos os contatos</div></a>
+</span></b></div>
+
+<div class="rescds_detalhes_itens">Site oficial: <b><a href="#" target="_blank"></a></b></div>
+
+<div class="rescds_detalhes_itens">Resenha por <b><a href="mailto:carrascu@bol.com.br">Carrascu</a></b></div>
+<div class="rescds_detalhes_itens" >Publicada no dia <b>31/01/2006</b></div>
+<div class="rescds_detalhes_itens" style="border-bottom:0px;">Nota: <b>Ophiolatry: 8,0 - Abhorrence: 9,0</b></div>
+</div>
+
+<div class="rescds_texto">Um trampo brutal, extremo e de alta qualidade! Se eu for come&ccedil;ar a resenha pelo resumo, seriam essas palavras que descreve o poderio do primeiro lan&ccedil;amento da<em> Malignant Art Distribui&ccedil;&atilde;o</em>. <strong>Ophiolatry</strong> e <strong>Abhorrence</strong> executam um som extremo e brutal, como j&aacute; &eacute; de conhecimento de quem acompanha o metal extremo nacional. <br />O trampo gr&aacute;fico ficou excelente, na frente vem a capa da banda paulista <strong>Ophiolatry</strong>, onde Jesus Cristo &eacute; totalmente dominado pela serpente em meio a chamas, tudo em tons de cinza. A capa da banda <strong>Abhorrence</strong> &eacute; um s&iacute;mbolo muito interessante que envolve espadas, caveiras, serpentes e uma cruz invertida ao fundo desse s&iacute;mbolo, seguido do logo da banda no alto, um desenho muito bem feito pelo conhecido desenhista Joe Petagno, que j&aacute; criou capas para bandas como <strong>Mot&ouml;rhead</strong>, <strong>Marduk</strong> e etc. Junto com esse material vem um poster do split com as fotos dos integrantes das duas bandas e suas respectivas capas desse CD, um trabalho de excelente qualidade. Dentro do CD, al&eacute;m do encarte onde consta informa&ccedil;&otilde;es, nome das m&uacute;sicas das duas bandas, letras e foto apenas da banda <strong>Abhorrence</strong> vem tamb&eacute;m um folheto de divulga&ccedil;&atilde;o das camisetas que as bandas vendem. O trampo gr&aacute;fico est&aacute; muito bom mesmo, bastante informativo e de extrema qualidade, raramente se v&ecirc; um lan&ccedil;amento t&atilde;o profissional.<br />O CD come&ccedil;a com a banda <strong>Ophiolatry</strong> e a primeira m&uacute;sica &eacute; a <em>Havoc</em>, que &eacute; extremamente r&aacute;pida e brutal, por&eacute;m logo se nota o som estranho da bateria, que ficou muito artificial nesse m&eacute;todo de grava&ccedil;&atilde;o escolhido pela banda. O som da bateria soa como uma bateria eletr&ocirc;nica, e o pior &eacute; que est&aacute; muito na cara isso, existem bandas que usam desse artif&iacute;cio por&eacute;m conseguem disfar&ccedil;ar bem, mas nesse caso a <strong>Ophiolatry</strong> n&atilde;o foi feliz. Infelismente esse &eacute; o ponto p&eacute;ssimo da grava&ccedil;&atilde;o, pois o resto est&aacute; excelente! As linhas de guitarra s&atilde;o muito criativas e r&aacute;pidas, o som soa muito bem, o timbre &eacute; &oacute;timo demonstrando muito peso e velocidade, em meios a harm&ocirc;nicos r&aacute;pidos o que deixa a m&uacute;sica muito brutal. O vocal &eacute; extremamente gutural, as vezes se juntam a backings gritados com efeitos. Em seguida vem um cover do <strong>Napalm Death </strong>na vers&atilde;o da <strong>Ophiolatry</strong>, a m&uacute;sica <em>Scum</em> ficou estupidamente r&aacute;pida e brutal, mas infelismente a bateria, que n&atilde;o deixa de ser r&aacute;pida, ficou muito estranha. A terceira m&uacute;sica &eacute; a<em> Impaling the Christian Race</em> que j&aacute; tem uma grava&ccedil;&atilde;o diferenciada quanto as m&uacute;sicas anteriores. Essa m&uacute;sica foi gravada em 2001 no est&uacute;dio Da Tribo. A bateria ficou mais &quot;real&quot; por&eacute;m um pouco baixa, mas ainda audit&iacute;vel. A m&uacute;sica segue a linha da <strong>Ophiolatry</strong>: velocidade, quebraceira, brutalidade e um vocal cavernoso por cima. A m&uacute;sica &eacute; excelente, os riffs s&atilde;o muito bons e o solo n&atilde;o &eacute; daqueles enjoativos e sim muito bem encaixados na m&uacute;sica. Os destaques dessa banda s&atilde;o realmente a velocidade e a brutalidade, &eacute; impressionante tamanha criatividade e entrosamento exercida pela <strong>Ophiolatry</strong>. A pr&oacute;xima m&uacute;sica foi gravada ao vivo no Tenis Clube Trememb&eacute; em S&atilde;o Paulo no ano de 2001. A <em>Opposite Monarchy</em> &eacute; originalmente do debut da banda <em>Anti-Evangelistic Process</em> lan&ccedil;ado em 2002. A grava&ccedil;&atilde;o ao vivo est&aacute; excelente, se ouve tudo, mas claro sempre h&aacute; um probleminha com a mesa como no caso dos solos onde ficou extremamente alto demais quando esses foram executados, mas nada que tire o brilho dessa &oacute;tima demonstra&ccedil;&atilde;o de destrui&ccedil;&atilde;o e blasf&ecirc;mia ao vivo. N&atilde;o se ouve muito do p&uacute;blico, somente antes e depois da m&uacute;sica, mas o que se ouve da banda j&aacute; &eacute; o bastante para ter uma no&ccedil;&atilde;o do que deve ter dado de empolga&ccedil;&atilde;o na frente do palco.<br />A pr&oacute;xima banda do split &eacute; a ga&uacute;cha <strong>Abhorrence</strong> detonando um brutal&iacute;ssimo Death Metal, com uma bateria devastadora e riffs cortantes. A primeira m&uacute;sica dessa excelente banda &eacute; a <em>Evoking the Abomination</em> que tem uma pegada muito forte, bateria com bumbos duplos constantes e um vocal gutural n&atilde;o muito fechado, mas bem encaixado. Essa m&uacute;sica &eacute; originalmente do &aacute;lbum &quot;<em>Evoken the Abomination</em>&quot; de 2001 e mostra varia&ccedil;&otilde;es na bateria que a princ&iacute;pio dava impress&atilde;o de ser reta e com algumas viradas &quot;a l&aacute; <strong>Krisiun</strong>&quot; por&eacute;m h&aacute; uma criatividade maior aqui do que na banda citada. Os riffs s&atilde;o criativos, r&aacute;pidos e pesados, o timbre &eacute; um pouco &quot;digital&quot; demais, por&eacute;m n&atilde;o afeta muito na m&uacute;sica, o som continua extremo e agressivo. O vocal muito bem encaixado por&eacute;m um pouco abaixo do que seria ideal, mas nada que afete na m&uacute;sica, se ouve tudo normalmente. Depois de excelentes 4 minutos de brutalidade com qualidade vem a segunda m&uacute;sica da banda nesse split que se chama <em>Shatterer Merciless</em> que &quot;n&atilde;o deixa a peteca cair&quot;, demonstra que a banda realmente &eacute; brutal e extremamente veloz, n&atilde;o existem partes lentas, a bateria &eacute; muito r&aacute;pida e varia de acordo com riffs caracter&iacute;sticos do estilo. Essa m&uacute;sica tem outra grava&ccedil;&atilde;o, que foi feita por Tchelo Martins em Mar&ccedil;o de 2004, e n&atilde;o demonstra uma boa mixagem pois a bateria est&aacute; um pouco baixa, se for comparar com a m&uacute;sica anterior, e o vocal tamb&eacute;m. Mas esse tanto baixo na bateria &eacute; pouca coisa, por&eacute;m no vocal j&aacute; d&aacute; uma diferen&ccedil;a legal, infelismente. Se ouve a m&uacute;sica tranquilamente, n&atilde;o &eacute; nenhum absurdo de mal mixado, s&atilde;o apenas detalhes pois a m&uacute;sica &eacute; muito criativa, mostrando partes variadas fazendo com que o som da <strong>Abhorrence</strong> seja de &oacute;tima qualidade, n&atilde;o dando aquela sensa&ccedil;&atilde;o de enj&ocirc;o caracter&iacute;stico de algumas bandas mon&oacute;tonas desse estilo. A pr&oacute;xima &eacute; a <em>Blackest Execration</em> que tem a mesma grava&ccedil;&atilde;o feita por Tchelo em 2004. O estilo da banda n&atilde;o muda, o som come&ccedil;a sempre em extrema velocidade com riffs velozes e bateria na velocidade da luz. O vocal bem encaixado do tamb&eacute;m baixista Marcello Marzari &eacute; muito bom por&eacute;m lembra bastante o Alex Kolesne do <strong>Krisiun</strong>. Os solos sempre seguidos de uma guitarra base, por&eacute;m a banda s&oacute; tem o Rangel Arroyo como guitarrista, ent&atilde;o ao vivo o som deve ser um pouco diferente por justamente n&atilde;o ter uma guitarra base na hora dos solos. Mas no geral as m&uacute;sicas do <strong>Abhorrence</strong> s&atilde;o de extrema qualidade, pra quem curte um som brutal e bem tocado, com certeza essa &eacute; uma &oacute;tima pedida. A &uacute;ltima m&uacute;sica do split e da <strong>Abhorrence</strong> nesse CD foi gravada ao vivo no Arena em 2005. A m&uacute;sica <em>Sacrificial Offerings </em>segue a linha da banda e aqui se pode notar a falta de uma guitarra base nos solos. Fica estranho quando se acostuma a ouvir o som da banda com uma guitarra base nos solos, e ao vivo sem ela. Bom, tirando esse detalhe o resto s&atilde;o s&oacute; elogios, a bateria de Fernando Arroyo n&atilde;o &eacute; brincadeira n&atilde;o, na hora do vamos ver ele massacra qualquer t&iacute;mpano ali presente, o cara &eacute; extremamente veloz. Aqui a banda mostra seu &oacute;timo entrosamento e a grava&ccedil;&atilde;o est&aacute; boa por&eacute;m a guitarra est&aacute; um pouco baixa, mas ainda audit&iacute;vel, e nos solos ela &quot;toma f&ocirc;lego&quot; e aparece bem. A<strong> Abhorrence</strong> encerra sua &oacute;tima participa&ccedil;&atilde;o nesse excelente split lan&ccedil;ado pela <em>Malignant Art</em>, que est&aacute; de parab&eacute;ns pelo profissionalismo e pela qualidade. Com esse excelente trabalho feito pela gravadora se pode esperar agora grandes lan&ccedil;amentos em breve e sempre com muito respeito ao povo underground do metal extremo nacional.</div>
+
+<div class="rescds_tracklist">
+<div class="rescds_tracklist_topo">Tracklist:</div>
+<u>Ophiolatry</u> <br /><br />01. Havoc<br />02. Scum (Napalm Death cover)<br />03. Impaling the Christian Race<br />04. Opposite Monarchy (live) <br /><br /><u>Abhorrence</u><br /><br />05. Evoking the Abomination<br />06. Shatterer Merciless<br />07. Blackest Execration<br />08. Sacrificial Offerings (live)</div>
+
+<div class="rescds_compartilhar">
+<div class="rescds_compartilhar_topo">Compartilhar</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="text-align:left; margin-top:5px;" >
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button_tweet"></a></div>
+<!-- Inclua esta tag onde desejar que o bot√£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><g:plusone size="medium"></g:plusone></div>
+<div style="margin:10px; margin-left:50px; width:100%; position:relative; float:left;"><a class="addthis_button" addthis:url="http://www.goregrinder.net/index.php?s=10&id=13" style="font:10pt Arial, Helvetica, sans-serif;"><img src="imagens/sm-plus.gif" 
+        width="16" height="16" border="0" alt="Compartilhar" />&nbsp;Divulgue!</a></div>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000"
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+
+</div>
+
+<div class="rescds_moreabout">
+<div class="rescds_moreabout_topo">Mais sobre:</div>
+
+
+
+
+<div class='more_setores'><div class='more_titulo_setor'>Resenha:</div><div class='more_texto_setor'><div class='more_txt_interno'><a href='index941b.html?s=10&amp;id=13' class='more_txt_interno'>- <i>Split CD</i></a></div></div></div>
+        </div>
+</div>
+
+<p style="position:relative; float:left; width:100%; text-align:center;"><a href="#comentarios" class="txt-cur-album">Envie seu coment&aacute;rio sobre essa not&iacute;cia! </a></p>
+
+
+
+<div class="rescds_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="rescds_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="rescds_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="rcc_res_id" id="rcc_res_id" value="13">
+                  <input type="hidden" name="rcc_ver" id="rcc_ver" value="n">
+                </form>
+</div>
+
+
+
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=10&id=13 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:10:18 GMT -->
+</html>

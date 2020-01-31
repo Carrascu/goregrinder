@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from goregrinder.net/index.php?s=14&id=1 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:08:35 GMT -->
+<head>
+<script type='text/javascript' src='jscripts/jquery.js'></script>
+<script type='text/javascript' src='jscripts/easyTooltip.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function(){	
+		$('a').easyTooltip();
+	});
+</script>
+<title>Mat&eacute;ria Especial: White Metal [GOREGRINDER Web Zine]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="gg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo_index">
+
+<table width="1013" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <th height="138" background="imagens/topo.png" scope="row">		<link rel="stylesheet" href="jscripts/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" href="jscripts/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+		<![endif]-->
+
+        		<!-- BEGIN Menu -->
+
+<div style="margin-top:120px; margin-left:-30px;"
+	    <ul id="nav">
+			<li><a href="index73bb.html?s=1">Capa</a>
+				<ul>
+					<li><a href="index5c8b.html?s=3">Not&iacute;cias</a></li>
+					<li><a href="index6827.html?s=4">Agenda</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Mat&eacute;rias</a>
+				<ul>
+					<li><a href="indexd7c2.html?s=14">Especiais</a></li>
+					<li><a href="index158d.html?s=10">Resenhas</a></li>
+					<li><a href="indexa9d0.html?s=11">Curto e Grosso</a></li>
+					<li><a href="indexfa11.html?s=13">Entrevistas</a></li>
+				</ul>
+			</li>
+
+			<li><a href="index8033.html?s=9">Blogs</a>
+				<ul>
+					<li><a href="index6ce8.html?blogid=3">Bleeeeergh</a></li>
+					<li><a href="indexeae5.html?blogid=1">Guilhotinando</a></li>
+					<li><a href="index316c.html?blogid=4">Laskeras</a></li>
+					<li><a href="index29fb.html?blogid=5">Olderground</a></li>
+					<li><a href="index23e3.html?blogid=2">Scat</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Multim&iacute;dia</a>
+				<ul>
+					<li><a href="index1882.html?s=17">GoreTube</a></li>
+					<li><a href="index6a3b.html?s=15">MP3 Online</a></li>
+					<li><a href="indexea98.html?s=16">&Aacute;lbuns Completos</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>	
+
+		<!-- END Menu -->
+
+	<!-- Load the Mootools Framework 
+	<script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>	
+    -->
+	<!-- Load the MenuMatic Class -->
+	<script src="jscripts/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+		window.addEvent('domready', function() {			
+			var myMenu = new MenuMatic();
+		});		
+	</script></th>
+  </tr>
+  <tr height="500">
+    <th background="imagens/fundo.png" scope="row" valign="top">
+    
+<script type="text/javascript" src="jscripts/validar.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function ValidaEmail()
+{
+  var obj = eval("document.forms[0].email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email incorreto');
+	obj.focus();
+  }
+}
+</script>
+<!-- Incluimos a biblioteca do jquery -->
+<script type="text/javascript" language="javascript" src="jquery-1.3.2.html"></script>
+<!-- Criamos as funÃ§Ãµes necessÃ¡rias para envio do formulÃ¡rio -->
+<script type="text/javascript" language="javascript">
+$(function($) {
+	// Quando o formulÃ¡rio for enviado, essa funÃ§Ã£o Ã© chamada
+	$("#formulario").submit(function() {
+		// Colocamos os valores de cada campo em uma vÃ¡riavel para facilitar a manipulaÃ§Ã£o
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var site = $("#site").val();
+		var mensagem = $("#mensagem").val();
+		var esc_esp_id = $("#esc_esp_id").val();
+		var esc_ver = $("#esc_ver").val();
+		var codigoimg = $("#codigoimg").val();
+		// Exibe mensagem de carregamento
+		$("#status").html("<img src='loader.gif' alt='Enviando' />");
+		// Fazemos a requisÃ£o ajax com o arquivo envia.php e enviamos os valores de cada campo atravÃ©s do mÃ©todo POST
+		$.post('com_mat681a.html?id=1', {nome: nome, email: email, site: site, mensagem: mensagem, esc_esp_id: esc_esp_id, esc_ver: esc_ver, codigoimg: codigoimg, }, function(resposta) {
+				// Quando terminada a requisiÃ§Ã£o
+				// Exibe a div status
+				$("#status").slideDown();
+				// Se a resposta Ã© um erro
+				if (resposta != false) {
+					// Exibe o erro na div
+					$("#status").html(resposta);
+				} 
+				// Se resposta for false, ou seja, nÃ£o ocorreu nenhum erro
+				else {
+					// Exibe mensagem de sucesso
+					$("#status").html("<p>Mensagem enviada com sucesso!<br>Assim que for aprovada, aparecer&aacute; nessa p&aacute;gina.<br>Agradecemos a sua participa&ccedil;&atilde;o no site!</p>");
+					// Coloca a mensagem no div de mensagens
+					$("#mensagens").prepend("<strong>"+ nome +"</strong> disse: <em>" + mensagem + "</em><br />");
+					// Limpando todos os campos
+					$("#nome").val("");
+					$("#email").val("");
+					$("#site").val("");
+					$("#mensagem").val("");
+					$("#codigoimg").val("");
+				}
+		});
+	});
+});
+</script>
+<table width="100%" height="500"  border="0" cellspacing="0" cellpadding="0" class="corpotab"><tr><th scope="row" valign="top" style="padding:20px; padding-top:30px;">
+
+<div class="mat_topo">
+
+<div class="mat_imagem"><img src="White%20Metale5ee.jpg?imagem=imagens/materias/White%20Metal.jpg&amp;w=350&amp;h=350" border="0" /></div>
+
+Em seus prim&oacute;rdios, o Heavy Metal surgira mesmo como uma forma de contra-cultura, ou mesmo como um grito de liberta&ccedil;&atilde;o, ante n&atilde;o s&oacute; as formas sofisticadas de domina&ccedil;&atilde;o social efetivadas pela pol&iacute;tica e pelos ditames de uma cultura dominante e de massa, mas tamb&eacute;m pelas pr&oacute;prias ideologias advindas dos mais diversos credos religiosos, principalmente. Por isso mesmo, nos in&iacute;cios da cria&ccedil;&atilde;o e difus&atilde;o do g&ecirc;nero musical e da pr&oacute;pria vis&atilde;o de mundo Heavy Metal, muitos o relacionariam com o satanismo, ou com cren&ccedil;as pagas, contr&aacute;rias &agrave; religi&atilde;o dominante, principalmente, ocidental. Simplesmente porque os jovens, que a esse g&ecirc;nero se ligariam, queriam muito mais sentirem-se livres do poder catequ&eacute;tico n&atilde;o somente da religi&atilde;o, mas de um mundo, de um forma geral, que os oprimia e ditava as regras para vestirem-se, comportarem-se, pensarem... O Metal foi evoluindo e mostrando ser um estilo absolutamente avesso as religi&otilde;es e a toda forma de domina&ccedil;&atilde;o, tornando-se assim marginalizado pelas variadas ideologias religiosas. J&aacute; nos anos 80, sentindo que o processo de difus&atilde;o era inevit&aacute;vel, pois o Metal se tornava muito mais popular entre a juventude, as entidades religiosas se mostraram interessadas em se infiltrar nesse meio. O intu&iacute;to, evidentemente, era o de se aproveitar do poder apaixonante do g&ecirc;nero e buscar, atrav&eacute;s dele, os &quot;cordeiros&quot; para o grande rebanho do Senhor, ou em outras palavras, puxar mais adeptos para suas religi&otilde;es. E foi onde surgiu o White Metal, um estilo muito controverso e que raras pessoas consideram um subg&ecirc;nero do Metal, pois a maioria dos headbangers n&atilde;o o encaram realmente como uma forma de express&atilde;o honesta do Metal, justamente pelo fato de o Heavy Metal ter como caracter&iacute;stica, em suas raizes, uma posi&ccedil;&atilde;o contra a religi&atilde;o e toda forma de domina&ccedil;&atilde;o, ou dogmatismos. Nessa mat&eacute;ria, tentaremos exp&ocirc;r id&eacute;ias de pessoas envolvidas no meio Underground a fim de debater esse pol&ecirc;mico estilo musical, que ao nosso ver n&atilde;o se encaixa dentro da proposta do Metal desde o seu princ&iacute;pio.<br /><br />
+<div class="mat_pergunta">Qual sua opinião sobre ideologias religiosas dentro do Metal?</div>
+<br /><br />
+Essa mat&eacute;ria foi elaborada por <b><a href="mailto:carrascu@bol.com.br">Carrascu</a>, <a href="mailto:alexneundorf@yahoo.com.br">Alex Neundorf</a>, <a href="mailto:vivianenihilisme@hotmail.com">Viviane Nihilisme</a> e <a href="mailto:rodrigo_simetti@hotmail.com">Rodrigo Simetti</a></b>, e publicada no dia <b>27/03/2009</b>.
+
+</div>
+
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Panda Reis&nbsp;
+<span class="mat_respostas_descricao">(Integrante das bandas <a href="http://www.oligarquiadeath.com/" title="" target="_blank">Oligarquia</a>, Erva Seca e <a href="http://www.myspace.com/heresia666" title="" target="_blank">Heresia</a>)</span></div>
+<div>A questão cristã na musica underground e não apenas no heavy metal, é algo que alguns anos parece incomodar os fãs desses estilos, e é muito coerente esse incômodo justamente pela ótima explicação do texto dessa matéria, a Igreja Católica sempre buscou controlar tudo e todos, desde os primórdios ela usa todas as armas e artifícios necessário para atingir seu objetivo, vejo uma certa possibilidade de os lideres Eclesiásticos tomarem sim uma atitude de sabotagem contra tudo que é contrário a ideologia deles, isso muito provavelmente aconteceu no rock e conseqüentemente ao heavy metal.</div><div>Porém pra mim tanto faz!!!! Eles não representam nada pra mim, pois não creio em religiosidade, com isso não acredito nos dogmas da Igreja Católica e nem na sua hierarquia, por isso pra mim é meio abstrato essas intermináveis discussões sobre o que a Igreja acha, sobre como ela age ou o que ela quer de nós, só seremos realmente atrapalhados se dermos importância pra ela, a Igreja, os bispos e o papa não são mais nada que funcionários de uma das “empresas” mais antigas e lucrativas do sistema capitalista e como esse sistema exige, ela é expansionista, e tende a querer e tentar controlar todos os meios da sociedade, isso inclui a musica e conseqüentemente o heavy metal. Vejo os white metal como “funcionários” dessa empresa, moleques que gostam de heavy metal, mas tem uma forte formação religiosa ou foram lobotomizados durante o processo, e como todo religioso, seja ele fã de metal ou não, é panfletário e tende a querer influenciar os que tem contato com eles.</div><div>Não encaro os white metal como um movimento conspirador ou algo parecido, os vejo como idiotas acéfalos que seguem uma religião medíocre, opressora, ditatorial, machista e que esta decadente... mas não me preocupo com eles, não os conheço, não fazem parte do meu mundo e dificilmente entraria em atrito com eles, tenho coisas mais importantes pra pensar, fazer e matar... (rs)&nbsp;</div></div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Luiz Carlos&nbsp;
+<span class="mat_respostas_descricao">(Dono da <a href="http://www.myspace.com/violentrecs" title="" target="_blank">Violent Records</a> e integrante das bandas <a href="http://www.myspace.com/hierarchicalpunishment" title="" target="_blank">Hierarchical Punishment</a>, <a href="http://www.myspace.com/predatorythrashmetal" title="" target="_blank">Predatory</a>, <a href="http://www.myspace.com/repulsa" title="" target="_blank">Repulsão Explícita</a> e <a href="http://www.myspace.com/blindbr" title="" target="_blank">Blind</a>)</span></div>
+Para mim, música não é a melhor "ferramenta" p/ um grupo fazer apologia a seus ideais; seria muito mais prático escrever um livro. Afinal, sabemos muito bem que a grande maioria das pessoas que freqüentam eventos Metal estão mais interessadas em ir à shows e "chapar" a cara, enquanto "o som" come solto... Isso já vem desde a época de Woodstock... Mas, felizmente, existem pessos que se interessam pelo conteúdo de letras inteligentes, senão seria cômodo "grunhir" palavras sem sentido. Já chega a sátira do Massacration, que estereotipou a cena e, pasmem, fez sucesso comercial... Conheço caras que tocam em grupos com cunho evangélico e, possuem atitudes que vão contra o que é pregado na Bíblia, por exemplo. Tá certo que, cada um é "dono do seu próprio nariz", portanto, acho mais fácil ignorar o que não vai de encontro ao que penso, do que ficar dando "ibope". Isso corre na cena HC/Punk que, de uns tempos para cá teve uma invasão de bandas que tratam sobre "espiritualidade"... É mais incoerente até do que o Metal, visto que o movimento Punk sempre foi mais radical sobre as questões sócio-políticas, indo totalmente contra a Igreja e seus fundamentos. E a molecada acabou caindo nessa de tocar HC, falando sobre evangelho... Nossa... Tô fora... Metal e Religião? Nada haver...</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Baron Von Causatan&nbsp;
+<span class="mat_respostas_descricao">(Dono da <a href="http://www.vampiriarecords.com/" title="" target="_blank">Vampiria Records</a>, editor da <a href="http://www.myspace.com/satanicmilitiamag" title="" target="_blank">Satanic Militia Magazine</a> e integrante da <a href="http://www.myspace.com/bestialatrocity" title="" target="_blank">Bestial Atrocity</a>)</span></div>
+O texto introdutivo aqui colocado na matéria já é algo que explica bem a situação do cristianismo dentro do Metal, isso cristianismo, pois como ocidentais essa é a crença que mais nos atinge realmente. O cristianismo sempre bateu firme no Metal e Rock em geral, mas depois de perceberem que as igrejas estavam ficando vazias e sem as novas faces da juventude dos anos 80, procuraram por conquistar alguns jovens que estariam chegando para fazer frente a um novo tipo de som, o tal do white metal. O que seria o white metal? Não é um estilo por si só, não conseguimos imaginar musicalmente o que é o white, sim em suas letras, ou seja white seria nada mais do que algo ideológico e nada mais. Quando falamos em Metal, sabemos que o pré-nome do estilo nos dá conta do que podemos esperar por vir sonoricamente falando, o white nunca nos dará isso, cada estilo tem uma linha e só se mantêm unido pelas letras. Considero o white como uma doença infecciosa que anda tomando conta cada vez mais no Metal porque muitos tem a filosofia de que o que vale é o som e não também a ideologia que está por trás do som da banda. Tudo faz parte, como ouvir algo e cantar junto uma letra que é cristã se você não for?? Religião é algo complicado, pois até o próprio Satanismo o pode ser, mas cristianismo em si é um mal que o Metal vem sofrendo e parece que vai longe ainda, porque falta a atitude de deixar de lado essa coisa de só o som importa. O problema é abraçar uma causa ideológica que sempre combateu esse tipo de som e agora o usa para tentar procurar novos cordeiros. Eu prefiro essa porcaria longe do Metal, nunca apoiei e nunca vou apoiar!!</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Fábio Bertoldi&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.purevolume.com/sacrilegium" title="" target="_blank">Sacrilegium</a>)</span></div>
+Antigamente haviam notas que não podiam ser tocadas dentro de igrejas pelo fato de soarem como notas sombrias, e agora? Esses merdas de white não lembram mais disso? Quantas pessoas foram mortas devido a isto? O catolicismo tem uma dívida enorme com o ser humano, por escravizar, torturar e por fazer lavagem cerebral em muitos idiotas como esses white de merda. Vejo um erro grave já de cara: white não pode usar o metal como um estilo para intitularem-se, na verdade deveria ser Merda! Um bando de filho da puta que quer aparecer... e mais nada! Se eles querem cultuar o seu falso deus, que peguem seu violão e vão se ajoelhar dentro de uma igreja, não usando o nome do Metal! É algo totalmente contraditório, metal é algo oposto a religiões e qualquer coisa imposta por fanatismo, metal é blasfêmia! white metal na minha visão não existe, é algo que escarro em cima, vomito e defeco! Blasfemem Eternamente!</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Alemão&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.myspace.com/soulassassinsbrazil" title="" target="_blank">Soul Assassins</a>)</span></div>
+Sou totalmente contra. A história nos mostra que a igreja sempre lançou mão de coisas que ela mesma no passado recriminou, e apontou como sendo obra de satanás, apenas para arregimentar mais fiéis. O White Metal é mais uma ferramenta religiosa, mais uma artimanha, uma apelação barata e uma total inversão dos valores do Metal.</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Sucoth Benoth&nbsp;
+<span class="mat_respostas_descricao">(Integrante das bandas <a href="http://www.amencorner.com.br/" title="" target="_blank">Amen Corner</a> e <a href="http://www.myspace.com/camoshorde" title="" target="_blank">Camos</a>)</span></div>
+Eu acho que o Heavy Metal assim com outros estilos dentro do Metal não devem ter ligações com religiões, a não ser para criticá-las, uma vez que a ideologia do Metal é falar das coisas que causam problemas nas pessoas e no mundo. Eu acredito que as religiões são um câncer que invade as pessoas e dominam as mentes, pastores e igrejas a serviço do dinheiro, padres pedófilos, etc... Portanto, temos que combater a religião nas músicas assim como combatemos a ganância, as guerras, destruições em massa, depredação do meio ambiente, etc... Resumindo, religiões não trazem benefício algum ao ser humano e sim prejuízo a curto, médio e longo prazo!!!</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Neil&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.laconist.com/" title="" target="_blank">Laconist</a>)</span></div>
+Realmente, não consigo imaginar um bando de idiotas, com corpsepaint, spikes, bateria caótica falando de um personagem que morreu na cruz para salvar a humanidade de seus pecados, ou de amor... O Heavy Metal em si, é algo que propaga sublevação desde seus primórdios. Acho normal a associação ao Satanismo, pois é o contrário da massa e é isso o que queriam no começo: Lutar contra Paradigmas e Preconceitos. E assim é até hoje. O cristianismo no Heavy Metal nada mais consiste do que um bando de Oportunistas, querendo se aproveitar de um público crescente que também CONSOME CDs, Camisetas dentre outras formas de Merchandise. Abomino essa raça, não os considero Headbangers. O Heavy Metal sempre será um forma de expressão com temas violentos, anti-religião e/ou combatendo limitações impostas por um bando de palhaços que pregam salvação, e te fazem pagar para adquiri-lá Postmortem. CABAÇOS! MORTE AO WHITE METAL!</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Slanderer&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.myspace.com/unbornbrazil" title="" target="_blank">Unborn</a>)</span></div>
+Penso que qualquer forma de arte que surgia para contrapor idéias com o tempo foi absorvida por diversos tipos de ideologias. E apesar dos pesares, qualquer manifestação artística não possui um padrão, uma forma a ser seguida ou proprietários. Isso é contradizer o próprio argumento de contracultura, de ir contramaré. Obviamente não aprovo o fato do estilo White Metal, por inúmeros motivos, entre os quais a falta de fundamentação bíblica, livro que repreende qualquer coisa deste mundo. E este é um ponto que demonstra que religiosos são extremamente contraditórios, incluindo aí o envolvimento com a política também. Não tem como levar a sério algo oriundo de tantas contradições e hipocrisias! Agora, o mundo é o mundo, é esta diversidade insana, tão plural e confuso que vão além de quaisquer preconceitos e discriminação.</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Marcio Maciel&nbsp;
+<span class="mat_respostas_descricao">(Editor do <a href="http://www.extrememetal.com.br/" title="" target="_blank">Apokalypse ExtremeMetal Webzine</a>)</span></div>
+Olá Amigos da GoreGrinder. Primeiramente gostaria de agradecer o convite para participar desta matéria. Bom, vou tentar ser o mais claro e objetivo possível sobre o que penso a respeito de White Metal, Unblack Metal e outros estilos ligados a religião católica e afins. Acho que todos tem direito de fazer o que quiser. Se os caras querem tocar metal falando de deus, o problema é deles. O que me indigina é querer tocar um som extremo falando de jesus, de coisinhas bonitinhas, de salvação e tudo mais. Metal é um som agressivo e que pra mim não tem nada a ver com a imagem que a igreja passa. O indivíduo tem que ser no mínimo imbecil para curtir um som extremo louvando a deus. Quem curte esse tipo de som são pessoas fracas, que tem medo da vida, que querem ser "fodões" mas não tem bolas pra enfrentar as dificuldades e barreiras que enfrentamos no dia a dia, abraçando-se a uma coisa que na minha opinião não existe (deus) como salvação dos pecados. Não sou ligado a nenhuma ideologia que bandas passam nem nada do tipo, mas tenho total aversão a bandas de metal cristão pela sua temática absurda. Religião é algo ignorante, seja católica ou não. Metal não é musica pra cagão, e eu acho que todo cristão é um cagão nato que acredita numa farsa criada a muito tempo pra controlar o povo. Não, metal não é musica pra pessoas ‘do mal’ como muitos pensam. É musica para pessoas inteligentes que tem um mínimo de noção das coisas e não é dominada pela massa que obriga seus "cordeirinhos" a fazer o que julgam certo ou errado. Metal é para pessoas de carácter, de personalidade, coisas que eu não consigo enxergar em cristãos de qualquer tipo.</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Wagner Moloch&nbsp;
+<span class="mat_respostas_descricao">(Artista plástico e integrante das bandas <a href="http://www.myspace.com/molochbr" title="" target="_blank">Moloch </a>e <a href="http://www.myspace.com/naberusbr" title="" target="_blank">Naberus</a>)</span></div>
+O Metal já é religioso em sí pela paixão de seus apreciadores. Em seus primórdios já se flertava com a religião, polemizando de alguma forma; porém o que acontece atualmente chega a soar como piada. Ou é um pseudo satanismo sem fundamento qualquer (que acaba por ser positivo inicialmente no sentido da rebeldia, e quebra de valores falidos impostos pela igreja) mas apenas uma supervalorização da aparência, ou seja uma ovação do revestimento sem conteúdo qualquer. Certo, não digo que nos anos 80 por exemplo as pessoas eram mais conscientes nesse sentido, porém eram mais simples e autênticas em suas colocações/musicalidades, beirando a inocência. O golpe mais baixo dentro do Metal na verdade vem dessa religiosidade da fé cristã inserida sem escrúpulos, utilizando-se da sonoridade e das armas que muitas vezes são utilizadas para quebrar seus dogmas em seu favor, Un-Black Metal, corpse paint, tudo em nome de deus. Claro, a igreja sempre foi baixa neste sentido, indo onde está a massa, indo onde está a juventude, atingi-los seja como for, vale tudo para eles. Assim como pediram desculpas a Giordano Bruno, assim como prestaram homenagens e até levantaram uma estátua a Galileu Galilei, assim como andam assumindo que se existirem outras vidas no cosmo também serão filhos de deus, exemplo que hoje ela não briga mais tanto com a Ciência, mas procuram absorver e adaptar o conhecimento ao seu universo hipócrita e pernicioso. Em suma, citando novamente, ouvir músical Heavy Metal tem o mesmo poder ou até maior do que um culto religioso, pois chegar em casa com seu disco recém adquirido na loja ou mesmo recebido pelo correio, colocar no aparelho e iniciar a audição chega a ser como um culto, muito mais produtivo ao seu ser e não tem preço algum que pague a emoção! Desdogmatize-se!</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Elton Lima&nbsp;
+<span class="mat_respostas_descricao">(Editor do Visão Underground Zine)</span></div>
+Ideologias religiosas? Sou contra todas as religiões, e esse fanatismo idiota que empesta o mundo! Realmente o maior instrumento de alienação que o homem já criou, pode ter certeza! Devemos boicotar/ignorar quem apóia e divide espaço com esses malditos vermes! Hoje em dia temos vários infiltrados em nosso meio, não temos o poder de adivinhar quem é quem em nossa cena, mais nada melhor que o tempo para desmascarar os malditos! Então, Invertam as cruzes!</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Lord Moonfog&nbsp;
+<span class="mat_respostas_descricao">(Integrante da banda <a href="http://www.myspace.com/drakonianage" title="" target="_blank">Drakonian Age</a>)</span></div>
+Me referindo diretamente ao cristianismo, já que não considero nem satanismo e nem paganismo religiões, mas sim filosofias de vida, eu acho extremamente absurda a união do metal com cristianismo, algo bem contraditório, pois se alguém quer louvar a cristo, que va para uma igreja e não a um show de metal. sou e sempre serei totalmente contra e vou sempre combater esse cancer dentro do metal.</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">Valterlir Mendes&nbsp;
+<span class="mat_respostas_descricao">(Editor do Máquina Metal Zine e <a href="http://www.recifemetallaw.com.br/" title="" target="_blank">Recife Metal Law</a>)</span></div>
+O Heavy Metal nasceu como sendo algo profano, por muitos leigos (leia-se religiosas) dizendo que aquilo era música do ‘capeta’, de gente drogada, etc. O tempo foi passando e a igreja não conseguiu ‘derrubar’ um estilo de música que não se limita apenas a música, mas algo que faz parte da própria vida de um headbanger. Então como não se pôde vencer, ‘se juntaram ao inimigo’. Bandas de White Metal surgem aos borbotões, fazendo, inclusive, suas apresentações em igrejas, para assim tornar o Heavy Metal algo mais ‘santificado’. Idiotice! Ninguém em sua sã consciência segue ensinamentos fantasiosos, que só servem mesmo para padres e pastores, afinal são eles que mais ganham com a ingenuidade do povo. Enquanto muitos morrem de fome, e diz que isso é obra de Deus, o Vaticano se esbalda em dinheiro, com o papa viajando às custas dessas mesmas pessoas que tiram o dízimo de seu suado dinheiro, para sustentar o luxo de cardeais, padres, e um monte de pedófilos que existe na igreja. É inadmissível uma ideologia tão demagoga se infiltrar no Heavy Metal. Heavy Metal vai de encontro a toda essa mentira. Religiosos vão para as igrejas, o Heavy Metal agradece!</div>
+<div class="mat_respostas">
+<div class="mat_respostas_nome">João Vormehlen Junior&nbsp;
+<span class="mat_respostas_descricao">(Organizador do festival <a href="http://www.myspace.com/trentoopenair" title="" target="_blank">Trento Open Air</a> e integrante da banda <a href="http://www.myspace.com/mrfearofficial" title="" target="_blank">Mr. Fear</a>)</span></div>
+No começo do Metal, varias bandas sofreram, discriminações, por simples fatos de contar histórias, do lado negro das idologias religiosas! Por ser um estilo com 'peso', ter uma personalidade própria. Diziam ser satanistas por falar de demônios, morte, etc.. em sua letras, se isso fosse verdade, a biblía não precisaria ter a pagina 666, ou falar de satanás, porque se um crente vier em sua casa de 10 palavras eles devem dizer uns 6 satanás! (risos) Mas uma coisa o metal nos anos 70 e 80 batia com o movimento punk, mesmo com isso o metal ganho seu espaço, foi crescendo, difundindo estilos como: black, thrash, death e etc... e hoje é um dos estilos de musica mais conheçidos do mundo, isso sem ajuda de ideologias religiosas! White Metal é que nem você trabalhar a sua vida toda atrás de um sonho e alguém que sempre criticava ele e batia na tecla não vai da certo, não vai da certo, chegasse com a cara de páu e roubasse o seu sonho, White Metal não faz parte do metal é mais uma merda criada pelas mentes doentes desse mundo, deixem essa hipocrisía de lado e deixem a bandeira do True Metal sempre estendida! Metal Sempre!</div>
+
+<div class="mat_compartilhar">
+<div class="mat_compartilhar_topo">Compartilhe essa mat&eacute;ria!</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " style="width:400px; vertical-align:central;">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<!-- Inclua esta tag onde desejar que o botÃ£o +1 seja exibido -->
+<script type="text/javascript" src="../apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+<g:plusone size="medium"></g:plusone>
+<a class="addthis_button">Divulgue!</a>
+</div>
+<script type="text/javascript">
+var addthis_config = {"data_track_clickback":true,
+ui_header_color: "#ffffff",
+ui_header_background: "#000000" 
+};</script>
+<script type="text/javascript" src="../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0e369f4a807b4b"></script>
+<!-- AddThis Button END -->
+<meta property="og:image" content="http://www.goregrinder.net/imagens/materias/White Metal.jpg" /></div>
+
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:zegonzales@yahoo.com'>José Maurício Gonzales Praxedes</a></span>
+&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Eu me arrependo bastate de ter sido um evangélico ( bostagélico ). hoje tenho minha própria religião, acredito em Deus e Deuses da minha maneira , mas não sou mais escravo do medo e da culpa. Quando vc se torna um White Metal eles tehntam subverter o direito mais básico que tem um headbanger: o direito a escutar boa música. A maioria dos cristãos prega que o crente só deve ouvir música gospel (incluindo white metal). isso sem falar na alienação política e ideológica. é pura manipulação , não recomendo pra ninguém !!! não se converta a essa religião !!! tempo perdido !!!</div>
+
+<div class="mat_comentarios_base">
+08/04/14 &agrave;s 13:33 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:zeonzales@yahoo.com'>José Maurício Gonzales Praxedes</a></span>
+&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Eu já fui cristão e já fui do White Metal e posso afirmar que, apesar de tentarem passar uma aparência de "cool" e "gente cabeça" e "gete boa" , os whites são tão ou mais pau no cu do que todos os outros cristãos , tipo Valdomiro , Malafaia e Feliciano. È TUDO FARINHA DO MESMO SACO , È TUDO UMA MERDA. Se vc preza pela sua LIBERDADE não destrua ela se convertendo a essa religião estúpida. </div>
+
+<div class="mat_comentarios_base">
+08/04/14 &agrave;s 13:24 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:satanicpropaganda666@hotmail.com'>Azazel Sabbath</a></span>
+<a href='http://www.myspace.com/hordadarkimperial' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ SOU COMPLETAMENTE CONTRA TUDO AQUI ATÉ O MOMENTO, POIS SE EXISTE A POSSIBILIDADE DE WHITE METAL SER CONSIDERADO UMA VERTENDO DO UNDERGROUND VERDADEIRO, É PORQUE ASSIM A MENTE DE VCS PERMITEM, COMO A MINHA NÃO PERMITE TAL AFIRMAÇÃO, TENHO DITO POR MIM QUE WHITE METAL É LIXO, É NADA!!! LUX ET NOX</div>
+
+<div class="mat_comentarios_base">
+16/10/12 &agrave;s 21:41 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:marlzonni_marrelli@hotmail.com'>Opus Lux Ferre</a></span>
+&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ esse tal de augusto e matheusfera 53 são dois cu! desde quando o metal surgiu com intuito de ser religioso? bando de babaca, esses cristãos desgraçados querem se meter em tudo, sou ateu e o metal tem de ser interinamente profano!!!
+deus só existe por o homem o inventou!!!</div>
+
+<div class="mat_comentarios_base">
+06/12/10 &agrave;s 15:52 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:Bruninhodek22@yahoo.com.br'>Bruno Macedo</a></span>
+&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Matéria Contraditória e Sem Fundamento algum ... Exemplo O rock e Suas Ramificações São totalmente insipientes no Brasil , ou seja , o público médio esta defecando para o detah metal , para o casse a 4 metal e pro white metal ... resumo : metal falando do capeta legal ? mas falando de Deus ILEGAL ? ... acho que a questão máxima é ... o maior numeros de bandas rolando por ai ... satanistas , cistãs ... enfim , algumas bandas cristãs mandam bem .. acho que matar a música em si por questão tão tola ... enquanto isso o público médio cagando ... e os bangers falando merda e se auto destrindo pq caras falam sobre deus e outros falam do capeta ...Parabéns pra vocês ... legado lindo pra nova geração !  </div>
+
+<div class="mat_comentarios_base">
+18/11/10 &agrave;s 15:37 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:mateus_jenko@hotmail.com'>Mateus Felipe</a></span>
+&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Acho que seria bem justo colocar respostas de bandas de White Metal.</div>
+
+<div class="mat_comentarios_base">
+02/11/10 &agrave;s 02:31 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:killerbutcher666@hotmail.com'>Jorge KillerButcher</a></span>
+&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Pau no cú de Deu$!!!!
+Foda-se os profetas e falsa verdade
+“Religião é uma coisa excelente para manter as pessoas comuns quietas”.
+Napoleão Bonaparte
+“Acreditar é mais fácil do que pensar. Daí existem muito mais crentes do que pensadores.”
+Bruce Calvert
+</div>
+
+<div class="mat_comentarios_base">
+29/10/10 &agrave;s 09:05 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+Luciano.BlackHeart</span>
+<a href='http://mortenoaltarzine.blogspot.com/' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Fudida a matéria... Como está no início da matéria o Metal foi um grito de liberdade contra os hipócritas religiosos, a gora esses cristã tentam  se infiltrar no meio do metal underground , se dizendo que são banda deathmetal, blackmetal  cara isso é um comedia!!!!! Sangue e honra ao Verdadeiro metal underground. !! 
+Gostei tanto da matéria que postei ela no meu zine “Morte No Altar” com um link direcionando para O GOREGRINDER WEB ZINE !! blz?
+Haill True Metal...
+</div>
+
+<div class="mat_comentarios_base">
+26/05/10 &agrave;s 20:08 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:matheusfera53@hotmail.com'>MatheusFera53</a></span>
+&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Seguinte a matéria é muito boa, não curti muito algumas opiniões cada tem sua crença, White Metal é o lado religioso do Metal, assim como tem o lado negro do Metal que é o Black Metal, eu acho que criticar seus estilos musicais é uma coisa que rolá direto no mundo da musica por cada um ter seu gosto!!! tipo eu curto mais Hard Rock do que Metal mais intendo dos dois um pouco!... mais tem um porem se for pra critikar o White Metal... você tenq critikar o Black Metal tbm, pois ambos vieram do metal, e mais uma coisa a musika ke só fala de CRISTO,DEUS etc... é igual as musikas que falam de SATANAS,DIABO,DEMONIOS E DESTRUIÇÃO, igual as musikas que falam de PUTARIA,ALEGRIA,AMOR e etc... cabe a cada um julgar da forma que acha certa!!!
+agora ká entre nos falar de destruição demonios ke só fazem mal eu não curto!!! prefiro falar de DEUS e de coisas ke fazem bem!!! é essa minha opinião!!
+flw!</div>
+
+<div class="mat_comentarios_base">
+19/05/10 &agrave;s 16:39 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:gutmetal@yahoo.com'>Augusto</a></span>
+&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Achei tosquissima essa matéria.
+
+Ela é preconceituosa e pré-definida para falar merda de bandas com ideologias contrarias ao que banda "pseudo-satanicas / anarquistas / politicas" crêem.
+
+Falar de satanás pode, falar de Deus "só se falar merda" !!?? e cade o povo falando merda de bandas
+que só falam de Satanismo sendo ou não pra levar a serio!?  kkk que babakice 
+
+Matéria contráditoria de apologia a bandas extremas que falam de destruição/satanismo/anarquia e coisas que assim convém para os própios membros.
+
+É a mesma coisa de entrarem num site de heavy tradicional e pedirem para musicas desse estilo falem oque acham do estilo grindecore kkkkkkkkk
+
+Obvio que vão falar um monte contra esse estilo
+isso que pensa um pouco saka na hora.
+
+Boicote aos hipocritas que se acham os fodas da cena e não respeitam os estilos variados do heavy metal, seja falando de religião ou de qualquer outra coisa
+
+Porque não colocaram comentários de outras bandas de estilos variados!? afinal para fazer apologia as coisas que citei acima não precisa ser eath/black/gore e etc
+
+
+
+</div>
+
+<div class="mat_comentarios_base">
+25/10/09 &agrave;s 15:28 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:eltonfcampos@gmail.com'>Elton Felipedes De Campos</a></span>
+<a href='www.myspace.com/eltonthorson.html' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Adorei a matérie!!!
+
+E bem..... tá mais que certo... lugar de White Metal é na Igreja, mas infelizmente eles se tornaram um cancer que não sei como vão estirpar!</div>
+
+<div class="mat_comentarios_base">
+05/08/09 &agrave;s 21:55 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:digital.pen@hotmail.com'>Dpa Gore Graphics</a></span>
+<a href='http://www.myspace.com/digitalpenartstudio' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ fuck off jesus christ!!</div>
+
+<div class="mat_comentarios_base">
+27/07/09 &agrave;s 09:36 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:digital.pen@hotmail.com'>Dpa Gore Graphics</a></span>
+<a href='http://www.myspace.com/digitalpenartstudio' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ cara sem comentários white metal é para os fracos, assim como qualquer religião, patéticos!
+vo queimar no inferno sim e dai!fuck off christians!</div>
+
+<div class="mat_comentarios_base">
+27/07/09 &agrave;s 09:32 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:delmon33@gmail.com'>Delmon "Splinter"</a></span>
+&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ Brilhante matéria, brilhantes respostas...
+Destaque para a resposta do Márcio Maciel e achei "um pouco" estranha a resposta do Sucoth...
+mas é isso... parabéns Carrascu...</div>
+
+<div class="mat_comentarios_base">
+22/07/09 &agrave;s 15:11 Hs
+</div>
+
+</div>
+<div class="mat_comentarios">
+
+<div class="mat_comentarios_titulo">
+<span class='txt-com-nome'>
+<a href='mailto:trentoopenair@gmail.com'>Joao Vormehlen Jr.</a></span>
+<a href='http://www.myspace.com/trentoopenair' target='_blank' style='font: 10pt Arial; color:#c10;'>&nbsp;(Site)</a>&nbsp; comentou:
+
+</div>
+
+<div class="mat_comentarios_texto">
+ o link do site do trento esta errado falta um "o"
+
+arrumem se puderem
+
+obrigado e a matéria ficou muito boa!
+Juninhu
+http://www.myspace.com/trentoopenair</div>
+
+<div class="mat_comentarios_base">
+01/05/09 &agrave;s 00:53 Hs
+</div>
+
+</div>
+
+
+<div class="mat_formulario">
+
+<div id="status" style="width:99%; text-align:center; font:11pt Arial, Helvetica, sans-serif; color:#C30;"></div>
+              
+<form id="formulario" action="javascript:func()" method="post" OnSubmit='JavaScript:return checkdata()'>
+<a name="comentarios"></a> 
+<div style="width:50%; height:25px; float:left;" class="mat_formulario_texto">Nome: <input type="text" name="nome" id="nome" value="" size="25" class="formularios"></div>
+<div style="width:50%; height:25px; float:left;" class="mat_formulario_texto">E-mail: <input type="text" name="email" id="email" onBlur="ValidaEmail();" value="" size="25" class="formularios"></div>
+<div style="width:100%; height:25px; float:left;" class="mat_formulario_texto">Site <span style="font:9px Tahoma, Geneva, sans-serif;">(opcional)</span>: <input type="text" name="site" id="site" value="" size="50" class="formularios"></div>
+<div style="width:100%; vertical-align:top;" class="mat_formulario_texto">Texto: <textarea name="mensagem" id="mensagem" cols="53" rows="5" class="formularios"></textarea></div>
+<div style="width:50%; text-align:left; float:left; padding-left:10px;"><img src="imgauth.png" align="baseline"> = <input type="text" size="4" name="codigoimg" id="codigoimg" class="formularios"></div>
+<div style="width:40%; text-align:right; float:right; margin-right:15px; padding-top:3px;"><input type="submit" value="Enviar" class="formularios_botoes"></div>
+                  <input type="hidden" name="esc_esp_id" id="esc_esp_id" value="1">
+                  <input type="hidden" name="esc_ver" id="esc_ver" value="n">
+                </form>
+</div>
+
+
+</th></tr></table>   </th>
+  </tr>
+  <tr>
+    <th height="300" background="imagens/base.png" scope="row"><div class="rodape_col1">
+<a href="index-2.html" class="rodape_txt">Capa</a><br>
+<a href="index73bb.html?s=1" class="rodape_txt">In&iacute;cio</a><br>
+<a href="index5c8b.html?s=3" class="rodape_txt">Not&iacute;cias</a><br>
+<a href="index6827.html?s=4" class="rodape_txt">Agenda</a><br>
+</div>
+
+<div class="rodape_col2">
+<a href="indexd7c2.html?s=14" class="rodape_txt">Mat&eacute;rias Especiais</a><br>
+<a href="index158d.html?s=10" class="rodape_txt">Resenhas</a><br>
+<a href="indexa9d0.html?s=11" class="rodape_txt">Curto e Grosso</a><br>
+<a href="indexfa11.html?s=13" class="rodape_txt">Entrevistas</a><br>
+</div>
+
+<div class="rodape_col3">
+<a href="index8033.html?s=9" class="rodape_txt">Blogs</a><br>
+<a href="index6ce8.html?blogid=3" class="rodape_txt">Blog Bleeeeergh</a><br>
+<a href="indexeae5.html?blogid=1" class="rodape_txt">Blog Guilhotinando</a><br>
+<a href="index23e3.html?blogid=2" class="rodape_txt">Blog Scat</a><br>
+</div>
+
+<div class="rodape_col4">
+<a href="index1882.html?s=17" class="rodape_txt">GoreTube</a><br>
+<a href="index6a3b.html?s=15" class="rodape_txt">MP3 Online</a><br>
+<a href="indexea98.html?s=16" class="rodape_txt">&Aacute;lbuns completos</a><br>
+</div>
+
+<div class="rodape_col5">
+<a href="index23b5.html?s=2" class="rodape_txt">A GoreGrinder</a><br>
+<a href="indexcb2e.html?s=19" class="rodape_txt">Coment&aacute;rios</a><br>
+<a href="indexb5f2.html?s=20" class="rodape_txt">Promo&ccedil;&otilde;es</a><br>
+<a href="index6ace.html?s=21" class="rodape_txt">Mat&eacute;rias antigas</a><br>
+<a href="indexf53a.html?s=8" class="rodape_txt">Links</a><br>
+</div>
+
+<div class="rodape_col6">
+<a href="http://edicaoespecial.goregrinder.net/" target="_blank" class="rodape_txt">Edi&ccedil;&atilde;o Especial Impressa</a><br>
+<a href="http://festival.goregrinder.net/" target="_blank" class="rodape_txt">GoreGrinder Festival</a>
+</div>
+
+<div class="rodape_midias">
+<a href="http://www.facebook.com/GoreGrinder.wz" target="_blank" title="Visite nossa p&aacute;gina no Facebook"><img src="imagens/facebook-logo.png" width="30" height="30" style="margin-bottom:10px;" border="0"></a><br>
+<a href="http://www.twitter.com/goregrinder_wz" target="_blank" title="Siga-nos pelo Twitter"><img src="imagens/twitter-logo.png" width="30" height="30" border="0"></a>
+</div>
+
+
+<div class="rodape_parceiros_topo">Parceiros</div>
+<div class="rodape_parceiros">
+<a href="http://baronshell.com/" target="_blank" title="Baron's Hell"><img src="imagens/logo-barons.png" border="0" /></a>
+<a href="http://metalmaniacszine.blogspot.com/" target="_blank" title="Metal Maniacs Zine"><img src="imagens/logo-metal-maniacs.png" border="0" /><br /></a>
+<a href="http://www.cgzine.blogger.com.br/" target="_blank" title="CGZINE"><img src="imagens/logo-cgzine.png" border="0" /></a>
+<a href="http://alcoholocaustbrutalinformation.blogspot.com/" target="_blank" title="Alcoholocaust Brutal Information"><img src="imagens/logo-alcoholocaust.png" border="0" /></a>
+</div></th>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from goregrinder.net/index.php?s=14&id=1 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 21:08:35 GMT -->
+</html>
